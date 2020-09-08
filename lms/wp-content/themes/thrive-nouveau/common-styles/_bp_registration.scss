@@ -1,0 +1,185 @@
+// Registration Screen
+// Styles the registration index.php form and elements.
+#document-wrapper-no-sidebar {
+	padding-bottom: 70px;
+}
+
+.buddypress-wrap {
+    &.extended-default-reg {
+        
+        .register-page {
+
+        	.site-content {
+        		height: 100%;
+        	}
+
+            .layout-wrap {
+                .register-section {
+                    width: 100%;
+                    @media(min-width: 768px) {
+                        width: 50%;
+                    }
+                    &#profile-details-section {
+                        margin-top: 45px;
+                        @media(min-width: 768px) {
+                            margin-top: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .register-section {
+        .bp-heading {
+            font-size: 1.375em;
+            line-height: 1.2727272727;
+            margin-bottom: 1.2727272727em;
+        }
+        .extended-profile {
+
+        }
+    }
+    .register-page {
+        .bp-feedback.bp-messages {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+#minimal-register {
+    padding: 0 25px;
+}
+
+#thrive-registration-logo {
+    margin: -35px -35px 45px ;
+    padding: 35px;
+}
+
+#minimal-registration-container {
+    max-width: 768px;
+    margin: 35px auto 35px auto;
+    padding: 35px;
+    background: $white;
+    position: relative;
+    @extend .thrive-material-card-2;
+}
+
+#thrive-social-connect {
+    margin-bottom: 25px;
+    &:empty {
+        margin-bottom: 0;
+    }
+}
+.register-page {
+	.register-section {
+
+		@include box-model();
+	}
+
+	.signup-form {
+
+		.default-profile {
+
+			input {
+				margin-bottom: $marg-lrg;
+			}
+		}
+
+		label,
+		legend {
+			margin: $marg-sml 0 0;
+		}
+
+		// profile extra element wrapper
+		.editfield {
+			margin: 0 0 $marg-med;
+
+			fieldset {
+				border: 0;
+				padding: 0;
+
+				legend {
+					margin: 0 0 5px;
+                    padding: 0;
+					text-indent: 0;
+				}
+			}
+
+			.field-visibility-settings {
+				padding: $pad-sml;
+
+				fieldset {
+					margin: 0 0 $marg-sml;
+				}
+			}
+		} // editfield
+
+		#signup-avatar img {
+			margin: 0 $marg-med $marg-sml 0;
+		}
+
+		.password-entry,
+		.password-entry-confirm {
+			border: 1px solid $bp-border-color;
+		}
+	} // close .signup-form
+
+} // close .register-page
+
+// Flex layout containers for registration sections
+
+@include medium-up() {
+
+	.buddypress-wrap {
+
+		.register-page {
+
+			.layout-wrap {
+				display: flex;
+				flex-flow: row wrap;
+				justify-content: space-around;
+
+				.default-profile {
+					flex: 1;
+					padding-right: $pad-lrg;
+				}
+
+				.blog-details {
+					flex: 1;
+					padding-left: $pad-lrg;
+				}
+			}
+
+			.submit {
+				clear: both;
+			}
+
+		}
+	}
+}
+
+// have we got extended profiles to factor in,
+// if so we'll adjust the child item elements.
+
+@include medium-up() {
+
+	.buddypress-wrap.extended-default-reg {
+
+		.register-page {
+
+			.default-profile {
+				flex: 1;
+				padding-right: $pad-med;
+			}
+
+			.extended-profile {
+				// flex: 2;
+				padding-left: $pad-med;
+			}
+
+			.blog-details {
+				flex: 1 100%;
+			}
+		}
+	}
+}

@@ -1,0 +1,170 @@
+// BP activity comment entries in response to activity loop entries
+.buddypress-wrap {
+
+	.activity-comments {
+		clear: both;
+	    margin: 14px -14px -14px -14px;
+	    overflow: hidden;
+	    position: relative;
+	    width: auto;
+	    background: #eee;
+	    border-top: 1px solid #ddd;
+
+		ul {
+			clear: both;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+
+			li {
+				border-top: 1px solid $bp-border-color;
+				border-bottom: 0;
+				padding: 15px 15px 15px 5%;
+
+				ul {
+					// indent any nested comments - comment to a comment
+					// Disable nested comments.
+					margin-left: 0;
+				}
+			}
+
+			li:first-child {
+				border-top: 0;
+			}
+
+			li:last-child {
+				margin-bottom: 0;
+			}
+		} // close ul
+
+		div.acomment-avatar {
+			width: auto;
+
+			img {
+				border-width: 1px;
+				float: left;
+				height: 25px;
+				max-width: none;
+				width: 25px;
+			}
+		}
+
+		.acomment-meta,
+		.acomment-content p {
+
+			@include font-size(14);
+		}
+
+		.acomment-meta {
+			color: $dark-grey;
+			overflow: hidden;
+			padding-left: 2%;
+		}
+
+		.acomment-content {
+			margin: 10px 0 0 35px;
+			p {
+				font-size: 12px;
+				margin-bottom: 0.5em;
+			}
+		}
+
+		.acomment-options {
+			float: left;
+			margin: $marg-sml 0 $marg-sml $marg-lrg;
+
+			a {
+				color: $light-text;
+
+				@include font-size(14);
+
+				&:focus,
+				&:hover {
+					color: inherit;
+				}
+			}
+
+		} // close .acomment-options
+
+		.activity-meta.action {
+			
+			background: none;
+			margin: 10px 0 0 37.5px;
+
+			.acomment-delete,
+			.acomment-reply {
+
+				padding: 0;
+				border: 0 none;
+				box-shadow: none;
+				font-weight: 400;
+    			margin-right: 5px;
+    			background: transparent;
+
+				&:hover {
+					background: none;
+				}
+			}
+			// if button element in use
+			button {
+
+				@include font-size(14);
+				font-weight: 400;
+				text-transform: none;
+			}
+		}
+
+		.show-all {
+
+			button {
+
+				@include font-size(14);
+				text-decoration: underline;
+				padding-left: $pad-sml;
+
+				span {
+					text-decoration: none;
+				}
+
+				&:hover,
+				&:focus {
+
+					span {
+						color: $blue;
+					}
+				}
+			}
+		}
+
+	} // close .activity-comments
+
+	// Activity li.mini Comments
+
+	.mini {
+
+		.activity-comments {
+			clear: both;
+		}
+
+	}
+
+} // close .buddypress-wrap
+
+// Single Activity Comment Entry View
+body.activity-permalink {
+
+	.activity-comments {
+		background: none;
+		width: auto;
+
+		> ul {
+			padding: 0 $pad-sml 0 $pad-med;
+		}
+
+		ul li > ul {
+			margin-top: $marg-sml;
+		}
+
+	}
+
+} //close .activity-permalink

@@ -1,0 +1,133 @@
+/**
+ * Reference Styles
+ */
+.thrive-inline {
+	.reference-menu-container {
+		width: 100%;
+		margin-top: 85px;
+		padding-right: 0;
+		.reference_nav_is_sticky.is_stuck {
+			margin-top: 85px;
+		}
+		.reference-menu-wrap {
+			background: #fff;
+			@extend .thrive-material-card-1;
+			border-color: #ddd;
+			transition: 0 none;
+		}
+
+	}
+	#reference-feedback {
+		border-color: #ddd;
+		background: #fff;
+		@extend .thrive-material-card-2;
+	}
+	article.single-knowledgebase{
+
+		font-size: 16px;
+		font-weight: 400;
+
+		.entry-title {
+			font-size: 28px;
+			font-weight: bold;
+			color: #212121;
+			margin: 20px 0 10px 0;
+		}
+
+		article.thrive-card {
+			box-shadow: none;
+    		background: #0000;
+    		padding: 0;
+    		margin-top: -20px;
+		}
+
+	}
+	#thrive-ref-toc-content-title {
+		position: relative;
+		top: 100px;
+	}
+	.reference-cat-image {
+		border-radius: 2px;
+		position: relative;
+		@extend .thrive-material-card-2;
+	}
+	.letter-thumbnail {
+		width: 100%;
+		height: 100%;
+		padding: 25% 0;
+		background: #fff;
+		border: 2px solid #ddd;
+	}
+}
+/*
+ * Breadcrumbs
+ */
+ .reference-main-wrapper {
+ 	
+ 	.reference-knowledgebase-search-field {
+ 		margin-top: 0;
+ 		margin-bottom: 15px;
+ 	}
+
+	#breadcrumbs-wrap {
+		background: #fff;
+	    padding: 10px 15px;
+	    border-radius: 2px;
+	    border: 1px solid #ddd;
+	    display: inline-block;
+	    font-size: 14px;
+	    font-weight: bold;
+		@extend .thrive-material-card-2;
+		margin-bottom: 20px;
+		&:empty {
+			display: none;
+		}
+	}
+	.page-header{
+		.reference-header-info {
+			.page-title {
+				.archive-title {
+					font-size: 24px;
+				    display: block;
+				    margin-bottom: 5px;
+				}
+				.archive-type {
+					display: none;
+				}
+			}
+		}
+	}
+ }
+
+ /*
+  * Archives
+  */
+.thrive-inline {
+	.category-listings .category-listing {
+		max-width: 33.3%;
+		border: 2px solid #ddd;
+		margin-bottom: 0;
+		&.allowance {
+			border: 0 none;
+		}
+	}
+	.reference-main-wrapper {
+		.page-header {
+			padding: 0;
+	    	border-bottom: 0;
+		}
+	}
+	.reference-knowledgebase-count {
+		margin: 25px 0;
+	}
+}
+.archive #content.site-content #content-left-col #primary.content-area article.hentry.dsc-knowledgebase {
+	flex-basis: 100%;
+    max-width: 100%;
+}
+
+.reference-knowledgebase-search-form input[type=text],
+.thrive-inline .letter-thumbnail, .knowledgebase .page-header .letter-thumbnail{
+	background: #f9f9f9;
+	border: 2px solid #ddd;
+}

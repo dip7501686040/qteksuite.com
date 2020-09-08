@@ -1,0 +1,20 @@
+New Gears Update (4.1.5)
+
+- Added conditional statement to check is the ff. constants are defined or not:
+   		BCP_MAX_WIDTH
+		BCP_MAX_HEIGHT
+		BCP_THUMB_MAX_WIDTH
+		BCP_THUMB_MAX_HEIGHT
+
+- Remove stray bp profile skin feature codes to prevent bugs from happening
+    - index.php (done)
+    - bcp-filters.php(done)
+    - templates/customise.php(done)
+
+- Solve Notice: WP_Date_Query was called incorrectly
+    - (Done) - Caused: Global input[name=“w”] is reserved
+
+- Wrong message when uploading small cover photo.
+    - Done - Alter $bp->message when uploading cover photo
+
+

@@ -1,0 +1,84 @@
+<!-- Right side column. Contains the navbar and content of the page -->
+<aside class="right-side">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1 class="pull-left"><?php _e('Assets'); ?><small> <?php _e('Manage Consumables'); ?></small></h1>
+        <div class="pull-right"><?php if(in_array("addConsumables",$perms)) { ?><a class="btn btn-primary btn-sm btn-flat" href="?route=inventory/assets/createconsumables"><?php _e('NEW CONSUMABLES'); ?></a><?php } ?></div>
+        <div style="clear:both"></div>
+    </section>
+    <!-- Main content -->
+    <section class="content">
+        <?php if(!empty($statusmessage)): ?>
+        <div class="row"><div class='col-md-12'><div class="alert alert-<?php print $statusmessage["type"]; ?> alert-auto" role="alert"><?php print __($statusmessage["message"]); ?></div></div></div>
+        <?php endif; ?>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box box-primary">
+                    <div class="box-body">
+                        <div class="table-responsive">
+                            <table id="dataTablesFull" class="table table-striped table-hover table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th><?php _e('Company Name'); ?></th>
+                                        <th><?php _e('Consumables Name'); ?></th>
+                                        <th><?php _e('Category'); ?></th>
+                                        <th><?php _e('Model No'); ?></th>
+                                        <th><?php _e('Manufacture'); ?></th>
+                                        <th><?php _e('Item No'); ?></th>
+                                        <th><?php _e('Order No'); ?></th>
+                                        <th><?php _e('Purchase Cost'); ?></th>
+                                        <th><?php _e('Purchase Date'); ?></th>
+                                        <th><?php _e('Quantity'); ?></th>
+                                        <th><?php _e('Status'); ?></th>
+<!--                                    <th><?php _e('Image'); ?></th>              -->
+                                        
+                                        <th class="text-right"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php
+                                    
+                                    foreach ($consumables as $consumable) { ?>
+                                    <tr>
+                                        <td><?php echo getSingleValue("company","company_name",$consumable['company_name']); ?></span></td>
+                                        <td><?php echo $consumable['consumables_name']; ?></td>
+                                        <td><span class='label' style='background-color:#FFF;color:<?php echo getSingleValue("assetcategories","color",$consumable['category']); ?>;border:1px solid <?php echo getSingleValue("assetcategories","color",$consumable['category']); ?>'><?php echo getSingleValue("assetcategories","name",$consumable['category']); ?></span></td>
+                                        <td><?php echo getSingleValue("models","name",$consumable['model_no']); ?></td>
+                                        <td><?php echo getSingleValue("manufacturers","name",$consumable['manufacture']); ?></td>
+                                        <td><?php echo $consumable['item_no']; ?></td>
+                                        <td><?php echo $consumable['order_no']; ?></td>
+                                        <td><?php echo $consumable['purchase_cost']; ?></td>
+                                        <td><?php echo $consumable['purchase_date']; ?></td>
+                                        <td><?php echo $consumable['quanitity']; ?></td>
+                                        
+                                        <td><span class='badge' style='background-color:<?php echo getSingleValue("labels","color",$consumable['statusid']); ?>'><?php echo getSingleValue("labels","name",$consumable['statusid']); ?></span></td>
+                                        <td>
+                                            <div class='pull-right'>
+                                                <div class="btn-group">
+                                                    <?php if(in_array("manageConsumables",$perms)) { ?>	<a href='?route=inventory/assets/manageconsumables&id=<?php echo $consumable['id']; ?>' class='btn btn-flat btn-primary btn-sm'><i class='fa fa-eye'></i></a><?php } ?>
+                                                    <?php if(in_array("editAsset",$perms)) { ?>	<a href='?route=inventory/assets/manageconsumables&id=<?php echo $consumable['id']; ?>&section=edit' class='btn btn-flat btn-success btn-sm'><i class='fa fa-edit'></i></a><?php } ?>
+
+                                                    <div class="btn-group">
+                                                        <button type="button" class="btn btn-default btn-sm btn-flat dropdown-toggle" data-toggle="dropdown">
+                                                            <span class="caret"></span>
+                                                        </button>
+                                                        <ul class="dropdown-menu pull-right">
+                                                            <?php if(in_array("deleteAsset",$perms)) { ?>	
+                                                            <li><a href='#' onClick='showM("?modal=consumables/delete&reroute=inventory/consumables&routeid=&id=<?php echo $consumable['id']; ?>&section=");return false' ><i class='fa fa-trash-o fa-fw'></i><?php _e('Delete'); ?></a></li><?php } ?>
+                                                        </ul>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <?php } ?>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- /.content -->
+</aside><!-- /.right-side -->

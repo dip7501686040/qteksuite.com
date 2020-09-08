@@ -1,0 +1,81 @@
+.vfb-span {
+	label {
+		font-size: 14px;
+		font-weight: normal;
+		color: $dark_secondary_icon;
+	}
+
+	.vfb-choice {
+		display: inline-block;
+		margin: 0.75em;
+	}
+}
+
+.vfb-fieldset {
+
+	background: #fff;
+	padding: 20px;
+	border-radius: 4px;
+	margin: 20px 0;
+	border: 2px solid #ddd;
+
+	.vfb-section {
+
+		padding-left: 0;
+
+		li {
+			list-style: none;
+
+			select {
+			    background-color: transparent;
+			}
+
+			&.vfb-item-checkbox,
+			&.vfb-item-radio {
+				.vfb-span {
+					label {
+						position: relative;
+					    top: -2px;
+					}
+				}
+			}
+			&.vfb-item-time{
+				.vfb-time{
+					display: inline-block;
+					margin-right: 15px;
+					line-height: 0;
+
+					label {
+						float: left;
+					    margin-right: 5px
+					}
+				}
+			}
+		}
+	}
+
+}
+
+label{
+	&.vfb-error {
+		background: $red;
+		color: $light_secondary;
+		clear: both;
+		padding: 10px 10px 10px 39px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		border-radius: 4px;
+		font-size: 14px;
+	    font-weight: normal;
+		border: none;
+		position: relative;
+		&:before {
+			@extend .material_font_extend;
+			content: "error_outline";
+
+			position: absolute;
+		    top: 9.5px;
+		    left: 10px;
+		}
+	}
+}

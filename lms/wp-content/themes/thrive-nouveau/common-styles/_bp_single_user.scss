@@ -1,0 +1,277 @@
+.bp-user {
+    #page-hero {
+        display: none;
+    }
+    #buddypress-user-head {
+        .buddypress-wrap {
+            &.bp-dir-hori-nav {
+            }
+        }
+    }
+    .thrive-document-wrapper{
+        &.active {
+            .buddypress-wrap#buddypress {
+                #object-nav.users-nav.single-screen-navs {
+                    &.horizontal {
+                        ul {
+                            @media(min-width: 768px){
+                                padding: 0 25px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .buddypress-wrap {
+        .single-screen-navs {
+            &.horizontal {
+
+                @media(max-width: 768px) {
+                    box-shadow: none;
+                }
+            }
+            &.vertical {
+                ~ .bp-wrap {
+                    .bp-feedback.custom-homepage-info {
+                        @extend .thrive-material-card-1;
+                        @media(min-width: 768px) {
+                            margin-top: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .member-front-page {
+            .bp-feedback.custom-homepage-info {
+                margin: 15px 0 0;
+
+            }
+        }
+    }
+
+	.bp-dir-hori-nav {
+		object-nav#nav{
+			border-top: 1px solid #eee;
+		}
+	}
+
+	#avatar-to-crop-wrap img.avatar {
+		border-radius: 0;
+	}
+
+	#page-content-wrapper {
+		padding-top: 0;
+	}
+
+    &.error404 #page-content-wrapper {
+        padding-top: 83px;
+    }
+
+	#buddypress-user-head {
+
+        margin: 0 -15px 0px -15px;
+
+        @extend .thrive-material-card-2;
+
+        @media(min-width: 768px){
+            margin-top: 84px;
+        }
+
+        .thrive-bp-vertical-nav {
+
+            @media(min-width: 768px) {
+                margin: 0 0  20px 0;
+            }
+    		@media( min-width: 992px ) {
+    			padding-top: 84px;
+    		}
+        }
+	}
+
+    .activity-update-form {
+        .activity-form {
+            #whats-new-submit {
+                width: -webkit-calc( 100% + 30px );
+                width: -moz-calc( 100% + 30px );
+                width: calc( 100% + 30px );
+                background: #eeefef;
+                padding: 25px 15px;
+                margin: 10px -15px -10px;
+                margin-bottom: -10px;
+                @media(min-width: 768px ) {
+                    width: 100%;
+                    margin: 10px 0 -10px;
+                }
+            }
+        }
+    }
+
+	#buddypress {
+		#item-header {
+
+		    background: $white;
+		    position: relative;
+		    padding: 0 15px 0 15px;
+
+
+		    .member-header-actions {
+                .generic-button {
+                    @media (min-width: 768px) {
+                        display: inline-block;
+                        margin-right: 10px;
+                    }
+                }
+		    	.generic-button a,
+		    	button {
+		    		@extend .thrive-material-card-1;
+		    		border: 1px solid #f5f5f5;
+		    		background: #eee;
+		    		width: 100%;
+                    margin-bottom: 15px;
+                    @media (min-width: 768px) {
+                        width: auto;
+                    }
+		    	}
+		    }
+
+		    .bp-feedback:not(.custom-homepage-info) {
+		    	margin: 40px 0 0 0;
+		    	@extend .thrive-material-card-3;
+		    	background: #eee;
+		    }
+		}
+        .bp-navs {
+            &.horizontal  {
+                margin: 20px 30px 0px;
+
+                @media(min-width: 768px) {
+                    width: 100%;
+                    margin: 0;
+                    padding: 0 10px;
+                    display: inline-block;
+                    // box-shadow: none;
+                }
+            }
+        }
+		.user-displayname {
+			@media(min-width: 768px) {
+				color: #fff;
+		    	text-shadow: 0px 0px 5px black;
+		    	margin: 20px 0 15px 0;
+
+		    	text-align: left;
+			}
+			text-align: center;
+			font-size: 22px;
+	    	line-height: 1;
+			color: #444;
+			font-weight: bold;
+		}
+
+		.bp-nouveau-member-meta {
+			@media( min-width: 768px ) {
+    			text-align: left;
+			}
+			color: #444;
+			margin-top: 10px;
+    		text-align: center;
+		}
+
+		#item-header-avatar,
+		#item-header-content {
+			position: relative;
+			z-index: 20;
+		}
+
+		#item-header-inner {
+			margin-top: -105px;
+		}
+
+		#object-nav {
+		}
+		#item-body{
+			.bp-navs ul li a,
+			.bp-navs ul li span {
+				@media(min-width: 768px){
+					padding: 15px 10px;
+				}
+				padding: 15px;
+    			color: #414141;
+			}
+
+		}
+		#object-nav.users-nav {
+                margin-top: 20px;
+                box-shadow: none;
+                @media(min-width: 768px){
+                    margin-top: 0;
+                }
+                &.horizontal {
+                    ul {
+                        @media(min-width: 768px){
+                            background-color: #fff;
+                            max-width: 1047px;
+                            padding: 0 15px;
+                            margin: 0 auto;
+                            display: block;
+                        }
+                        &:after {
+                            display: table;
+                            content: "";
+                            clear: both;
+                        }
+                    }
+                    margin-bottom: -6px;
+                }
+                &.vertical {
+                    ul {
+                        @media(min-width: 768px){
+                            padding: 0;
+                        }
+                    }
+                }
+			ul {
+				margin: 0 auto;
+    			max-width: 1047px;
+                padding: 0;
+                @media(min-width: 768px){
+		             padding: 0 10px;
+                }
+			}
+		}
+        #document-wrapper:not(.active) {
+            #object-nav.users-nav {
+                ul {
+                    padding: 0 15px;
+                }
+            }
+        }
+
+	}
+
+	.main-navs {
+
+		> ul {
+			background: $white;
+				> li {
+					> a {
+						padding: 15px 15px;
+		    			color: #424242;
+					}
+				}
+			}
+	}
+
+	/*sidebar*/
+	#secondary.widget-area {
+		padding-top: 15px;
+	}
+
+    &.thrive-bp-user-is-vertical-nav {
+        #secondary.widget-area {
+            padding-top: 0;
+        }
+    }
+
+}

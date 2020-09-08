@@ -1,0 +1,5219 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Thrive English Default\n"
+"POT-Creation-Date: 2018-07-14 19:46+0800\n"
+"PO-Revision-Date: 2018-07-14 19:46+0800\n"
+"Last-Translator: \n"
+"Language-Team: Dunhakdis Software Creatives <info@dunhakdis.com>\n"
+"Language: ro_RO\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.5\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?"
+"2:1));\n"
+"X-Poedit-KeywordsList: __;_e;esc_html__;esc_html_e;esc_attr_e;_n;_x;_ex;_nx;"
+"esc_attr__;esc_attr_x;esc_html_x;_n_noop\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: inc/option-tree\n"
+"X-Poedit-SearchPathExcluded-1: node_modules\n"
+
+#: 404.php:26
+msgid "404"
+msgstr ""
+
+#: 404.php:29
+#, fuzzy
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "404 - Pagina nu a fost gasita."
+
+#: 404.php:34
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+"Se pare că nu sa găsit nimic în această locație. Poate încercați una dintre "
+"legăturile de mai jos sau faceți o nouă căutare?"
+
+#: archive-dsc-knowledgebase.php:110 single-dsc-knowledgebase.php:102
+#: thrive/widgets/widgets.php:67
+msgid "Reference KNB"
+msgstr ""
+
+#: archive.php:55 inc/template-tags.php:216 knowledgebase-none.php:37
+#: taxonomy-knb-categories.php:65 thrive/widgets/widgets.php:55
+#, fuzzy
+msgid "Archives"
+msgstr "Categorii"
+
+#: buddypress.php:116
+msgid "Group Admins"
+msgstr "Administratori de grup"
+
+#: buddypress.php:132
+msgid "Group Mods"
+msgstr "Moderatori de grup"
+
+#: buddypress.php:151
+#, fuzzy, php-format
+#| msgid "About Me"
+msgid "About %s"
+msgstr "Despre mine"
+
+#: buddypress/groups/single/admin/manage-members.php:10
+#, fuzzy
+#| msgid "Manage Members"
+msgid "Manage Group Members"
+msgstr "Gestionați membrii"
+
+#: buddypress/groups/single/admin/manage-members.php:13
+msgid ""
+"Manage your group members; promote to moderators, admins or demote or ban."
+msgstr ""
+
+#: buddypress/groups/single/admin/manage-members.php:17
+msgid "Administrators"
+msgstr "Administratorii"
+
+#: buddypress/groups/single/admin/manage-members.php:37
+#: buddypress/groups/single/admin/manage-members.php:69
+msgid "Demote to Member"
+msgstr "Retrogradează la Membru"
+
+#: buddypress/groups/single/admin/manage-members.php:51
+msgid "Moderators"
+msgstr "Moderatori"
+
+#: buddypress/groups/single/admin/manage-members.php:68
+msgid "Promote to Admin"
+msgstr "Promovați la Admin"
+
+#: buddypress/groups/single/admin/manage-members.php:83
+#: thrive/theme-widgets/featured-group.php:99
+#, fuzzy
+msgid "Members"
+msgstr "Membri"
+
+#: buddypress/groups/single/admin/manage-members.php:103
+msgid "(banned)"
+msgstr "(Interzis)"
+
+#: buddypress/groups/single/group-header.php:38
+#, php-format
+msgid "active %s"
+msgstr "activ %s"
+
+#: buddypress/members/register.php:31
+msgid "Account Details"
+msgstr "Detalii cont"
+
+#: buddypress/members/register.php:47
+msgid "Profile Details"
+msgstr "Detalii de profil"
+
+#: buddypress/members/register.php:89
+msgid "Blog Details"
+msgstr "Detalii despre blog"
+
+#: buddypress/members/register.php:91
+msgid "Yes, I'd like to create a new site"
+msgstr "Da, aș dori să creez un nou site"
+
+#: comments.php:34
+#, fuzzy
+msgid "1 Comment"
+msgstr "Comentariu"
+
+# cred ca se refera la optiunile de navigare prin comments, i.e. comentariul urmator, precedent,etc.
+#: comments.php:50 comments.php:70
+#, fuzzy
+msgid "Comment navigation"
+msgstr "Navigare laterală"
+
+#: comments.php:52 comments.php:73
+msgid "Older Comments"
+msgstr "Comentarii mai vechi"
+
+#: comments.php:53 comments.php:74
+msgid "Newer Comments"
+msgstr "Comentarii mai noi"
+
+#: comments.php:86
+msgid "Comments are closed."
+msgstr "Comentariile sunt închise."
+
+#: customizer/components/archive.php:8
+#, fuzzy
+msgid "Posts Archives"
+msgstr "Categorii"
+
+#: customizer/components/archive.php:9
+msgid "The settings related to posts and custom post typ archives"
+msgstr ""
+
+#: customizer/components/archive.php:18
+msgid "Post Type Archive Layout"
+msgstr ""
+
+#: customizer/components/archive.php:19
+msgid ""
+"Select the default layout for post archives (e.g. index, date, author) "
+"archive pages."
+msgstr ""
+
+#: customizer/components/archive.php:24 thrive/cmb2-fields/terms.php:25
+#: thrive/sidebars/sidebars-meta.php:242
+msgid "Content / Sidebar Right"
+msgstr "Conținut / Bara laterală dreapta"
+
+#: customizer/components/archive.php:25 thrive/cmb2-fields/terms.php:26
+#: thrive/sidebars/sidebars-meta.php:243
+msgid "Sidebar Left / Content"
+msgstr "Bara laterală stânga / Conținut"
+
+#: customizer/components/archive.php:26
+#, fuzzy
+msgid "Full Content"
+msgstr "Conținut complet / Fără bară laterală"
+
+#: customizer/components/custom-css.php:14
+#: customizer/components/custom-css.php:24
+msgid "Custom CSS"
+msgstr "CSS personalizat"
+
+#: customizer/components/custom-css.php:15
+msgid "Your own CSS code"
+msgstr ""
+
+#: customizer/components/custom-css.php:25
+msgid "Add your own custom CSS here. Click the button below to get started."
+msgstr ""
+
+#: customizer/components/footer-copyright.php:5
+#, fuzzy
+#| msgid "Copyright"
+msgid "Footer Copyright"
+msgstr "Drepturi de autor"
+
+#: customizer/components/footer-copyright.php:6
+msgid ""
+"Change the copyright section of the footer to your own content. You can also "
+"personalized the colors to match your needs."
+msgstr ""
+
+#: customizer/components/footer-copyright.php:18
+#: customizer/components/footer-widgets.php:43
+#: customizer/components/header-menu.php:76 customizer/components/layout.php:37
+#: customizer/components/logo.php:136
+#: customizer/components/registration.php:152 thrive/cmb2-fields/page.php:84
+#, fuzzy
+#| msgid "Background"
+msgid "Background Color"
+msgstr "Fundal"
+
+#: customizer/components/footer-copyright.php:19
+msgid "The bacground color of the footer copyright section."
+msgstr ""
+
+#: customizer/components/footer-copyright.php:46
+#, fuzzy
+#| msgid "Secondary Colors"
+msgid "Foreground Color"
+msgstr "Culori Secundare"
+
+#: customizer/components/footer-copyright.php:47
+msgid "The color of the text in your footer copyright section."
+msgstr ""
+
+#: customizer/components/footer-copyright.php:70
+#, fuzzy
+msgid "Links Color Mode"
+msgstr "Starea link-urilor cu mouse-ul deasupra"
+
+#: customizer/components/footer-copyright.php:71
+msgid ""
+"Choose the color mode for the links in your footer copyright section. For "
+"best result, choose the dark contrast option if you are applying a white "
+"background color to your footer."
+msgstr ""
+
+#: customizer/components/footer-copyright.php:77
+msgid "Light Contrast"
+msgstr ""
+
+#: customizer/components/footer-copyright.php:78
+msgid "Dark Contrast"
+msgstr ""
+
+#: customizer/components/footer-copyright.php:102
+#, fuzzy
+msgid "Copyright Context"
+msgstr "Textul pentru drepturile de autor"
+
+#: customizer/components/footer-copyright.php:103
+msgid ""
+"Replace the default copyright content with your site's copyright statements "
+"and contents."
+msgstr ""
+
+#: customizer/components/footer-copyright.php:105 footer.php:61
+msgid "&copy; [Your Website Name Here] 2015. All Rights Reserved."
+msgstr "&copy; [Numele site-ului dvs. aici] 2015. Toate drepturile rezervate."
+
+#: customizer/components/footer-widgets.php:5
+#, fuzzy
+msgid "Footer Widgets"
+msgstr "Widget-uri din bara laterală"
+
+#: customizer/components/footer-widgets.php:6
+msgid ""
+"All settings related to the footer widgets section. You can control the "
+"number of columns per row for each widget, the background color, and other "
+"things."
+msgstr ""
+
+#: customizer/components/footer-widgets.php:18
+#, fuzzy
+msgid "No. Of Columns"
+msgstr "2 coloane"
+
+#: customizer/components/footer-widgets.php:19
+msgid ""
+"Choose how many columns you would like to display for each widgets rows in "
+"the footer"
+msgstr ""
+"Alegeți tipul de meniu pe care doriți să îl afișați în bara din dreapta sus"
+
+#: customizer/components/footer-widgets.php:24
+#, fuzzy
+msgid "Single Column"
+msgstr "O coloană"
+
+#: customizer/components/footer-widgets.php:25
+#: customizer/components/layout.php:25
+#, fuzzy
+msgid "2 Columns"
+msgstr "2 coloane"
+
+#: customizer/components/footer-widgets.php:26
+#, fuzzy
+msgid "3 Columns"
+msgstr "3 coloane"
+
+#: customizer/components/footer-widgets.php:27
+#, fuzzy
+msgid "4 Columns"
+msgstr "4 coloane"
+
+#: customizer/components/general-colors.php:5
+#, fuzzy
+msgid "General Colors"
+msgstr "Culori generale"
+
+#: customizer/components/general-colors.php:6
+#, fuzzy
+#| msgid "Select the desired layout for your website."
+msgid "Choose the appropriate colors for your website."
+msgstr "Selectaţi aspectul dorit pentru site-ul dvs."
+
+#: customizer/components/general-colors.php:18
+msgid "Primary Colors"
+msgstr "Culori primare"
+
+#: customizer/components/general-colors.php:19
+msgid ""
+"Primary colors will be applied to general link colors, buttons, and other "
+"section that requires distinction. For widgets, headers, and footer colors, "
+"kindly refer to their respective areas of customization."
+msgstr ""
+
+#: customizer/components/general-colors.php:48
+msgid "Secondary Colors"
+msgstr "Culori Secundare"
+
+#: customizer/components/general-typography.php:5
+#: customizer/components/single-post.php:18
+#, fuzzy
+msgid "Typography"
+msgstr "Tipar"
+
+#: customizer/components/general-typography.php:6
+msgid ""
+"Personalize the typographical style of your website by choosing specific "
+"fonts to each area. Fonts are delivered via Google Fonts.."
+msgstr ""
+
+#: customizer/components/general-typography.php:18
+#, fuzzy
+msgid "Headers Font Choice"
+msgstr "Font pentru subtitluri"
+
+#: customizer/components/general-typography.php:19
+msgid ""
+"Select a font that will be applied to each h1, h2, h3, h4, h5, h6, and other "
+"headings element of your site."
+msgstr ""
+
+#: customizer/components/general-typography.php:42
+#, fuzzy
+#| msgid "Body Font"
+msgid "Body Font Choice"
+msgstr "Fontul de bază"
+
+#: customizer/components/general-typography.php:43
+msgid ""
+"Select a font that will be applied to the overall text and paragraphs of "
+"your site."
+msgstr ""
+
+# font point cred ca se refera la font point size, caz in care se refera la marime
+#: customizer/components/general-typography.php:65
+#: customizer/components/single-post.php:69
+#, fuzzy
+msgid "Font Size"
+msgstr "Mărimea fontului"
+
+#: customizer/components/general-typography.php:66
+msgid ""
+"Enter a general size for the fonts of your website. Approriate font size "
+"heirarchy will be applied."
+msgstr ""
+
+#: customizer/components/header-menu.php:5
+msgid "Header Styling"
+msgstr ""
+
+#: customizer/components/header-menu.php:6
+#, fuzzy
+#| msgid "Select the desired layout for your website."
+msgid "Personalize the header of your website."
+msgstr "Selectaţi aspectul dorit pentru site-ul dvs."
+
+#: customizer/components/header-menu.php:18
+msgid "Header Type"
+msgstr ""
+
+#: customizer/components/header-menu.php:19
+#, fuzzy
+#| msgid "Select the desired layout for your website."
+msgid "Select which header you would like your website to have."
+msgstr "Selectaţi aspectul dorit pentru site-ul dvs."
+
+#: customizer/components/header-menu.php:24
+msgid "Header Style 1"
+msgstr ""
+
+#: customizer/components/header-menu.php:25
+msgid "Header Style 2"
+msgstr ""
+
+#: customizer/components/header-menu.php:35 searchform.php:9 searchform.php:12
+msgid "Search"
+msgstr "Căutare"
+
+#: customizer/components/header-menu.php:36
+#, fuzzy
+msgid "Select the 'Disabled' option to disable the search in the header menu."
+msgstr "Selectați fontul dorit pentru a fi aplicat în subtitlurile temei."
+
+#: customizer/components/header-menu.php:41
+#: customizer/components/social-connect.php:25
+#: customizer/components/social-connect.php:83
+msgid "Enabled"
+msgstr ""
+
+#: customizer/components/header-menu.php:42
+#: customizer/components/social-connect.php:26
+#: customizer/components/social-connect.php:84
+msgid "Disabled"
+msgstr ""
+
+#: customizer/components/header-menu.php:77
+#: customizer/components/header-menu.php:178
+msgid "Pick a background color for the header."
+msgstr ""
+
+#: customizer/components/header-menu.php:110
+#, fuzzy
+#| msgid "Menu Background"
+msgid "Linear Gradient Background"
+msgstr "Fundal de meniu"
+
+#: customizer/components/header-menu.php:111
+msgid "Check to use linear gradient background instead of solid"
+msgstr ""
+
+#: customizer/components/header-menu.php:121
+msgid "Gradient Color Start"
+msgstr ""
+
+#: customizer/components/header-menu.php:122
+msgid "Pick your first gradient color."
+msgstr ""
+
+#: customizer/components/header-menu.php:139
+msgid "Gradient Color End"
+msgstr ""
+
+#: customizer/components/header-menu.php:140
+msgid "Pick your second gradient color."
+msgstr ""
+
+#: customizer/components/header-menu.php:176
+#, fuzzy
+msgid "Header Typography"
+msgstr "Tipar"
+
+#: customizer/components/header-menu.php:200
+msgid "Sign Up Button Gradient"
+msgstr ""
+
+#: customizer/components/header-menu.php:202
+msgid ""
+"Choose the color for the 'Sign-up' button. Pro tip: Registration must be "
+"enabled for the button to show up."
+msgstr ""
+
+#: customizer/components/header-menu.php:205
+#, fuzzy
+#| msgid "Topic"
+msgid "Top"
+msgstr "Subiect"
+
+#: customizer/components/header-menu.php:206
+msgid "Bottom"
+msgstr ""
+
+#: customizer/components/layout.php:5
+#, fuzzy
+#| msgid "Page Layout"
+msgid "Site Layout"
+msgstr "Aranjament în pagină"
+
+#: customizer/components/layout.php:18
+#, fuzzy
+#| msgid "Group Types"
+msgid "Layout Type"
+msgstr "Tipuri de grupuri"
+
+#: customizer/components/layout.php:19
+msgid ""
+"Select the layout type of your website. You can choose between 2 columns and "
+"1 column. The 1 column will disable the side navigation."
+msgstr ""
+
+#: customizer/components/layout.php:26
+#, fuzzy
+msgid "1 Column"
+msgstr "O coloană"
+
+#: customizer/components/layout.php:38
+msgid ""
+"This option allows you to change the background color of the main section."
+msgstr ""
+
+#: customizer/components/layout.php:64
+#: customizer/components/registration.php:124 thrive/cmb2-fields/page.php:98
+#, fuzzy
+#| msgid "Background"
+msgid "Background Image"
+msgstr "Fundal"
+
+#: customizer/components/layout.php:65
+msgid "Upload an image to be used as the background of your website."
+msgstr ""
+
+#: customizer/components/layout.php:91
+#: customizer/components/registration.php:183
+#, fuzzy
+#| msgid "Background"
+msgid "Background Size"
+msgstr "Fundal"
+
+#: customizer/components/layout.php:92
+msgid "Select a size for your background image"
+msgstr ""
+
+#: customizer/components/layout.php:98
+msgid "Automatic"
+msgstr ""
+
+#: customizer/components/layout.php:99
+#: customizer/components/registration.php:191 thrive/cmb2-fields/page.php:145
+#, fuzzy
+#| msgid "Cover Image"
+msgid "Cover"
+msgstr "Imagine de copertă"
+
+#: customizer/components/layout.php:100
+#: customizer/components/registration.php:192 thrive/cmb2-fields/page.php:146
+#, fuzzy
+#| msgid "Content:"
+msgid "Contain"
+msgstr "Conţinut:"
+
+#: customizer/components/layout.php:124
+#: customizer/components/registration.php:217
+#, fuzzy
+#| msgid "Background"
+msgid "Background Repeat"
+msgstr "Fundal"
+
+#: customizer/components/layout.php:125
+msgid "Select the 'repeat' pattern of your site's background image."
+msgstr ""
+
+#: customizer/components/layout.php:131 thrive/cmb2/includes/CMB2_JS.php:166
+#, fuzzy
+#| msgid "Default State"
+msgid "Default"
+msgstr "Starea implicită"
+
+#: customizer/components/layout.php:132
+msgid "Do Not Repeat"
+msgstr ""
+
+#: customizer/components/layout.php:133
+msgid "Repeat Horizontally & Vertically"
+msgstr ""
+
+#: customizer/components/layout.php:134
+#: customizer/components/registration.php:224 thrive/cmb2-fields/page.php:160
+msgid "Repeat Horizontally"
+msgstr ""
+
+#: customizer/components/layout.php:135
+#: customizer/components/registration.php:225 thrive/cmb2-fields/page.php:161
+msgid "Repeat Vertically"
+msgstr ""
+
+#: customizer/components/logo.php:5
+#, fuzzy
+#| msgid "Settings"
+msgid "Logo Settings"
+msgstr "Setări"
+
+#: customizer/components/logo.php:6
+msgid "Add your own company logo and resize it accordingly."
+msgstr ""
+
+#: customizer/components/logo.php:16
+#, fuzzy
+msgid "Upload Logo"
+msgstr "Încărcați o siglă"
+
+#: customizer/components/logo.php:17
+msgid "Upload an image file to be used as the logo for your website."
+msgstr ""
+
+#: customizer/components/logo.php:37 customizer/components/registration.php:58
+msgid "Logo Size"
+msgstr ""
+
+#: customizer/components/logo.php:38 customizer/components/registration.php:59
+msgid "Adjust the size of your logo by dragging the circle in the slider."
+msgstr ""
+
+#: customizer/components/logo.php:70
+msgid "Horizontal Position"
+msgstr ""
+
+#: customizer/components/logo.php:71
+msgid "Adjust the horizontal position of your logo."
+msgstr ""
+
+#: customizer/components/logo.php:103
+msgid "Vertical Position"
+msgstr ""
+
+#: customizer/components/logo.php:104
+msgid "The vertical position of your logo."
+msgstr ""
+
+#: customizer/components/logo.php:139
+msgid "Choose a background color to resolve any contrast issues."
+msgstr ""
+
+#: customizer/components/page.php:9
+msgid "Single Pages"
+msgstr ""
+
+#: customizer/components/page.php:10
+msgid "All options related to single pages."
+msgstr ""
+
+#: customizer/components/page.php:21
+#, fuzzy
+#| msgid "Site Title"
+msgid "Page Title"
+msgstr "Titlul Site-ului"
+
+#: customizer/components/page.php:22
+msgid ""
+"The default color for your page titles. Can be overwritten through "
+"individual pages options."
+msgstr ""
+
+#: customizer/components/page.php:32
+msgid "Page Title: Text Alignment"
+msgstr ""
+
+#: customizer/components/page.php:34
+msgid ""
+"The default text alignment for your page title. Can be overwritten through "
+"individual pages options"
+msgstr ""
+
+#: customizer/components/page.php:39
+msgid "Align Left"
+msgstr ""
+
+#: customizer/components/page.php:40
+msgid "Align Right"
+msgstr ""
+
+#: customizer/components/page.php:41
+#, fuzzy
+msgid "Centered"
+msgstr "Bara laterală din stânga"
+
+#: customizer/components/page.php:50 thrive/cmb2-fields/page.php:63
+#, fuzzy
+msgid "Secondary Title"
+msgstr "Meniu Secundar"
+
+#: customizer/components/page.php:52
+msgid ""
+"The default secondary title for all new pages. Can be overwritten through "
+"individual pages options."
+msgstr ""
+
+#: customizer/components/page.php:61 thrive/cmb2-fields/page.php:71
+#, fuzzy
+#| msgid "Secondary Colors"
+msgid "Secondary Title Color"
+msgstr "Culori Secundare"
+
+#: customizer/components/page.php:62
+msgid ""
+"The default color of your secondary title. Can be overwritten through "
+"individual pages options"
+msgstr ""
+
+#: customizer/components/page.php:72
+#, fuzzy
+#| msgid "Background"
+msgid "Background Control"
+msgstr "Fundal"
+
+#: customizer/components/page.php:73
+msgid ""
+"The default background settings for your new pages. Can be overwritten "
+"through individual pages options."
+msgstr ""
+
+#: customizer/components/registration.php:5
+#, fuzzy
+#| msgid "Register Page"
+msgid "Registration Page"
+msgstr "Înregistrează pagina"
+
+#: customizer/components/registration.php:6
+#, fuzzy
+#| msgid ""
+#| "Use this section to customize your register page. After saving, log-out "
+#| "and visit your register page to see the changes. Make sure to disable the "
+#| "registration option inside the site settings."
+msgid ""
+"Use this section to customize your register page. After saving, log-out and "
+"visit your register page to see the changes. Make sure to enable the "
+"registration option inside the site settings."
+msgstr ""
+"Utilizați această secțiune pentru a personaliza pagina dvs. de înregistrare. "
+"După salvare, deconectați-vă și accesați pagina de înregistrare pentru a "
+"vedea modificările. Asigurați-vă că dezactivați opțiunea de înregistrare din "
+"interiorul setărilor site-ului."
+
+#: customizer/components/registration.php:19
+#, fuzzy
+#| msgid "Disable Page Header"
+msgid "Disable Header"
+msgstr "Dezactivați antetul paginii"
+
+#: customizer/components/registration.php:20
+msgid "Check to disable site header in the register page."
+msgstr "Bifați pentru a dezactiva antetul site-ului în pagina de înregistrare."
+
+#: customizer/components/registration.php:32
+#, fuzzy
+#| msgid "Disable Page Footer"
+msgid "Disable Footer"
+msgstr "Dezactivați subsolul paginii"
+
+#: customizer/components/registration.php:33
+msgid "Check to disable site footer in the register page."
+msgstr ""
+"Bifați pentru a dezactiva subsolul site-ului în pagina de înregistrare."
+
+#: customizer/components/registration.php:45
+#, fuzzy
+msgid "Enable Logo"
+msgstr "Activați sigla site-ului"
+
+#: customizer/components/registration.php:46
+#, fuzzy
+#| msgid ""
+#| "Check to enable site logo in the register form. Useful if you want to "
+#| "hide the site header."
+msgid ""
+"Check to enable site logo in the register form. Useful if you want to hide "
+"the site header.."
+msgstr ""
+"Bifați pentru a activa sigla site-ului în formularul de înregistrare. Util "
+"dacă doriți să ascundeți antetul site-ului."
+
+#: customizer/components/registration.php:91
+msgid "Logo Position"
+msgstr ""
+
+#: customizer/components/registration.php:92
+msgid "Set the registration logo postion."
+msgstr ""
+
+#: customizer/components/registration.php:98 thrive/cmb2-fields/page.php:54
+msgid "Left"
+msgstr ""
+
+#: customizer/components/registration.php:99 thrive/cmb2-fields/page.php:56
+msgid "Center"
+msgstr ""
+
+#: customizer/components/registration.php:100 thrive/cmb2-fields/page.php:55
+msgid "Right"
+msgstr ""
+
+#: customizer/components/registration.php:125
+msgid ""
+"Upload an image to be used as the background of your register page. Leave "
+"this blank to use the color field below."
+msgstr ""
+
+#: customizer/components/registration.php:153
+msgid "Remove the image above to use solid background color"
+msgstr ""
+
+#: customizer/components/registration.php:184
+msgid "Set the background size for the background image."
+msgstr ""
+
+#: customizer/components/registration.php:190 thrive/cmb2-fields/page.php:144
+msgid "Auto"
+msgstr ""
+
+#: customizer/components/registration.php:218
+msgid ""
+"Choose 'Auto' for 'Background Size' if you intend to use image patterns and "
+"repeat the background horizontally or vertically."
+msgstr ""
+
+#: customizer/components/registration.php:226
+msgid "Repeat both horizontally and vertically"
+msgstr ""
+
+#: customizer/components/registration.php:227
+msgid "Do not repeat"
+msgstr ""
+
+#: customizer/components/registration.php:248
+#, fuzzy
+#| msgid "Menu Background"
+msgid "Heading Background Color"
+msgstr "Fundal de meniu"
+
+#: customizer/components/registration.php:249
+msgid "The background color of the heading when logo is enabled"
+msgstr ""
+
+#: customizer/components/side-navigation.php:5
+msgid "Side Navigation"
+msgstr "Navigare laterală"
+
+#: customizer/components/side-navigation.php:6
+msgid "Customize your website side navigation to suit your needs."
+msgstr ""
+
+#: customizer/components/side-navigation.php:19
+#, fuzzy
+#| msgid "%s's Profile"
+msgid "User Profile"
+msgstr "Profilul lui %s"
+
+#: customizer/components/side-navigation.php:24
+#, fuzzy
+msgid "Show"
+msgstr "Afișați:"
+
+#: customizer/components/side-navigation.php:25
+msgid "Do Not Show"
+msgstr ""
+
+#: customizer/components/side-navigation.php:49
+#, fuzzy
+msgid "Logged Out Message"
+msgstr "Mesaj de deconectare"
+
+#: customizer/components/side-navigation.php:51
+#: template-parts/sidebar-content.php:123
+#, fuzzy
+msgid "Welcome! Please sign-in to your account. Thank you!"
+msgstr "Bine ați venit! Vă rugăm să vă conectați cu contul dvs.! Vă mulțumim!"
+
+#: customizer/components/side-navigation.php:62
+msgid "Logged-out Image"
+msgstr ""
+
+#: customizer/components/side-navigation.php:63
+msgid "You can change the image displayed when logged-out."
+msgstr ""
+
+#: customizer/components/single-post.php:5
+msgid "Single Blog Post"
+msgstr ""
+
+#: customizer/components/single-post.php:6
+msgid "Single post typography and other options"
+msgstr ""
+
+#: customizer/components/single-post.php:19
+#, fuzzy
+msgid "Select a font that will be applied to the blog post of your site."
+msgstr "Selectați fontul dorit pentru a fi aplicat în subtitlurile temei."
+
+#: customizer/components/single-post.php:101
+msgid "Social Sharing Icons"
+msgstr ""
+
+#: customizer/components/single-post.php:102
+msgid "Enable or disable the post social media sharing icons."
+msgstr ""
+
+#: customizer/components/single-post.php:106
+#: customizer/components/single-post.php:137
+#, fuzzy
+msgid "Enable"
+msgstr "Activați sigla site-ului"
+
+#: customizer/components/single-post.php:107
+#: customizer/components/single-post.php:138
+#, fuzzy
+#| msgid "Disable Page Header"
+msgid "Disable"
+msgstr "Dezactivați antetul paginii"
+
+#: customizer/components/single-post.php:132
+#, fuzzy
+#| msgid "Author"
+msgid "Author About"
+msgstr "Autor"
+
+#: customizer/components/single-post.php:133
+msgid "Enable or disable the author section below the body of the post."
+msgstr ""
+
+#: customizer/components/social-connect.php:7
+#, fuzzy
+#| msgid "Social Connect "
+msgid "Social Connect"
+msgstr "Conectare la rețele sociale "
+
+#: customizer/components/social-connect.php:8
+msgid ""
+"All customizations related to Social Logins. Social Login requires PHP 5.4+ "
+"version with PHP Curl enabled. Gears plugin must be installed and enabled."
+msgstr ""
+
+#: customizer/components/social-connect.php:19
+msgid "Enable Facebook Connect"
+msgstr ""
+
+#: customizer/components/social-connect.php:21
+msgid ""
+"Toggle to disable or enable user login using Facebook Account. You need to "
+"create a new Facebook App and then enter the App ID and App Secret in the "
+"associated fields below. "
+msgstr ""
+
+#: customizer/components/social-connect.php:34
+msgid "Facebook App ID"
+msgstr ""
+
+#: customizer/components/social-connect.php:35
+#, php-format
+msgid "Click %s to learn on how to get your FB App ID."
+msgstr ""
+
+#: customizer/components/social-connect.php:37
+msgid "40121904-{Get Your Own)"
+msgstr ""
+
+#: customizer/components/social-connect.php:53
+msgid "Facebook App Secret"
+msgstr ""
+
+#: customizer/components/social-connect.php:54
+#, php-format
+msgid "Click %s to learn on how to get your FB Secret."
+msgstr ""
+
+#: customizer/components/social-connect.php:56
+msgid "6911f0e323b-(Get Your Own)"
+msgstr ""
+
+#: customizer/components/social-connect.php:76
+msgid "Enable Google Connect"
+msgstr ""
+
+#: customizer/components/social-connect.php:77
+msgid ""
+"Toggle to disable or enable user login using Google Account. You need to "
+"create a new Google App and then enter the \n"
+"    Client ID and the Client Secret in the associated fields below. "
+msgstr ""
+
+#: customizer/components/social-connect.php:92
+msgid "Google Client ID"
+msgstr ""
+
+#: customizer/components/social-connect.php:94
+#, php-format
+msgid "%s to learn on how to get your Google Client ID."
+msgstr ""
+
+#: customizer/components/social-connect.php:95
+msgid "1029578692451-(Get Your Own)"
+msgstr ""
+
+#: customizer/components/social-connect.php:111
+msgid "Google Client Secret"
+msgstr ""
+
+#: customizer/components/social-connect.php:112
+#, php-format
+msgid "%s to learn on how to get your Google Client Secret."
+msgstr ""
+
+#: customizer/components/social-connect.php:114
+msgid "zWHSTEQvTwU-(Get Your Own)"
+msgstr ""
+
+#: customizer/components/social-connect.php:130
+msgid ""
+"Important: Add the following URL in your Google Developer Console "
+"\"Authorized redirect URIs\""
+msgstr ""
+
+#: customizer/components/social-connect.php:131
+msgid "Authorized Redirect URIs"
+msgstr ""
+
+#: customizer/components/widget-style.php:5
+#, fuzzy
+msgid "Widget Styling"
+msgstr "Contur al Widgets-urilor"
+
+#: customizer/components/widget-style.php:6
+#, fuzzy
+#| msgid "Select the desired layout for your website."
+msgid "Personalize the sidebar widgets of your website."
+msgstr "Selectaţi aspectul dorit pentru site-ul dvs."
+
+#: customizer/components/widget-style.php:18
+#, fuzzy
+#| msgid "Mobile Background"
+msgid "Title Background"
+msgstr "Fundalul pentru Mobil"
+
+#: customizer/components/widget-style.php:21
+msgid "This option will change the background color of the widget title."
+msgstr ""
+
+#: customizer/components/widget-style.php:45 thrive/cmb2-fields/page.php:40
+#, fuzzy
+msgid "Title Color"
+msgstr "Titlu : "
+
+#: customizer/components/widget-style.php:48
+#, fuzzy
+#| msgid "You can use this field to enter the widget title."
+msgid "This option will change the color of the widget title."
+msgstr "Puteți utiliza acest câmp pentru a introduce titlul widget-ului."
+
+#: customizer/components/widget-style.php:84
+msgid "Border Style"
+msgstr ""
+
+#: customizer/components/widget-style.php:85
+#, fuzzy
+#| msgid "You can change the appearance of your sidebar widgets here"
+msgid ""
+"You can choose between 'Circular' or 'Sharp Edges' style for your sidebar "
+"widgets."
+msgstr "Puteți schimba aspectul widget-urilor din bara laterală aici"
+
+#: customizer/components/widget-style.php:90
+msgid "Circular"
+msgstr ""
+
+#: customizer/components/widget-style.php:91
+msgid "Sharp Edges"
+msgstr ""
+
+#: customizer/customizer.php:16
+msgid ""
+"You are currently using Thrive WordPress Theme. This is where you can "
+"customize almost everything about Thrive. Personalize your website and make "
+"the branding yours by changing the default settings below."
+msgstr ""
+
+#: customizer/customizer.php:29
+msgid "Thrive Customization"
+msgstr ""
+
+#: customizer/customizer.php:30
+#, fuzzy
+#| msgid "Description"
+msgid "My Description"
+msgstr "Descriere"
+
+#: customizer/include-kirky.php:54
+msgid ""
+"A plugin is required to take advantage of this theme's features in the "
+"customizer."
+msgstr ""
+
+#: customizer/include-kirky.php:55
+msgid "Install Kirki Toolkit now"
+msgstr ""
+
+#: customizer/include-kirky.php:56
+#, fuzzy
+#| msgid "Install"
+msgid "Install Now"
+msgstr "Instalați"
+
+#: customizer/include-kirky.php:60
+msgid ""
+"You have installed Kirki. Activate it to take advantage of this theme's "
+"features in the customizer."
+msgstr ""
+
+#: customizer/include-kirky.php:62
+msgid "Activate Kirki Toolkit now"
+msgstr ""
+
+#: customizer/include-kirky.php:63
+#, fuzzy
+#| msgid "Activate"
+msgid "Activate Now"
+msgstr "Activați"
+
+#: footer.php:91 footer.php:93
+msgid "Scroll to top"
+msgstr ""
+
+#: functions.php:155
+msgid "on"
+msgstr "pe"
+
+#: functions.php:307 functions.php:312
+msgid "Social Connect "
+msgstr "Conectare la rețele sociale "
+
+#: functions.php:317
+msgid "Thrive Social Connect "
+msgstr "Conectare la rețeaua socială Thrive "
+
+#: header-navigation-1.php:8 header-navigation-2.php:8
+#, fuzzy
+msgid "Toggle navigation"
+msgstr "Navigare laterală"
+
+#: header-navigation-1.php:39 header-navigation-2.php:74
+msgid "Search posts, groups, members, and etc"
+msgstr ""
+
+#: header-navigation-1.php:50
+#, fuzzy
+#| msgid "Sub Menu"
+msgid "Site Menu"
+msgstr "Submeniu"
+
+#: header-navigation-1.php:71 header-navigation-1.php:73
+#: header-navigation-2.php:56 header-navigation-2.php:58
+#, fuzzy
+#| msgid "Primary Menu"
+msgid "Add Primary Menu"
+msgstr "Meniu Principal"
+
+#: header-navigation-1.php:82 header-navigation-2.php:84 inc/extras.php:859
+msgid "View your shopping cart"
+msgstr ""
+
+#: header-navigation-1.php:100 header-navigation-2.php:103
+msgid "Log In"
+msgstr ""
+
+#: header-navigation-1.php:107 header-navigation-2.php:110
+#, fuzzy
+#| msgid "Sign Out"
+msgid "Sign Up"
+msgstr "Ieșiți"
+
+#: inc/bp-functions/thrive-bp-hooks.php:57
+#, fuzzy, php-format
+#| msgid "Profile photo to crop"
+msgid "Profile photo of %s"
+msgstr "Fotografia de profil pentru decupare"
+
+#: inc/bp-functions/thrive-bp-hooks.php:84
+#, php-format
+msgid "What's new, %s?"
+msgstr "Ce este nou, %s?"
+
+#: inc/bp-functions/thrive-bp-hooks.php:85
+#, fuzzy
+#| msgid "Post Update"
+msgid "Post what's new"
+msgstr "Actualizare articol"
+
+#: inc/bp-functions/thrive-bp-hooks.php:86
+#, fuzzy
+#| msgid "Post"
+msgid "Post in"
+msgstr "Articol"
+
+#: inc/bp-functions/thrive-bp-hooks.php:87
+msgid "Post Update"
+msgstr "Actualizare articol"
+
+#: inc/bp-functions/thrive-bp-hooks.php:88
+#, fuzzy
+msgid "Cancel"
+msgstr "Anulaţi"
+
+#: inc/bp-functions/thrive-bp-messages.php:121
+#, php-format
+msgid "%s &raquo; Read message "
+msgstr "%s &raquo; Citiți mesajul "
+
+#: inc/extras.php:68
+#, php-format
+msgid "Page %s"
+msgstr "Pagina %s"
+
+#: inc/extras.php:161
+msgid "Your comment is awaiting moderation."
+msgstr "Comentariul dvs. așteaptă să fie analizat de moderator."
+
+#: inc/extras.php:171
+#, php-format
+msgid "<span class=\"type-strong fn\">%s</span>"
+msgstr "<span class=\"type-strong fn\">%s</span>"
+
+#: inc/extras.php:175
+msgid "(Edit)"
+msgstr "(Editați)"
+
+#: inc/extras.php:180
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s la %2$s"
+
+#: inc/extras.php:211
+msgid "Category"
+msgstr "Categorie"
+
+#: inc/extras.php:216
+msgid "Tag"
+msgstr "Etichetă"
+
+#: inc/extras.php:222
+msgid "Author"
+msgstr "Autor"
+
+#: inc/extras.php:236
+msgid "Archive"
+msgstr "Arhiva"
+
+#: inc/extras.php:254
+msgid "Files"
+msgstr "Fișiere"
+
+#: inc/extras.php:306
+msgid "Chat"
+msgstr "Conversație"
+
+#: inc/extras.php:334
+msgid "Media Updates"
+msgstr "Actualizări media"
+
+#: inc/extras.php:418 inc/extras.php:419
+msgid "Settings"
+msgstr "Setări"
+
+#: inc/extras.php:469
+#, fuzzy
+#| msgid "Mentions"
+msgid "@Mention"
+msgstr "Menţiuni"
+
+#: inc/extras.php:476 installer/classes/templates/import.php:177
+msgid "Message"
+msgstr "Mesaj"
+
+#: inc/extras.php:679 installer/import-config.php:20
+#: installer/import-config.php:102 installer/import-config.php:151
+#: thrive/widgets/widgets.php:80
+msgid "BuddyPress"
+msgstr "BuddyPress"
+
+#: inc/extras.php:683 thrive/widgets/widgets.php:90
+#, fuzzy
+#| msgid "BuddyPress"
+msgid "BuddyPress Profile"
+msgstr "BuddyPress"
+
+#: inc/extras.php:688 thrive/widgets/widgets.php:100
+#, fuzzy
+#| msgid "BuddyPress"
+msgid "BuddyPress Members"
+msgstr "BuddyPress"
+
+#: inc/extras.php:693 thrive/widgets/widgets.php:120
+#, fuzzy
+#| msgid "BuddyPress"
+msgid "BuddyPress Single Group"
+msgstr "BuddyPress"
+
+#: inc/extras.php:698 thrive/widgets/widgets.php:110
+#, fuzzy
+#| msgid "BuddyPress"
+msgid "BuddyPress Groups"
+msgstr "BuddyPress"
+
+#: inc/extras.php:771
+msgid "SHARE"
+msgstr ""
+
+#: inc/extras.php:774
+msgid "Share on Facebook"
+msgstr ""
+
+#: inc/extras.php:777
+msgid "Share on Twitter"
+msgstr ""
+
+#: inc/extras.php:780
+msgid "Share on LinkedIn"
+msgstr ""
+
+#: inc/extras.php:783
+msgid "Share on Google+"
+msgstr ""
+
+#: inc/extras.php:786
+msgid "Share on Reddit"
+msgstr ""
+
+#: inc/extras.php:789
+#, fuzzy
+msgid "WhatsApp"
+msgstr "Chat-uri"
+
+#: inc/extras.php:793
+msgid "E-mail to friend"
+msgstr ""
+
+#: inc/template-tags.php:23
+#, fuzzy
+msgid "Posts navigation"
+msgstr "Navigare laterală"
+
+#: inc/template-tags.php:27
+#, fuzzy
+msgid "Older posts"
+msgstr "Articole mai vechi"
+
+#: inc/template-tags.php:31
+msgid "Newer posts"
+msgstr "Articole mai noi"
+
+#: inc/template-tags.php:56
+#, fuzzy
+msgid "Post navigation"
+msgstr "Navigare laterală"
+
+#: inc/template-tags.php:86
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: inc/template-tags.php:91 inc/template-tags.php:98
+#, php-format
+msgid "by %s"
+msgstr "de %s"
+
+#: inc/template-tags.php:104
+msgid "Last updated"
+msgstr "Ultima actualizare"
+
+#: inc/template-tags.php:109
+#, fuzzy
+#| msgid "on"
+msgid "on "
+msgstr "pe"
+
+#: inc/template-tags.php:131 inc/template-tags.php:136
+msgid ", "
+msgstr ", "
+
+#: inc/template-tags.php:133
+#, php-format
+msgid "Posted in %1$s"
+msgstr "Postat în %1$s"
+
+#: inc/template-tags.php:138
+#, php-format
+msgid "Tagged %1$s"
+msgstr "Etichetat %1$s"
+
+#: inc/template-tags.php:147
+msgid "Comments"
+msgstr "Comentarii"
+
+#: inc/template-tags.php:155
+#, fuzzy
+msgid "Manage"
+msgstr "Gestionați"
+
+#: inc/template-tags.php:178
+#, php-format
+msgid "Category: %s"
+msgstr "Categorie: %s"
+
+#: inc/template-tags.php:180
+#, php-format
+msgid "Tag: %s"
+msgstr "Etichetă: %s"
+
+#: inc/template-tags.php:182
+#, php-format
+msgid "Author: %s"
+msgstr "Autor: %s"
+
+#: inc/template-tags.php:184
+#, php-format
+msgid "Year: %s"
+msgstr "An: %s"
+
+# se refera la formatul datei Y = Year (an)
+#: inc/template-tags.php:184
+#, fuzzy
+msgid "Y"
+msgstr "An"
+
+#: inc/template-tags.php:186
+#, php-format
+msgid "Month: %s"
+msgstr "Luna: %s"
+
+# se refera la formatul datei, F Y = Full month Year
+#: inc/template-tags.php:186
+#, fuzzy
+msgid "F Y"
+msgstr "Luna An"
+
+#: inc/template-tags.php:188
+#, php-format
+msgid "Day: %s"
+msgstr "Ziua:  %s"
+
+# se refera la formatul datei, F j, Y = Full month day of month, Year
+#: inc/template-tags.php:188
+#, fuzzy
+msgid "F j, Y"
+msgstr "Luna zi, An"
+
+#: inc/template-tags.php:191
+#, fuzzy
+msgid "Asides"
+msgstr "Asides"
+
+#: inc/template-tags.php:193
+msgid "Galleries"
+msgstr "Galerii"
+
+#: inc/template-tags.php:195
+msgid "Images"
+msgstr "Imagini"
+
+#: inc/template-tags.php:197
+msgid "Videos"
+msgstr "Videoclipuri"
+
+#: inc/template-tags.php:199
+msgid "Quotes"
+msgstr "Citate"
+
+#: inc/template-tags.php:201
+msgid "Links"
+msgstr "Link-uri"
+
+#: inc/template-tags.php:203
+#, fuzzy
+msgid "Statuses"
+msgstr "Stări"
+
+#: inc/template-tags.php:205
+msgid "Audio"
+msgstr "Audio"
+
+#: inc/template-tags.php:207
+#, fuzzy
+msgid "Chats"
+msgstr "Chat-uri"
+
+#: inc/template-tags.php:210
+#, php-format
+msgid "Archives: %s"
+msgstr "Arhive: %s"
+
+#: inc/template-tags.php:214
+#, php-format
+msgid "%1$s: %2$s"
+msgstr "%1$s: %2$s"
+
+#: inc/template-tags.php:552 inc/template-tags.php:554
+#, fuzzy
+#| msgid "Edit 'Top Right Bar' Menu"
+msgid "Add 'Top Right Bar' Menu"
+msgstr "Editați meniul \"Dreapta Sus\""
+
+#: inc/template-tags.php:559
+msgid "Logout"
+msgstr "Deconectare"
+
+#: inc/template-tags.php:561 template-parts/sidebar-content.php:57
+#: thrive/user-navigation/user-navigation.php:183
+msgid "Sign Out"
+msgstr "Ieșiți"
+
+#: inc/theme-welcome.php:41
+msgid "Welcome To Thrive"
+msgstr ""
+
+#: inc/theme-welcome.php:42
+#, fuzzy
+#| msgid "About Me"
+msgid "About Thrive"
+msgstr "Despre mine"
+
+#: inc/theme-welcome.php:53
+#, php-format
+msgid "Welcome to Thrive %s \"Nouveau\""
+msgstr ""
+
+#: inc/theme-welcome.php:57
+msgid ""
+"Thanks for choosing Thrive WordPress Theme!\n"
+"          We hope that you enjoy using this theme. Read the instructions "
+"below to get started."
+msgstr ""
+
+#: inc/theme-welcome.php:62
+msgid "Getting Started"
+msgstr ""
+
+#: inc/theme-welcome.php:64
+msgid ""
+"Start customizing your website. Change the logo, color scheme, fonts, and "
+"more."
+msgstr ""
+
+#: inc/theme-welcome.php:68
+#, fuzzy
+#| msgid "Update recommended"
+msgid "Activate Recommended Plugins"
+msgstr "Actualizare recomandată"
+
+#: inc/theme-welcome.php:69
+msgid "Visit Set-up Wizard"
+msgstr ""
+
+#: inc/theme-welcome.php:74 inc/theme-welcome.php:75
+#, fuzzy
+#| msgid "Custom Theme CSS"
+msgid "Customize Thrive"
+msgstr "CSS de temă personalizat"
+
+#: inc/theme-welcome.php:81
+msgid "Frequently Asked Questions"
+msgstr ""
+
+#: inc/theme-welcome.php:86 inc/theme-welcome.php:88
+msgid "Memory Limit Issues"
+msgstr ""
+
+#: inc/theme-welcome.php:92 inc/theme-welcome.php:94
+msgid "Visual Composer License and Auto Updates"
+msgstr ""
+
+#: inc/theme-welcome.php:98 inc/theme-welcome.php:100
+msgid "General Errors (a.k.a 500 Internal Server Error)"
+msgstr ""
+
+#: inc/theme-welcome.php:104 inc/theme-welcome.php:110
+msgid "Get Support"
+msgstr ""
+
+#: inc/theme-welcome.php:107
+msgid ""
+"Encounter some problems while using Thrive? Send a friendly ticket to our <a "
+"target=\"_blank\" href=\"http://support.dunhakdis.com/\">support portal</a> "
+"and we will get back to you as soon as possible."
+msgstr ""
+
+#: inc/theme-welcome.php:113
+msgid "Start Learning"
+msgstr ""
+
+#: inc/theme-welcome.php:116
+msgid "Access Theme Documentation"
+msgstr ""
+
+#: inc/theme-welcome.php:120
+#, fuzzy
+#| msgid "BuddyPress"
+msgid "Read BuddyPress Docs"
+msgstr "BuddyPress"
+
+#: inc/theme-welcome.php:125
+msgid "Follow Us"
+msgstr ""
+
+#: inc/theme-welcome.php:127
+msgid "Facebook"
+msgstr ""
+
+#: inc/theme-welcome.php:128
+#, fuzzy
+#| msgid "Visit Group Profile"
+msgid "Visit our Website"
+msgstr "Vizitați Profilul grupului"
+
+#: inc/wp-login-css.php:71
+msgid "Go back to main page"
+msgstr ""
+
+#: inc/wp-login-css.php:83
+#, fuzzy
+#| msgid "Lost your password?"
+msgid "Lost Password?"
+msgstr "Ați uitat parola?"
+
+#: installer/classes/class-demo-config.php:16
+msgid "Sample Demo"
+msgstr ""
+
+#: installer/classes/class-installer.php:50
+msgid "Theme Demo Installation"
+msgstr ""
+
+#: installer/classes/class-installer.php:51
+msgid "Set-up Wizard"
+msgstr ""
+
+#: installer/classes/class-logger-html.php:20
+#: installer/classes/class-wxr-import-ui.php:79
+#, fuzzy
+#| msgid "Sorry, there were no sites found."
+msgid "Sorry, there has been an error."
+msgstr "Ne pare rău, nu au fost găsite site-uri."
+
+#: installer/classes/class-wxr-import-ui.php:50
+#, php-format
+msgid ""
+"A new version of this importer is available. Please update to version %s to "
+"ensure compatibility with newer export files."
+msgstr ""
+
+#: installer/classes/class-wxr-import-ui.php:60
+#, fuzzy
+#| msgid "Update"
+msgid "Update Now"
+msgstr "Actualizați"
+
+#: installer/classes/class-wxr-import-ui.php:164
+msgid ""
+"Before you can upload your import file, you will need to fix the following "
+"error:"
+msgstr ""
+
+#: installer/classes/class-wxr-import-ui.php:184
+#, fuzzy
+msgid "Select"
+msgstr "Mutați fișierele media selectate"
+
+#: installer/classes/class-wxr-import-ui.php:185
+msgid "Import"
+msgstr ""
+
+#: installer/classes/class-wxr-import-ui.php:193
+#, fuzzy
+#| msgid "My Profile"
+msgid "XML files"
+msgstr "Profilul meu"
+
+#: installer/classes/class-wxr-import-ui.php:244
+msgid "Error: Unable to fetch demo_id from the url"
+msgstr ""
+
+#: installer/classes/class-wxr-import-ui.php:264
+#, php-format
+msgid ""
+"The export file could not be found at %s. It is likely that this was caused "
+"by a permissions problem."
+msgstr ""
+
+#: installer/classes/class-wxr-import-ui.php:300
+msgid "You do not have permission to upload files."
+msgstr ""
+
+#: installer/classes/class-wxr-import-ui.php:344
+#: installer/classes/class-wxr-import-ui.php:355
+msgid "Invalid media item ID."
+msgstr ""
+
+#: installer/classes/class-wxr-import-ui.php:363
+msgid "You cannot access the selected media item."
+msgstr ""
+
+#: installer/classes/class-wxr-import-ui.php:390
+#, php-format
+msgid "Error extensible markup language (xml) for content is not found in: %s"
+msgstr ""
+
+#: installer/classes/class-wxr-import-ui.php:413
+msgid "Could not cache information on the import."
+msgstr ""
+
+#: installer/classes/class-wxr-import-ui.php:431
+msgid "Missing import file ID from request."
+msgstr ""
+
+#: installer/classes/class-wxr-import-ui.php:602
+msgid "Import author:"
+msgstr ""
+
+#: installer/classes/class-wxr-import-ui.php:619
+msgid "or create new user with login name:"
+msgstr ""
+
+#: installer/classes/class-wxr-import-ui.php:622
+msgid "as a new user:"
+msgstr ""
+
+#: installer/classes/class-wxr-import-ui.php:634
+msgid "assign posts to an existing user:"
+msgstr ""
+
+#: installer/classes/class-wxr-import-ui.php:636
+msgid "or assign posts to an existing user:"
+msgstr ""
+
+#: installer/classes/class-wxr-import-ui.php:642
+#, fuzzy
+msgid "- Select -"
+msgstr "Mutați fișierele media selectate"
+
+#: installer/classes/class-wxr-import-ui.php:815
+msgid "Export"
+msgstr ""
+
+# ramane asa
+#: installer/classes/class-wxr-import-ui.php:817
+msgid "Widgets"
+msgstr "Widget-uri"
+
+#: installer/classes/class-wxr-import-ui.php:820
+#, fuzzy
+#| msgid "Custom CSS"
+msgid "Customizer"
+msgstr "CSS personalizat"
+
+#: installer/classes/class-wxr-importer.php:133
+msgid "Could not open the file for parsing"
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:169
+#: installer/classes/class-wxr-importer.php:285
+#: installer/classes/class-wxr-importer.php:358
+#, php-format
+msgid ""
+"This WXR file (version %s) is newer than the importer (version %s) and may "
+"not be supported. Please consider updating."
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:507
+msgid "The file does not exist, please try again."
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:567
+msgid "Invalid author mapping"
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:668
+msgid "Cannot import auto-draft posts"
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:756
+#, php-format
+msgid "Failed to import \"%s\": Invalid post type %s"
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:766
+#, php-format
+msgid "%s \"%s\" already exists."
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:851
+#, php-format
+msgid "Skipping attachment \"%s\", fetching attachments disabled"
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:872
+#, php-format
+msgid "Failed to import \"%s\" (%s)"
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:904
+#: installer/classes/class-wxr-importer.php:1738
+#, php-format
+msgid "Imported \"%s\" (%s)"
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:909
+#, php-format
+msgid "Post %d remapped to %d"
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:1053
+msgid "Invalid file type"
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:1544
+#, php-format
+msgid "Failed to import user \"%s\""
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:1565
+#, php-format
+msgid "Imported user \"%s\""
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:1569
+#, php-format
+msgid "User %d remapped to %d"
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:1714
+#, php-format
+msgid "Failed to import %s %s"
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:1743
+#, php-format
+msgid "Term %d remapped to %d"
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:1796
+#, php-format
+msgid "Remote server returned %1$d %2$s for %3$s"
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:1809
+msgid "Remote file is incorrect size"
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:1814
+msgid "Zero size file downloaded"
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:1820
+#, php-format
+msgid "Remote file is too large, limit is %s"
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:1842
+#, php-format
+msgid "Running post-processing for post %d"
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:1855
+#, php-format
+msgid "Could not find the post parent for \"%s\" (post #%d)"
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:1860
+#, php-format
+msgid "Post %d was imported with parent %d, but could not be found"
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:1874
+#, php-format
+msgid "Could not find the author for \"%s\" (post #%d)"
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:1879
+#, php-format
+msgid "Post %d was imported with author \"%s\", but could not be found"
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:1905
+#, php-format
+msgid "Post %d was marked for post-processing, but none was required."
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:1916
+#, php-format
+msgid "Could not update \"%s\" (post #%d) with mapped data"
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:1961
+#, php-format
+msgid "Could not find the menu object for \"%s\" (post #%d)"
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:1966
+#, php-format
+msgid ""
+"Post %d was imported with object \"%d\" of type \"%s\", but could not be "
+"found"
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:1988
+#, php-format
+msgid "Could not find the comment parent for comment #%d"
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:1992
+#, php-format
+msgid "Comment %d was imported with parent %d, but could not be found"
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:2006
+#, php-format
+msgid "Could not find the author for comment #%d"
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:2010
+#, php-format
+msgid "Comment %d was imported with author %d, but could not be found"
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:2027
+#, php-format
+msgid "Could not update comment #%d with mapped data"
+msgstr ""
+
+#: installer/classes/customizer.php:18
+msgid "Importing Customizer Settings &hellip;"
+msgstr ""
+
+#: installer/classes/customizer.php:36
+msgid "Customizer Settings Applied &hellip;"
+msgstr ""
+
+#: installer/classes/customizer.php:38 installer/classes/widgets.php:89
+#: installer/classes/widgets.php:99
+msgid "All Done &hellip;"
+msgstr ""
+
+#: installer/classes/templates/demos.php:12
+msgid "Step 1 of 3:"
+msgstr ""
+
+#: installer/classes/templates/demos.php:14
+#, fuzzy
+#| msgid "Create account to get started"
+msgid "Please select a demo to get started."
+msgstr "Creați-vă un cont pentru a începe"
+
+#: installer/classes/templates/demos.php:35
+#: installer/classes/templates/demos.php:37
+#, fuzzy
+#| msgid "Select Layout:"
+msgid "Select Demo"
+msgstr "Selectați aspectul:"
+
+#: installer/classes/templates/demos.php:41
+#: installer/classes/templates/demos.php:43
+#: installer/tgm/class-tgm-plugin-activation.php:330
+#, fuzzy
+msgid "Install Plugins"
+msgstr "Instalați module"
+
+#: installer/classes/templates/import.php:24
+msgid "Import complete!"
+msgstr ""
+
+#: installer/classes/templates/import.php:38
+msgid "Step 3 of 3:"
+msgstr ""
+
+#: installer/classes/templates/import.php:40
+msgid "Running Import."
+msgstr ""
+
+#: installer/classes/templates/import.php:46
+msgid "Step 3: Importing"
+msgstr ""
+
+#: installer/classes/templates/import.php:47
+msgid "Now importing."
+msgstr ""
+
+#: installer/classes/templates/import.php:52
+msgid "Import Summary"
+msgstr ""
+
+#: installer/classes/templates/import.php:53
+#, fuzzy
+#| msgid "Complete Sign Up"
+msgid "Completed"
+msgstr "Înscrieți-vă complet"
+
+#: installer/classes/templates/import.php:54
+msgid "Progress"
+msgstr ""
+
+#: installer/classes/templates/import.php:63
+#: installer/classes/templates/select-options.php:130
+#, php-format
+msgid "%d post (including CPTs)"
+msgstr ""
+
+#: installer/classes/templates/import.php:81
+#: installer/classes/templates/select-options.php:139
+#, php-format
+msgid "%d media item"
+msgstr ""
+
+#: installer/classes/templates/import.php:100
+#: installer/classes/templates/select-options.php:148
+#, php-format
+msgid "%d user"
+msgstr ""
+
+#: installer/classes/templates/import.php:119
+#: installer/classes/templates/select-options.php:157
+#, fuzzy, php-format
+msgid "%d comment"
+msgstr "Comentariu"
+
+#: installer/classes/templates/import.php:138
+#: installer/classes/templates/select-options.php:166
+#, php-format
+msgid "%d term"
+msgstr ""
+
+#: installer/classes/templates/import.php:167
+msgid "Toggle Import Log"
+msgstr ""
+
+#: installer/classes/templates/import.php:168
+msgid "Click to toggle the import log"
+msgstr ""
+
+#: installer/classes/templates/import.php:176
+#: installer/tgm/class-tgm-plugin-activation.php:2570
+#, fuzzy
+msgid "Type"
+msgstr "Tip"
+
+#: installer/classes/templates/select-options.php:21
+#, fuzzy, php-format
+msgid "WordPress %s"
+msgstr "Depozitar WordPress"
+
+#: installer/classes/templates/select-options.php:26
+msgid "Step 2 of 3:"
+msgstr ""
+
+#: installer/classes/templates/select-options.php:28
+#, fuzzy
+msgid "Install 3rd Party Plugins."
+msgstr "Instalați module"
+
+#: installer/classes/templates/select-options.php:36
+#, php-format
+msgid "You have chosen: %s"
+msgstr ""
+
+#: installer/classes/templates/select-options.php:42
+msgid ""
+"Your import is almost ready to go. Before we begin,\n"
+"\t\t\t\t\tbe sure to check out the 'Required Plugins' to make sure\n"
+"\t\t\t\t\tevery post type data and other 3rd party plugins data will be "
+"imported."
+msgstr ""
+
+# am vazut ca wordpress asa traduce
+#: installer/classes/templates/select-options.php:55
+#, fuzzy
+msgid "Required Plugins"
+msgstr "Instalați modulele necesare"
+
+#: installer/classes/templates/select-options.php:58
+msgid ""
+"This demo requires the following plugins to be\n"
+"\t\t\t\t\t\tinstalled and activated, plugins listed below that are checked "
+"does not require any actions:"
+msgstr ""
+
+#: installer/classes/templates/select-options.php:65
+msgid "Legend"
+msgstr ""
+
+#: installer/classes/templates/select-options.php:69
+#, fuzzy
+#| msgid "%1$s installed and activated successfully."
+msgid "Needs to be installed and activated"
+msgstr "%1$s instalat și activat cu succes."
+
+#: installer/classes/templates/select-options.php:71
+#, fuzzy
+#| msgid "%1$s installed and activated successfully."
+msgid "Already installed and activated"
+msgstr "%1$s instalat și activat cu succes."
+
+#: installer/classes/templates/select-options.php:104
+msgid "Click to begin installing and activating required plugins"
+msgstr ""
+
+#: installer/classes/templates/select-options.php:123
+msgid "Summary"
+msgstr ""
+
+#: installer/classes/templates/select-options.php:174
+msgid "Import Facts"
+msgstr ""
+
+#: installer/classes/templates/select-options.php:179
+#, php-format
+msgid "Exported from <a href=\"%1$s\">%2$s</a>"
+msgstr ""
+
+#: installer/classes/templates/select-options.php:188
+#, fuzzy, php-format
+#| msgid "Started by %1$s"
+msgid "Generated by %s"
+msgstr "Început de %1$s"
+
+#: installer/classes/templates/select-options.php:196
+#, php-format
+msgid "Format: WXR v%s"
+msgstr ""
+
+#: installer/classes/templates/select-options.php:216
+#, fuzzy
+#| msgid "Author"
+msgid "Assign Authors"
+msgstr "Autor"
+
+#: installer/classes/templates/select-options.php:220
+msgid ""
+"To make it easier for you to edit and save the imported content, you may "
+"want to reassign the author of the imported item to an existing user of this "
+"site. For example, you may want to import all the entries as <code>admin</"
+"code>s entries."
+msgstr ""
+
+#: installer/classes/templates/select-options.php:227
+#, php-format
+msgid ""
+"If a new user is created by WordPress, a new password will be randomly "
+"generated and the new user&#8217;s role will be set as %s. Manually changing "
+"the new user&#8217;s details will be necessary."
+msgstr ""
+
+#: installer/classes/templates/select-options.php:245
+msgid "Import Attachments"
+msgstr ""
+
+#: installer/classes/templates/select-options.php:249
+msgid "Download and import file attachments"
+msgstr ""
+
+#: installer/classes/templates/select-options.php:264
+msgid "I have already installed and activated all required plugins"
+msgstr ""
+
+#: installer/classes/templates/select-options.php:269
+msgid "Start Importing"
+msgstr ""
+
+#: installer/classes/widgets.php:82
+msgid "Updating Individual Widget Settings &hellip;"
+msgstr ""
+
+#: installer/classes/widgets.php:86
+#, php-format
+msgid "Updating settings for <strong>%s</strong> ... [Done]</li>"
+msgstr ""
+
+#: installer/classes/widgets.php:97
+msgid "Applying settings for all widget positions in sidebars... [Done]"
+msgstr ""
+
+#: installer/import-config.php:8
+msgid "Intranet/Extranet"
+msgstr ""
+
+#: installer/import-config.php:16 installer/import-config.php:98
+#: installer/import-config.php:147
+#, fuzzy
+#| msgid "Privacy Options"
+msgid "Nifty Menu Options"
+msgstr "Opțiuni de confidențialitate"
+
+#: installer/import-config.php:24 installer/import-config.php:106
+#: installer/import-config.php:155
+msgid "BuddyKit"
+msgstr ""
+
+#: installer/import-config.php:30 installer/import-config.php:112
+#: installer/import-config.php:161
+#, fuzzy
+#| msgid "BuddyPress"
+msgid "BbPress"
+msgstr "BuddyPress"
+
+#: installer/import-config.php:34
+msgid "TaskBreaker - Project Management"
+msgstr ""
+
+#: installer/import-config.php:38
+msgid "Reference Knowledgebase and Docs"
+msgstr ""
+
+#: installer/import-config.php:42 installer/import-config.php:116
+#: installer/import-config.php:177
+msgid "Subway - Private Site Option"
+msgstr ""
+
+#: installer/import-config.php:46
+#, fuzzy
+#| msgid "BuddyPress"
+msgid "BuddyPress Docs"
+msgstr "BuddyPress"
+
+#: installer/import-config.php:50
+msgid "Visual Form Builder"
+msgstr ""
+
+#: installer/import-config.php:55
+msgid "WooCommerce"
+msgstr ""
+
+#: installer/import-config.php:59 installer/import-config.php:165
+#, fuzzy
+#| msgid "BuddyPress"
+msgid "BuddyDrive"
+msgstr "BuddyPress"
+
+#: installer/import-config.php:63 installer/import-config.php:173
+msgid "The Events Calendar"
+msgstr ""
+
+#: installer/import-config.php:67
+msgid "WP Polls"
+msgstr ""
+
+#: installer/import-config.php:71 installer/import-config.php:120
+#: installer/import-config.php:181
+msgid "Visual Composer"
+msgstr ""
+
+#: installer/import-config.php:77 installer/import-config.php:126
+#: installer/import-config.php:187
+#, fuzzy
+#| msgid "Side Navigation"
+msgid "Slider Revolution"
+msgstr "Navigare laterală"
+
+#: installer/import-config.php:83 installer/import-config.php:132
+#: installer/import-config.php:193
+msgid "Gears"
+msgstr ""
+
+#: installer/import-config.php:91
+msgid "Small Community"
+msgstr ""
+
+#: installer/import-config.php:140
+msgid "E-Learning via LearnDash"
+msgstr ""
+
+#: installer/import-config.php:169
+#, fuzzy
+#| msgid "BuddyPress"
+msgid "BuddyDocs"
+msgstr "BuddyPress"
+
+# am vazut ca wordpress asa traduce
+#: installer/tgm/class-tgm-plugin-activation.php:329
+#, fuzzy
+msgid "Install Required Plugins"
+msgstr "Instalați modulele necesare"
+
+#: installer/tgm/class-tgm-plugin-activation.php:332
+#, fuzzy, php-format
+msgid "Installing Plugin: %s"
+msgstr "Modulul se instalează: %s"
+
+#: installer/tgm/class-tgm-plugin-activation.php:334
+#, fuzzy, php-format
+msgid "Updating Plugin: %s"
+msgstr "Modulul se actualizează: %s"
+
+#: installer/tgm/class-tgm-plugin-activation.php:335
+msgid "Something went wrong with the plugin API."
+msgstr "Ceva a functionat gresit cu API-ul acestui modul."
+
+#: installer/tgm/class-tgm-plugin-activation.php:338
+#, fuzzy, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgstr "Această temă necesită următorul modul: %1$s."
+
+#: installer/tgm/class-tgm-plugin-activation.php:344
+#, fuzzy, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgstr "Această temă recomandă următorul modul: %1$s."
+
+#: installer/tgm/class-tgm-plugin-activation.php:350
+#, fuzzy, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr ""
+"Urmatorul modul trebuie actualizat la ultima versiune pentru a asigura "
+"compatibilitatea cu tema: %1$s."
+
+#: installer/tgm/class-tgm-plugin-activation.php:356
+#, php-format
+msgid "There is an update available for: %1$s."
+msgstr "Există o actualizare disponibilă pentru: %1$s."
+
+#: installer/tgm/class-tgm-plugin-activation.php:362
+#, fuzzy, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgstr "Următorul modul necesar este momentan inactiv: %1$s."
+
+#: installer/tgm/class-tgm-plugin-activation.php:368
+#, fuzzy, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgstr "Următorul modul recomandat este momentan inactiv: %1$s."
+
+#: installer/tgm/class-tgm-plugin-activation.php:373
+#, fuzzy
+msgid "Begin installing plugin"
+msgstr "Începeți să instalați modulul"
+
+#: installer/tgm/class-tgm-plugin-activation.php:378
+#, fuzzy
+msgid "Begin updating plugin"
+msgstr "Începeți să actualizați modulul"
+
+#: installer/tgm/class-tgm-plugin-activation.php:383
+#, fuzzy
+msgid "Begin activating plugin"
+msgstr "Începeți să activați modulul"
+
+#: installer/tgm/class-tgm-plugin-activation.php:387
+#, fuzzy
+msgid "Return to Required Plugins Installer"
+msgstr "Întoarceți-vă la instalarea modulelor necesare"
+
+#: installer/tgm/class-tgm-plugin-activation.php:388
+#: installer/tgm/class-tgm-plugin-activation.php:3602
+#, fuzzy
+msgid "Return to the Dashboard"
+msgstr "Reveniți la Panoul de control"
+
+#: installer/tgm/class-tgm-plugin-activation.php:389
+#: installer/tgm/class-tgm-plugin-activation.php:3181
+#, fuzzy
+msgid "Plugin activated successfully."
+msgstr "Modulul a fost activat cu succes."
+
+#: installer/tgm/class-tgm-plugin-activation.php:390
+#: installer/tgm/class-tgm-plugin-activation.php:2974
+#, fuzzy
+msgid "The following plugin was activated successfully:"
+msgstr "Următorul modul a fost activat cu succes:"
+
+#: installer/tgm/class-tgm-plugin-activation.php:392
+#, fuzzy, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr "Nicio acțiune luata. Modulul %1$s a fost deja activ."
+
+#: installer/tgm/class-tgm-plugin-activation.php:394
+#, fuzzy, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+"Modulul nu este activat. Pentru această temă este necesară o versiune mai "
+"mare a %s. Vă rugam actualizați modulul."
+
+#: installer/tgm/class-tgm-plugin-activation.php:396
+#, fuzzy, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr "Toate modulele au fost instalate și activate cu succes. %1$s"
+
+#: installer/tgm/class-tgm-plugin-activation.php:397
+msgid "Dismiss this notice"
+msgstr "Respingeți această notificare"
+
+#: installer/tgm/class-tgm-plugin-activation.php:398
+#, fuzzy
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+"Există unul sau mai multe module necesare sau recomandate pentru instalare, "
+"actualizare sau activare."
+
+#: installer/tgm/class-tgm-plugin-activation.php:399
+msgid "Please contact the administrator of this site for help."
+msgstr "Contactați administratorul acestui site pentru ajutor."
+
+#: installer/tgm/class-tgm-plugin-activation.php:525
+#, fuzzy
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr "Acest modul trebuie actualizat pentru a fi compatibil cu tema dvs."
+
+#: installer/tgm/class-tgm-plugin-activation.php:526
+#, fuzzy
+msgid "Update Required"
+msgstr "Este necesară actualizare"
+
+#: installer/tgm/class-tgm-plugin-activation.php:830
+#, fuzzy
+msgid "Return to the Demo Set-up"
+msgstr "Reveniți la Panoul de control"
+
+# nu am tradus remote; nu inteleg la ce se refera, dar cred ca e inteligibil asa
+#: installer/tgm/class-tgm-plugin-activation.php:937
+#, fuzzy
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+"Pachetul modulului nu conține un director cu descriptorul dorită și "
+"redenumirea nu a funcționat."
+
+#: installer/tgm/class-tgm-plugin-activation.php:937
+#: installer/tgm/class-tgm-plugin-activation.php:940
+#, fuzzy
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+"Vă rugăm să contactați furnizorul modului și solicitați-i să-și împacheteze "
+"plugin-ul în conformitate cu ghidul WordPress."
+
+#: installer/tgm/class-tgm-plugin-activation.php:940
+#, fuzzy
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+"Pachetul modulului conține mai mult de un fișier, dar fișierele nu sunt "
+"ambalate într-un director."
+
+#: installer/tgm/class-tgm-plugin-activation.php:1126
+#: installer/tgm/class-tgm-plugin-activation.php:2970
+#, fuzzy
+msgid "and"
+msgstr "și"
+
+#: installer/tgm/class-tgm-plugin-activation.php:1997
+#, php-format
+msgid "TGMPA v%s"
+msgstr "TGMPA v%s"
+
+#: installer/tgm/class-tgm-plugin-activation.php:2289
+msgid "Required"
+msgstr "Necesar"
+
+#: installer/tgm/class-tgm-plugin-activation.php:2292
+msgid "Recommended"
+msgstr "Recomandat"
+
+#: installer/tgm/class-tgm-plugin-activation.php:2308
+#, fuzzy
+msgid "WordPress Repository"
+msgstr "Depozitar WordPress"
+
+#: installer/tgm/class-tgm-plugin-activation.php:2311
+#, fuzzy
+msgid "External Source"
+msgstr "Sursă externă"
+
+#: installer/tgm/class-tgm-plugin-activation.php:2314
+#, fuzzy
+msgid "Pre-Packaged"
+msgstr "Pre-ambalat"
+
+#: installer/tgm/class-tgm-plugin-activation.php:2331
+#, fuzzy
+msgid "Not Installed"
+msgstr "Neinstalat"
+
+#: installer/tgm/class-tgm-plugin-activation.php:2335
+msgid "Installed But Not Activated"
+msgstr "Instalat dar nu activat"
+
+#: installer/tgm/class-tgm-plugin-activation.php:2337
+msgid "Active"
+msgstr "Activ"
+
+#: installer/tgm/class-tgm-plugin-activation.php:2343
+msgid "Required Update not Available"
+msgstr "Actualizarea necesară nu este disponibilă"
+
+#: installer/tgm/class-tgm-plugin-activation.php:2346
+msgid "Requires Update"
+msgstr "Necesită actualizare"
+
+#: installer/tgm/class-tgm-plugin-activation.php:2349
+msgid "Update recommended"
+msgstr "Actualizare recomandată"
+
+#: installer/tgm/class-tgm-plugin-activation.php:2358
+#, php-format
+msgid "%1$s, %2$s"
+msgstr "%1$s, %2$s"
+
+#: installer/tgm/class-tgm-plugin-activation.php:2404
+#, php-format
+msgid "All <span class=\"count\">(%s)</span>"
+msgstr "Toate <span class=\"count\">(%s)</span>"
+
+#: installer/tgm/class-tgm-plugin-activation.php:2408
+#, fuzzy, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgstr "Pentru a instala <span class=\"count\">(%s)</span>"
+
+#: installer/tgm/class-tgm-plugin-activation.php:2412
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgstr "Actualizare disponibilă <span class=\"count\">(%s)</span>"
+
+#: installer/tgm/class-tgm-plugin-activation.php:2416
+#, fuzzy, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgstr "Pentru a activa <span class=\"count\">(%s)</span>"
+
+#: installer/tgm/class-tgm-plugin-activation.php:2498
+msgid "unknown"
+msgstr "necunoscut"
+
+#: installer/tgm/class-tgm-plugin-activation.php:2506
+#, fuzzy
+msgid "Installed version:"
+msgstr "Versiune instalată:"
+
+#: installer/tgm/class-tgm-plugin-activation.php:2514
+#, fuzzy
+msgid "Minimum required version:"
+msgstr "Versiune minimă necesară:"
+
+#: installer/tgm/class-tgm-plugin-activation.php:2526
+msgid "Available version:"
+msgstr "Versiune disponibilă:"
+
+#: installer/tgm/class-tgm-plugin-activation.php:2552
+#, fuzzy
+msgid "No plugins to install, update or activate."
+msgstr "Nu există module pentru instalare, actualizare sau activare."
+
+#: installer/tgm/class-tgm-plugin-activation.php:2552
+#, fuzzy
+msgid "Return to the demo installer"
+msgstr "Întoarceți-vă la instalarea modulelor necesare"
+
+#: installer/tgm/class-tgm-plugin-activation.php:2568
+#, fuzzy
+msgid "Plugin"
+msgstr "Modul"
+
+#: installer/tgm/class-tgm-plugin-activation.php:2569
+#, fuzzy
+msgid "Source"
+msgstr "Sursă"
+
+#: installer/tgm/class-tgm-plugin-activation.php:2574
+#, fuzzy
+msgid "Version"
+msgstr "Versiune"
+
+#: installer/tgm/class-tgm-plugin-activation.php:2575
+msgid "Status"
+msgstr "Stare"
+
+#: installer/tgm/class-tgm-plugin-activation.php:2624
+#, php-format
+msgid "Install %2$s"
+msgstr "Instalați %2$s"
+
+#: installer/tgm/class-tgm-plugin-activation.php:2629
+#, php-format
+msgid "Update %2$s"
+msgstr "Actualizați %2$s"
+
+#: installer/tgm/class-tgm-plugin-activation.php:2635
+#, php-format
+msgid "Activate %2$s"
+msgstr "Activați %2$s"
+
+#: installer/tgm/class-tgm-plugin-activation.php:2706
+#, fuzzy
+msgid "Upgrade message from the plugin author:"
+msgstr "Actualizați mesajul de la autorul modulului:"
+
+#: installer/tgm/class-tgm-plugin-activation.php:2739
+msgid "Install"
+msgstr "Instalați"
+
+#: installer/tgm/class-tgm-plugin-activation.php:2745
+msgid "Update"
+msgstr "Actualizați"
+
+#: installer/tgm/class-tgm-plugin-activation.php:2748
+msgid "Activate"
+msgstr "Activați"
+
+#: installer/tgm/class-tgm-plugin-activation.php:2779
+#, fuzzy
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+"Nu au fost selectate module pentru a fi instalate. Nu a avut loc nicio "
+"acțiune."
+
+#: installer/tgm/class-tgm-plugin-activation.php:2781
+#, fuzzy
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+"Nu au fost selectate module pentru a fi actualizate. Nu a avut loc nicio "
+"acțiune."
+
+#: installer/tgm/class-tgm-plugin-activation.php:2822
+#, fuzzy
+msgid "No plugins are available to be installed at this time."
+msgstr "Nu sunt disponibile module care să fie instalate în acest moment."
+
+#: installer/tgm/class-tgm-plugin-activation.php:2824
+#, fuzzy
+msgid "No plugins are available to be updated at this time."
+msgstr "Nu sunt disponibile module care să fie actualizate în acest moment."
+
+#: installer/tgm/class-tgm-plugin-activation.php:2930
+#, fuzzy
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+"Nu au fost selectate module pentru a fi activate. Nu a avut loc nicio "
+"acțiune."
+
+#: installer/tgm/class-tgm-plugin-activation.php:2956
+#, fuzzy
+msgid "No plugins are available to be activated at this time."
+msgstr "Nu sunt disponibile module pentru a fi activate în acest moment."
+
+#: installer/tgm/class-tgm-plugin-activation.php:3180
+#, fuzzy
+msgid "Plugin activation failed."
+msgstr "Activarea modulelor a eșuat."
+
+#: installer/tgm/class-tgm-plugin-activation.php:3520
+#, fuzzy, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr "Actualizarea modulului %1$s (%2$d/%3$d)"
+
+#: installer/tgm/class-tgm-plugin-activation.php:3523
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr "A apărut o eroare la instalarea %1$s: <strong>%2$s</strong>."
+
+#: installer/tgm/class-tgm-plugin-activation.php:3525
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr "Instalarea %1$s a eșuat."
+
+#: installer/tgm/class-tgm-plugin-activation.php:3529
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+"Procesul de instalare și activare începe. Acest proces poate dura un timp pe "
+"unele echipamente, deci vă rugăm să aveți răbdare."
+
+#: installer/tgm/class-tgm-plugin-activation.php:3531
+#: installer/tgm/class-tgm-plugin-activation.php:3539
+#, php-format
+msgid "%1$s done."
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:3532
+msgid "All installations and activations have been completed."
+msgstr "Toate instalările și activările au fost finalizate."
+
+#: installer/tgm/class-tgm-plugin-activation.php:3534
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr "Instalarea și activarea plugin-ului %1$s (%2$d/%3$d)"
+
+#: installer/tgm/class-tgm-plugin-activation.php:3537
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+"Procesul de instalare începe. Acest proces poate dura un timp pe unele "
+"echipamente, deci vă rugăm să aveți răbdare."
+
+#: installer/tgm/class-tgm-plugin-activation.php:3540
+msgid "All installations have been completed."
+msgstr "Toate instalările au fost finalizate."
+
+#: installer/tgm/class-tgm-plugin-activation.php:3542
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr "Instalarea Plugin-ului %1$s (%2$d/%3$d)"
+
+#: installer/views/index.php:4
+msgid "Thrive Setup Wizard"
+msgstr ""
+
+#: knowledgebase-none.php:59
+#, fuzzy, php-format
+#| msgid ""
+#| "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">\n"
+"                        Get started here</a>."
+msgstr ""
+"Sunteți gata să publicați prima dvs. postare? <a href=\"%1$s\"> Începeți "
+"aici </a>."
+
+#: knowledgebase-none.php:76 template-parts/content-none.php:24
+#, fuzzy
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Ne pare rău, dar căutarea nu a returnat nimic. Încercați să căutați folosind "
+"alte cuvinte cheie."
+
+#: knowledgebase-search.php:23
+msgid "Search Results"
+msgstr "Rezultatele Căutării"
+
+#: page-templates/dashboard.php:42
+msgid "Click to Reset Widget Positions"
+msgstr ""
+
+#: page-templates/dashboard.php:57 page-templates/dashboard.php:59
+#: thrive/widgets/widgets.php:25
+#, fuzzy
+msgid "Dashboard"
+msgstr "Panou de control"
+
+#: search.php:30
+#, fuzzy, php-format
+#| msgid "Search Results"
+msgid "Search results for \"%s\""
+msgstr "Rezultatele Căutării"
+
+#: searchform.php:4
+msgid "Search for:"
+msgstr "Căutați:"
+
+#: single-dsc-knowledgebase.php:59 template-parts/content-buddypress.php:23
+#: template-parts/content-page.php:52 template-parts/content.php:64
+msgid "Pages:"
+msgstr "Pagini:"
+
+#: single-dsc-knowledgebase.php:66 template-parts/content-buddypress.php:30
+#: template-parts/content-page.php:59
+msgid "Edit"
+msgstr "Editați"
+
+#: single-dsc-knowledgebase.php:91
+msgid "Table of Contents"
+msgstr ""
+
+#: template-parts/content-learndash-single.php:34
+#: template-parts/content-single.php:34
+#, fuzzy
+#| msgid "Pages:"
+msgid "Page: "
+msgstr "Pagini:"
+
+#: template-parts/content-learndash-single.php:45
+#: template-parts/content-single.php:49
+#, fuzzy
+#| msgid "About Me"
+msgid "About"
+msgstr "Despre mine"
+
+#: template-parts/content-none.php:14
+#, fuzzy
+msgid "Oops! Nothing Found"
+msgstr "Ne pare rău! Nu s-a găsit nimic"
+
+#: template-parts/content-none.php:20
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Sunteți gata să publicați prima dvs. postare? <a href=\"%1$s\"> Începeți "
+"aici </a>."
+
+#: template-parts/content-none.php:29
+#, fuzzy
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Se pare că nu găsim ceea ce vreți să accesați. Poate ar fi mai bine să "
+"efectuați o căutare."
+
+#: template-parts/content-page.php:21
+#, fuzzy
+#| msgid "Posted on %s"
+msgid "Published on "
+msgstr "Postat pe %s"
+
+#: template-parts/sidebar-content.php:32 template-parts/sidebar-content.php:47
+msgid "View Profile"
+msgstr "Vedeți profilul"
+
+#: template-parts/sidebar-content.php:38 template-parts/sidebar-content.php:51
+msgid "View My Post Archives"
+msgstr ""
+
+#: template-parts/sidebar-content.php:56
+#, fuzzy
+#| msgid "Sign Out"
+msgid "Sign Ou"
+msgstr "Ieșiți"
+
+#: template-parts/sidebar-content.php:91
+#, fuzzy
+msgid "New 'Secondary' Menu"
+msgstr "Meni \"Secundar\" nou"
+
+#: template-parts/sidebar-content.php:108
+#, fuzzy
+#| msgid "Profile Details"
+msgid "Profile Settings"
+msgstr "Detalii de profil"
+
+#: template-parts/sidebar-content.php:136
+#, fuzzy
+msgid "Login"
+msgstr "Autentificare"
+
+#: thrive/cmb2-fields/page.php:31
+msgid "Thrive: Page Title Style"
+msgstr ""
+
+#: thrive/cmb2-fields/page.php:41
+msgid "Select a color for the title of this page"
+msgstr ""
+
+#: thrive/cmb2-fields/page.php:49
+msgid "Text Alignment"
+msgstr ""
+
+#: thrive/cmb2-fields/page.php:58
+msgid "Choose the text alignment for the title and subtitle"
+msgstr ""
+
+#: thrive/cmb2-fields/page.php:64
+msgid ""
+"Add a secondary title below the main title of the page. Could be any text."
+msgstr ""
+
+#: thrive/cmb2-fields/page.php:72
+msgid "Select a color for the subtitle of this page"
+msgstr ""
+
+#: thrive/cmb2-fields/page.php:85
+msgid "Select a background color for this page"
+msgstr ""
+
+#: thrive/cmb2-fields/page.php:116
+#, fuzzy
+#| msgid "Background"
+msgid "Background Image Position"
+msgstr "Fundal"
+
+#: thrive/cmb2-fields/page.php:117
+msgid "Select the background position of the title for this page"
+msgstr ""
+
+#: thrive/cmb2-fields/page.php:122
+msgid "Left Top"
+msgstr ""
+
+#: thrive/cmb2-fields/page.php:123
+#, fuzzy
+msgid "Left Center"
+msgstr "Bara laterală din stânga"
+
+#: thrive/cmb2-fields/page.php:124
+msgid "Left Bottom"
+msgstr ""
+
+#: thrive/cmb2-fields/page.php:125
+msgid "Right Top"
+msgstr ""
+
+#: thrive/cmb2-fields/page.php:126
+#, fuzzy
+msgid "Right Center"
+msgstr "Bara laterală dreapta"
+
+#: thrive/cmb2-fields/page.php:127
+msgid "Right Bottom"
+msgstr ""
+
+#: thrive/cmb2-fields/page.php:128
+msgid "Center Top"
+msgstr ""
+
+#: thrive/cmb2-fields/page.php:129
+msgid "Center Center"
+msgstr ""
+
+#: thrive/cmb2-fields/page.php:130
+msgid "Center bottom"
+msgstr ""
+
+#: thrive/cmb2-fields/page.php:138
+#, fuzzy
+#| msgid "Background"
+msgid "Background Image Size"
+msgstr "Fundal"
+
+#: thrive/cmb2-fields/page.php:139
+#, fuzzy
+#| msgid "Background"
+msgid "Select the background size"
+msgstr "Fundal"
+
+#: thrive/cmb2-fields/page.php:153
+#, fuzzy
+#| msgid "Background"
+msgid "Background Image Repeat"
+msgstr "Fundal"
+
+#: thrive/cmb2-fields/page.php:154
+#, fuzzy
+#| msgid "Background"
+msgid "Select the background repeat"
+msgstr "Fundal"
+
+#: thrive/cmb2-fields/page.php:159
+#, fuzzy
+#| msgid "Background"
+msgid "Repeat All"
+msgstr "Fundal"
+
+#: thrive/cmb2-fields/page.php:162
+#, fuzzy
+#| msgid "Background"
+msgid "No Repeat"
+msgstr "Fundal"
+
+#: thrive/cmb2-fields/terms.php:12
+msgid "Thrive: Terms Title Style"
+msgstr ""
+
+#: thrive/cmb2-fields/terms.php:20
+#, fuzzy
+msgid "Thrive: Term Layout"
+msgstr "Thrive: Grup Reprezentativ"
+
+#: thrive/cmb2-fields/terms.php:27
+#, fuzzy
+msgid "Full Content / No Sidebars"
+msgstr "Conținut complet / Fără bară laterală"
+
+#: thrive/cmb2-fields/terms.php:29
+#, fuzzy
+#| msgid "Select the desired layout for your website."
+msgid "Select the layout for this term"
+msgstr "Selectaţi aspectul dorit pentru site-ul dvs."
+
+#: thrive/cmb2/includes/CMB2.php:179
+msgid "Metabox configuration is required to have an ID parameter."
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2.php:582
+msgid "Click to toggle"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_Ajax.php:75
+msgid "Please Try Again"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_Ajax.php:181
+#, fuzzy
+#| msgid "Remove Invite"
+msgid "Remove Embed"
+msgstr "Eliminați invitația"
+
+#: thrive/cmb2/includes/CMB2_Ajax.php:189
+#: thrive/cmb2/includes/helper-functions.php:105
+#, php-format
+msgid "No oEmbed Results Found for %1$s. View more info at %2$s."
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_Base.php:422
+#, php-format
+msgid ""
+"The \"%1$s\" field parameter has been deprecated in favor of the \"%2$s\" "
+"parameter."
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_Base.php:426
+#, php-format
+msgid ""
+"Using the \"%1$s\" field parameter as a callback has been deprecated in "
+"favor of the \"%2$s\" parameter."
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_Base.php:456
+#, php-format
+msgid ""
+"%1$s was called with a parameter that is <strong>deprecated</strong> since "
+"version %2$s! %3$s"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_Base.php:458
+#, php-format
+msgid ""
+"%1$s was called with a parameter that is <strong>deprecated</strong> since "
+"version %2$s with no alternative available."
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_Base.php:491
+#: thrive/cmb2/includes/CMB2_Hookup_Base.php:100
+#: thrive/cmb2/includes/CMB2_Options_Hookup.php:341
+#: thrive/cmb2/includes/types/CMB2_Type_Base.php:172
+#, php-format
+msgid "Invalid %1$s property: %2$s"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_Base.php:506
+#: thrive/cmb2/includes/types/CMB2_Type_Base.php:156
+#, php-format
+msgid "Invalid %1$s method: %2$s"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_Field.php:1296
+#, fuzzy
+#| msgid "BuddyPress"
+msgid "Add Group"
+msgstr "BuddyPress"
+
+#: thrive/cmb2/includes/CMB2_Field.php:1297
+#, fuzzy
+#| msgid "Remove from group"
+msgid "Remove Group"
+msgstr "Eliminați din grup"
+
+#: thrive/cmb2/includes/CMB2_Field.php:1328
+#: thrive/cmb2/includes/CMB2_Field.php:1332
+msgid "None"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_Field.php:1443
+msgid "Sorry, this field does not have a cmb_id specified."
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_Field_Display.php:432
+#: thrive/cmb2/includes/CMB2_JS.php:228
+#: thrive/cmb2/includes/types/CMB2_Type_File_Base.php:79
+#, fuzzy
+#| msgid "Files"
+msgid "File:"
+msgstr "Fișiere"
+
+#: thrive/cmb2/includes/CMB2_Hookup_Base.php:42
+#, php-format
+msgid "%1$s should be implemented by the extended class."
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_JS.php:165 thrive/cmb2/includes/CMB2_JS.php:208
+msgid "Clear"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_JS.php:167
+#, fuzzy
+#| msgid "Select Layout:"
+msgid "Select Color"
+msgstr "Selectați aspectul:"
+
+#: thrive/cmb2/includes/CMB2_JS.php:168
+#, fuzzy
+#| msgid "Button Color"
+msgid "Current Color"
+msgstr "Culoarea Butonului"
+
+#: thrive/cmb2/includes/CMB2_JS.php:198
+msgid "mm/dd/yy"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_JS.php:199
+msgid "Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_JS.php:200
+msgid "Su, Mo, Tu, We, Th, Fr, Sa"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_JS.php:201
+msgid "Sun, Mon, Tue, Wed, Thu, Fri, Sat"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_JS.php:202
+msgid ""
+"January, February, March, April, May, June, July, August, September, "
+"October, November, December"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_JS.php:203
+msgid "Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_JS.php:204
+msgid "Next"
+msgstr "Următorul"
+
+#: thrive/cmb2/includes/CMB2_JS.php:205
+msgid "Prev"
+msgstr "Anterior"
+
+#: thrive/cmb2/includes/CMB2_JS.php:206
+msgid "Today"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_JS.php:207 thrive/cmb2/includes/CMB2_JS.php:217
+msgid "Done"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_JS.php:211
+msgid "Choose Time"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_JS.php:212
+msgid "Time"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_JS.php:213
+msgid "Hour"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_JS.php:214
+msgid "Minute"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_JS.php:215
+#, fuzzy
+msgid "Second"
+msgstr "Meniu Secundar"
+
+#: thrive/cmb2/includes/CMB2_JS.php:216
+#, fuzzy
+#| msgid "No"
+msgid "Now"
+msgstr "Nu"
+
+#: thrive/cmb2/includes/CMB2_JS.php:218
+msgid "hh:mm TT"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_JS.php:224
+#, fuzzy
+#| msgid "%s's Profile"
+msgid "Use this file"
+msgstr "Profilul lui %s"
+
+#: thrive/cmb2/includes/CMB2_JS.php:225
+msgid "Use these files"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_JS.php:226
+#: thrive/cmb2/includes/types/CMB2_Type_File_Base.php:64
+#, fuzzy
+#| msgid "Remove Ban"
+msgid "Remove Image"
+msgstr "Eliminați interdicția"
+
+#: thrive/cmb2/includes/CMB2_JS.php:227 thrive/cmb2/includes/CMB2_Types.php:412
+#: thrive/cmb2/includes/types/CMB2_Type_File_Base.php:84
+#, fuzzy
+#| msgid "Remove Ban"
+msgid "Remove"
+msgstr "Eliminați interdicția"
+
+#: thrive/cmb2/includes/CMB2_JS.php:229
+#: thrive/cmb2/includes/types/CMB2_Type_File_Base.php:82
+msgid "Download"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_JS.php:230
+msgid "Select / Deselect All"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_Options_Hookup.php:131
+msgid "Nothing to update."
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_Options_Hookup.php:135
+#, fuzzy
+#| msgid "Settings"
+msgid "Settings updated."
+msgstr "Setări"
+
+#: thrive/cmb2/includes/CMB2_Types.php:231
+msgid "Custom CMB2 field type classes must extend CMB2_Type_Base."
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_Types.php:349
+msgid "Add Row"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_Types.php:412
+#, fuzzy
+#| msgid "Remove Ban"
+msgid "Remove Row"
+msgstr "Eliminați interdicția"
+
+#: thrive/cmb2/includes/CMB2_hookup.php:181
+msgid ""
+"Term Metadata is a WordPress 4.4+ feature. Please upgrade your WordPress "
+"install."
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_hookup.php:185
+msgid "Term metaboxes configuration requires a \"taxonomies\" parameter."
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_hookup.php:458
+#, php-format
+msgid "Toggle panel: %s"
+msgstr ""
+
+#: thrive/cmb2/includes/helper-functions.php:303
+#, fuzzy
+msgid "Save"
+msgstr "Salvați"
+
+#: thrive/cmb2/includes/rest-api/CMB2_REST_Controller.php:257
+#, fuzzy
+#| msgid "This topic does not exist."
+msgid "This box does not have read permissions."
+msgstr "Acest subiect nu există."
+
+#: thrive/cmb2/includes/rest-api/CMB2_REST_Controller.php:277
+msgid "This box does not have write permissions."
+msgstr ""
+
+#: thrive/cmb2/includes/rest-api/CMB2_REST_Controller.php:300
+msgid ""
+"No box found by that id. A box needs to be registered with the \"show_in_rest"
+"\" parameter configured."
+msgstr ""
+
+#: thrive/cmb2/includes/rest-api/CMB2_REST_Controller.php:378
+msgid "A human-readable description of the object."
+msgstr ""
+
+#: thrive/cmb2/includes/rest-api/CMB2_REST_Controller.php:385
+msgid "The id for the object."
+msgstr ""
+
+#: thrive/cmb2/includes/rest-api/CMB2_REST_Controller.php:392
+msgid "The title for the object."
+msgstr ""
+
+#: thrive/cmb2/includes/rest-api/CMB2_REST_Controller_Boxes.php:51
+msgid "Includes the registered fields for the box in the response."
+msgstr ""
+
+#: thrive/cmb2/includes/rest-api/CMB2_REST_Controller_Boxes.php:72
+msgid ""
+"Includes the fully rendered attributes, 'form_open', 'form_close', as well "
+"as the enqueued 'js_dependencies' script handles, and 'css_dependencies' "
+"stylesheet handles."
+msgstr ""
+
+#: thrive/cmb2/includes/rest-api/CMB2_REST_Controller_Boxes.php:122
+#, fuzzy
+#| msgid "No members were found."
+msgid "No boxes found."
+msgstr "Nu au fost găsiți membri."
+
+#: thrive/cmb2/includes/rest-api/CMB2_REST_Controller_Fields.php:27
+msgid ""
+"Includes the box object which the fields are registered to in the response."
+msgstr ""
+
+#: thrive/cmb2/includes/rest-api/CMB2_REST_Controller_Fields.php:30
+msgid ""
+"When the '_rendered' argument is passed, the renderable field attributes "
+"will be returned fully rendered. By default, the names of the callback "
+"handers for the renderable attributes will be returned."
+msgstr ""
+
+#: thrive/cmb2/includes/rest-api/CMB2_REST_Controller_Fields.php:33
+#: thrive/cmb2/includes/rest-api/CMB2_REST_Controller_Fields.php:36
+msgid ""
+"To view or modify the field's value, the 'object_id' and 'object_type' "
+"arguments are required."
+msgstr ""
+
+#: thrive/cmb2/includes/rest-api/CMB2_REST_Controller_Fields.php:236
+msgid ""
+"CMB2 Field value cannot be updated without the value parameter specified."
+msgstr ""
+
+#: thrive/cmb2/includes/rest-api/CMB2_REST_Controller_Fields.php:297
+msgid ""
+"CMB2 Field value cannot be modified without the object_id and object_type "
+"parameters specified."
+msgstr ""
+
+#: thrive/cmb2/includes/rest-api/CMB2_REST_Controller_Fields.php:312
+#: thrive/cmb2/includes/rest-api/CMB2_REST_Controller_Fields.php:341
+msgid "No field found by that id."
+msgstr ""
+
+#: thrive/cmb2/includes/rest-api/CMB2_REST_Controller_Fields.php:415
+#, php-format
+msgid "Value Error for %s"
+msgstr ""
+
+#: thrive/cmb2/includes/shim/WP_REST_Controller.php:25
+#, php-format
+msgid "Method '%s' must be overridden."
+msgstr ""
+
+#: thrive/cmb2/includes/shim/WP_REST_Controller.php:35
+#: thrive/cmb2/includes/shim/WP_REST_Controller.php:47
+#: thrive/cmb2/includes/shim/WP_REST_Controller.php:59
+#: thrive/cmb2/includes/shim/WP_REST_Controller.php:71
+#: thrive/cmb2/includes/shim/WP_REST_Controller.php:83
+#: thrive/cmb2/includes/shim/WP_REST_Controller.php:95
+#: thrive/cmb2/includes/shim/WP_REST_Controller.php:107
+#: thrive/cmb2/includes/shim/WP_REST_Controller.php:119
+#: thrive/cmb2/includes/shim/WP_REST_Controller.php:131
+#: thrive/cmb2/includes/shim/WP_REST_Controller.php:143
+#: thrive/cmb2/includes/shim/WP_REST_Controller.php:155
+#: thrive/cmb2/includes/shim/WP_REST_Controller.php:168
+#, php-format
+msgid "Method '%s' not implemented. Must be overridden in subclass."
+msgstr ""
+
+#: thrive/cmb2/includes/shim/WP_REST_Controller.php:273
+msgid "Current page of the collection."
+msgstr ""
+
+#: thrive/cmb2/includes/shim/WP_REST_Controller.php:281
+msgid "Maximum number of items to be returned in result set."
+msgstr ""
+
+#: thrive/cmb2/includes/shim/WP_REST_Controller.php:290
+msgid "Limit results to those matching a string."
+msgstr ""
+
+#: thrive/cmb2/includes/shim/WP_REST_Controller.php:308
+msgid ""
+"Scope under which the request is made; determines fields present in response."
+msgstr ""
+
+#: thrive/cmb2/includes/types/CMB2_Type_File.php:76
+msgid "Add or Upload File"
+msgstr ""
+
+#: thrive/cmb2/includes/types/CMB2_Type_File_List.php:41
+msgid "Add or Upload Files"
+msgstr ""
+
+#: thrive/cmb2/includes/types/CMB2_Type_Taxonomy_Base.php:115
+msgid "No terms"
+msgstr ""
+
+#: thrive/menu/customizer/branding.php:12
+#, fuzzy
+msgid "Branding"
+msgstr "Marca"
+
+#: thrive/menu/customizer/branding.php:14
+#, fuzzy
+msgid ""
+"This section handles the all default settings for your Branding. Change it "
+"to your preference."
+msgstr ""
+"Această secțiune tratează toate setările implicite pentru marcă. Schimbați-o "
+"în preferinţele dvs."
+
+#: thrive/menu/customizer/branding.php:32
+#, fuzzy
+msgid "Branding Height"
+msgstr "Înălţimea mărcii"
+
+#: thrive/menu/customizer/branding.php:33
+#, fuzzy
+msgid "Use the slider below to adjust the height of the the Header Section."
+msgstr "Utilizaţi glisorul de mai jos pentru a ajusta înălţimea antetului."
+
+#: thrive/menu/customizer/branding.php:53
+#, fuzzy
+msgid "Logo Background"
+msgstr "Fundalul siglei"
+
+#: thrive/menu/customizer/branding.php:69
+msgid "Menu Background"
+msgstr "Fundal de meniu"
+
+#: thrive/menu/customizer/branding.php:89
+#, fuzzy
+msgid "Upload a logo"
+msgstr "Încărcați o siglă"
+
+#: thrive/menu/customizer/branding.php:110
+#, fuzzy
+msgid "Mobile Logo"
+msgstr "Sigla de mobil"
+
+#: thrive/menu/customizer/menu.php:5
+#, fuzzy
+msgid "Menu"
+msgstr "Meniu"
+
+#: thrive/menu/customizer/menu.php:7
+msgid ""
+"This section handles the all default settings for your website menu. Choose "
+"the best colors that suites your company and personality."
+msgstr ""
+"Această secțiune se ocupă de toate setările implicite pentru meniul site-"
+"ului dvs. Alegeți cele mai bune culori care se potrivesc companiei și "
+"personalității dvs."
+
+#: thrive/menu/customizer/menu.php:22 thrive/menu/customizer/mobile-menu.php:39
+#: thrive/menu/customizer/sub-menu.php:22
+msgid "Default State"
+msgstr "Starea implicită"
+
+#: thrive/menu/customizer/menu.php:38
+#, fuzzy
+msgid "Active & Hover State"
+msgstr "Starea activă și cu mouse-ul deasupra"
+
+#: thrive/menu/customizer/menu.php:58
+msgid "Top Right Menu"
+msgstr "Meniul din dreapta sus"
+
+#: thrive/menu/customizer/menu.php:60
+msgid ""
+"Choose which kind of menu you would like to display in the top right bar."
+msgstr ""
+"Alegeți tipul de meniu pe care doriți să îl afișați în bara din dreapta sus."
+
+#: thrive/menu/customizer/menu.php:62
+#, fuzzy
+msgid ""
+"Automatically fetch BuddyPress generated profile menu for me. (BuddyPress "
+"plugin required)"
+msgstr ""
+"Obțineți automat meniul de profilul generat BuddyPress. (Este necesar plugin-"
+"ul BuddyPress)"
+
+#: thrive/menu/customizer/menu.php:63
+#, fuzzy
+msgid "I would like to use the theme \"Top Right Bar\" menu."
+msgstr "Doresc să folosesc meniul \"Sus dreapta\"."
+
+#: thrive/menu/customizer/mobile-menu.php:5
+msgid "Mobile Menu"
+msgstr "Meniul pentru Mobil"
+
+#: thrive/menu/customizer/mobile-menu.php:7
+msgid ""
+"This section handles the all default settings for your website mobile menu. "
+"Choose the best colors that suites your company and personality."
+msgstr ""
+"Această secțiune se ocupă de toate setările implicite pentru meniul mobil al "
+"site-ului dvs. Alegeți cele mai bune culori care se potrivesc companiei și "
+"personalității dvs."
+
+#: thrive/menu/customizer/mobile-menu.php:23
+msgid "Button Color"
+msgstr "Culoarea Butonului"
+
+#: thrive/menu/customizer/mobile-menu.php:54
+#: thrive/menu/customizer/sub-menu.php:37
+#, fuzzy
+msgid "Hover & Active State"
+msgstr "Starea cu mouse-ul deasupra și activă"
+
+#: thrive/menu/customizer/mobile-menu.php:69
+#, fuzzy
+msgid "Hover & Active Background"
+msgstr "Fundalul pentru mouse-ul deasupra și activ"
+
+#: thrive/menu/customizer/mobile-menu.php:84
+msgid "Mobile Background"
+msgstr "Fundalul pentru Mobil"
+
+#: thrive/menu/customizer/sub-menu.php:5
+msgid "Sub Menu"
+msgstr "Submeniu"
+
+#: thrive/menu/customizer/sub-menu.php:7
+msgid ""
+"This section handles the all default settings for your website submenu menu. "
+"Choose the best colors that suites your company and personality."
+msgstr ""
+"Această secțiune se ocupă de toate setările implicite pentru meniul "
+"submeniului site-ului dvs. web. Alegeți cele mai bune culori care se "
+"potrivesc companiei și personalității dvs."
+
+#: thrive/menu/customizer/sub-menu.php:54
+#, fuzzy
+msgid "Hover & Active State Background"
+msgstr "Fundalul pentru starea cu mouse-ul deasupra și activă"
+
+#: thrive/menu/menu.php:35
+msgid "Primary Menu"
+msgstr "Meniu Principal"
+
+#: thrive/menu/menu.php:36
+#, fuzzy
+msgid "Secondary Menu"
+msgstr "Meniu Secundar"
+
+#: thrive/menu/menu.php:37
+#, fuzzy
+msgid "Top Right Bar"
+msgstr "Bară dreapta sus"
+
+#: thrive/menu/menu.php:65
+#, fuzzy
+msgid "Branding & Menu"
+msgstr "Marcă & Meniu"
+
+#: thrive/sidebars/sidebars-meta.php:101
+#, fuzzy
+msgid "Appearance"
+msgstr "Aspect"
+
+#: thrive/sidebars/sidebars-meta.php:164
+#, fuzzy
+msgid "Left Sidebar"
+msgstr "Bara laterală din stânga"
+
+#: thrive/sidebars/sidebars-meta.php:180 thrive/sidebars/sidebars-meta.php:226
+msgid "No Sidebars Available"
+msgstr "Nu sunt disponibile bare laterale"
+
+#: thrive/sidebars/sidebars-meta.php:197
+#, fuzzy
+msgid "Right Sidebar"
+msgstr "Bara laterală dreapta"
+
+#: thrive/sidebars/sidebars-meta.php:231
+msgid "Page Layout"
+msgstr "Aranjament în pagină"
+
+#: thrive/sidebars/sidebars-meta.php:244
+#, fuzzy
+msgid "Full Content / No Sidebar"
+msgstr "Conținut complet / Fără bară laterală"
+
+#: thrive/sidebars/sidebars-screen.php:14 thrive/sidebars/sidebars.php:42
+#: thrive/sidebars/sidebars.php:43
+#, fuzzy
+msgid "Sidebars"
+msgstr "Bare laterale"
+
+#: thrive/sidebars/sidebars-screen.php:29
+#, fuzzy
+msgid "There was an error while adding your sidebar. Sidebar already exists."
+msgstr ""
+"A apărut o eroare la adăugarea barei laterale. Bara laterală există deja."
+
+#: thrive/sidebars/sidebars-screen.php:30
+#, fuzzy
+msgid "Invalid sidebar name. Only alphanumeric characters are allowed."
+msgstr ""
+"Denumire bară laterală invalidă. Sunt permise numai caractere alfanumerice."
+
+#: thrive/sidebars/sidebars-screen.php:31
+#, fuzzy
+msgid "There was an error while adding sidebar. Sidebar name is required."
+msgstr ""
+"A apărut o eroare la adăugarea barei laterale. Denumirea barei laterale este "
+"obligatorie."
+
+#: thrive/sidebars/sidebars-screen.php:45
+msgid "Sidebar has been added."
+msgstr "Bara laterală a fost adăugată."
+
+#: thrive/sidebars/sidebars-screen.php:56
+#: thrive/sidebars/sidebars-screen.php:86
+msgid "Name"
+msgstr "Nume"
+
+#: thrive/sidebars/sidebars-screen.php:57
+#: thrive/sidebars/sidebars-screen.php:87
+msgid "Description"
+msgstr "Descriere"
+
+#: thrive/sidebars/sidebars-screen.php:92
+msgid "No Custom Sidebars Yet."
+msgstr "Nu există încă bare laterale personalizate."
+
+#: thrive/sidebars/sidebars-screen.php:98
+#, fuzzy
+msgid "Add New Sidebar"
+msgstr "Adăugați bară laterală nouă"
+
+#: thrive/sidebars/sidebars-screen.php:100
+#, fuzzy
+msgid ""
+"Use this form to create a new sidebar for the theme (in case you need it!). "
+"After you have successfully added a sidebar, you will be able to assign "
+"inside a post or page."
+msgstr ""
+"Utilizați acest formular pentru a crea o nouă bară laterală pentru temă (în "
+"cazul în care aveți nevoie de ea!). După ce ați adăugat cu succes o bară "
+"laterală, o veți putea atribui în interiorul unui post sau al unei pagini."
+
+#: thrive/sidebars/sidebars-screen.php:127
+msgid "Name: *"
+msgstr "Denumire: *"
+
+#: thrive/sidebars/sidebars-screen.php:129
+#, fuzzy
+msgid "Sidebar name (must be unique)"
+msgstr "Denumirea barei laterale (trebuie să fie unică)"
+
+#: thrive/sidebars/sidebars-screen.php:132
+#, fuzzy
+msgid "Description: (optional)"
+msgstr "Descriere: (opțional)"
+
+#: thrive/sidebars/sidebars-screen.php:135
+#, fuzzy
+msgid ""
+"Text description of what/where the sidebar is. Shown on widget management "
+"screen."
+msgstr ""
+"Descrierea textului a ceea ce/unde este bara laterală. Afișat pe ecranul de "
+"gestionare a widgeturilor."
+
+#: thrive/sidebars/sidebars-screen.php:143
+msgid "Update Sidebar"
+msgstr "Actualizați bara laterală"
+
+#: thrive/sidebars/sidebars-screen.php:146
+msgid "Add Sidebar"
+msgstr "Adăugați bara laterală"
+
+#: thrive/theme-widgets/featured-group.php:13
+#, fuzzy
+msgid "Thrive: Featured Group"
+msgstr "Thrive: Grup Reprezentativ"
+
+#: thrive/theme-widgets/featured-group.php:14
+#, fuzzy
+msgid "Use this widget to feature a group."
+msgstr "Utilizați acest modul pentru a face un grup ca și reprezentativ."
+
+#: thrive/theme-widgets/featured-group.php:39
+msgid "Unable to fetch groups. Is BuddyPress installed or activated?"
+msgstr "Imposibil de preluat grupuri. Este BuddyPress instalat sau activat?"
+
+#: thrive/theme-widgets/featured-group.php:45
+#, fuzzy
+msgid ""
+"Unable to match a specific group with the given group name. Please check "
+"group name input."
+msgstr ""
+"Nu pot să găsesc un grup cu această denumire. Verificați introducerea "
+"denumirii grupului."
+
+#: thrive/theme-widgets/featured-group.php:79
+msgid "Visit Group Profile"
+msgstr "Vizitați Profilul grupului"
+
+#: thrive/theme-widgets/featured-group.php:94
+msgid "Activities"
+msgstr "Activități"
+
+#: thrive/theme-widgets/featured-group.php:118
+#, fuzzy
+msgid "Featured Group"
+msgstr "Grup reprezentativ"
+
+#: thrive/theme-widgets/featured-group.php:124
+#: thrive/theme-widgets/featured-member.php:117
+#: thrive/theme-widgets/members-birthday.php:215
+msgid "Title:"
+msgstr "Titlu:"
+
+#: thrive/theme-widgets/featured-group.php:131
+#: thrive/theme-widgets/featured-member.php:122
+msgid "You can use this field to enter the widget title."
+msgstr "Puteți utiliza acest câmp pentru a introduce titlul widget-ului."
+
+#: thrive/theme-widgets/featured-group.php:139
+#, fuzzy
+msgid "Groups Name:"
+msgstr "Denumirea Grupurilor:"
+
+#: thrive/theme-widgets/featured-group.php:145
+#, fuzzy
+msgid "Enter the name of the group that you want to be featured."
+msgstr ""
+"Introduceți denumirea grupului pe care doriți să îl marcați ca reprezentativ."
+
+#: thrive/theme-widgets/featured-member.php:14
+#, fuzzy
+msgid "Thrive: Featured Member"
+msgstr "Thrive: Membru Reprezentativ"
+
+#: thrive/theme-widgets/featured-member.php:15
+msgid "Use this widget to feature a member."
+msgstr "Utilizați acest widget pentru a marca un membru ca și reprezentativ."
+
+#: thrive/theme-widgets/featured-member.php:42
+msgid ""
+"I can't seem to find a user with that username. Please check your username "
+"input."
+msgstr ""
+"Nu pot să găsesc un utilizator cu acea denumire. Verificați introducerea "
+"denumirii utilizatorului."
+
+#: thrive/theme-widgets/featured-member.php:62
+msgid "Visit Member Profile"
+msgstr "Vizitează profilul de membru"
+
+#: thrive/theme-widgets/featured-member.php:83
+#: thrive/user-navigation/user-navigation.php:209
+msgid "Profile"
+msgstr "Profil"
+
+#: thrive/theme-widgets/featured-member.php:88
+msgid "Activity"
+msgstr "Activitate"
+
+#: thrive/theme-widgets/featured-member.php:93
+msgid "Friends"
+msgstr "Prieteni"
+
+#: thrive/theme-widgets/featured-member.php:112
+#, fuzzy
+msgid "Featured Member"
+msgstr "Membru reprezentativ"
+
+#: thrive/theme-widgets/featured-member.php:128
+msgid "Username:"
+msgstr "Nume de utilizator:"
+
+#: thrive/theme-widgets/featured-member.php:133
+#, fuzzy
+msgid "Enter the username of the member that you want to be featured."
+msgstr ""
+"Introduceți numele de utilizator al membrului pe care doriți să îl marcați "
+"ca și reprezentativ."
+
+#: thrive/theme-widgets/members-birthday.php:14
+#, fuzzy
+msgid "Thrive: Birthday Widget"
+msgstr "Thrive: Widget pentru ziua de naștere"
+
+#: thrive/theme-widgets/members-birthday.php:15
+#, fuzzy
+msgid ""
+"Celebrate your members' birthday with Thrive Birthday Widget. Requires "
+"BuddyPress."
+msgstr ""
+"Sărbătoriți ziua de naștere a membrilor cu Widget-ul Thrive pentru zile de "
+"naștere."
+
+#: thrive/theme-widgets/members-birthday.php:49
+msgid ""
+"Unable to display members birthdays: There is no 'Date of Birth' extended "
+"profile field. Go to your user profile settings and add a new field called "
+"'Date of Birth.'"
+msgstr ""
+
+#: thrive/theme-widgets/members-birthday.php:120
+msgid "Visit Profile"
+msgstr "Vizitați profilul"
+
+#: thrive/theme-widgets/members-birthday.php:134
+#, fuzzy
+msgid " Happy%20Birthday!"
+msgstr " LA MULȚI%20ANI!"
+
+#: thrive/theme-widgets/members-birthday.php:139
+#, fuzzy
+msgid "Happy Birthday!"
+msgstr "La Mulți Ani!"
+
+#: thrive/theme-widgets/members-birthday.php:140
+#, fuzzy
+msgid "Greet"
+msgstr "Salută"
+
+#: thrive/theme-widgets/members-birthday.php:158
+#, fuzzy
+msgid "There are no upcoming birthday celebrations"
+msgstr "Nu există celebrări de zile de naștere în zilele următoare"
+
+#: thrive/theme-widgets/members-birthday.php:210
+msgid "Birthdays"
+msgstr "Zile de naștere"
+
+#: thrive/theme-widgets/members-birthday.php:219
+msgid "Show Birthdays:"
+msgstr "Afișează zile de naștere:"
+
+#: thrive/theme-widgets/members-birthday.php:222
+#, fuzzy
+msgid "This Year"
+msgstr "Acest an"
+
+#: thrive/theme-widgets/members-birthday.php:223
+#, fuzzy
+msgid "This Month"
+msgstr "Această lună"
+
+#: thrive/theme-widgets/members-birthday.php:224
+#, fuzzy
+msgid "This Week"
+msgstr "Această săptămână"
+
+#: thrive/theme-widgets/members-birthday.php:236
+msgid "Hide if no birthdays:"
+msgstr "Ascundeți dacă nu sunt zile de naștere:"
+
+#: thrive/user-navigation/user-navigation.php:40
+#: thrive/user-navigation/user-navigation.php:87
+#: thrive/user-navigation/user-navigation.php:88
+#: thrive/user-navigation/user-navigation.php:102
+#, fuzzy
+msgid "See All Notifications"
+msgstr "Vedeți toate notificările"
+
+#: thrive/user-navigation/user-navigation.php:48
+#: thrive/user-navigation/user-navigation.php:68
+#: thrive/user-navigation/user-navigation.php:105
+#, fuzzy
+#| msgid "Notification"
+msgid "Notifications"
+msgstr "Notificare"
+
+#: thrive/user-navigation/user-navigation.php:122
+msgid "Show Unread Messages"
+msgstr "Afișați mesaje necitite"
+
+#: thrive/user-navigation/user-navigation.php:129
+#: thrive/user-navigation/user-navigation.php:167
+#, fuzzy
+#| msgid "Messages"
+msgid "My Messages"
+msgstr "Mesaje"
+
+#: thrive/user-navigation/user-navigation.php:138
+msgid "Messages"
+msgstr "Mesaje"
+
+#: thrive/user-navigation/user-navigation.php:152
+#: thrive/user-navigation/user-navigation.php:153
+#, fuzzy
+msgid "See All Messages"
+msgstr "Vedeți Toate Mesajele"
+
+#: thrive/user-navigation/user-navigation.php:164
+#, fuzzy
+#| msgid "Show Unread Messages"
+msgid "Show Messages"
+msgstr "Afișați mesaje necitite"
+
+#: thrive/user-navigation/user-navigation.php:219
+msgid "Docs"
+msgstr "Documente"
+
+#: thrive/widgets/widgets.php:27
+msgid "You can use this area to populate the 'Blocks' of your dashboard."
+msgstr ""
+
+#: thrive/widgets/widgets.php:35
+#, fuzzy
+#| msgid "Side Navigation"
+msgid "Left Side Navigation"
+msgstr "Navigare laterală"
+
+#: thrive/widgets/widgets.php:37
+msgid ""
+"Use this sidebar to display your favourite widgets in the left navigation "
+"below the user photo."
+msgstr ""
+
+#: thrive/widgets/widgets.php:45
+#, fuzzy
+msgid "Sidebar"
+msgstr "Bară laterală"
+
+#: thrive/widgets/widgets.php:47
+msgid "This sidebar appears in the single Pages, Posts, and other Post Types."
+msgstr ""
+
+#: thrive/widgets/widgets.php:57
+msgid "This sidebar appears in the index, author, and taxonomy pages."
+msgstr ""
+
+#: thrive/widgets/widgets.php:69
+msgid ""
+"Use this sidebar to display widgets in your knowledge-base pages powered by "
+"\"Reference\" plugin."
+msgstr ""
+
+#: thrive/widgets/widgets.php:82
+msgid ""
+"Use this sidebar to display your favourite widgets in the BuddyPress area "
+"such as members, groups, and activity streams."
+msgstr ""
+
+#: thrive/widgets/widgets.php:92
+msgid ""
+"Use this sidebar area to display widgets to your member's profile page. In "
+"absense of widgets, 'BuddyPress' sidebar will be used."
+msgstr ""
+
+#: thrive/widgets/widgets.php:102
+msgid ""
+"Use this sidebar area to display widgets in members page of your site. In "
+"absense of widgets, 'BuddyPress' sidebar will be used."
+msgstr ""
+
+#: thrive/widgets/widgets.php:112
+msgid ""
+"Use this sidebar area to display widgets in groups page of your site. In "
+"absense of widgets, 'BuddyPress' sidebar will be used."
+msgstr ""
+
+#: thrive/widgets/widgets.php:122
+msgid ""
+"Use this sidebar area to display widgets in the single group page. In "
+"absense of widgets, 'BuddyPress' sidebar will be used."
+msgstr ""
+
+#: thrive/widgets/widgets.php:133
+msgid "Footer"
+msgstr "Subsol"
+
+#: thrive/widgets/widgets.php:135
+msgid "Choose the widgets to appear before the site footer."
+msgstr ""
+
+#: thrive/widgets/widgets.php:145
+#, fuzzy
+msgid "LearnDash Sidebar"
+msgstr "Bara laterală din stânga"
+
+#: thrive/widgets/widgets.php:147
+msgid "Use this sidebar to display widgets in your LearnDash pages"
+msgstr ""
+
+#~ msgid "Copyright"
+#~ msgstr "Drepturi de autor"
+
+#~ msgid ""
+#~ "This section handles the all default settings for your footer. Choose the "
+#~ "best colors that suites your company and personality."
+#~ msgstr ""
+#~ "Această secțiune se ocupă de toate setările implicite pentru subsolul "
+#~ "site-ului dvs. Alegeți cele mai bune culori care se potrivesc companiei "
+#~ "și personalității dvs."
+
+#~ msgid "Background"
+#~ msgstr "Fundal"
+
+#, fuzzy
+#~ msgid "Links Hover State"
+#~ msgstr "Starea link-urilor cu mouse-ul deasupra"
+
+#, fuzzy
+#~ msgid "Copyright Text"
+#~ msgstr "Textul pentru drepturile de autor"
+
+#, fuzzy
+#~ msgid ""
+#~ "Enter the copyright text that can be found in your site's footer. You can "
+#~ "also add html tags."
+#~ msgstr ""
+#~ "Introduceţi textul drepturilor de autor care pot fi găsite în subsolul "
+#~ "site-ului. Puteţi adăuga, de asemenea, etichete HTML."
+
+#, fuzzy
+#~ msgid ""
+#~ "Configure the widgets that are shown in the footer section of your website"
+#~ msgstr ""
+#~ "Configuraţi widget-urile care sunt afişate în secţiunea subsol a site-"
+#~ "ului dvs."
+
+#~ msgid "Columns"
+#~ msgstr "Coloane"
+
+#~ msgid "Color"
+#~ msgstr "Culoare"
+
+#~ msgid "General Layout"
+#~ msgstr "Aspect general"
+
+#~ msgid "Select Layout:"
+#~ msgstr "Selectați aspectul:"
+
+#~ msgid "Direction:"
+#~ msgstr "Direcţia:"
+
+#~ msgid "Register Page"
+#~ msgstr "Înregistrează pagina"
+
+#~ msgid ""
+#~ "Use this section to customize your register page. After saving, log-out "
+#~ "and visit your register page to see the changes. Make sure to disable the "
+#~ "registration option inside the site settings."
+#~ msgstr ""
+#~ "Utilizați această secțiune pentru a personaliza pagina dvs. de "
+#~ "înregistrare. După salvare, deconectați-vă și accesați pagina de "
+#~ "înregistrare pentru a vedea modificările. Asigurați-vă că dezactivați "
+#~ "opțiunea de înregistrare din interiorul setărilor site-ului."
+
+#~ msgid "Disable Page Header"
+#~ msgstr "Dezactivați antetul paginii"
+
+#~ msgid "Disable Page Footer"
+#~ msgstr "Dezactivați subsolul paginii"
+
+#, fuzzy
+#~ msgid "Enable Site Logo"
+#~ msgstr "Activați sigla site-ului"
+
+#~ msgid ""
+#~ "Check to enable site logo in the register form. Useful if you want to "
+#~ "hide the site header."
+#~ msgstr ""
+#~ "Bifați pentru a activa sigla site-ului în formularul de înregistrare. "
+#~ "Util dacă doriți să ascundeți antetul site-ului."
+
+#~ msgid "Fonts"
+#~ msgstr "Fonturi"
+
+#~ msgid ""
+#~ "Select desired font combination for your website.\n"
+#~ "                        Hundreds of fonts are available to choose from."
+#~ msgstr ""
+#~ "Selectați combinația de font dorită pentru site-ul dvs. \n"
+#~ "                       Sunt disponibile sute de fonturi pentru a face o "
+#~ "alegere."
+
+#, fuzzy
+#~ msgid "Headings Font"
+#~ msgstr "Font pentru subtitluri"
+
+#, fuzzy
+#~ msgid "Select the desired font to be applied in the headings of the theme."
+#~ msgstr "Selectați fontul dorit pentru a fi aplicat în subtitlurile temei."
+
+#~ msgid "Body Font"
+#~ msgstr "Fontul de bază"
+
+#~ msgid ""
+#~ "Use this option to select a general font for the content of the theme."
+#~ msgstr ""
+#~ "Utilizați această opțiune pentru a selecta un font general pentru "
+#~ "conținutul temei."
+
+# font point cred ca se refera la font point size, caz in care se refera la marime
+#, fuzzy
+#~ msgid "Font Point"
+#~ msgstr "Mărimea fontului"
+
+#~ msgid ""
+#~ "Controls the overall size of the text. Minimum recommended input is "
+#~ "\"12\" and the maximum recommended input is \"22\". Set the value to "
+#~ "\"14\" in order to reset the size."
+#~ msgstr ""
+#~ "Controlează dimensiunea generală a textului. Intrarea minimă recomandată "
+#~ "este \"12\", iar intrarea maximă recomandată este \"22\". Setați valoarea "
+#~ "la \"14\" pentru a reseta dimensiunea."
+
+#~ msgid "Custom Theme CSS"
+#~ msgstr "CSS de temă personalizat"
+
+#, fuzzy
+#~| msgid "Menu Background"
+#~ msgid "Menu Icons"
+#~ msgstr "Fundal de meniu"
+
+#~ msgid "See Course"
+#~ msgstr "Vedeți cursul"
+
+# nu sunt sigur in ce context il foloseste, il lasam asa momentan
+#, fuzzy
+#~ msgid "By"
+#~ msgstr "Prin"
+
+#, fuzzy
+#~ msgid "Load More"
+#~ msgstr "Încarcaţi mai multe"
+
+#~ msgid "Sorry, there was no activity found. Please try a different filter."
+#~ msgstr "Activitatea nu a fost gasită. Încercați alt filtru."
+
+#~ msgid ""
+#~ "<a href=\"%1$s\">%2$s</a> replied <a href=\"%3$s\" class=\"activity-time-"
+#~ "since\"><span class=\"time-since\">%4$s</span></a>"
+#~ msgstr ""
+#~ "<a href=\"%1$s\">%2$s</a> a răspuns <a href=\"%3$s\" class=\"activity-"
+#~ "time-since\"><span class=\"time-since\">%4$s</span></a>"
+
+#, fuzzy
+#~ msgid "Reply"
+#~ msgstr "Răspundeți"
+
+#, fuzzy
+#~ msgid "Delete"
+#~ msgstr "Ştergeţi"
+
+#, fuzzy
+#~ msgid "View Conversation"
+#~ msgstr "Vizualizați Conversaţia"
+
+#~ msgid "Comment <span>%s</span>"
+#~ msgstr "Comentariu <span>%s</span>"
+
+#, fuzzy
+#~ msgid "Mark as Favorite"
+#~ msgstr "Marcaţi ca Favorit"
+
+#, fuzzy
+#~ msgid "Favorite"
+#~ msgstr "Favorit"
+
+#, fuzzy
+#~ msgid "Remove Favorite"
+#~ msgstr "Ștergeţi de la Favorite"
+
+#, fuzzy
+#~ msgid "The public activity for everyone on this site."
+#~ msgstr "Activitatea publică a tuturor membrilor site-ului."
+
+#, fuzzy
+#~ msgid "All Members <span>%s</span>"
+#~ msgstr "Toţi membrii <span>%s</span>"
+
+#~ msgid "The activity of my friends only."
+#~ msgstr "Doar activitatea prietenilor mei."
+
+#~ msgid "My Friends <span>%s</span>"
+#~ msgstr "Prietenii mei <span>%s</span>"
+
+#~ msgid "The activity of groups I am a member of."
+#~ msgstr "Activitatea grupurilor la care am aderat."
+
+#~ msgid "My Groups <span>%s</span>"
+#~ msgstr "Grupurile mele <span>%s</span>"
+
+#~ msgid "The activity I've marked as a favorite."
+#~ msgstr "Activitate marcată de mine ca preferată."
+
+#~ msgid "My Favorites <span>%s</span>"
+#~ msgstr "Favoritele  mele<span>%s</span>"
+
+#~ msgid "Activity that I have been mentioned in."
+#~ msgstr "Activitatea în care am fost menţionat."
+
+#~ msgid "%s new"
+#~ msgstr "Nou %s"
+
+#~ msgid "RSS Feed"
+#~ msgstr "Flux RSS"
+
+#~ msgid "RSS"
+#~ msgstr "RSS"
+
+#~ msgid "&mdash; Everything &mdash;"
+#~ msgstr "&mdash; Totul &mdash;"
+
+#~ msgid "What's new in %s, %s?"
+#~ msgstr "Ce este nou în %s, %s?"
+
+#~ msgid "Your browser does not support this feature."
+#~ msgstr "Browser-ul dvs. nu acceptă această funcție."
+
+#~ msgid "Capture"
+#~ msgstr "Captură"
+
+#~ msgid "Crop Image"
+#~ msgstr "Decupați imaginea"
+
+#~ msgid ""
+#~ "If you'd like to delete your current profile photo but not upload a new "
+#~ "one, please use the delete profile photo button."
+#~ msgstr ""
+#~ "Dacă doriți să ștergeți fotografia de profil curentă, dar să nu încărcați "
+#~ "una nouă, utilizați butonul Ștergeți fotografia profilului."
+
+#~ msgid "Delete Profile Photo"
+#~ msgstr "Ștergeți fotografia profilului"
+
+#~ msgid "Delete My Profile Photo"
+#~ msgstr "Ștergeți fotografia profilului meu"
+
+#~ msgid ""
+#~ "If you'd like to remove the existing group profile photo but not upload a "
+#~ "new one, please use the delete group profile photo button."
+#~ msgstr ""
+#~ "Dacă doriți să eliminați fotografia de profil existentă la un grup, dar "
+#~ "să nu încărcați una nouă, utilizați butonul de ștergere a profilului "
+#~ "grupului de ștergere."
+
+#~ msgid "Delete Group Profile Photo"
+#~ msgstr "Ștergeți fotografia profilului grupului"
+
+#~ msgid "The web browser on your device cannot be used to upload files."
+#~ msgstr ""
+#~ "Browser-ul web de pe dispozitivul dvs. nu poate fi utilizat pentru a "
+#~ "încărca fișiere."
+
+#~ msgid "Upload Limit Exceeded"
+#~ msgstr "Limita de încărcare a fost depășită"
+
+#~ msgid "Drop your file here"
+#~ msgstr "Puneți fișierul aici"
+
+#~ msgid "or"
+#~ msgstr "sau"
+
+#~ msgid "Select your File"
+#~ msgstr "Selectați fișierul"
+
+#~ msgid "Site registration is currently disabled"
+#~ msgstr "Înregistrarea în site este dezactivată în prezent - Reveniți"
+
+#~ msgid "All Sites <span>%s</span>"
+#~ msgstr "Toate site-urile <span>% s </ span>"
+
+#~ msgid "My Sites <span>%s</span>"
+#~ msgstr "Site-urile mele <span>% s </ span>"
+
+#, fuzzy
+#~ msgid "Order By:"
+#~ msgstr "Ordonaţi după:"
+
+#~ msgid "Last Active"
+#~ msgstr "Ultima dată activ"
+
+#~ msgid "Newest"
+#~ msgstr "Cele mai recente"
+
+#~ msgid "Alphabetical"
+#~ msgstr "Alfabetic"
+
+#~ msgid "Posts"
+#~ msgstr "Mesaje"
+
+#~ msgid "Freshness"
+#~ msgstr "Prospeţime"
+
+#~ msgid "Permanent link to this post"
+#~ msgstr "Link permanent către acest articol"
+
+#~ msgid "in %1$s"
+#~ msgstr "în %1$s"
+
+#~ msgid "Sorry, there were no forum topics found."
+#~ msgstr "Ne pare rău, nu au fost găsite subiecte în forum."
+
+#~ msgid "All Topics <span>%s</span>"
+#~ msgstr "Toate subiectele <span>% s </span>"
+
+#~ msgid "My Topics <span>%s</span>"
+#~ msgstr "Subiectele mele <span>% s </ span>"
+
+#~ msgid "Most Posts"
+#~ msgstr "Cele mai multe Articole"
+
+#~ msgid "Unreplied"
+#~ msgstr "Fără răspuns"
+
+#~ msgid "Create New Topic:"
+#~ msgstr "Creați un subiect nou:"
+
+#, fuzzy
+#~ msgid "Tags (comma separated):"
+#~ msgstr "Etichete (separate prin virgulă):"
+
+#~ msgid "Post In Group Forum:"
+#~ msgstr "Mesaj în forumul grupului:"
+
+#~ msgid "----"
+#~ msgstr "----"
+
+#, fuzzy
+#~ msgid "Post Topic"
+#~ msgstr "Afișați subiect"
+
+#, fuzzy
+#~ msgid ""
+#~ "You are not a member of any groups so you \n"
+#~ "\t\t\t\t\t\t\t\t don't have any group forums you can post in. To start "
+#~ "posting, \n"
+#~ "\t\t\t\t\t\t\t\t first find a group that matches the topic subject you'd "
+#~ "like to start. \n"
+#~ "\t\t\t\t\t\t\t\t If this group does not exist, why not <a "
+#~ "href='%s'>create a new group</a>? \n"
+#~ "\t\t\t\t\t\t\t\t Once you have joined or created the group you can post "
+#~ "your topic in that \n"
+#~ "\t\t\t\t\t\t\t\t group's forum."
+#~ msgstr ""
+#~ "Nu sunteți membru al niciunui grup, așa că\n"
+#~ "\t\t\t\t\t\t\t\t nu aveți grupuri în care să postați. Pentru a începe "
+#~ "postarea,\n"
+#~ "\t\t\t\t\t\t\t\t întâi găsiți un grup care să corespundă subiectului pe "
+#~ "care doriți să-l începeți.\n"
+#~ "\t\t\t\t\t\t\t\t Dacă acest grup nu există, de ce nu <a href='%s'> creați "
+#~ "un nou grup </a>?\n"
+#~ "\t\t\t\t\t\t\t\t După ce v-ați alăturat grupului sau l-ați creat, puteți "
+#~ "posta subiectul în acest acel\n"
+#~ "\t\t\t\t\t\t\t\t forum al grupului."
+
+#, fuzzy
+#~ msgid "Group Details"
+#~ msgstr "Detaliile grupului"
+
+#~ msgid "Group Name (required)"
+#~ msgstr "Numele grupului (obligatoriu)"
+
+#~ msgid "Group Description (required)"
+#~ msgstr "Descrierea grupului (obligatoriu)"
+
+#~ msgid "Group Settings"
+#~ msgstr "Setările grupului"
+
+#~ msgid "This is a public group"
+#~ msgstr "Acesta este un grup public"
+
+#~ msgid "Any site member can join this group."
+#~ msgstr "Orice membru al site-ului se poate alătura acestui grup."
+
+#~ msgid ""
+#~ "This group will be listed in the groups directory and in search results."
+#~ msgstr ""
+#~ "Acest grup va fi afișat în directorul de grupuri și în rezultatele "
+#~ "căutării."
+
+#~ msgid "Group content and activity will be visible to any site member."
+#~ msgstr ""
+#~ "Conținutul și activitatea grupului vor fi vizibile pentru orice membru al "
+#~ "site-ului."
+
+#~ msgid "This is a private group"
+#~ msgstr "Acesta este un grup privat"
+
+#~ msgid ""
+#~ "Only users who request membership and are accepted can join the group."
+#~ msgstr ""
+#~ "Se pot alătura grupului numai utilizatorii care solicită calitatea de "
+#~ "membru și sunt acceptați."
+
+#~ msgid ""
+#~ "Group content and activity will only be visible to members of the group."
+#~ msgstr ""
+#~ "Conținutul și activitatea grupului vor fi vizibile numai pentru membrii "
+#~ "grupului."
+
+#~ msgid "This is a hidden group"
+#~ msgstr "Acesta este un grup ascuns"
+
+#~ msgid "Only users who are invited can join the group."
+#~ msgstr "Se pot alătura grupului numai utilizatorii care sunt invitați."
+
+#~ msgid ""
+#~ "This group will not be listed in the groups directory or search results."
+#~ msgstr ""
+#~ "Acest grup nu va fi afișat în directorul de grupuri sau în rezultatele "
+#~ "căutării."
+
+#~ msgid "Select the types this group should be a part of."
+#~ msgstr "Selectați tipurile din care ar trebui să facă parte acest grup."
+
+#~ msgid "&ndash; %s"
+#~ msgstr "&ndash; % s"
+
+#~ msgid "Group Invitations"
+#~ msgstr "Invitații de grup"
+
+#~ msgid "Which members of this group are allowed to invite others?"
+#~ msgstr "Ce membri ai acestui grup au voie să invite pe alții?"
+
+#~ msgid "All group members"
+#~ msgstr "Toți membrii grupului"
+
+#, fuzzy
+#~ msgid "Group admins and mods only"
+#~ msgstr "Numai administratori de grup și moderatori"
+
+#~ msgid "Group admins only"
+#~ msgstr "Numai administratorii grupului"
+
+#~ msgid "Group Forums"
+#~ msgstr "Grupuri de discuții"
+
+#~ msgid "Should this group have a forum?"
+#~ msgstr "Ar trebui ca acest grup să aibă un forum?"
+
+#~ msgid "Enable discussion forum"
+#~ msgstr "Activați forumul de discuții"
+
+#, fuzzy
+#~ msgid ""
+#~ "<strong>Attention Site Admin:</strong> Group forums require the <a href="
+#~ "\"%s\">correct setup and configuration</a> of a bbPress installation."
+#~ msgstr ""
+#~ "<strong> Atenție Administrator de site: </strong> Forumurile de grup "
+#~ "necesită <a href=\"%s\"> configurarea corectă</a> unei instalări bbPress."
+
+#~ msgid "Group Avatar"
+#~ msgstr "Avatar de grup"
+
+#~ msgid ""
+#~ "Upload an image to use as a profile photo for this group. The image will "
+#~ "be shown on the main group page, and in search results."
+#~ msgstr ""
+#~ "Încărcați o imagine pentru a fi utilizată ca fotografie de profil pentru "
+#~ "acest grup. Imaginea va fi afișată în pagina grupului principal și în "
+#~ "rezultatele căutării."
+
+#~ msgid "Select an image"
+#~ msgstr "Selectați o imagine"
+
+#~ msgid "Upload Image"
+#~ msgstr "Încarcați imaginea"
+
+#~ msgid ""
+#~ "To skip the group profile photo upload process, hit the \"Next Step\" "
+#~ "button."
+#~ msgstr ""
+#~ "Pentru a sări peste procesul de încărcare a profilului de grup, apăsați "
+#~ "butonul \"Pasul următor\"."
+
+#~ msgid "Crop Group Profile Photo"
+#~ msgstr "Decupați fotografia profilului grupului"
+
+#~ msgid "Profile photo preview"
+#~ msgstr "Previzualizare fotografie de profil"
+
+#, fuzzy
+#~ msgid "Group Invites"
+#~ msgstr "Invitații ale grupului"
+
+#~ msgid "Select people to invite from your friends list."
+#~ msgstr "Selectați persoanele de invitat din lista de prieteni."
+
+#~ msgid ""
+#~ "Once you have built up friend connections you will be able to invite "
+#~ "others to your group."
+#~ msgstr ""
+#~ "Odată ce ați realizat conexiuni de prietenie, veți putea invita în grupul "
+#~ "dvs. și alte persoane."
+
+#~ msgid "Back to Previous Step"
+#~ msgstr "Înapoi la pasul anterior"
+
+#~ msgid "Next Step"
+#~ msgstr "Pasul următor"
+
+#~ msgid "Create Group and Continue"
+#~ msgstr "Creați grup și Continuați"
+
+#, fuzzy
+#~ msgid "Finish"
+#~ msgstr "Finalizați"
+
+#~ msgid "Active %s"
+#~ msgstr "Activ %s"
+
+#~ msgid "There were no groups found."
+#~ msgstr "Nu au fost găsite grupuri."
+
+#~ msgid "All Groups <span>%s</span>"
+#~ msgstr "Toate grupurile <span>%s</span>"
+
+#~ msgid "Most Members"
+#~ msgstr "Cei mai mulți membri"
+
+#~ msgid "Newly Created"
+#~ msgstr "Nou creat"
+
+#~ msgid "Group secondary navigation"
+#~ msgstr "Navigare secundară de grup"
+
+#~ msgid "Delete Group"
+#~ msgstr "Ștergeți grupul"
+
+#~ msgid ""
+#~ "WARNING: Deleting this group will completely remove ALL content "
+#~ "associated with it. There is no way back, please be careful with this "
+#~ "option."
+#~ msgstr ""
+#~ "AVERTISMENT: Ștergerea acestui grup va elimina complet conținutul asociat "
+#~ "cu acesta. Nu există nici o cale de întoarcere, vă rugăm să fiți atenți "
+#~ "cu această opțiune."
+
+#~ msgid "I understand the consequences of deleting this group."
+#~ msgstr "Înțeleg consecințele ștergerii acestui grup."
+
+#~ msgid "Manage Group Details"
+#~ msgstr "Gestionați detaliile grupului"
+
+#~ msgid "Notify group members of these changes via email"
+#~ msgstr "Notificați membrii grupului despre aceste modificări prin e-mail"
+
+#, fuzzy
+#~ msgid "Save Changes"
+#~ msgstr "Salvați modificările"
+
+#~ msgid "Crop Profile Photo"
+#~ msgstr "Decupați fotografia profilului"
+
+#~ msgid "The Cover Image will be used to customize the header of your group."
+#~ msgstr ""
+#~ "Imaginea de copertă va fi utilizată pentru personalizarea antetului "
+#~ "grupului dvs."
+
+#~ msgid "Manage Group Settings"
+#~ msgstr "Gestionați setările grupului"
+
+#~ msgid "Profile picture of %s"
+#~ msgstr "Imaginea de profil a %s"
+
+#~ msgid "No group administrators were found."
+#~ msgstr "Nu au fost găsiți administratori de grup."
+
+#~ msgid "No group moderators were found."
+#~ msgstr "Nu au fost gasiți administratori de grup."
+
+#, fuzzy
+#~ msgid "Unban this member"
+#~ msgstr "Permiteți acestui membru"
+
+#, fuzzy
+#~ msgid "Kick &amp; Ban"
+#~ msgstr "Deconectați &amp; Interziceți"
+
+#~ msgid "Promote to Mod"
+#~ msgstr "Promovați la Moderator"
+
+#~ msgid "No group members were found."
+#~ msgstr "Nu au fost găsiți membri ai grupului."
+
+#~ msgid "Manage Membership Requests"
+#~ msgstr "Gestionați solicitările de membru"
+
+#~ msgid "New Topic"
+#~ msgstr "Subiect nou"
+
+#, fuzzy
+#~ msgid "Forum Directory"
+#~ msgstr "Director al forumului"
+
+#~ msgid "You will auto join this group when you start a new topic."
+#~ msgstr ""
+#~ "Vă veți înscrie automat la acest grup atunci când începeți un subiect nou."
+
+#, fuzzy
+#~ msgid "Post a New Topic:"
+#~ msgstr "Postați un nou subiect:"
+
+#~ msgid "Edit:"
+#~ msgstr "Editați:"
+
+#~ msgid "New Reply"
+#~ msgstr "Răspuns nou"
+
+#, fuzzy
+#~ msgid "Topic tags:"
+#~ msgstr "Tag-uri de subiecte:"
+
+#~ msgid "%1$s said %2$s:"
+#~ msgstr "%1$s a spus %2$s:"
+
+#~ msgid "There are no posts for this topic."
+#~ msgstr "Nu există postări pentru acest subiect."
+
+#~ msgid "You will auto join this group when you reply to this topic."
+#~ msgstr ""
+#~ "Vă veți înscrie automat la acest grup când răspundeți la acest subiect."
+
+#~ msgid "Add a reply:"
+#~ msgstr "Adăugați un răspuns:"
+
+#, fuzzy
+#~ msgid "Post Reply"
+#~ msgstr "Raspundeți"
+
+#~ msgid "This topic is closed, replies are no longer accepted."
+#~ msgstr "Acest subiect este închis, răspunsurile nu mai sunt acceptate."
+
+#, fuzzy
+#~ msgid "Select friends to invite."
+#~ msgstr "Selectați prietenii pentru a-i invita."
+
+#~ msgid "You are requesting to become a member of the group '%s'."
+#~ msgstr "Solicitați să deveniți membru al grupului '%s'."
+
+#~ msgid "Comments (optional)"
+#~ msgstr "Comentarii (opțional)"
+
+#~ msgid "Send Request"
+#~ msgstr "Trimiteți cerere"
+
+#, fuzzy
+#~ msgid "Accept"
+#~ msgstr "Acceptați"
+
+#, fuzzy
+#~ msgid "Reject"
+#~ msgstr "Respingeți"
+
+#~ msgid "There are no pending membership requests."
+#~ msgstr "Nu există cereri de membri în așteptare."
+
+#~ msgid "Send Invites"
+#~ msgstr "Trimiteți invitații"
+
+#~ msgid "Group invitations can only be extended to friends."
+#~ msgstr "Invitațiile de grup pot fi extinse numai la prieteni."
+
+#, fuzzy
+#~ msgid ""
+#~ "Once you've made some friendships, you'll be able to invite those members "
+#~ "to this group."
+#~ msgstr ""
+#~ "Odată ce ați făcut unele prietenii, veți putea să îi invitați pe acești "
+#~ "membri în acest grup."
+
+#~ msgid "All of your friends already belong to this group."
+#~ msgstr "Toți prietenii dvs. aparțin deja acestui grup."
+
+#~ msgid ""
+#~ "Your account was activated successfully! Your account details have been "
+#~ "sent to you in a separate email."
+#~ msgstr ""
+#~ "Contul dvs. a fost activat cu succes! Detaliile contului dvs. v-au fost "
+#~ "trimise într-un e-mail separat."
+
+#, fuzzy
+#~ msgid ""
+#~ "Your account was activated successfully! You can now <a href=\"%s\">log "
+#~ "in</a> with the username and password you provided when you signed up."
+#~ msgstr ""
+#~ "Contul dvs. a fost activat cu succes! Acum vă puteți <a href=\"%s\"> "
+#~ "conecta </a> cu numele de utilizator și parola pe care le-ați furnizat "
+#~ "când v-ați înscris."
+
+#, fuzzy
+#~ msgid "Please provide a valid activation key."
+#~ msgstr "Vă rugăm să furnizați o cheie de activare validă."
+
+#~ msgid "Activation Key:"
+#~ msgstr "Cheie de activare:"
+
+#~ msgid "Newest Registered"
+#~ msgstr "Cel mai nou membru înregistrat"
+
+#~ msgid "Sorry, no members were found."
+#~ msgstr "Ne pare rău, nu au fost găsiți membri."
+
+#~ msgid "User registration is currently not allowed."
+#~ msgstr "Înregistrarea utilizatorilor nu este momentan permisă."
+
+#, fuzzy
+#~ msgid ""
+#~ "Registering for this site is easy. Just fill in the fields below, and "
+#~ "we'll get a new account set up for you in no time."
+#~ msgstr ""
+#~ "Înregistrarea în acest site este ușoară. Completați câmpurile de mai jos "
+#~ "și veți obține un cont nou pentru dvs. în cel mai scurt timp."
+
+#~ msgid "Username"
+#~ msgstr "Nume de utilizator"
+
+#~ msgid "(required)"
+#~ msgstr "(necesar)"
+
+#~ msgid "Email Address"
+#~ msgstr "Adresa de email"
+
+#, fuzzy
+#~ msgid "Choose a Password"
+#~ msgstr "Alegeți o parolă"
+
+#~ msgid "Confirm Password"
+#~ msgstr "Confirmați parola"
+
+#, fuzzy
+#~ msgid ""
+#~ "This field can be seen by: <span class=\"current-visibility-level\">%s</"
+#~ "span>"
+#~ msgstr ""
+#~ "Acest câmp poate fi văzut de: <span class=\"current-visibility-level\">"
+#~ "%s</span>"
+
+#, fuzzy
+#~ msgid "Change"
+#~ msgstr "Schimbare"
+
+#~ msgid "Who can see this field?"
+#~ msgstr "Cine poate vedea acest câmp?"
+
+#, fuzzy
+#~ msgid "Close"
+#~ msgstr "Închideți"
+
+#~ msgid "Blog URL"
+#~ msgstr "Adresa URL a blogului"
+
+#~ msgid ""
+#~ "I would like my site to appear in search engines, and in public listings "
+#~ "around this network."
+#~ msgstr ""
+#~ "Aș dori ca site-ul meu să apară în motoarele de căutare și în listele "
+#~ "publice din jurul acestei rețele."
+
+#~ msgid "Yes"
+#~ msgstr "Da"
+
+#~ msgid ""
+#~ "You have successfully created your account! To begin using this site you "
+#~ "will need to activate your account via the email we have just sent to "
+#~ "your address."
+#~ msgstr ""
+#~ "Ați creat contul dvs. cu succes! Pentru a începe să utilizați acest site, "
+#~ "va trebui să vă activați contul prin e-mailul pe care tocmai l-am trimis "
+#~ "la adresa dvs."
+
+#~ msgid ""
+#~ "You have successfully created your account! Please log in using the "
+#~ "username and password you have just created."
+#~ msgstr ""
+#~ "Ați creat contul dvs. cu succes! Conectați-vă folosind numele de "
+#~ "utilizator și parola pe care tocmai ați creat-o."
+
+#~ msgid "You have no pending friendship requests."
+#~ msgstr "Nu aveți cereri de prietenie în așteptare."
+
+#~ msgid "%d member"
+#~ msgstr "%d membru"
+
+#, fuzzy
+#~ msgid "You have no outstanding group invites."
+#~ msgstr "Nu aveți invitații de grup nerezolvate."
+
+#~ msgid "Send To (Username or Friend's Name)"
+#~ msgstr "Trimiteți la (numele de utilizator sau numele prietenului)"
+
+#~ msgid "This is a notice to all users."
+#~ msgstr "Aceasta este o notificare către toți utilizatorii."
+
+#~ msgid "Subject"
+#~ msgstr "Subiect"
+
+#, fuzzy
+#~ msgid "Send Message"
+#~ msgstr "Trimiteți mesaj"
+
+#, fuzzy
+#~ msgid "From"
+#~ msgstr "De la"
+
+#~ msgid "Star"
+#~ msgstr "Stea"
+
+#~ msgid "Actions"
+#~ msgstr "Acţiuni"
+
+#~ msgid "To:"
+#~ msgstr "La:"
+
+#~ msgid "View Message"
+#~ msgstr "Afișați mesajul"
+
+#, fuzzy
+#~ msgid "Read"
+#~ msgstr "Marcați ca citit"
+
+#, fuzzy
+#~ msgid "Unread"
+#~ msgstr "Marcați ca necitit"
+
+#~ msgid "Sorry, no messages were found."
+#~ msgstr "Ne pare rău, nu au fost găsite mesaje."
+
+#~ msgid "Sent:"
+#~ msgstr "Trimis:"
+
+#, fuzzy
+#~ msgid "Delete Message"
+#~ msgstr "Ștergeți mesajul"
+
+#, fuzzy
+#~ msgid "Sorry, no notices were found."
+#~ msgstr "Ne pare rău, nu au fost găsite notificări."
+
+#, fuzzy
+#~ msgid "You are alone in this conversation."
+#~ msgstr "Sunteți singur în această conversație."
+
+#~ msgid "Conversation between %s recipients."
+#~ msgstr "Conversație între destinatarii %s."
+
+#~ msgid "Conversation between %s and you."
+#~ msgstr "Conversația între %s și dvs."
+
+#, fuzzy
+#~ msgid "Delete Conversation"
+#~ msgstr "Ștergeți conversația"
+
+#~ msgid "Send a Reply"
+#~ msgstr "Trimiteți un răspuns"
+
+#, fuzzy
+#~ msgid "Send Reply"
+#~ msgstr "Trimiteți răspuns"
+
+#~ msgid "You have no unread notifications."
+#~ msgstr "Nu aveți nicio notificare necitită."
+
+#~ msgid "This member has no unread notifications."
+#~ msgstr "Acest membru nu are notificări necitite."
+
+#~ msgid "You have no notifications."
+#~ msgstr "Nu aveți nicio notificare."
+
+#~ msgid "This member has no notifications."
+#~ msgstr "Acest membru nu are notificări."
+
+#~ msgid "Date Received"
+#~ msgstr "Data primită"
+
+#~ msgid "Change Profile Photo"
+#~ msgstr "Schimbați fotografia profilului"
+
+#~ msgid ""
+#~ "Your profile photo will be used on your profile and throughout the site. "
+#~ "If there is a <a href=\"http://gravatar.com\">Gravatar</a> associated "
+#~ "with your account email we will use that, or you can upload an image from "
+#~ "your computer."
+#~ msgstr ""
+#~ "Fotografia dvs. de profil va fi utilizată în profilul dvs. și în întreg "
+#~ "site-ul. Dacă există un <a href=\"http://gravatar.com\"> Gravatar </a> "
+#~ "asociat cu e-mailul contului dvs., îl vom folosi sau puteți încărca o "
+#~ "imagine de pe computer."
+
+#~ msgid ""
+#~ "Click below to select a JPG, GIF or PNG format photo from your computer "
+#~ "and then click 'Upload Image' to proceed."
+#~ msgstr ""
+#~ "Faceți clic mai jos pentru a selecta o fotografie în format JPG, GIF sau "
+#~ "PNG de pe computer și apoi faceți clic pe 'Încărcați imaginea' pentru a "
+#~ "continua."
+
+#, fuzzy
+#~ msgid "Crop Your New Profile Photo"
+#~ msgstr "Decupați noua fotografie de profil"
+
+#, fuzzy
+#~ msgid "Profile Photo to crop"
+#~ msgstr "Fotografia de profil pentru decupare"
+
+#~ msgid "Profile Photo preview"
+#~ msgstr "Vizualizare profil Foto"
+
+#~ msgid ""
+#~ "Your profile photo will be used on your profile and throughout the site. "
+#~ "To change your profile photo, please create an account with <a href="
+#~ "\"http://gravatar.com\">Gravatar</a> using the same email address as you "
+#~ "used to register with this site."
+#~ msgstr ""
+#~ "Fotografia dvs. de profil va fi utilizată în profilul dvs. și pe întreg "
+#~ "site-ul. Pentru a schimba fotografia de profil, vă rugăm să creați un "
+#~ "cont cu <a href=\"http://gravatar.com\"> Gravatar </a> utilizând aceeași "
+#~ "adresă de e-mail pe care ați folosit-o pentru a vă înregistra pe acest "
+#~ "site."
+
+#, fuzzy
+#~ msgid "Change Cover Image"
+#~ msgstr "Schimbați imaginea de copertă"
+
+#, fuzzy
+#~ msgid ""
+#~ "Your Cover Image will be used to customize the header of your profile."
+#~ msgstr ""
+#~ "Imaginea dvs. de copertă va fi utilizată pentru personalizarea antetului "
+#~ "profilului dvs."
+
+#~ msgid "Editing '%s' Profile Group"
+#~ msgstr "Editarea '%s' grupului de profil"
+
+#~ msgid "Website"
+#~ msgstr "Site Web"
+
+#, fuzzy
+#~ msgid "Jabber"
+#~ msgstr "Jabber"
+
+#, fuzzy
+#~ msgid "AOL Messenger"
+#~ msgstr "AOL Messenger"
+
+#, fuzzy
+#~ msgid "Yahoo Messenger"
+#~ msgstr "Yahoo Messenger"
+
+#, fuzzy
+#~ msgid "This user is a spammer."
+#~ msgstr "Acest utilizator este spam."
+
+#~ msgid ""
+#~ "Deleting your account will delete all of the content you have created. It "
+#~ "will be completely irrecoverable."
+#~ msgstr ""
+#~ "Ștergând contului dvs. se va șterge tot conținutul pe care l-ați creat. "
+#~ "Conținutul va fi complet irecuperabil."
+
+#~ msgid ""
+#~ "Deleting this account will delete all of the content it has created. It "
+#~ "will be completely irrecoverable."
+#~ msgstr ""
+#~ "Ștergerea acestui cont va șterge tot conținutul creat. Va fi complet "
+#~ "irecuperabil."
+
+#~ msgid "I understand the consequences."
+#~ msgstr "Înțeleg consecințele."
+
+#~ msgid "Delete Account"
+#~ msgstr "Ștergeți cont"
+
+#~ msgid ""
+#~ "Current Password <span>(required to update email or change current "
+#~ "password)</span>"
+#~ msgstr ""
+#~ "Parola actuală <span>(necesară pentru actualizarea e-mailului sau "
+#~ "modificarea parolei curente)</span>"
+
+#~ msgid "Password Lost and Found"
+#~ msgstr "Parola pierdută și găsită"
+
+#~ msgid "Account Email"
+#~ msgstr "Cont de email"
+
+#~ msgid "Change Password <span>(leave blank for no change)</span>"
+#~ msgstr ""
+#~ "Schimbați parola <span>(lăsați necompletat unde nu doriți nici o "
+#~ "schimbare)</span>"
+
+#~ msgid "New Password"
+#~ msgstr "Parolă nouă"
+
+#~ msgid "Repeat New Password"
+#~ msgstr "Repetați noua parolă"
+
+#~ msgid "Send an email notice when:"
+#~ msgstr "Trimiteți o notificare prin e-mail atunci când:"
+
+#~ msgid "Visibility"
+#~ msgstr "Vizibilitate"
+
+#~ msgid "Save Settings"
+#~ msgstr "Salvați setările"
+
+#, fuzzy
+#~ msgid "One thought on &ldquo;%2$s&rdquo;"
+#~ msgstr "O idee despre &ldquo;%2$s&rdquo;"
+
+#~ msgid "Toggle Sidebar"
+#~ msgstr "Comutați bara laterală"
+
+#~ msgid "Skip to content"
+#~ msgstr "Sariți la conținut"
+
+#~ msgid "Show Menu"
+#~ msgstr "Afișați meniul"
+
+#~ msgid ""
+#~ "%s is not currently installed or activated. Thrive recommends that you "
+#~ "install and activate %s plugin. Thank you :)"
+#~ msgstr ""
+#~ "%s nu este instalat sau activat în prezent. Thrive vă recomandă să "
+#~ "instalați și să activați plugin-ul %s. Mulțumesc :)"
+
+#~ msgid "Site Logo"
+#~ msgstr "Logo site"
+
+#, fuzzy
+#~ msgid "Site Mobile Logo"
+#~ msgstr "Logo site mobil"
+
+#, fuzzy
+#~ msgid "Create or Assign a 'Primary' Menu"
+#~ msgstr "Creați sau atribuiți un meniu 'Principal'"
+
+#, fuzzy
+#~ msgid ""
+#~ "After you import this demo, you will have to create your own members and "
+#~ "groups because their data should be unique."
+#~ msgstr ""
+#~ "După ce importați această demonstrație, va trebui să vă creați propriii "
+#~ "membri și propriile grupuri, deoarece datele lor trebuie să fie unice."
+
+#~ msgid ""
+#~ "For this import, please make sure that you have installed and activated "
+#~ "all the recommended plugins. Also, you will have to setup the slider "
+#~ "separately."
+#~ msgstr ""
+#~ "Pentru acest import, asigurați-vă că ați instalat și ați activat toate "
+#~ "plugin-urile recomandate. De asemenea, va trebui să configurați glisorul "
+#~ "separat."
+
+#~ msgid "Album List"
+#~ msgstr "Lista de albume"
+
+#, fuzzy
+#~ msgid "Sorry !! There's no media found for the request !!"
+#~ msgstr "Ne pare rău!! Nu s-a găsit niciun fișier media pentru solicitare!!"
+
+#~ msgid "Edit Album : "
+#~ msgstr "Editați albumul : "
+
+#~ msgid "Details"
+#~ msgstr "Detalii"
+
+#~ msgid "Manage Media"
+#~ msgstr "Gestionați Media"
+
+#~ msgid "Description: "
+#~ msgstr "Descriere : "
+
+#~ msgid "Back"
+#~ msgstr "Înapoi"
+
+#, fuzzy
+#~ msgid "Select All Visible"
+#~ msgstr "Selectați Toate Vizibile"
+
+#, fuzzy
+#~ msgid "Move Selected media to another album."
+#~ msgstr "Mutați fișierele media selectate într-un alt album."
+
+#~ msgid "Move"
+#~ msgstr "Mutați"
+
+#, fuzzy
+#~ msgid "Delete Selected media from the album."
+#~ msgstr "Ștergeți fișierele media selectate din album."
+
+#, fuzzy
+#~ msgid "Move selected media to the album : "
+#~ msgstr "Mutați fișierul media selectat în album : "
+
+#~ msgid "The album is empty."
+#~ msgstr "Albumul este gol."
+
+#~ msgid "Sorry !! You can not edit this album."
+#~ msgstr "Ne pare rău!! Nu puteți edita acest album."
+
+#~ msgid "Media Gallery"
+#~ msgstr "Galerie media"
+
+#, fuzzy
+#~ msgid "Oops !! There's no media found for the request !!"
+#~ msgstr "Ne pare rău !! Nu există fișiere media corespunzătoare solicitării!"
+
+#~ msgid "Edit Media"
+#~ msgstr "Editați Media"
+
+#, fuzzy
+#~ msgid "Sorry !! You do not have rights to edit this media"
+#~ msgstr "Ne pare rău!! Nu aveți drepturi de editare a acestui suport"
+
+#~ msgid "under"
+#~ msgstr "sub"
+
+#, fuzzy
+#~ msgid "To search, type and hit enter"
+#~ msgstr "Pentru a căuta, tastați și apăsați Enter"
+
+#~ msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+#~ msgstr "Continuați să citiți % s <span class = “meta-nav”> &rarr; </span>"
+
+#~ msgid "Select the desired general color combination for your website."
+#~ msgstr "Selectați combinația dorită de culori pentru website-ul dvs."
+
+#, fuzzy
+#~ msgid "Dark Side Menu"
+#~ msgstr "Meniu lateral închis la culoare"
+
+#, fuzzy
+#~ msgid "This option applies for 2 columns layout side menu background color"
+#~ msgstr ""
+#~ "Această opțiune este valabilă pentru culoarea de fundal a meniului "
+#~ "lateral cu două coloane"
+
+#, fuzzy
+#~ msgid ""
+#~ "Select a primary color for your website. This settings will be "
+#~ "automatically overwritten if you change the colors inside individual "
+#~ "components, for example, \"Branding\", \"Menu\", etc. "
+#~ msgstr ""
+#~ "Selectați o culoare primară pentru website-ul dvs. Aceste setări vor fi "
+#~ "suprascrise automat dacă schimbați culorile componentelor individuale, de "
+#~ "exemplu \"Branding\", \"Menu\" etc. "
+
+#, fuzzy
+#~ msgid "Primary Colors Shade"
+#~ msgstr "Tonuri ale Culorilor Primare"
+
+#, fuzzy
+#~ msgid ""
+#~ "Select a shade for your primary color. This settings will be "
+#~ "automatically overwritten if you change the colors inside individual "
+#~ "components, for example, \"Branding\", \"Menu\", etc. "
+#~ msgstr ""
+#~ "Selectaţi un ton pentru culoarea primară. Aceste setări vor fi "
+#~ "suprascrise automat dacă schimbaţi culorile din interiorul componentelor "
+#~ "individuale, de exemplu, \"branding\", \"meniu\", etc. "
+
+#~ msgid ""
+#~ "Select a secondary color. This settings will be automatically overwritten "
+#~ "if you change the colors inside individual components, for example, "
+#~ "\"Branding\", \"Menu\", etc. "
+#~ msgstr ""
+#~ "Selectați o culoare secundară. Aceste setări vor fi suprascrise automat "
+#~ "dacă schimbați culorile din interiorul componentelor individuale, de "
+#~ "exemplu \"Branding\", \"Menu\" etc. "
+
+#~ msgid ""
+#~ "Side Navigation are useful for retaining user \tpermalink links. Side "
+#~ "Navigation (SideNav) is only available for 2 columns layout."
+#~ msgstr ""
+#~ "Navigarea laterală este utilă pentru păstrarea legăturilor utilizatorilor "
+#~ "permalink. Navigarea laterală (SideNav) este disponibilă numai pentru "
+#~ "aspectul cu 2 coloane."
+
+#, fuzzy
+#~ msgid "Public 'Sidenav Widgets'"
+#~ msgstr "Widget-urile din bara laterală publice"
+
+#, fuzzy
+#~ msgid "Check to make the left sidebar widgets accesible to public."
+#~ msgstr ""
+#~ "Verificați pentru a face widget-urile barei laterale din stânga "
+#~ "accesibile publicului."
+
+#, fuzzy
+#~ msgid ""
+#~ "Use the Textarea below to write your side navigation message when the "
+#~ "user is logged out."
+#~ msgstr ""
+#~ "Utilizați textul de mai jos pentru a scrie mesajul de navigare laterală "
+#~ "atunci când utilizatorul este deconectat."
+
+#, fuzzy
+#~ msgid "Show Details"
+#~ msgstr "Afișează detaliile"
+
+#, fuzzy
+#~ msgid "Hide Details"
+#~ msgstr "Ascunde detaliile"
+
+#~ msgid "%1$s installed successfully."
+#~ msgstr "%1$s instalat cu succes."
+
+#~ msgid ""
+#~ "I can't find \"Date of Birth\" profile data. Have you added \"Date of "
+#~ "Birth\" user field already?"
+#~ msgstr ""
+#~ "Nu se găsesc date despre profilul \"Data nașterii\". Ați adăugat deja "
+#~ "câmpul de utilizator \"Data nașterii\"?"
+
+#, fuzzy
+#~ msgid "Sign-in to your account"
+#~ msgstr "Conectați-vă la contul dvs."
+
+#~ msgid "Sign-in"
+#~ msgstr "Conectare"
+
+#~ msgid "Register"
+#~ msgstr "Înregistrați-vă"
+
+#, fuzzy
+#~ msgid "See Notifications"
+#~ msgstr "Vedeți Notificările"
+
+#~ msgid "Shadowed"
+#~ msgstr "Umbrită"
+
+#~ msgid "Solid Border"
+#~ msgstr "Chenar solid"
+
+#~ msgid "No Outline"
+#~ msgstr "Fără contur"
+
+#, fuzzy
+#~ msgid "Links Hover"
+#~ msgstr "Link-uri când mouse-ul trece deasupra"
+
+#, fuzzy
+#~ msgid "BP Sidebar"
+#~ msgstr "Bară laterală BP"
+
+#, fuzzy
+#~ msgid "Sidenav Sidebar"
+#~ msgstr "Bară laterală Sidenav"

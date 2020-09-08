@@ -1,0 +1,326 @@
+// BP Whats new form handles user updates to groups or profiles
+
+.activity-update-form {
+	padding: 0;
+}
+
+.item-body {
+
+	.activity-update-form {
+
+		.activity-form {
+			margin: 0;
+			padding: 0;
+		}
+	}
+}
+
+.activity-update-form #whats-new-submit input#aw-whats-new-submit {
+    &[disabled="disabled"],
+    &[disabled="disabled"]:hover {
+        color: rgba(0, 0, 0, 0.3);
+        background-color: #e6e6e6;
+    }
+}
+
+.directory.activity {
+    .activity-update-form {
+        .activity-form {
+            #whats-new-post-in-box {
+                @media(min-width: 480px) {
+                    width: 40%;
+                }
+                li {
+                    &.bp-activity-object {
+                        padding: 5px 10px;
+                    }
+                    .bp-remove-item {
+                        width: 25px;
+                        height: 25px;
+                        padding: 0 5px;
+                        margin-left: 0;
+                    }
+                }
+            }
+            #buddykit-container {
+                padding-top: 15px;                
+                padding-bottom: 10px;                
+                padding-left: 12%;
+                clear: both;
+            }
+            #whats-new-submit {
+                width: 60%;
+                input {
+                    &#aw-whats-new-reset,
+                    &#aw-whats-new-submit {
+                        @media(min-width: 480px) {
+                            width: auto;
+                            margin-bottom: 0;
+                        }
+                    }
+                    &#aw-whats-new-submit {
+                        @media(min-width: 480px) {
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.activity-update-form {
+	border: 1px solid $bp-border-dark;
+
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+    background: #fff;
+    padding: 0 0 0 0;
+
+	margin: 24px 0;
+
+	// these ID's need replacing with this!
+	//.content-wrap { // #whats-new-content
+
+	#whats-new-content {
+		padding: 0 0 0 0;
+	}
+
+	#whats-new-form {
+		padding: 10px 15px;
+		@media(min-width: 768px) {
+			padding: 17.5px 0 10px;
+		}
+	}
+
+	#whats-new-avatar {
+		margin: 0 0 15px;
+		text-align: center;
+		width: 15%;
+        @media(min-width: 768px) {
+            margin: 0;
+        }
+		img {
+			display: inline-block;
+            margin: 5px 0;
+            width: 64px;
+            max-width: 100%;
+		}
+	}
+    #aw-whats-new-reset {
+        @extend .thrive-bp-btn;
+    }
+	#whats-new-submit input#aw-whats-new-reset {
+	    text-align: center;
+	    line-height: inherit;
+	    width: 100%;
+	    height: auto;
+	    display: inline-block;
+	    color: #f00;
+	    background-color: transparent;
+	    text-transform: uppercase;
+        border: none;
+        padding: 7.5px 15px;
+        margin-bottom: 0;
+        @media(min-width: 768px) {
+            width: auto;
+            margin-bottom: 0;
+        }
+
+	    &:hover {
+            background-color: $buttons-background;
+	    }
+	}
+
+
+
+	// these ID's need replacing with this!
+	//.textarea-wrap { // #whats-new-textarea
+
+	#whats-new-textarea {
+
+		textarea {
+			background: $textarea-bck;
+
+			@include box-model();
+			color: #333;
+			font-family: inherit;
+			font-size: medium;
+			height: 2.2em;
+			line-height: 1.4;
+			padding: 6px;
+			width: 100%;
+			border: 0 none;
+			margin: 0;
+			border: 1px solid #eee;
+			@media(min-width: 768px) {
+				border: 0 none;
+                margin-bottom: 15px;
+			}
+			&:focus {
+
+				@include box-shadow(0 0 6px 0 $med-light-grey);
+			}
+		}
+	}
+
+	#whats-new-post-in-box {
+		margin: $marg-sml 0;
+
+		#whats-new-post-in-box-items {
+			list-style: none;
+			margin: $marg-sml 0;
+
+			li {
+				margin-bottom: $marg-sml;
+			}
+
+			#activity-autocomplete {
+				padding: 0.3em;
+			}
+
+			.bp-activity-object {
+
+				@include center-vert();
+				padding: 0.2em;
+
+				.avatar {
+					width: 30px;
+				}
+
+				span {
+					padding-left: $marg-sml;
+					vertical-align: middle;
+				}
+
+				&:focus,
+				&:hover {
+					background: $light-grey;
+					cursor: pointer;
+				}
+
+				&.selected {
+					border: 1px solid $med-light-grey;
+                    padding: 5px;
+                    min-width: 210px;
+				}
+			}
+		}
+
+	}
+
+    .activity-form  {
+        #whats-new-post-in-box,
+        #whats-new-submit {
+            width: 100%;
+            margin: 15px 0;
+            padding: 0;
+            display: inline-block;
+            vertical-align: top;
+            @media(min-width: 768px) {
+                padding: 0 15px;
+            }
+        }
+        #whats-new-post-in-box {
+            position: relative;
+            @media(min-width: 768px) {
+                padding-left: 12%;
+            }
+            #whats-new-post-in {
+                width: 100%;
+                background-color: #f1f1f1;
+                padding-top: 7.5px;
+                padding-left: 15px;
+                padding-bottom: 7.5px;
+                margin-bottom: 0;
+                @extend .thrive-material-card-1;
+                @media(min-width: 480px) {
+                    width: auto;
+                }
+            }
+            #whats-new-post-in-box-items {
+                background: $container-bg;
+                padding: 10px 15px 15px;
+                margin: 10px 0 0;
+                border-radius: 6px;
+                position: absolute;
+                z-index: 20;
+                @extend .thrive-material-card-1;
+                @extend .thrive-comment-bubble-arrow;
+                &:before,
+                &:after {
+                    top: -15px;
+                    left: 20.55%;
+                    border: 15px solid transparent;
+                    border-bottom-color: #eceff1;
+                    border-top: 0;
+                }
+                &:before {
+                    top: -32px;
+                    left: 19.5%;
+                    border: 17px solid transparent;
+                    border-bottom-color: #d2d2d2;
+                    border-top: 0;
+                }
+                li {
+                    list-style: none;
+                    margin-bottom: 0;
+                }
+                #activity-autocomplete {
+                    margin-bottom: 0;
+                    &:focus {
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+    }
+
+	#whats-new-submit {
+		margin: $marg-med 0 $marg-sml;
+        text-align: right;
+		input {
+            width: 100%;
+			@include font-size(14);
+			line-height: inherit;
+			margin-bottom: $marg-sml;
+            padding: 7.5px 15px;
+			text-align: center;
+            background-color: $primary_700;
+            color: $white;
+            border: none;
+            @media(min-width: 768px) {
+                width: auto;
+                margin-right: 5px;
+            }
+            &:hover {
+                background-color: $primary_700;
+            }
+		}
+	}
+
+	@include medium-up() {
+
+		#whats-new-avatar {
+			display: block;
+			float: left;
+			width: 10%;
+			padding: 0 0 0 15px;
+            position: relative;
+            top: -2.5px;
+		}
+
+		#whats-new-content,
+		#whats-new-post-in-box,
+		#whats-new-submit {
+
+			margin-left: 12%;
+            margin-right: 15px;
+		}
+
+		#whats-new-submit {
+
+			input {
+				margin-bottom: 0;
+			}
+		}
+	} // close @media
+}

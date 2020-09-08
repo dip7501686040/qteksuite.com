@@ -1,0 +1,69 @@
+<!-- Right side column. Contains the navbar and content of the page -->
+<aside class="right-side">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1 class="pull-left"><?php _e('SAM'); ?><small> <?php _e('Manage Licenses Allocate'); ?></small></h1>
+        <div class="pull-right"><?php if(in_array("addLicensesallocate",$perms)) { ?><a class="btn btn-primary btn-sm btn-flat" href="?route=sam/assets/createlicensesallocate"><?php _e('NEW LICENSES ALLOCATE'); ?></a><?php } ?></div>
+        <div style="clear:both"></div>
+    </section>
+    <!-- Main content -->
+    <section class="content">
+        <?php if(!empty($statusmessage)): ?>
+        <div class="row"><div class='col-md-12'><div class="alert alert-<?php print $statusmessage["type"]; ?> alert-auto" role="alert"><?php print __($statusmessage["message"]); ?></div></div></div>
+        <?php endif; ?>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box box-primary">
+                    <div class="box-body">
+                        <div class="table-responsive">
+                            <table id="dataTablesFull" class="table table-striped table-hover table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th><?php _e('User'); ?></th>
+                                        <th><?php _e('Checkout Date'); ?></th>
+                                        <th><?php _e('Checkin Date'); ?></th>
+                                        <th><?php _e('Notes'); ?></th>
+                                        <th><?php _e('Manufacture'); ?></th>
+                                        <th class="text-right"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php
+                                    
+                                    foreach ($licensesAllocates as $licensesAllocate) { ?>
+                                    <tr>
+                                        <td><?php echo getSingleValue("people","name",$licensesAllocate['userid']); ?></span></td>
+                                        <td><?php echo dateDisplay($licensesAllocate['checkout_date']); ?></td>
+                                        <td><?php echo dateDisplay($licensesAllocate['checkin_date']); ?></td>
+                                        <td><?php echo $licensesAllocate['notes']; ?></td>
+                                        <td><?php echo getSingleValue("manufacturers","name",$licensesAllocate['manufacturer']); ?></td>
+                                        <td>
+                                            <div class='pull-right'>
+                                                <div class="btn-group">
+                                                    <?php if(in_array("manageLicensesallocate",$perms)) { ?>	<a href='?route=sam/assets/managelicensesallocate&id=<?php echo $licensesAllocate['id']; ?>' class='btn btn-flat btn-primary btn-sm'><i class='fa fa-eye'></i></a><?php } ?>
+                                                    <?php if(in_array("editLicensesallocate",$perms)) { ?>	<a href='?route=sam/assets/managelicensesallocate&id=<?php echo $licensesAllocate['id']; ?>&section=edit' class='btn btn-flat btn-success btn-sm'><i class='fa fa-edit'></i></a><?php } ?>
+
+                                                    <div class="btn-group">
+                                                        <button type="button" class="btn btn-default btn-sm btn-flat dropdown-toggle" data-toggle="dropdown">
+                                                            <span class="caret"></span>
+                                                        </button>
+                                                        <ul class="dropdown-menu pull-right">
+                                                            <?php if(in_array("deleteLicensesallocate",$perms)) { ?>	
+                                                            <li><a href='#' onClick='showM("?modal=licensesallocate/delete&reroute=inventory/licensesallocate&routeid=&id=<?php echo $licensesAllocate['id']; ?>&section=");return false' ><i class='fa fa-trash-o fa-fw'></i><?php _e('Delete'); ?></a></li><?php } ?>
+                                                        </ul>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <?php } ?>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- /.content -->
+</aside><!-- /.right-side -->

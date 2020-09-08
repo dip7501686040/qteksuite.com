@@ -1,0 +1,102 @@
+#task_breaker-task-add-tab {
+    /*Task Breaker (temporary)*/
+    a {
+        padding: 7.5px 15px 7.5px 15px;
+    }
+}
+
+#taskbreaker-project-navigation {
+	margin-top: 30px;
+}
+
+.directory.projects #task_breaker-intranet-projects {
+    padding-top: 35px;
+}
+
+.task_breaker-project-excerpt {
+	display: none;
+}
+#task_breaker-project-tab-content {
+    margin-top: -2px;
+}
+
+#group-projects-explainer {
+	font-weight: normal;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+#task_breaker-intranet-projects ul#task_breaker-projects-lists {
+	
+	display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 -10px;
+    
+    li.type-project {
+
+		padding: 10px;
+		margin: 0;
+		margin-bottom: 0;
+		border: 0 none;
+		flex-grow: 1;
+    	flex-basis: 50%;
+
+    	background: transparent;
+
+    	div.taskbreaker-project-item-wrap {
+    		background: #fff;
+    		padding: 20px 25px 20px 45px;
+    		border-radius: 4px;
+    		border: 1px solid #ddd;
+    		@extend .thrive-material-card-1;
+    	}
+		.task_breaker-project-author {
+			font-size: 12px;
+			margin-top: 20px;
+			img.avatar {
+				width: 18px;
+			}
+		}
+	 	.task_breaker-project-title {
+	 		h3 {
+	 			font-size: 1.5em;
+	 			position: relative;
+	 			&:before {
+	 				@extend .material_font_extend;
+                    content: "sort";
+				    left: -30px;
+				    position: absolute;
+				    color: #777;
+				    top: 2px;
+	 			}
+	 		}
+	 	}
+
+	}
+}
+
+@media( max-width: 768px ){
+	#task_breaker-dashboard-at-a-glance ul li {
+		width: 100%;
+	}
+
+	#task_breaker-dashboard-at-a-glance ul li .task_breaker-dashboard-at-a-glance-box {
+		margin-bottom: 0px;
+	}
+}
+
+#task_breaker-new-project-modal {
+	z-index: 2000;
+	background-color: rgba(0, 0, 0, 0.78);
+}
+
+.single-project {
+	.type-project {
+		h1.entry-title {
+			font-size: 2em;
+    		font-weight: bold;
+    		color: #212121;
+		}
+	}
+}

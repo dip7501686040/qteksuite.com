@@ -1,0 +1,229 @@
+// BP Directory Filters
+// Specific Styling & Positioning
+// N.B. See _bp_navigation for additional rules and properties.
+.buddypress-wrap {
+
+	.dir-component-filters { // ul
+
+		.filter { // li
+
+			label {
+				display: inline;
+			}
+		}
+	}
+
+	// User account filters .subnav-filters
+
+	@include clearfix-element(".subnav-filters");
+
+	.subnav-filters {
+		list-style: none;
+	    margin: 15px 0 0;
+	    background: $white;
+	    padding: 10px;
+	    border-radius: 2px;
+
+	    @extend .thrive-material-card-2;
+
+	    @media( max-width: 768px ) {
+	    	margin-bottom: 20px;
+	    	clear: both;
+	    }
+
+	    &:empty {
+	    	display: none;
+	    }
+
+		> ul {
+			float: left;
+			list-style: none;
+		}
+
+		&.bp-messages-filters#subsubnav {
+			background: $white;
+			> ul {
+				padding: 0;
+				width: 100%;
+				margin: 0;
+
+				li {
+					list-style: none;
+					&.user-messages-bulk-actions {
+						margin-top: 5px;
+						#user_messages_select_all {
+							margin: 0 5px 0 0;
+
+						}
+					}
+				}
+			}
+
+			.messages-search {
+				margin-bottom: 1em;
+
+				@include medium-up {
+
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		div {
+			float: none;
+
+
+			select,
+			input[type="search"] {
+
+				@include font-size(14);
+			}
+
+			button.nouveau-search-submit {
+				padding: 5px 0.8em 6px;
+			}
+
+			button#user_messages_search_submit {
+				padding: 7px 0.8em;
+			}
+		}
+
+		.component-filters {
+			margin-top: $marg-sml;
+		}
+
+		.feed {
+			margin-right: $marg-med;
+			display: none;
+			@media(min-width: 768px){
+				display: inline-block;
+			}
+		}
+
+		.last.filter {
+
+			label {
+				display: inline;
+			}
+
+		}
+
+		.user-messages-bulk-actions {
+
+			@include clearfix-element(".bulk-actions-wrap");
+
+			.bulk-actions-wrap {
+
+				&.bp-show {
+					display: inline-block;
+				}
+
+				&.bp-hide {
+					display: none;
+				}
+			}
+
+			.select-wrap {
+				border: 0;
+			}
+
+			.select-wrap:focus,
+			.select-wrap:hover {
+				outline: 1px solid $med-light-grey;
+			}
+
+			.bulk-actions {
+				float: left;
+			}
+
+			label {
+				display: inline-block;
+				font-weight: 300;
+				margin: 0;
+				padding: 0;
+				vertical-align: middle;
+			}
+
+			div {
+
+				select {
+					-webkit-appearance: textfield;
+				    margin-bottom: 0;
+				    font-size: 13px;
+				    line-height: 1.4;
+				}
+			}
+
+			.bulk-apply {
+				border: 0;
+				border-radius: none;
+				font-weight: 400;
+				line-height: 1.8;
+				margin: 0 0 0 10px;
+				padding: 3px 5px;
+				text-align: center;
+				text-transform: none;
+				width: auto;
+
+				span {
+					vertical-align: middle;
+				}
+			}
+		}
+
+		//position for wider screens
+
+		@include medium-small-up() {
+
+			li {
+				margin-bottom: 0;
+			}
+
+			.subnav-search,
+			.subnav-search form,
+			.feed,
+			.bp-search,
+			.dir-search,
+			.user-messages-bulk-actions,
+			.user-messages-search,
+			.group-invites-search,
+			.group-act-search {
+				float: left;
+				line-height: 2;
+				&.clearfix {
+					clear: none;
+				}
+			}
+
+			.last,
+			.component-filters {
+				float: right;
+				margin-top: 0;
+				width: auto;
+				&.clearfix {
+					clear: none;
+				}
+				select {
+					max-width: 200px;
+					margin-bottom: 0;
+				}
+			}
+
+			.user-messages-search {
+				float: right;
+			}
+
+		} // @media
+
+	} // close .subnav-filters
+
+	.notifications-options-nav {
+
+		input#notification-bulk-manage {
+			border: 0;
+			border-radius: 0;
+			line-height: 1.6;
+		}
+	}
+
+} // close .buddypress-wrap

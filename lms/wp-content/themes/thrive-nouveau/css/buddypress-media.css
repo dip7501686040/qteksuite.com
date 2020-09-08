@@ -1,0 +1,95 @@
+/**
+ * Support for BuddyPress Media
+ */
+#rtmedia-action-update {
+	position: absolute;
+	top: -55px;
+    left: 20px;
+}
+
+.rtm-plupload-list li.plupload_file {
+	list-style: none;
+}
+
+#buddypress form#whats-new-form textarea {
+	color: #212121!important;
+}
+
+.thrive-inline #whats-new-submit #aw-whats-new-submit {
+    font-size: inherit;
+    line-height: inherit;
+    padding: 10px 15px;
+}
+
+.thrive-inline #buddypress form#whats-new-form #whats-new-submit {
+	margin-top: 10px;
+}
+
+.thrive-inline #aw-whats-new-submit, .rtmedia-add-media-button {
+	display: inline-block;
+}
+
+.thrive-inline .rtm-upload-button-wrapper button.rtmedia-comment-media-upload, 
+.thrive-inline button.rtmedia-comment-media-upload {
+    line-height: 1.4;
+    padding: 7.5px 10px;
+}
+ul.rtmedia-comment-media-list {
+	padding-left: 0;
+	margin-left: 0;
+}
+
+ul.rtm-comment-list .rtm-comment-wrap li {
+	padding: 0;
+}
+
+.rtmedia-activity-container .rtmedia-list.masonry {
+	margin: 0;
+}
+
+.activity-inner .rtmedia-activity-text {
+	margin-bottom: 1.5em;
+}
+
+.thrive-inline #buddypress #item-body {
+	padding: 0;
+}
+
+ul.subnav.rtmedia-nav li a span{
+	display: inline-block;
+    padding: 0 5px !important;/*Overwrite Plugin Style*/
+    background: #095ac3;
+    border-radius: 4px;
+    margin-left: 10px;
+    color: #fff!important;/*Overwrite Plugin Style*/
+}
+#buddypress ul.rtmedia-list li {
+	list-style: none;
+}
+.thrive-inline  .rtm-media-options > * {
+	border-right: 0 none;
+}
+
+.thrive-inline .media_search.media_search {
+    padding: 0;
+    margin-top: -10px;
+}
+.thrive-inline .media_search.media_search .media_search_remove.search_option i,
+.thrive-inline .media_search.media_search .search_option {
+	margin-top: 10px;
+}
+
+.thrive-inline .rtmedia-container .rtmedia-list {
+    margin: 25px -5px;
+}
+
+.thrive-inline .rtmedia-no-media-found {
+    min-height: 0px;
+    margin: 25px 0;
+    padding: 10px 20px;
+    background: #fff493;
+    color: #000000;
+    font-weight: 500;
+    border-radius: 4px;
+    border: 2px solid #f7c85b;
+}

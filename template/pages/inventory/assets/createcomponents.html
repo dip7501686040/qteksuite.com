@@ -1,0 +1,171 @@
+<!-- Right side column. Contains the navbar and content of the page -->
+<aside class="right-side">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1><?php _e('Assets'); ?><small> <?php _e('Create Components'); ?></small></h1>
+        <ol class="breadcrumb"><li><a href="?route=dashboard"><i class="fa fa-dashboard"></i> <?php _e('Home'); ?></a></li>
+            <li><?php _e('AHM'); ?></li><li><a href="?route=inventory/components"><?php _e('Components List'); ?></a></li>
+            <li class="active"><?php _e('Create Components'); ?></li>
+        </ol>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+        <?php if(!empty($statusmessage)): ?>
+        <div class="row"><div class='col-md-12'><div class="alert alert-<?php print $statusmessage["type"]; ?> alert-auto" role="alert"><?php print __($statusmessage["message"]); ?></div></div></div>
+        <?php endif; ?>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box box-primary">
+                    <div class="box-header with-border"><h3 class="box-title"><?php _e('Components'); ?></h3></div><!-- /.box-header -->
+                    <div class="box-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <form role="form" method="post" class="" enctype="multipart/form-data">
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="company"><?php _e('Company Name'); ?></label>
+                                            <select class="form-control select2 select2-hidden-accessible" id="company" name="company_name" style="width: 100%;" tabindex="1" aria-hidden="true">
+                                                <option value=""><?php _e('None'); ?></option>
+                                                <?php foreach ($companies as $company) { echo "<option value='".$company['id']."'>".$company['company_name']."</option>"; } ?>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="consumables_name">Consumables Name *</label>
+                                            <input type="text" class="form-control" id="consumables_name" name="consumables_name" required="" tabindex="2">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="category"><?php _e('Category'); ?> </label>
+                                            <select class="form-control select2tag select2-hidden-accessible" id="category" name="category" style="width: 100%;" tabindex="3" required="" aria-hidden="true" multiple>
+                                                <?php foreach ($categories as $category) { echo "<option value='".$category['name']."'>".$category['name']."</option>"; } ?>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="manufacture"><?php _e('Manufacture'); ?></label>
+                                            <select class="form-control select2 select2-hidden-accessible" id="manufacture" name="manufacture" style="width: 100%;" tabindex="4" aria-hidden="true" required="">
+                                                <option value=""><?php _e('None'); ?></option>
+                                                <?php foreach ($manufacturers as $manufacture) { echo "<option value='".$manufacture['id']."'>".$manufacture['name']."</option>"; } ?>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="location"><?php _e('Location'); ?></label>
+                                            <input type="text" class="form-control" id="location" name="location" required="" tabindex="5">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="statusid"><?php _e('Status'); ?> *</label>
+                                            <select class="form-control select2 select2-hidden-accessible" id="statusid" name="statusid" style="width: 100%;" tabindex="6" aria-hidden="true">
+                                                <?php foreach ($labels as $label) { echo "<option value='".$label['id']."'>".$label['name']."</option>"; } ?>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="model_no"><?php _e('Model No'); ?></label>
+                                            <select class="form-control select2 select2-hidden-accessible" id="model_no" name="model_no" style="width: 100%;" tabindex="7" aria-hidden="true" required="">
+                                                <option value=""><?php _e('None'); ?></option>
+                                                <?php foreach ($models as $model) { echo "<option value='".$model['id']."'>".$model['name']."</option>"; } ?>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="item_no"><?php _e('Item No'); ?></label>
+                                            <input type="text" class="form-control" id="item_no" name="item_no" required="" tabindex="8">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="order_no"><?php _e('Order No'); ?></label>
+                                            <input type="text" class="form-control" id="order_no" name="order_no" required="" tabindex="9">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="purchase_date"><?php _e('Purchase Date'); ?></label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" id="purchase_date" name="purchase_date" tabindex="10">
+                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="purchase_cost"><?php _e('Purchase Cost'); ?></label>
+                                            <input type="text" class="form-control" id="purchase_cost" name="purchase_cost" required="" tabindex="11">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="currency"><?php _e('Currency'); ?></label>
+                                            <select class="form-control select2 select2-hidden-accessible" id="currency" name="currency" style="width: 100%;" tabindex="12" aria-hidden="true" required="">
+                                                <option value=""><?php _e('None'); ?></option>
+                                                <?php foreach ($correncies as $corrency) { echo "<option value='".$corrency['id']."'>".$corrency['currency_name']."</option>"; } ?>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="quanitity"><?php _e('Quanitity.'); ?></label>
+                                            <input type="text" class="form-control" id="quanitity" name="quanitity" required="" tabindex="13">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="notes"><?php _e('Image'); ?></label>
+                                            <input type="file" class="form-control" id="image" name="image" required="" tabindex="14">
+                                        </div>
+                                    </div>
+
+                                    <input type="hidden" name="action" value="addComponents">
+                                    <input type="hidden" name="route" value="inventory/components">
+                                    <input type="hidden" name="routeid" value="">
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <button type="submit" class="btn btn-primary"><i class="fa fa-check"></i> <?php _e('Create'); ?></button>
+                                        </div>
+                                    </div>
+                                </form><!-- /.form -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- /.content -->
+</aside><!-- /.right-side -->
+
+<script type="text/javascript">
+
+    function generateTag(_this) {
+
+        var tagprefix = $(_this).find(':selected').data("tagprefix");
+        var tagsufix = '<?php echo Asset::nextAssetTag(); ?>';
+
+        document.getElementById("tag").value = tagprefix + tagsufix;
+    }
+
+</script>

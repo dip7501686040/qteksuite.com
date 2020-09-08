@@ -1,0 +1,3507 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Thrive English Default\n"
+"POT-Creation-Date: 2018-07-14 19:46+0800\n"
+"PO-Revision-Date: 2018-07-14 19:46+0800\n"
+"Last-Translator: \n"
+"Language-Team: Dunhakdis Software Creatives <info@dunhakdis.com>\n"
+"Language: en_BS\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.5\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;esc_html__;esc_html_e;esc_attr_e;_n;_x;_ex;_nx;"
+"esc_attr__;esc_attr_x;esc_html_x;_n_noop\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: inc/option-tree\n"
+"X-Poedit-SearchPathExcluded-1: node_modules\n"
+
+#: 404.php:26
+msgid "404"
+msgstr ""
+
+#: 404.php:29
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:34
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: archive-dsc-knowledgebase.php:110 single-dsc-knowledgebase.php:102
+#: thrive/widgets/widgets.php:67
+msgid "Reference KNB"
+msgstr ""
+
+#: archive.php:55 inc/template-tags.php:216 knowledgebase-none.php:37
+#: taxonomy-knb-categories.php:65 thrive/widgets/widgets.php:55
+msgid "Archives"
+msgstr ""
+
+#: buddypress.php:116
+msgid "Group Admins"
+msgstr ""
+
+#: buddypress.php:132
+msgid "Group Mods"
+msgstr ""
+
+#: buddypress.php:151
+#, php-format
+msgid "About %s"
+msgstr ""
+
+#: buddypress/groups/single/admin/manage-members.php:10
+msgid "Manage Group Members"
+msgstr ""
+
+#: buddypress/groups/single/admin/manage-members.php:13
+msgid ""
+"Manage your group members; promote to moderators, admins or demote or ban."
+msgstr ""
+
+#: buddypress/groups/single/admin/manage-members.php:17
+msgid "Administrators"
+msgstr ""
+
+#: buddypress/groups/single/admin/manage-members.php:37
+#: buddypress/groups/single/admin/manage-members.php:69
+msgid "Demote to Member"
+msgstr ""
+
+#: buddypress/groups/single/admin/manage-members.php:51
+msgid "Moderators"
+msgstr ""
+
+#: buddypress/groups/single/admin/manage-members.php:68
+msgid "Promote to Admin"
+msgstr ""
+
+#: buddypress/groups/single/admin/manage-members.php:83
+#: thrive/theme-widgets/featured-group.php:99
+msgid "Members"
+msgstr ""
+
+#: buddypress/groups/single/admin/manage-members.php:103
+msgid "(banned)"
+msgstr ""
+
+#: buddypress/groups/single/group-header.php:38
+#, php-format
+msgid "active %s"
+msgstr ""
+
+#: buddypress/members/register.php:31
+msgid "Account Details"
+msgstr ""
+
+#: buddypress/members/register.php:47
+msgid "Profile Details"
+msgstr ""
+
+#: buddypress/members/register.php:89
+msgid "Blog Details"
+msgstr ""
+
+#: buddypress/members/register.php:91
+msgid "Yes, I'd like to create a new site"
+msgstr ""
+
+#: comments.php:34
+msgid "1 Comment"
+msgstr ""
+
+#: comments.php:50 comments.php:70
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:52 comments.php:73
+msgid "Older Comments"
+msgstr ""
+
+#: comments.php:53 comments.php:74
+msgid "Newer Comments"
+msgstr ""
+
+#: comments.php:86
+msgid "Comments are closed."
+msgstr ""
+
+#: customizer/components/archive.php:8
+msgid "Posts Archives"
+msgstr ""
+
+#: customizer/components/archive.php:9
+msgid "The settings related to posts and custom post typ archives"
+msgstr ""
+
+#: customizer/components/archive.php:18
+msgid "Post Type Archive Layout"
+msgstr ""
+
+#: customizer/components/archive.php:19
+msgid ""
+"Select the default layout for post archives (e.g. index, date, author) "
+"archive pages."
+msgstr ""
+
+#: customizer/components/archive.php:24 thrive/cmb2-fields/terms.php:25
+#: thrive/sidebars/sidebars-meta.php:242
+msgid "Content / Sidebar Right"
+msgstr ""
+
+#: customizer/components/archive.php:25 thrive/cmb2-fields/terms.php:26
+#: thrive/sidebars/sidebars-meta.php:243
+msgid "Sidebar Left / Content"
+msgstr ""
+
+#: customizer/components/archive.php:26
+msgid "Full Content"
+msgstr ""
+
+#: customizer/components/custom-css.php:14
+#: customizer/components/custom-css.php:24
+msgid "Custom CSS"
+msgstr ""
+
+#: customizer/components/custom-css.php:15
+msgid "Your own CSS code"
+msgstr ""
+
+#: customizer/components/custom-css.php:25
+msgid "Add your own custom CSS here. Click the button below to get started."
+msgstr ""
+
+#: customizer/components/footer-copyright.php:5
+msgid "Footer Copyright"
+msgstr ""
+
+#: customizer/components/footer-copyright.php:6
+msgid ""
+"Change the copyright section of the footer to your own content. You can also "
+"personalized the colors to match your needs."
+msgstr ""
+
+#: customizer/components/footer-copyright.php:18
+#: customizer/components/footer-widgets.php:43
+#: customizer/components/header-menu.php:76 customizer/components/layout.php:37
+#: customizer/components/logo.php:136
+#: customizer/components/registration.php:152 thrive/cmb2-fields/page.php:84
+msgid "Background Color"
+msgstr ""
+
+#: customizer/components/footer-copyright.php:19
+msgid "The bacground color of the footer copyright section."
+msgstr ""
+
+#: customizer/components/footer-copyright.php:46
+msgid "Foreground Color"
+msgstr ""
+
+#: customizer/components/footer-copyright.php:47
+msgid "The color of the text in your footer copyright section."
+msgstr ""
+
+#: customizer/components/footer-copyright.php:70
+msgid "Links Color Mode"
+msgstr ""
+
+#: customizer/components/footer-copyright.php:71
+msgid ""
+"Choose the color mode for the links in your footer copyright section. For "
+"best result, choose the dark contrast option if you are applying a white "
+"background color to your footer."
+msgstr ""
+
+#: customizer/components/footer-copyright.php:77
+msgid "Light Contrast"
+msgstr ""
+
+#: customizer/components/footer-copyright.php:78
+msgid "Dark Contrast"
+msgstr ""
+
+#: customizer/components/footer-copyright.php:102
+msgid "Copyright Context"
+msgstr ""
+
+#: customizer/components/footer-copyright.php:103
+msgid ""
+"Replace the default copyright content with your site's copyright statements "
+"and contents."
+msgstr ""
+
+#: customizer/components/footer-copyright.php:105 footer.php:61
+msgid "&copy; [Your Website Name Here] 2015. All Rights Reserved."
+msgstr ""
+
+#: customizer/components/footer-widgets.php:5
+msgid "Footer Widgets"
+msgstr ""
+
+#: customizer/components/footer-widgets.php:6
+msgid ""
+"All settings related to the footer widgets section. You can control the "
+"number of columns per row for each widget, the background color, and other "
+"things."
+msgstr ""
+
+#: customizer/components/footer-widgets.php:18
+msgid "No. Of Columns"
+msgstr ""
+
+#: customizer/components/footer-widgets.php:19
+msgid ""
+"Choose how many columns you would like to display for each widgets rows in "
+"the footer"
+msgstr ""
+
+#: customizer/components/footer-widgets.php:24
+msgid "Single Column"
+msgstr ""
+
+#: customizer/components/footer-widgets.php:25
+#: customizer/components/layout.php:25
+msgid "2 Columns"
+msgstr ""
+
+#: customizer/components/footer-widgets.php:26
+msgid "3 Columns"
+msgstr ""
+
+#: customizer/components/footer-widgets.php:27
+msgid "4 Columns"
+msgstr ""
+
+#: customizer/components/general-colors.php:5
+msgid "General Colors"
+msgstr ""
+
+#: customizer/components/general-colors.php:6
+msgid "Choose the appropriate colors for your website."
+msgstr ""
+
+#: customizer/components/general-colors.php:18
+msgid "Primary Colors"
+msgstr ""
+
+#: customizer/components/general-colors.php:19
+msgid ""
+"Primary colors will be applied to general link colors, buttons, and other "
+"section that requires distinction. For widgets, headers, and footer colors, "
+"kindly refer to their respective areas of customization."
+msgstr ""
+
+#: customizer/components/general-colors.php:48
+msgid "Secondary Colors"
+msgstr ""
+
+#: customizer/components/general-typography.php:5
+#: customizer/components/single-post.php:18
+msgid "Typography"
+msgstr ""
+
+#: customizer/components/general-typography.php:6
+msgid ""
+"Personalize the typographical style of your website by choosing specific "
+"fonts to each area. Fonts are delivered via Google Fonts.."
+msgstr ""
+
+#: customizer/components/general-typography.php:18
+msgid "Headers Font Choice"
+msgstr ""
+
+#: customizer/components/general-typography.php:19
+msgid ""
+"Select a font that will be applied to each h1, h2, h3, h4, h5, h6, and other "
+"headings element of your site."
+msgstr ""
+
+#: customizer/components/general-typography.php:42
+msgid "Body Font Choice"
+msgstr ""
+
+#: customizer/components/general-typography.php:43
+msgid ""
+"Select a font that will be applied to the overall text and paragraphs of "
+"your site."
+msgstr ""
+
+#: customizer/components/general-typography.php:65
+#: customizer/components/single-post.php:69
+msgid "Font Size"
+msgstr ""
+
+#: customizer/components/general-typography.php:66
+msgid ""
+"Enter a general size for the fonts of your website. Approriate font size "
+"heirarchy will be applied."
+msgstr ""
+
+#: customizer/components/header-menu.php:5
+msgid "Header Styling"
+msgstr ""
+
+#: customizer/components/header-menu.php:6
+msgid "Personalize the header of your website."
+msgstr ""
+
+#: customizer/components/header-menu.php:18
+msgid "Header Type"
+msgstr ""
+
+#: customizer/components/header-menu.php:19
+msgid "Select which header you would like your website to have."
+msgstr ""
+
+#: customizer/components/header-menu.php:24
+msgid "Header Style 1"
+msgstr ""
+
+#: customizer/components/header-menu.php:25
+msgid "Header Style 2"
+msgstr ""
+
+#: customizer/components/header-menu.php:35 searchform.php:9 searchform.php:12
+msgid "Search"
+msgstr ""
+
+#: customizer/components/header-menu.php:36
+msgid "Select the 'Disabled' option to disable the search in the header menu."
+msgstr ""
+
+#: customizer/components/header-menu.php:41
+#: customizer/components/social-connect.php:25
+#: customizer/components/social-connect.php:83
+msgid "Enabled"
+msgstr ""
+
+#: customizer/components/header-menu.php:42
+#: customizer/components/social-connect.php:26
+#: customizer/components/social-connect.php:84
+msgid "Disabled"
+msgstr ""
+
+#: customizer/components/header-menu.php:77
+#: customizer/components/header-menu.php:178
+msgid "Pick a background color for the header."
+msgstr ""
+
+#: customizer/components/header-menu.php:110
+msgid "Linear Gradient Background"
+msgstr ""
+
+#: customizer/components/header-menu.php:111
+msgid "Check to use linear gradient background instead of solid"
+msgstr ""
+
+#: customizer/components/header-menu.php:121
+msgid "Gradient Color Start"
+msgstr ""
+
+#: customizer/components/header-menu.php:122
+msgid "Pick your first gradient color."
+msgstr ""
+
+#: customizer/components/header-menu.php:139
+msgid "Gradient Color End"
+msgstr ""
+
+#: customizer/components/header-menu.php:140
+msgid "Pick your second gradient color."
+msgstr ""
+
+#: customizer/components/header-menu.php:176
+msgid "Header Typography"
+msgstr ""
+
+#: customizer/components/header-menu.php:200
+msgid "Sign Up Button Gradient"
+msgstr ""
+
+#: customizer/components/header-menu.php:202
+msgid ""
+"Choose the color for the 'Sign-up' button. Pro tip: Registration must be "
+"enabled for the button to show up."
+msgstr ""
+
+#: customizer/components/header-menu.php:205
+msgid "Top"
+msgstr ""
+
+#: customizer/components/header-menu.php:206
+msgid "Bottom"
+msgstr ""
+
+#: customizer/components/layout.php:5
+msgid "Site Layout"
+msgstr ""
+
+#: customizer/components/layout.php:18
+msgid "Layout Type"
+msgstr ""
+
+#: customizer/components/layout.php:19
+msgid ""
+"Select the layout type of your website. You can choose between 2 columns and "
+"1 column. The 1 column will disable the side navigation."
+msgstr ""
+
+#: customizer/components/layout.php:26
+msgid "1 Column"
+msgstr ""
+
+#: customizer/components/layout.php:38
+msgid ""
+"This option allows you to change the background color of the main section."
+msgstr ""
+
+#: customizer/components/layout.php:64
+#: customizer/components/registration.php:124 thrive/cmb2-fields/page.php:98
+msgid "Background Image"
+msgstr ""
+
+#: customizer/components/layout.php:65
+msgid "Upload an image to be used as the background of your website."
+msgstr ""
+
+#: customizer/components/layout.php:91
+#: customizer/components/registration.php:183
+msgid "Background Size"
+msgstr ""
+
+#: customizer/components/layout.php:92
+msgid "Select a size for your background image"
+msgstr ""
+
+#: customizer/components/layout.php:98
+msgid "Automatic"
+msgstr ""
+
+#: customizer/components/layout.php:99
+#: customizer/components/registration.php:191 thrive/cmb2-fields/page.php:145
+msgid "Cover"
+msgstr ""
+
+#: customizer/components/layout.php:100
+#: customizer/components/registration.php:192 thrive/cmb2-fields/page.php:146
+msgid "Contain"
+msgstr ""
+
+#: customizer/components/layout.php:124
+#: customizer/components/registration.php:217
+msgid "Background Repeat"
+msgstr ""
+
+#: customizer/components/layout.php:125
+msgid "Select the 'repeat' pattern of your site's background image."
+msgstr ""
+
+#: customizer/components/layout.php:131 thrive/cmb2/includes/CMB2_JS.php:166
+msgid "Default"
+msgstr ""
+
+#: customizer/components/layout.php:132
+msgid "Do Not Repeat"
+msgstr ""
+
+#: customizer/components/layout.php:133
+msgid "Repeat Horizontally & Vertically"
+msgstr ""
+
+#: customizer/components/layout.php:134
+#: customizer/components/registration.php:224 thrive/cmb2-fields/page.php:160
+msgid "Repeat Horizontally"
+msgstr ""
+
+#: customizer/components/layout.php:135
+#: customizer/components/registration.php:225 thrive/cmb2-fields/page.php:161
+msgid "Repeat Vertically"
+msgstr ""
+
+#: customizer/components/logo.php:5
+msgid "Logo Settings"
+msgstr ""
+
+#: customizer/components/logo.php:6
+msgid "Add your own company logo and resize it accordingly."
+msgstr ""
+
+#: customizer/components/logo.php:16
+msgid "Upload Logo"
+msgstr ""
+
+#: customizer/components/logo.php:17
+msgid "Upload an image file to be used as the logo for your website."
+msgstr ""
+
+#: customizer/components/logo.php:37 customizer/components/registration.php:58
+msgid "Logo Size"
+msgstr ""
+
+#: customizer/components/logo.php:38 customizer/components/registration.php:59
+msgid "Adjust the size of your logo by dragging the circle in the slider."
+msgstr ""
+
+#: customizer/components/logo.php:70
+msgid "Horizontal Position"
+msgstr ""
+
+#: customizer/components/logo.php:71
+msgid "Adjust the horizontal position of your logo."
+msgstr ""
+
+#: customizer/components/logo.php:103
+msgid "Vertical Position"
+msgstr ""
+
+#: customizer/components/logo.php:104
+msgid "The vertical position of your logo."
+msgstr ""
+
+#: customizer/components/logo.php:139
+msgid "Choose a background color to resolve any contrast issues."
+msgstr ""
+
+#: customizer/components/page.php:9
+msgid "Single Pages"
+msgstr ""
+
+#: customizer/components/page.php:10
+msgid "All options related to single pages."
+msgstr ""
+
+#: customizer/components/page.php:21
+msgid "Page Title"
+msgstr ""
+
+#: customizer/components/page.php:22
+msgid ""
+"The default color for your page titles. Can be overwritten through "
+"individual pages options."
+msgstr ""
+
+#: customizer/components/page.php:32
+msgid "Page Title: Text Alignment"
+msgstr ""
+
+#: customizer/components/page.php:34
+msgid ""
+"The default text alignment for your page title. Can be overwritten through "
+"individual pages options"
+msgstr ""
+
+#: customizer/components/page.php:39
+msgid "Align Left"
+msgstr ""
+
+#: customizer/components/page.php:40
+msgid "Align Right"
+msgstr ""
+
+#: customizer/components/page.php:41
+msgid "Centered"
+msgstr ""
+
+#: customizer/components/page.php:50 thrive/cmb2-fields/page.php:63
+msgid "Secondary Title"
+msgstr ""
+
+#: customizer/components/page.php:52
+msgid ""
+"The default secondary title for all new pages. Can be overwritten through "
+"individual pages options."
+msgstr ""
+
+#: customizer/components/page.php:61 thrive/cmb2-fields/page.php:71
+msgid "Secondary Title Color"
+msgstr ""
+
+#: customizer/components/page.php:62
+msgid ""
+"The default color of your secondary title. Can be overwritten through "
+"individual pages options"
+msgstr ""
+
+#: customizer/components/page.php:72
+msgid "Background Control"
+msgstr ""
+
+#: customizer/components/page.php:73
+msgid ""
+"The default background settings for your new pages. Can be overwritten "
+"through individual pages options."
+msgstr ""
+
+#: customizer/components/registration.php:5
+msgid "Registration Page"
+msgstr ""
+
+#: customizer/components/registration.php:6
+msgid ""
+"Use this section to customize your register page. After saving, log-out and "
+"visit your register page to see the changes. Make sure to enable the "
+"registration option inside the site settings."
+msgstr ""
+
+#: customizer/components/registration.php:19
+msgid "Disable Header"
+msgstr ""
+
+#: customizer/components/registration.php:20
+msgid "Check to disable site header in the register page."
+msgstr ""
+
+#: customizer/components/registration.php:32
+msgid "Disable Footer"
+msgstr ""
+
+#: customizer/components/registration.php:33
+msgid "Check to disable site footer in the register page."
+msgstr ""
+
+#: customizer/components/registration.php:45
+msgid "Enable Logo"
+msgstr ""
+
+#: customizer/components/registration.php:46
+msgid ""
+"Check to enable site logo in the register form. Useful if you want to hide "
+"the site header.."
+msgstr ""
+
+#: customizer/components/registration.php:91
+msgid "Logo Position"
+msgstr ""
+
+#: customizer/components/registration.php:92
+msgid "Set the registration logo postion."
+msgstr ""
+
+#: customizer/components/registration.php:98 thrive/cmb2-fields/page.php:54
+msgid "Left"
+msgstr ""
+
+#: customizer/components/registration.php:99 thrive/cmb2-fields/page.php:56
+msgid "Center"
+msgstr ""
+
+#: customizer/components/registration.php:100 thrive/cmb2-fields/page.php:55
+msgid "Right"
+msgstr ""
+
+#: customizer/components/registration.php:125
+msgid ""
+"Upload an image to be used as the background of your register page. Leave "
+"this blank to use the color field below."
+msgstr ""
+
+#: customizer/components/registration.php:153
+msgid "Remove the image above to use solid background color"
+msgstr ""
+
+#: customizer/components/registration.php:184
+msgid "Set the background size for the background image."
+msgstr ""
+
+#: customizer/components/registration.php:190 thrive/cmb2-fields/page.php:144
+msgid "Auto"
+msgstr ""
+
+#: customizer/components/registration.php:218
+msgid ""
+"Choose 'Auto' for 'Background Size' if you intend to use image patterns and "
+"repeat the background horizontally or vertically."
+msgstr ""
+
+#: customizer/components/registration.php:226
+msgid "Repeat both horizontally and vertically"
+msgstr ""
+
+#: customizer/components/registration.php:227
+msgid "Do not repeat"
+msgstr ""
+
+#: customizer/components/registration.php:248
+msgid "Heading Background Color"
+msgstr ""
+
+#: customizer/components/registration.php:249
+msgid "The background color of the heading when logo is enabled"
+msgstr ""
+
+#: customizer/components/side-navigation.php:5
+msgid "Side Navigation"
+msgstr ""
+
+#: customizer/components/side-navigation.php:6
+msgid "Customize your website side navigation to suit your needs."
+msgstr ""
+
+#: customizer/components/side-navigation.php:19
+msgid "User Profile"
+msgstr ""
+
+#: customizer/components/side-navigation.php:24
+msgid "Show"
+msgstr ""
+
+#: customizer/components/side-navigation.php:25
+msgid "Do Not Show"
+msgstr ""
+
+#: customizer/components/side-navigation.php:49
+msgid "Logged Out Message"
+msgstr ""
+
+#: customizer/components/side-navigation.php:51
+#: template-parts/sidebar-content.php:123
+msgid "Welcome! Please sign-in to your account. Thank you!"
+msgstr ""
+
+#: customizer/components/side-navigation.php:62
+msgid "Logged-out Image"
+msgstr ""
+
+#: customizer/components/side-navigation.php:63
+msgid "You can change the image displayed when logged-out."
+msgstr ""
+
+#: customizer/components/single-post.php:5
+msgid "Single Blog Post"
+msgstr ""
+
+#: customizer/components/single-post.php:6
+msgid "Single post typography and other options"
+msgstr ""
+
+#: customizer/components/single-post.php:19
+msgid "Select a font that will be applied to the blog post of your site."
+msgstr ""
+
+#: customizer/components/single-post.php:101
+msgid "Social Sharing Icons"
+msgstr ""
+
+#: customizer/components/single-post.php:102
+msgid "Enable or disable the post social media sharing icons."
+msgstr ""
+
+#: customizer/components/single-post.php:106
+#: customizer/components/single-post.php:137
+msgid "Enable"
+msgstr ""
+
+#: customizer/components/single-post.php:107
+#: customizer/components/single-post.php:138
+msgid "Disable"
+msgstr ""
+
+#: customizer/components/single-post.php:132
+msgid "Author About"
+msgstr ""
+
+#: customizer/components/single-post.php:133
+msgid "Enable or disable the author section below the body of the post."
+msgstr ""
+
+#: customizer/components/social-connect.php:7
+msgid "Social Connect"
+msgstr ""
+
+#: customizer/components/social-connect.php:8
+msgid ""
+"All customizations related to Social Logins. Social Login requires PHP 5.4+ "
+"version with PHP Curl enabled. Gears plugin must be installed and enabled."
+msgstr ""
+
+#: customizer/components/social-connect.php:19
+msgid "Enable Facebook Connect"
+msgstr ""
+
+#: customizer/components/social-connect.php:21
+msgid ""
+"Toggle to disable or enable user login using Facebook Account. You need to "
+"create a new Facebook App and then enter the App ID and App Secret in the "
+"associated fields below. "
+msgstr ""
+
+#: customizer/components/social-connect.php:34
+msgid "Facebook App ID"
+msgstr ""
+
+#: customizer/components/social-connect.php:35
+#, php-format
+msgid "Click %s to learn on how to get your FB App ID."
+msgstr ""
+
+#: customizer/components/social-connect.php:37
+msgid "40121904-{Get Your Own)"
+msgstr ""
+
+#: customizer/components/social-connect.php:53
+msgid "Facebook App Secret"
+msgstr ""
+
+#: customizer/components/social-connect.php:54
+#, php-format
+msgid "Click %s to learn on how to get your FB Secret."
+msgstr ""
+
+#: customizer/components/social-connect.php:56
+msgid "6911f0e323b-(Get Your Own)"
+msgstr ""
+
+#: customizer/components/social-connect.php:76
+msgid "Enable Google Connect"
+msgstr ""
+
+#: customizer/components/social-connect.php:77
+msgid ""
+"Toggle to disable or enable user login using Google Account. You need to "
+"create a new Google App and then enter the \n"
+"    Client ID and the Client Secret in the associated fields below. "
+msgstr ""
+
+#: customizer/components/social-connect.php:92
+msgid "Google Client ID"
+msgstr ""
+
+#: customizer/components/social-connect.php:94
+#, php-format
+msgid "%s to learn on how to get your Google Client ID."
+msgstr ""
+
+#: customizer/components/social-connect.php:95
+msgid "1029578692451-(Get Your Own)"
+msgstr ""
+
+#: customizer/components/social-connect.php:111
+msgid "Google Client Secret"
+msgstr ""
+
+#: customizer/components/social-connect.php:112
+#, php-format
+msgid "%s to learn on how to get your Google Client Secret."
+msgstr ""
+
+#: customizer/components/social-connect.php:114
+msgid "zWHSTEQvTwU-(Get Your Own)"
+msgstr ""
+
+#: customizer/components/social-connect.php:130
+msgid ""
+"Important: Add the following URL in your Google Developer Console "
+"\"Authorized redirect URIs\""
+msgstr ""
+
+#: customizer/components/social-connect.php:131
+msgid "Authorized Redirect URIs"
+msgstr ""
+
+#: customizer/components/widget-style.php:5
+msgid "Widget Styling"
+msgstr ""
+
+#: customizer/components/widget-style.php:6
+msgid "Personalize the sidebar widgets of your website."
+msgstr ""
+
+#: customizer/components/widget-style.php:18
+msgid "Title Background"
+msgstr ""
+
+#: customizer/components/widget-style.php:21
+msgid "This option will change the background color of the widget title."
+msgstr ""
+
+#: customizer/components/widget-style.php:45 thrive/cmb2-fields/page.php:40
+msgid "Title Color"
+msgstr ""
+
+#: customizer/components/widget-style.php:48
+msgid "This option will change the color of the widget title."
+msgstr ""
+
+#: customizer/components/widget-style.php:84
+msgid "Border Style"
+msgstr ""
+
+#: customizer/components/widget-style.php:85
+msgid ""
+"You can choose between 'Circular' or 'Sharp Edges' style for your sidebar "
+"widgets."
+msgstr ""
+
+#: customizer/components/widget-style.php:90
+msgid "Circular"
+msgstr ""
+
+#: customizer/components/widget-style.php:91
+msgid "Sharp Edges"
+msgstr ""
+
+#: customizer/customizer.php:16
+msgid ""
+"You are currently using Thrive WordPress Theme. This is where you can "
+"customize almost everything about Thrive. Personalize your website and make "
+"the branding yours by changing the default settings below."
+msgstr ""
+
+#: customizer/customizer.php:29
+msgid "Thrive Customization"
+msgstr ""
+
+#: customizer/customizer.php:30
+msgid "My Description"
+msgstr ""
+
+#: customizer/include-kirky.php:54
+msgid ""
+"A plugin is required to take advantage of this theme's features in the "
+"customizer."
+msgstr ""
+
+#: customizer/include-kirky.php:55
+msgid "Install Kirki Toolkit now"
+msgstr ""
+
+#: customizer/include-kirky.php:56
+msgid "Install Now"
+msgstr ""
+
+#: customizer/include-kirky.php:60
+msgid ""
+"You have installed Kirki. Activate it to take advantage of this theme's "
+"features in the customizer."
+msgstr ""
+
+#: customizer/include-kirky.php:62
+msgid "Activate Kirki Toolkit now"
+msgstr ""
+
+#: customizer/include-kirky.php:63
+msgid "Activate Now"
+msgstr ""
+
+#: footer.php:91 footer.php:93
+msgid "Scroll to top"
+msgstr ""
+
+#: functions.php:155
+msgid "on"
+msgstr ""
+
+#: functions.php:307 functions.php:312
+msgid "Social Connect "
+msgstr ""
+
+#: functions.php:317
+msgid "Thrive Social Connect "
+msgstr ""
+
+#: header-navigation-1.php:8 header-navigation-2.php:8
+msgid "Toggle navigation"
+msgstr ""
+
+#: header-navigation-1.php:39 header-navigation-2.php:74
+msgid "Search posts, groups, members, and etc"
+msgstr ""
+
+#: header-navigation-1.php:50
+msgid "Site Menu"
+msgstr ""
+
+#: header-navigation-1.php:71 header-navigation-1.php:73
+#: header-navigation-2.php:56 header-navigation-2.php:58
+msgid "Add Primary Menu"
+msgstr ""
+
+#: header-navigation-1.php:82 header-navigation-2.php:84 inc/extras.php:859
+msgid "View your shopping cart"
+msgstr ""
+
+#: header-navigation-1.php:100 header-navigation-2.php:103
+msgid "Log In"
+msgstr ""
+
+#: header-navigation-1.php:107 header-navigation-2.php:110
+msgid "Sign Up"
+msgstr ""
+
+#: inc/bp-functions/thrive-bp-hooks.php:57
+#, php-format
+msgid "Profile photo of %s"
+msgstr ""
+
+#: inc/bp-functions/thrive-bp-hooks.php:84
+#, php-format
+msgid "What's new, %s?"
+msgstr ""
+
+#: inc/bp-functions/thrive-bp-hooks.php:85
+msgid "Post what's new"
+msgstr ""
+
+#: inc/bp-functions/thrive-bp-hooks.php:86
+msgid "Post in"
+msgstr ""
+
+#: inc/bp-functions/thrive-bp-hooks.php:87
+msgid "Post Update"
+msgstr ""
+
+#: inc/bp-functions/thrive-bp-hooks.php:88
+msgid "Cancel"
+msgstr ""
+
+#: inc/bp-functions/thrive-bp-messages.php:121
+#, php-format
+msgid "%s &raquo; Read message "
+msgstr ""
+
+#: inc/extras.php:68
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: inc/extras.php:161
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: inc/extras.php:171
+#, php-format
+msgid "<span class=\"type-strong fn\">%s</span>"
+msgstr ""
+
+#: inc/extras.php:175
+msgid "(Edit)"
+msgstr ""
+
+#: inc/extras.php:180
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: inc/extras.php:211
+msgid "Category"
+msgstr ""
+
+#: inc/extras.php:216
+msgid "Tag"
+msgstr ""
+
+#: inc/extras.php:222
+msgid "Author"
+msgstr ""
+
+#: inc/extras.php:236
+msgid "Archive"
+msgstr ""
+
+#: inc/extras.php:254
+msgid "Files"
+msgstr ""
+
+#: inc/extras.php:306
+msgid "Chat"
+msgstr ""
+
+#: inc/extras.php:334
+msgid "Media Updates"
+msgstr ""
+
+#: inc/extras.php:418 inc/extras.php:419
+msgid "Settings"
+msgstr ""
+
+#: inc/extras.php:469
+msgid "@Mention"
+msgstr ""
+
+#: inc/extras.php:476 installer/classes/templates/import.php:177
+msgid "Message"
+msgstr ""
+
+#: inc/extras.php:679 installer/import-config.php:20
+#: installer/import-config.php:102 installer/import-config.php:151
+#: thrive/widgets/widgets.php:80
+msgid "BuddyPress"
+msgstr ""
+
+#: inc/extras.php:683 thrive/widgets/widgets.php:90
+msgid "BuddyPress Profile"
+msgstr ""
+
+#: inc/extras.php:688 thrive/widgets/widgets.php:100
+msgid "BuddyPress Members"
+msgstr ""
+
+#: inc/extras.php:693 thrive/widgets/widgets.php:120
+msgid "BuddyPress Single Group"
+msgstr ""
+
+#: inc/extras.php:698 thrive/widgets/widgets.php:110
+msgid "BuddyPress Groups"
+msgstr ""
+
+#: inc/extras.php:771
+msgid "SHARE"
+msgstr ""
+
+#: inc/extras.php:774
+msgid "Share on Facebook"
+msgstr ""
+
+#: inc/extras.php:777
+msgid "Share on Twitter"
+msgstr ""
+
+#: inc/extras.php:780
+msgid "Share on LinkedIn"
+msgstr ""
+
+#: inc/extras.php:783
+msgid "Share on Google+"
+msgstr ""
+
+#: inc/extras.php:786
+msgid "Share on Reddit"
+msgstr ""
+
+#: inc/extras.php:789
+msgid "WhatsApp"
+msgstr ""
+
+#: inc/extras.php:793
+msgid "E-mail to friend"
+msgstr ""
+
+#: inc/template-tags.php:23
+msgid "Posts navigation"
+msgstr ""
+
+#: inc/template-tags.php:27
+msgid "Older posts"
+msgstr ""
+
+#: inc/template-tags.php:31
+msgid "Newer posts"
+msgstr ""
+
+#: inc/template-tags.php:56
+msgid "Post navigation"
+msgstr ""
+
+#: inc/template-tags.php:86
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: inc/template-tags.php:91 inc/template-tags.php:98
+#, php-format
+msgid "by %s"
+msgstr ""
+
+#: inc/template-tags.php:104
+msgid "Last updated"
+msgstr ""
+
+#: inc/template-tags.php:109
+msgid "on "
+msgstr ""
+
+#: inc/template-tags.php:131 inc/template-tags.php:136
+msgid ", "
+msgstr ""
+
+#: inc/template-tags.php:133
+#, php-format
+msgid "Posted in %1$s"
+msgstr ""
+
+#: inc/template-tags.php:138
+#, php-format
+msgid "Tagged %1$s"
+msgstr ""
+
+#: inc/template-tags.php:147
+msgid "Comments"
+msgstr ""
+
+#: inc/template-tags.php:155
+msgid "Manage"
+msgstr ""
+
+#: inc/template-tags.php:178
+#, php-format
+msgid "Category: %s"
+msgstr ""
+
+#: inc/template-tags.php:180
+#, php-format
+msgid "Tag: %s"
+msgstr ""
+
+#: inc/template-tags.php:182
+#, php-format
+msgid "Author: %s"
+msgstr ""
+
+#: inc/template-tags.php:184
+#, php-format
+msgid "Year: %s"
+msgstr ""
+
+#: inc/template-tags.php:184
+msgid "Y"
+msgstr ""
+
+#: inc/template-tags.php:186
+#, php-format
+msgid "Month: %s"
+msgstr ""
+
+#: inc/template-tags.php:186
+msgid "F Y"
+msgstr ""
+
+#: inc/template-tags.php:188
+#, php-format
+msgid "Day: %s"
+msgstr ""
+
+#: inc/template-tags.php:188
+msgid "F j, Y"
+msgstr ""
+
+#: inc/template-tags.php:191
+msgid "Asides"
+msgstr ""
+
+#: inc/template-tags.php:193
+msgid "Galleries"
+msgstr ""
+
+#: inc/template-tags.php:195
+msgid "Images"
+msgstr ""
+
+#: inc/template-tags.php:197
+msgid "Videos"
+msgstr ""
+
+#: inc/template-tags.php:199
+msgid "Quotes"
+msgstr ""
+
+#: inc/template-tags.php:201
+msgid "Links"
+msgstr ""
+
+#: inc/template-tags.php:203
+msgid "Statuses"
+msgstr ""
+
+#: inc/template-tags.php:205
+msgid "Audio"
+msgstr ""
+
+#: inc/template-tags.php:207
+msgid "Chats"
+msgstr ""
+
+#: inc/template-tags.php:210
+#, php-format
+msgid "Archives: %s"
+msgstr ""
+
+#: inc/template-tags.php:214
+#, php-format
+msgid "%1$s: %2$s"
+msgstr ""
+
+#: inc/template-tags.php:552 inc/template-tags.php:554
+msgid "Add 'Top Right Bar' Menu"
+msgstr ""
+
+#: inc/template-tags.php:559
+msgid "Logout"
+msgstr ""
+
+#: inc/template-tags.php:561 template-parts/sidebar-content.php:57
+#: thrive/user-navigation/user-navigation.php:183
+msgid "Sign Out"
+msgstr ""
+
+#: inc/theme-welcome.php:41
+msgid "Welcome To Thrive"
+msgstr ""
+
+#: inc/theme-welcome.php:42
+msgid "About Thrive"
+msgstr ""
+
+#: inc/theme-welcome.php:53
+#, php-format
+msgid "Welcome to Thrive %s \"Nouveau\""
+msgstr ""
+
+#: inc/theme-welcome.php:57
+msgid ""
+"Thanks for choosing Thrive WordPress Theme!\n"
+"          We hope that you enjoy using this theme. Read the instructions "
+"below to get started."
+msgstr ""
+
+#: inc/theme-welcome.php:62
+msgid "Getting Started"
+msgstr ""
+
+#: inc/theme-welcome.php:64
+msgid ""
+"Start customizing your website. Change the logo, color scheme, fonts, and "
+"more."
+msgstr ""
+
+#: inc/theme-welcome.php:68
+msgid "Activate Recommended Plugins"
+msgstr ""
+
+#: inc/theme-welcome.php:69
+msgid "Visit Set-up Wizard"
+msgstr ""
+
+#: inc/theme-welcome.php:74 inc/theme-welcome.php:75
+msgid "Customize Thrive"
+msgstr ""
+
+#: inc/theme-welcome.php:81
+msgid "Frequently Asked Questions"
+msgstr ""
+
+#: inc/theme-welcome.php:86 inc/theme-welcome.php:88
+msgid "Memory Limit Issues"
+msgstr ""
+
+#: inc/theme-welcome.php:92 inc/theme-welcome.php:94
+msgid "Visual Composer License and Auto Updates"
+msgstr ""
+
+#: inc/theme-welcome.php:98 inc/theme-welcome.php:100
+msgid "General Errors (a.k.a 500 Internal Server Error)"
+msgstr ""
+
+#: inc/theme-welcome.php:104 inc/theme-welcome.php:110
+msgid "Get Support"
+msgstr ""
+
+#: inc/theme-welcome.php:107
+msgid ""
+"Encounter some problems while using Thrive? Send a friendly ticket to our <a "
+"target=\"_blank\" href=\"http://support.dunhakdis.com/\">support portal</a> "
+"and we will get back to you as soon as possible."
+msgstr ""
+
+#: inc/theme-welcome.php:113
+msgid "Start Learning"
+msgstr ""
+
+#: inc/theme-welcome.php:116
+msgid "Access Theme Documentation"
+msgstr ""
+
+#: inc/theme-welcome.php:120
+msgid "Read BuddyPress Docs"
+msgstr ""
+
+#: inc/theme-welcome.php:125
+msgid "Follow Us"
+msgstr ""
+
+#: inc/theme-welcome.php:127
+msgid "Facebook"
+msgstr ""
+
+#: inc/theme-welcome.php:128
+msgid "Visit our Website"
+msgstr ""
+
+#: inc/wp-login-css.php:71
+msgid "Go back to main page"
+msgstr ""
+
+#: inc/wp-login-css.php:83
+msgid "Lost Password?"
+msgstr ""
+
+#: installer/classes/class-demo-config.php:16
+msgid "Sample Demo"
+msgstr ""
+
+#: installer/classes/class-installer.php:50
+msgid "Theme Demo Installation"
+msgstr ""
+
+#: installer/classes/class-installer.php:51
+msgid "Set-up Wizard"
+msgstr ""
+
+#: installer/classes/class-logger-html.php:20
+#: installer/classes/class-wxr-import-ui.php:79
+msgid "Sorry, there has been an error."
+msgstr ""
+
+#: installer/classes/class-wxr-import-ui.php:50
+#, php-format
+msgid ""
+"A new version of this importer is available. Please update to version %s to "
+"ensure compatibility with newer export files."
+msgstr ""
+
+#: installer/classes/class-wxr-import-ui.php:60
+msgid "Update Now"
+msgstr ""
+
+#: installer/classes/class-wxr-import-ui.php:164
+msgid ""
+"Before you can upload your import file, you will need to fix the following "
+"error:"
+msgstr ""
+
+#: installer/classes/class-wxr-import-ui.php:184
+msgid "Select"
+msgstr ""
+
+#: installer/classes/class-wxr-import-ui.php:185
+msgid "Import"
+msgstr ""
+
+#: installer/classes/class-wxr-import-ui.php:193
+msgid "XML files"
+msgstr ""
+
+#: installer/classes/class-wxr-import-ui.php:244
+msgid "Error: Unable to fetch demo_id from the url"
+msgstr ""
+
+#: installer/classes/class-wxr-import-ui.php:264
+#, php-format
+msgid ""
+"The export file could not be found at %s. It is likely that this was caused "
+"by a permissions problem."
+msgstr ""
+
+#: installer/classes/class-wxr-import-ui.php:300
+msgid "You do not have permission to upload files."
+msgstr ""
+
+#: installer/classes/class-wxr-import-ui.php:344
+#: installer/classes/class-wxr-import-ui.php:355
+msgid "Invalid media item ID."
+msgstr ""
+
+#: installer/classes/class-wxr-import-ui.php:363
+msgid "You cannot access the selected media item."
+msgstr ""
+
+#: installer/classes/class-wxr-import-ui.php:390
+#, php-format
+msgid "Error extensible markup language (xml) for content is not found in: %s"
+msgstr ""
+
+#: installer/classes/class-wxr-import-ui.php:413
+msgid "Could not cache information on the import."
+msgstr ""
+
+#: installer/classes/class-wxr-import-ui.php:431
+msgid "Missing import file ID from request."
+msgstr ""
+
+#: installer/classes/class-wxr-import-ui.php:602
+msgid "Import author:"
+msgstr ""
+
+#: installer/classes/class-wxr-import-ui.php:619
+msgid "or create new user with login name:"
+msgstr ""
+
+#: installer/classes/class-wxr-import-ui.php:622
+msgid "as a new user:"
+msgstr ""
+
+#: installer/classes/class-wxr-import-ui.php:634
+msgid "assign posts to an existing user:"
+msgstr ""
+
+#: installer/classes/class-wxr-import-ui.php:636
+msgid "or assign posts to an existing user:"
+msgstr ""
+
+#: installer/classes/class-wxr-import-ui.php:642
+msgid "- Select -"
+msgstr ""
+
+#: installer/classes/class-wxr-import-ui.php:815
+msgid "Export"
+msgstr ""
+
+#: installer/classes/class-wxr-import-ui.php:817
+msgid "Widgets"
+msgstr ""
+
+#: installer/classes/class-wxr-import-ui.php:820
+msgid "Customizer"
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:133
+msgid "Could not open the file for parsing"
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:169
+#: installer/classes/class-wxr-importer.php:285
+#: installer/classes/class-wxr-importer.php:358
+#, php-format
+msgid ""
+"This WXR file (version %s) is newer than the importer (version %s) and may "
+"not be supported. Please consider updating."
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:507
+msgid "The file does not exist, please try again."
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:567
+msgid "Invalid author mapping"
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:668
+msgid "Cannot import auto-draft posts"
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:756
+#, php-format
+msgid "Failed to import \"%s\": Invalid post type %s"
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:766
+#, php-format
+msgid "%s \"%s\" already exists."
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:851
+#, php-format
+msgid "Skipping attachment \"%s\", fetching attachments disabled"
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:872
+#, php-format
+msgid "Failed to import \"%s\" (%s)"
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:904
+#: installer/classes/class-wxr-importer.php:1738
+#, php-format
+msgid "Imported \"%s\" (%s)"
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:909
+#, php-format
+msgid "Post %d remapped to %d"
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:1053
+msgid "Invalid file type"
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:1544
+#, php-format
+msgid "Failed to import user \"%s\""
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:1565
+#, php-format
+msgid "Imported user \"%s\""
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:1569
+#, php-format
+msgid "User %d remapped to %d"
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:1714
+#, php-format
+msgid "Failed to import %s %s"
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:1743
+#, php-format
+msgid "Term %d remapped to %d"
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:1796
+#, php-format
+msgid "Remote server returned %1$d %2$s for %3$s"
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:1809
+msgid "Remote file is incorrect size"
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:1814
+msgid "Zero size file downloaded"
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:1820
+#, php-format
+msgid "Remote file is too large, limit is %s"
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:1842
+#, php-format
+msgid "Running post-processing for post %d"
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:1855
+#, php-format
+msgid "Could not find the post parent for \"%s\" (post #%d)"
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:1860
+#, php-format
+msgid "Post %d was imported with parent %d, but could not be found"
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:1874
+#, php-format
+msgid "Could not find the author for \"%s\" (post #%d)"
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:1879
+#, php-format
+msgid "Post %d was imported with author \"%s\", but could not be found"
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:1905
+#, php-format
+msgid "Post %d was marked for post-processing, but none was required."
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:1916
+#, php-format
+msgid "Could not update \"%s\" (post #%d) with mapped data"
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:1961
+#, php-format
+msgid "Could not find the menu object for \"%s\" (post #%d)"
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:1966
+#, php-format
+msgid ""
+"Post %d was imported with object \"%d\" of type \"%s\", but could not be "
+"found"
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:1988
+#, php-format
+msgid "Could not find the comment parent for comment #%d"
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:1992
+#, php-format
+msgid "Comment %d was imported with parent %d, but could not be found"
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:2006
+#, php-format
+msgid "Could not find the author for comment #%d"
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:2010
+#, php-format
+msgid "Comment %d was imported with author %d, but could not be found"
+msgstr ""
+
+#: installer/classes/class-wxr-importer.php:2027
+#, php-format
+msgid "Could not update comment #%d with mapped data"
+msgstr ""
+
+#: installer/classes/customizer.php:18
+msgid "Importing Customizer Settings &hellip;"
+msgstr ""
+
+#: installer/classes/customizer.php:36
+msgid "Customizer Settings Applied &hellip;"
+msgstr ""
+
+#: installer/classes/customizer.php:38 installer/classes/widgets.php:89
+#: installer/classes/widgets.php:99
+msgid "All Done &hellip;"
+msgstr ""
+
+#: installer/classes/templates/demos.php:12
+msgid "Step 1 of 3:"
+msgstr ""
+
+#: installer/classes/templates/demos.php:14
+msgid "Please select a demo to get started."
+msgstr ""
+
+#: installer/classes/templates/demos.php:35
+#: installer/classes/templates/demos.php:37
+msgid "Select Demo"
+msgstr ""
+
+#: installer/classes/templates/demos.php:41
+#: installer/classes/templates/demos.php:43
+#: installer/tgm/class-tgm-plugin-activation.php:330
+msgid "Install Plugins"
+msgstr ""
+
+#: installer/classes/templates/import.php:24
+msgid "Import complete!"
+msgstr ""
+
+#: installer/classes/templates/import.php:38
+msgid "Step 3 of 3:"
+msgstr ""
+
+#: installer/classes/templates/import.php:40
+msgid "Running Import."
+msgstr ""
+
+#: installer/classes/templates/import.php:46
+msgid "Step 3: Importing"
+msgstr ""
+
+#: installer/classes/templates/import.php:47
+msgid "Now importing."
+msgstr ""
+
+#: installer/classes/templates/import.php:52
+msgid "Import Summary"
+msgstr ""
+
+#: installer/classes/templates/import.php:53
+msgid "Completed"
+msgstr ""
+
+#: installer/classes/templates/import.php:54
+msgid "Progress"
+msgstr ""
+
+#: installer/classes/templates/import.php:63
+#: installer/classes/templates/select-options.php:130
+#, php-format
+msgid "%d post (including CPTs)"
+msgstr ""
+
+#: installer/classes/templates/import.php:81
+#: installer/classes/templates/select-options.php:139
+#, php-format
+msgid "%d media item"
+msgstr ""
+
+#: installer/classes/templates/import.php:100
+#: installer/classes/templates/select-options.php:148
+#, php-format
+msgid "%d user"
+msgstr ""
+
+#: installer/classes/templates/import.php:119
+#: installer/classes/templates/select-options.php:157
+#, php-format
+msgid "%d comment"
+msgstr ""
+
+#: installer/classes/templates/import.php:138
+#: installer/classes/templates/select-options.php:166
+#, php-format
+msgid "%d term"
+msgstr ""
+
+#: installer/classes/templates/import.php:167
+msgid "Toggle Import Log"
+msgstr ""
+
+#: installer/classes/templates/import.php:168
+msgid "Click to toggle the import log"
+msgstr ""
+
+#: installer/classes/templates/import.php:176
+#: installer/tgm/class-tgm-plugin-activation.php:2570
+msgid "Type"
+msgstr ""
+
+#: installer/classes/templates/select-options.php:21
+#, php-format
+msgid "WordPress %s"
+msgstr ""
+
+#: installer/classes/templates/select-options.php:26
+msgid "Step 2 of 3:"
+msgstr ""
+
+#: installer/classes/templates/select-options.php:28
+msgid "Install 3rd Party Plugins."
+msgstr ""
+
+#: installer/classes/templates/select-options.php:36
+#, php-format
+msgid "You have chosen: %s"
+msgstr ""
+
+#: installer/classes/templates/select-options.php:42
+msgid ""
+"Your import is almost ready to go. Before we begin,\n"
+"\t\t\t\t\tbe sure to check out the 'Required Plugins' to make sure\n"
+"\t\t\t\t\tevery post type data and other 3rd party plugins data will be "
+"imported."
+msgstr ""
+
+#: installer/classes/templates/select-options.php:55
+msgid "Required Plugins"
+msgstr ""
+
+#: installer/classes/templates/select-options.php:58
+msgid ""
+"This demo requires the following plugins to be\n"
+"\t\t\t\t\t\tinstalled and activated, plugins listed below that are checked "
+"does not require any actions:"
+msgstr ""
+
+#: installer/classes/templates/select-options.php:65
+msgid "Legend"
+msgstr ""
+
+#: installer/classes/templates/select-options.php:69
+msgid "Needs to be installed and activated"
+msgstr ""
+
+#: installer/classes/templates/select-options.php:71
+msgid "Already installed and activated"
+msgstr ""
+
+#: installer/classes/templates/select-options.php:104
+msgid "Click to begin installing and activating required plugins"
+msgstr ""
+
+#: installer/classes/templates/select-options.php:123
+msgid "Summary"
+msgstr ""
+
+#: installer/classes/templates/select-options.php:174
+msgid "Import Facts"
+msgstr ""
+
+#: installer/classes/templates/select-options.php:179
+#, php-format
+msgid "Exported from <a href=\"%1$s\">%2$s</a>"
+msgstr ""
+
+#: installer/classes/templates/select-options.php:188
+#, php-format
+msgid "Generated by %s"
+msgstr ""
+
+#: installer/classes/templates/select-options.php:196
+#, php-format
+msgid "Format: WXR v%s"
+msgstr ""
+
+#: installer/classes/templates/select-options.php:216
+msgid "Assign Authors"
+msgstr ""
+
+#: installer/classes/templates/select-options.php:220
+msgid ""
+"To make it easier for you to edit and save the imported content, you may "
+"want to reassign the author of the imported item to an existing user of this "
+"site. For example, you may want to import all the entries as <code>admin</"
+"code>s entries."
+msgstr ""
+
+#: installer/classes/templates/select-options.php:227
+#, php-format
+msgid ""
+"If a new user is created by WordPress, a new password will be randomly "
+"generated and the new user&#8217;s role will be set as %s. Manually changing "
+"the new user&#8217;s details will be necessary."
+msgstr ""
+
+#: installer/classes/templates/select-options.php:245
+msgid "Import Attachments"
+msgstr ""
+
+#: installer/classes/templates/select-options.php:249
+msgid "Download and import file attachments"
+msgstr ""
+
+#: installer/classes/templates/select-options.php:264
+msgid "I have already installed and activated all required plugins"
+msgstr ""
+
+#: installer/classes/templates/select-options.php:269
+msgid "Start Importing"
+msgstr ""
+
+#: installer/classes/widgets.php:82
+msgid "Updating Individual Widget Settings &hellip;"
+msgstr ""
+
+#: installer/classes/widgets.php:86
+#, php-format
+msgid "Updating settings for <strong>%s</strong> ... [Done]</li>"
+msgstr ""
+
+#: installer/classes/widgets.php:97
+msgid "Applying settings for all widget positions in sidebars... [Done]"
+msgstr ""
+
+#: installer/import-config.php:8
+msgid "Intranet/Extranet"
+msgstr ""
+
+#: installer/import-config.php:16 installer/import-config.php:98
+#: installer/import-config.php:147
+msgid "Nifty Menu Options"
+msgstr ""
+
+#: installer/import-config.php:24 installer/import-config.php:106
+#: installer/import-config.php:155
+msgid "BuddyKit"
+msgstr ""
+
+#: installer/import-config.php:30 installer/import-config.php:112
+#: installer/import-config.php:161
+msgid "BbPress"
+msgstr ""
+
+#: installer/import-config.php:34
+msgid "TaskBreaker - Project Management"
+msgstr ""
+
+#: installer/import-config.php:38
+msgid "Reference Knowledgebase and Docs"
+msgstr ""
+
+#: installer/import-config.php:42 installer/import-config.php:116
+#: installer/import-config.php:177
+msgid "Subway - Private Site Option"
+msgstr ""
+
+#: installer/import-config.php:46
+msgid "BuddyPress Docs"
+msgstr ""
+
+#: installer/import-config.php:50
+msgid "Visual Form Builder"
+msgstr ""
+
+#: installer/import-config.php:55
+msgid "WooCommerce"
+msgstr ""
+
+#: installer/import-config.php:59 installer/import-config.php:165
+msgid "BuddyDrive"
+msgstr ""
+
+#: installer/import-config.php:63 installer/import-config.php:173
+msgid "The Events Calendar"
+msgstr ""
+
+#: installer/import-config.php:67
+msgid "WP Polls"
+msgstr ""
+
+#: installer/import-config.php:71 installer/import-config.php:120
+#: installer/import-config.php:181
+msgid "Visual Composer"
+msgstr ""
+
+#: installer/import-config.php:77 installer/import-config.php:126
+#: installer/import-config.php:187
+msgid "Slider Revolution"
+msgstr ""
+
+#: installer/import-config.php:83 installer/import-config.php:132
+#: installer/import-config.php:193
+msgid "Gears"
+msgstr ""
+
+#: installer/import-config.php:91
+msgid "Small Community"
+msgstr ""
+
+#: installer/import-config.php:140
+msgid "E-Learning via LearnDash"
+msgstr ""
+
+#: installer/import-config.php:169
+msgid "BuddyDocs"
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:329
+msgid "Install Required Plugins"
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:332
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:334
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:335
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:338
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:344
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:350
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:356
+#, php-format
+msgid "There is an update available for: %1$s."
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:362
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:368
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:373
+msgid "Begin installing plugin"
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:378
+msgid "Begin updating plugin"
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:383
+msgid "Begin activating plugin"
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:387
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:388
+#: installer/tgm/class-tgm-plugin-activation.php:3602
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:389
+#: installer/tgm/class-tgm-plugin-activation.php:3181
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:390
+#: installer/tgm/class-tgm-plugin-activation.php:2974
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:392
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:394
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:396
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:397
+msgid "Dismiss this notice"
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:398
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:399
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:525
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:526
+msgid "Update Required"
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:830
+msgid "Return to the Demo Set-up"
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:937
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:937
+#: installer/tgm/class-tgm-plugin-activation.php:940
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:940
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:1126
+#: installer/tgm/class-tgm-plugin-activation.php:2970
+msgid "and"
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:1997
+#, php-format
+msgid "TGMPA v%s"
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:2289
+msgid "Required"
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:2292
+msgid "Recommended"
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:2308
+msgid "WordPress Repository"
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:2311
+msgid "External Source"
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:2314
+msgid "Pre-Packaged"
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:2331
+msgid "Not Installed"
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:2335
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:2337
+msgid "Active"
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:2343
+msgid "Required Update not Available"
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:2346
+msgid "Requires Update"
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:2349
+msgid "Update recommended"
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:2358
+#, php-format
+msgid "%1$s, %2$s"
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:2404
+#, php-format
+msgid "All <span class=\"count\">(%s)</span>"
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:2408
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:2412
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:2416
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:2498
+msgid "unknown"
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:2506
+msgid "Installed version:"
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:2514
+msgid "Minimum required version:"
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:2526
+msgid "Available version:"
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:2552
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:2552
+msgid "Return to the demo installer"
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:2568
+msgid "Plugin"
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:2569
+msgid "Source"
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:2574
+msgid "Version"
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:2575
+msgid "Status"
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:2624
+#, php-format
+msgid "Install %2$s"
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:2629
+#, php-format
+msgid "Update %2$s"
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:2635
+#, php-format
+msgid "Activate %2$s"
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:2706
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:2739
+msgid "Install"
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:2745
+msgid "Update"
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:2748
+msgid "Activate"
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:2779
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:2781
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:2822
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:2824
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:2930
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:2956
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:3180
+msgid "Plugin activation failed."
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:3520
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:3523
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:3525
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:3529
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:3531
+#: installer/tgm/class-tgm-plugin-activation.php:3539
+#, php-format
+msgid "%1$s done."
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:3532
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:3534
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:3537
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:3540
+msgid "All installations have been completed."
+msgstr ""
+
+#: installer/tgm/class-tgm-plugin-activation.php:3542
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: installer/views/index.php:4
+msgid "Thrive Setup Wizard"
+msgstr ""
+
+#: knowledgebase-none.php:59
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">\n"
+"                        Get started here</a>."
+msgstr ""
+
+#: knowledgebase-none.php:76 template-parts/content-none.php:24
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: knowledgebase-search.php:23
+msgid "Search Results"
+msgstr ""
+
+#: page-templates/dashboard.php:42
+msgid "Click to Reset Widget Positions"
+msgstr ""
+
+#: page-templates/dashboard.php:57 page-templates/dashboard.php:59
+#: thrive/widgets/widgets.php:25
+msgid "Dashboard"
+msgstr ""
+
+#: search.php:30
+#, php-format
+msgid "Search results for \"%s\""
+msgstr ""
+
+#: searchform.php:4
+msgid "Search for:"
+msgstr ""
+
+#: single-dsc-knowledgebase.php:59 template-parts/content-buddypress.php:23
+#: template-parts/content-page.php:52 template-parts/content.php:64
+msgid "Pages:"
+msgstr ""
+
+#: single-dsc-knowledgebase.php:66 template-parts/content-buddypress.php:30
+#: template-parts/content-page.php:59
+msgid "Edit"
+msgstr ""
+
+#: single-dsc-knowledgebase.php:91
+msgid "Table of Contents"
+msgstr ""
+
+#: template-parts/content-learndash-single.php:34
+#: template-parts/content-single.php:34
+msgid "Page: "
+msgstr ""
+
+#: template-parts/content-learndash-single.php:45
+#: template-parts/content-single.php:49
+msgid "About"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Oops! Nothing Found"
+msgstr ""
+
+#: template-parts/content-none.php:20
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:29
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: template-parts/content-page.php:21
+msgid "Published on "
+msgstr ""
+
+#: template-parts/sidebar-content.php:32 template-parts/sidebar-content.php:47
+msgid "View Profile"
+msgstr ""
+
+#: template-parts/sidebar-content.php:38 template-parts/sidebar-content.php:51
+msgid "View My Post Archives"
+msgstr ""
+
+#: template-parts/sidebar-content.php:56
+msgid "Sign Ou"
+msgstr ""
+
+#: template-parts/sidebar-content.php:91
+msgid "New 'Secondary' Menu"
+msgstr ""
+
+#: template-parts/sidebar-content.php:108
+msgid "Profile Settings"
+msgstr ""
+
+#: template-parts/sidebar-content.php:136
+msgid "Login"
+msgstr ""
+
+#: thrive/cmb2-fields/page.php:31
+msgid "Thrive: Page Title Style"
+msgstr ""
+
+#: thrive/cmb2-fields/page.php:41
+msgid "Select a color for the title of this page"
+msgstr ""
+
+#: thrive/cmb2-fields/page.php:49
+msgid "Text Alignment"
+msgstr ""
+
+#: thrive/cmb2-fields/page.php:58
+msgid "Choose the text alignment for the title and subtitle"
+msgstr ""
+
+#: thrive/cmb2-fields/page.php:64
+msgid ""
+"Add a secondary title below the main title of the page. Could be any text."
+msgstr ""
+
+#: thrive/cmb2-fields/page.php:72
+msgid "Select a color for the subtitle of this page"
+msgstr ""
+
+#: thrive/cmb2-fields/page.php:85
+msgid "Select a background color for this page"
+msgstr ""
+
+#: thrive/cmb2-fields/page.php:116
+msgid "Background Image Position"
+msgstr ""
+
+#: thrive/cmb2-fields/page.php:117
+msgid "Select the background position of the title for this page"
+msgstr ""
+
+#: thrive/cmb2-fields/page.php:122
+msgid "Left Top"
+msgstr ""
+
+#: thrive/cmb2-fields/page.php:123
+msgid "Left Center"
+msgstr ""
+
+#: thrive/cmb2-fields/page.php:124
+msgid "Left Bottom"
+msgstr ""
+
+#: thrive/cmb2-fields/page.php:125
+msgid "Right Top"
+msgstr ""
+
+#: thrive/cmb2-fields/page.php:126
+msgid "Right Center"
+msgstr ""
+
+#: thrive/cmb2-fields/page.php:127
+msgid "Right Bottom"
+msgstr ""
+
+#: thrive/cmb2-fields/page.php:128
+msgid "Center Top"
+msgstr ""
+
+#: thrive/cmb2-fields/page.php:129
+msgid "Center Center"
+msgstr ""
+
+#: thrive/cmb2-fields/page.php:130
+msgid "Center bottom"
+msgstr ""
+
+#: thrive/cmb2-fields/page.php:138
+msgid "Background Image Size"
+msgstr ""
+
+#: thrive/cmb2-fields/page.php:139
+msgid "Select the background size"
+msgstr ""
+
+#: thrive/cmb2-fields/page.php:153
+msgid "Background Image Repeat"
+msgstr ""
+
+#: thrive/cmb2-fields/page.php:154
+msgid "Select the background repeat"
+msgstr ""
+
+#: thrive/cmb2-fields/page.php:159
+msgid "Repeat All"
+msgstr ""
+
+#: thrive/cmb2-fields/page.php:162
+msgid "No Repeat"
+msgstr ""
+
+#: thrive/cmb2-fields/terms.php:12
+msgid "Thrive: Terms Title Style"
+msgstr ""
+
+#: thrive/cmb2-fields/terms.php:20
+msgid "Thrive: Term Layout"
+msgstr ""
+
+#: thrive/cmb2-fields/terms.php:27
+msgid "Full Content / No Sidebars"
+msgstr ""
+
+#: thrive/cmb2-fields/terms.php:29
+msgid "Select the layout for this term"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2.php:179
+msgid "Metabox configuration is required to have an ID parameter."
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2.php:582
+msgid "Click to toggle"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_Ajax.php:75
+msgid "Please Try Again"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_Ajax.php:181
+msgid "Remove Embed"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_Ajax.php:189
+#: thrive/cmb2/includes/helper-functions.php:105
+#, php-format
+msgid "No oEmbed Results Found for %1$s. View more info at %2$s."
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_Base.php:422
+#, php-format
+msgid ""
+"The \"%1$s\" field parameter has been deprecated in favor of the \"%2$s\" "
+"parameter."
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_Base.php:426
+#, php-format
+msgid ""
+"Using the \"%1$s\" field parameter as a callback has been deprecated in "
+"favor of the \"%2$s\" parameter."
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_Base.php:456
+#, php-format
+msgid ""
+"%1$s was called with a parameter that is <strong>deprecated</strong> since "
+"version %2$s! %3$s"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_Base.php:458
+#, php-format
+msgid ""
+"%1$s was called with a parameter that is <strong>deprecated</strong> since "
+"version %2$s with no alternative available."
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_Base.php:491
+#: thrive/cmb2/includes/CMB2_Hookup_Base.php:100
+#: thrive/cmb2/includes/CMB2_Options_Hookup.php:341
+#: thrive/cmb2/includes/types/CMB2_Type_Base.php:172
+#, php-format
+msgid "Invalid %1$s property: %2$s"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_Base.php:506
+#: thrive/cmb2/includes/types/CMB2_Type_Base.php:156
+#, php-format
+msgid "Invalid %1$s method: %2$s"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_Field.php:1296
+msgid "Add Group"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_Field.php:1297
+msgid "Remove Group"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_Field.php:1328
+#: thrive/cmb2/includes/CMB2_Field.php:1332
+msgid "None"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_Field.php:1443
+msgid "Sorry, this field does not have a cmb_id specified."
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_Field_Display.php:432
+#: thrive/cmb2/includes/CMB2_JS.php:228
+#: thrive/cmb2/includes/types/CMB2_Type_File_Base.php:79
+msgid "File:"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_Hookup_Base.php:42
+#, php-format
+msgid "%1$s should be implemented by the extended class."
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_JS.php:165 thrive/cmb2/includes/CMB2_JS.php:208
+msgid "Clear"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_JS.php:167
+msgid "Select Color"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_JS.php:168
+msgid "Current Color"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_JS.php:198
+msgid "mm/dd/yy"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_JS.php:199
+msgid "Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_JS.php:200
+msgid "Su, Mo, Tu, We, Th, Fr, Sa"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_JS.php:201
+msgid "Sun, Mon, Tue, Wed, Thu, Fri, Sat"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_JS.php:202
+msgid ""
+"January, February, March, April, May, June, July, August, September, "
+"October, November, December"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_JS.php:203
+msgid "Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_JS.php:204
+msgid "Next"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_JS.php:205
+msgid "Prev"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_JS.php:206
+msgid "Today"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_JS.php:207 thrive/cmb2/includes/CMB2_JS.php:217
+msgid "Done"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_JS.php:211
+msgid "Choose Time"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_JS.php:212
+msgid "Time"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_JS.php:213
+msgid "Hour"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_JS.php:214
+msgid "Minute"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_JS.php:215
+msgid "Second"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_JS.php:216
+msgid "Now"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_JS.php:218
+msgid "hh:mm TT"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_JS.php:224
+msgid "Use this file"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_JS.php:225
+msgid "Use these files"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_JS.php:226
+#: thrive/cmb2/includes/types/CMB2_Type_File_Base.php:64
+msgid "Remove Image"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_JS.php:227 thrive/cmb2/includes/CMB2_Types.php:412
+#: thrive/cmb2/includes/types/CMB2_Type_File_Base.php:84
+msgid "Remove"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_JS.php:229
+#: thrive/cmb2/includes/types/CMB2_Type_File_Base.php:82
+msgid "Download"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_JS.php:230
+msgid "Select / Deselect All"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_Options_Hookup.php:131
+msgid "Nothing to update."
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_Options_Hookup.php:135
+msgid "Settings updated."
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_Types.php:231
+msgid "Custom CMB2 field type classes must extend CMB2_Type_Base."
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_Types.php:349
+msgid "Add Row"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_Types.php:412
+msgid "Remove Row"
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_hookup.php:181
+msgid ""
+"Term Metadata is a WordPress 4.4+ feature. Please upgrade your WordPress "
+"install."
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_hookup.php:185
+msgid "Term metaboxes configuration requires a \"taxonomies\" parameter."
+msgstr ""
+
+#: thrive/cmb2/includes/CMB2_hookup.php:458
+#, php-format
+msgid "Toggle panel: %s"
+msgstr ""
+
+#: thrive/cmb2/includes/helper-functions.php:303
+msgid "Save"
+msgstr ""
+
+#: thrive/cmb2/includes/rest-api/CMB2_REST_Controller.php:257
+msgid "This box does not have read permissions."
+msgstr ""
+
+#: thrive/cmb2/includes/rest-api/CMB2_REST_Controller.php:277
+msgid "This box does not have write permissions."
+msgstr ""
+
+#: thrive/cmb2/includes/rest-api/CMB2_REST_Controller.php:300
+msgid ""
+"No box found by that id. A box needs to be registered with the \"show_in_rest"
+"\" parameter configured."
+msgstr ""
+
+#: thrive/cmb2/includes/rest-api/CMB2_REST_Controller.php:378
+msgid "A human-readable description of the object."
+msgstr ""
+
+#: thrive/cmb2/includes/rest-api/CMB2_REST_Controller.php:385
+msgid "The id for the object."
+msgstr ""
+
+#: thrive/cmb2/includes/rest-api/CMB2_REST_Controller.php:392
+msgid "The title for the object."
+msgstr ""
+
+#: thrive/cmb2/includes/rest-api/CMB2_REST_Controller_Boxes.php:51
+msgid "Includes the registered fields for the box in the response."
+msgstr ""
+
+#: thrive/cmb2/includes/rest-api/CMB2_REST_Controller_Boxes.php:72
+msgid ""
+"Includes the fully rendered attributes, 'form_open', 'form_close', as well "
+"as the enqueued 'js_dependencies' script handles, and 'css_dependencies' "
+"stylesheet handles."
+msgstr ""
+
+#: thrive/cmb2/includes/rest-api/CMB2_REST_Controller_Boxes.php:122
+msgid "No boxes found."
+msgstr ""
+
+#: thrive/cmb2/includes/rest-api/CMB2_REST_Controller_Fields.php:27
+msgid ""
+"Includes the box object which the fields are registered to in the response."
+msgstr ""
+
+#: thrive/cmb2/includes/rest-api/CMB2_REST_Controller_Fields.php:30
+msgid ""
+"When the '_rendered' argument is passed, the renderable field attributes "
+"will be returned fully rendered. By default, the names of the callback "
+"handers for the renderable attributes will be returned."
+msgstr ""
+
+#: thrive/cmb2/includes/rest-api/CMB2_REST_Controller_Fields.php:33
+#: thrive/cmb2/includes/rest-api/CMB2_REST_Controller_Fields.php:36
+msgid ""
+"To view or modify the field's value, the 'object_id' and 'object_type' "
+"arguments are required."
+msgstr ""
+
+#: thrive/cmb2/includes/rest-api/CMB2_REST_Controller_Fields.php:236
+msgid ""
+"CMB2 Field value cannot be updated without the value parameter specified."
+msgstr ""
+
+#: thrive/cmb2/includes/rest-api/CMB2_REST_Controller_Fields.php:297
+msgid ""
+"CMB2 Field value cannot be modified without the object_id and object_type "
+"parameters specified."
+msgstr ""
+
+#: thrive/cmb2/includes/rest-api/CMB2_REST_Controller_Fields.php:312
+#: thrive/cmb2/includes/rest-api/CMB2_REST_Controller_Fields.php:341
+msgid "No field found by that id."
+msgstr ""
+
+#: thrive/cmb2/includes/rest-api/CMB2_REST_Controller_Fields.php:415
+#, php-format
+msgid "Value Error for %s"
+msgstr ""
+
+#: thrive/cmb2/includes/shim/WP_REST_Controller.php:25
+#, php-format
+msgid "Method '%s' must be overridden."
+msgstr ""
+
+#: thrive/cmb2/includes/shim/WP_REST_Controller.php:35
+#: thrive/cmb2/includes/shim/WP_REST_Controller.php:47
+#: thrive/cmb2/includes/shim/WP_REST_Controller.php:59
+#: thrive/cmb2/includes/shim/WP_REST_Controller.php:71
+#: thrive/cmb2/includes/shim/WP_REST_Controller.php:83
+#: thrive/cmb2/includes/shim/WP_REST_Controller.php:95
+#: thrive/cmb2/includes/shim/WP_REST_Controller.php:107
+#: thrive/cmb2/includes/shim/WP_REST_Controller.php:119
+#: thrive/cmb2/includes/shim/WP_REST_Controller.php:131
+#: thrive/cmb2/includes/shim/WP_REST_Controller.php:143
+#: thrive/cmb2/includes/shim/WP_REST_Controller.php:155
+#: thrive/cmb2/includes/shim/WP_REST_Controller.php:168
+#, php-format
+msgid "Method '%s' not implemented. Must be overridden in subclass."
+msgstr ""
+
+#: thrive/cmb2/includes/shim/WP_REST_Controller.php:273
+msgid "Current page of the collection."
+msgstr ""
+
+#: thrive/cmb2/includes/shim/WP_REST_Controller.php:281
+msgid "Maximum number of items to be returned in result set."
+msgstr ""
+
+#: thrive/cmb2/includes/shim/WP_REST_Controller.php:290
+msgid "Limit results to those matching a string."
+msgstr ""
+
+#: thrive/cmb2/includes/shim/WP_REST_Controller.php:308
+msgid ""
+"Scope under which the request is made; determines fields present in response."
+msgstr ""
+
+#: thrive/cmb2/includes/types/CMB2_Type_File.php:76
+msgid "Add or Upload File"
+msgstr ""
+
+#: thrive/cmb2/includes/types/CMB2_Type_File_List.php:41
+msgid "Add or Upload Files"
+msgstr ""
+
+#: thrive/cmb2/includes/types/CMB2_Type_Taxonomy_Base.php:115
+msgid "No terms"
+msgstr ""
+
+#: thrive/menu/customizer/branding.php:12
+msgid "Branding"
+msgstr ""
+
+#: thrive/menu/customizer/branding.php:14
+msgid ""
+"This section handles the all default settings for your Branding. Change it "
+"to your preference."
+msgstr ""
+
+#: thrive/menu/customizer/branding.php:32
+msgid "Branding Height"
+msgstr ""
+
+#: thrive/menu/customizer/branding.php:33
+msgid "Use the slider below to adjust the height of the the Header Section."
+msgstr ""
+
+#: thrive/menu/customizer/branding.php:53
+msgid "Logo Background"
+msgstr ""
+
+#: thrive/menu/customizer/branding.php:69
+msgid "Menu Background"
+msgstr ""
+
+#: thrive/menu/customizer/branding.php:89
+msgid "Upload a logo"
+msgstr ""
+
+#: thrive/menu/customizer/branding.php:110
+msgid "Mobile Logo"
+msgstr ""
+
+#: thrive/menu/customizer/menu.php:5
+msgid "Menu"
+msgstr ""
+
+#: thrive/menu/customizer/menu.php:7
+msgid ""
+"This section handles the all default settings for your website menu. Choose "
+"the best colors that suites your company and personality."
+msgstr ""
+
+#: thrive/menu/customizer/menu.php:22 thrive/menu/customizer/mobile-menu.php:39
+#: thrive/menu/customizer/sub-menu.php:22
+msgid "Default State"
+msgstr ""
+
+#: thrive/menu/customizer/menu.php:38
+msgid "Active & Hover State"
+msgstr ""
+
+#: thrive/menu/customizer/menu.php:58
+msgid "Top Right Menu"
+msgstr ""
+
+#: thrive/menu/customizer/menu.php:60
+msgid ""
+"Choose which kind of menu you would like to display in the top right bar."
+msgstr ""
+
+#: thrive/menu/customizer/menu.php:62
+msgid ""
+"Automatically fetch BuddyPress generated profile menu for me. (BuddyPress "
+"plugin required)"
+msgstr ""
+
+#: thrive/menu/customizer/menu.php:63
+msgid "I would like to use the theme \"Top Right Bar\" menu."
+msgstr ""
+
+#: thrive/menu/customizer/mobile-menu.php:5
+msgid "Mobile Menu"
+msgstr ""
+
+#: thrive/menu/customizer/mobile-menu.php:7
+msgid ""
+"This section handles the all default settings for your website mobile menu. "
+"Choose the best colors that suites your company and personality."
+msgstr ""
+
+#: thrive/menu/customizer/mobile-menu.php:23
+msgid "Button Color"
+msgstr ""
+
+#: thrive/menu/customizer/mobile-menu.php:54
+#: thrive/menu/customizer/sub-menu.php:37
+msgid "Hover & Active State"
+msgstr ""
+
+#: thrive/menu/customizer/mobile-menu.php:69
+msgid "Hover & Active Background"
+msgstr ""
+
+#: thrive/menu/customizer/mobile-menu.php:84
+msgid "Mobile Background"
+msgstr ""
+
+#: thrive/menu/customizer/sub-menu.php:5
+msgid "Sub Menu"
+msgstr ""
+
+#: thrive/menu/customizer/sub-menu.php:7
+msgid ""
+"This section handles the all default settings for your website submenu menu. "
+"Choose the best colors that suites your company and personality."
+msgstr ""
+
+#: thrive/menu/customizer/sub-menu.php:54
+msgid "Hover & Active State Background"
+msgstr ""
+
+#: thrive/menu/menu.php:35
+msgid "Primary Menu"
+msgstr ""
+
+#: thrive/menu/menu.php:36
+msgid "Secondary Menu"
+msgstr ""
+
+#: thrive/menu/menu.php:37
+msgid "Top Right Bar"
+msgstr ""
+
+#: thrive/menu/menu.php:65
+msgid "Branding & Menu"
+msgstr ""
+
+#: thrive/sidebars/sidebars-meta.php:101
+msgid "Appearance"
+msgstr ""
+
+#: thrive/sidebars/sidebars-meta.php:164
+msgid "Left Sidebar"
+msgstr ""
+
+#: thrive/sidebars/sidebars-meta.php:180 thrive/sidebars/sidebars-meta.php:226
+msgid "No Sidebars Available"
+msgstr ""
+
+#: thrive/sidebars/sidebars-meta.php:197
+msgid "Right Sidebar"
+msgstr ""
+
+#: thrive/sidebars/sidebars-meta.php:231
+msgid "Page Layout"
+msgstr ""
+
+#: thrive/sidebars/sidebars-meta.php:244
+msgid "Full Content / No Sidebar"
+msgstr ""
+
+#: thrive/sidebars/sidebars-screen.php:14 thrive/sidebars/sidebars.php:42
+#: thrive/sidebars/sidebars.php:43
+msgid "Sidebars"
+msgstr ""
+
+#: thrive/sidebars/sidebars-screen.php:29
+msgid "There was an error while adding your sidebar. Sidebar already exists."
+msgstr ""
+
+#: thrive/sidebars/sidebars-screen.php:30
+msgid "Invalid sidebar name. Only alphanumeric characters are allowed."
+msgstr ""
+
+#: thrive/sidebars/sidebars-screen.php:31
+msgid "There was an error while adding sidebar. Sidebar name is required."
+msgstr ""
+
+#: thrive/sidebars/sidebars-screen.php:45
+msgid "Sidebar has been added."
+msgstr ""
+
+#: thrive/sidebars/sidebars-screen.php:56
+#: thrive/sidebars/sidebars-screen.php:86
+msgid "Name"
+msgstr ""
+
+#: thrive/sidebars/sidebars-screen.php:57
+#: thrive/sidebars/sidebars-screen.php:87
+msgid "Description"
+msgstr ""
+
+#: thrive/sidebars/sidebars-screen.php:92
+msgid "No Custom Sidebars Yet."
+msgstr ""
+
+#: thrive/sidebars/sidebars-screen.php:98
+msgid "Add New Sidebar"
+msgstr ""
+
+#: thrive/sidebars/sidebars-screen.php:100
+msgid ""
+"Use this form to create a new sidebar for the theme (in case you need it!). "
+"After you have successfully added a sidebar, you will be able to assign "
+"inside a post or page."
+msgstr ""
+
+#: thrive/sidebars/sidebars-screen.php:127
+msgid "Name: *"
+msgstr ""
+
+#: thrive/sidebars/sidebars-screen.php:129
+msgid "Sidebar name (must be unique)"
+msgstr ""
+
+#: thrive/sidebars/sidebars-screen.php:132
+msgid "Description: (optional)"
+msgstr ""
+
+#: thrive/sidebars/sidebars-screen.php:135
+msgid ""
+"Text description of what/where the sidebar is. Shown on widget management "
+"screen."
+msgstr ""
+
+#: thrive/sidebars/sidebars-screen.php:143
+msgid "Update Sidebar"
+msgstr ""
+
+#: thrive/sidebars/sidebars-screen.php:146
+msgid "Add Sidebar"
+msgstr ""
+
+#: thrive/theme-widgets/featured-group.php:13
+msgid "Thrive: Featured Group"
+msgstr ""
+
+#: thrive/theme-widgets/featured-group.php:14
+msgid "Use this widget to feature a group."
+msgstr ""
+
+#: thrive/theme-widgets/featured-group.php:39
+msgid "Unable to fetch groups. Is BuddyPress installed or activated?"
+msgstr ""
+
+#: thrive/theme-widgets/featured-group.php:45
+msgid ""
+"Unable to match a specific group with the given group name. Please check "
+"group name input."
+msgstr ""
+
+#: thrive/theme-widgets/featured-group.php:79
+msgid "Visit Group Profile"
+msgstr ""
+
+#: thrive/theme-widgets/featured-group.php:94
+msgid "Activities"
+msgstr ""
+
+#: thrive/theme-widgets/featured-group.php:118
+msgid "Featured Group"
+msgstr ""
+
+#: thrive/theme-widgets/featured-group.php:124
+#: thrive/theme-widgets/featured-member.php:117
+#: thrive/theme-widgets/members-birthday.php:215
+msgid "Title:"
+msgstr ""
+
+#: thrive/theme-widgets/featured-group.php:131
+#: thrive/theme-widgets/featured-member.php:122
+msgid "You can use this field to enter the widget title."
+msgstr ""
+
+#: thrive/theme-widgets/featured-group.php:139
+msgid "Groups Name:"
+msgstr ""
+
+#: thrive/theme-widgets/featured-group.php:145
+msgid "Enter the name of the group that you want to be featured."
+msgstr ""
+
+#: thrive/theme-widgets/featured-member.php:14
+msgid "Thrive: Featured Member"
+msgstr ""
+
+#: thrive/theme-widgets/featured-member.php:15
+msgid "Use this widget to feature a member."
+msgstr ""
+
+#: thrive/theme-widgets/featured-member.php:42
+msgid ""
+"I can't seem to find a user with that username. Please check your username "
+"input."
+msgstr ""
+
+#: thrive/theme-widgets/featured-member.php:62
+msgid "Visit Member Profile"
+msgstr ""
+
+#: thrive/theme-widgets/featured-member.php:83
+#: thrive/user-navigation/user-navigation.php:209
+msgid "Profile"
+msgstr ""
+
+#: thrive/theme-widgets/featured-member.php:88
+msgid "Activity"
+msgstr ""
+
+#: thrive/theme-widgets/featured-member.php:93
+msgid "Friends"
+msgstr ""
+
+#: thrive/theme-widgets/featured-member.php:112
+msgid "Featured Member"
+msgstr ""
+
+#: thrive/theme-widgets/featured-member.php:128
+msgid "Username:"
+msgstr ""
+
+#: thrive/theme-widgets/featured-member.php:133
+msgid "Enter the username of the member that you want to be featured."
+msgstr ""
+
+#: thrive/theme-widgets/members-birthday.php:14
+msgid "Thrive: Birthday Widget"
+msgstr ""
+
+#: thrive/theme-widgets/members-birthday.php:15
+msgid ""
+"Celebrate your members' birthday with Thrive Birthday Widget. Requires "
+"BuddyPress."
+msgstr ""
+
+#: thrive/theme-widgets/members-birthday.php:49
+msgid ""
+"Unable to display members birthdays: There is no 'Date of Birth' extended "
+"profile field. Go to your user profile settings and add a new field called "
+"'Date of Birth.'"
+msgstr ""
+
+#: thrive/theme-widgets/members-birthday.php:120
+msgid "Visit Profile"
+msgstr ""
+
+#: thrive/theme-widgets/members-birthday.php:134
+msgid " Happy%20Birthday!"
+msgstr ""
+
+#: thrive/theme-widgets/members-birthday.php:139
+msgid "Happy Birthday!"
+msgstr ""
+
+#: thrive/theme-widgets/members-birthday.php:140
+msgid "Greet"
+msgstr ""
+
+#: thrive/theme-widgets/members-birthday.php:158
+msgid "There are no upcoming birthday celebrations"
+msgstr ""
+
+#: thrive/theme-widgets/members-birthday.php:210
+msgid "Birthdays"
+msgstr ""
+
+#: thrive/theme-widgets/members-birthday.php:219
+msgid "Show Birthdays:"
+msgstr ""
+
+#: thrive/theme-widgets/members-birthday.php:222
+msgid "This Year"
+msgstr ""
+
+#: thrive/theme-widgets/members-birthday.php:223
+msgid "This Month"
+msgstr ""
+
+#: thrive/theme-widgets/members-birthday.php:224
+msgid "This Week"
+msgstr ""
+
+#: thrive/theme-widgets/members-birthday.php:236
+msgid "Hide if no birthdays:"
+msgstr ""
+
+#: thrive/user-navigation/user-navigation.php:40
+#: thrive/user-navigation/user-navigation.php:87
+#: thrive/user-navigation/user-navigation.php:88
+#: thrive/user-navigation/user-navigation.php:102
+msgid "See All Notifications"
+msgstr ""
+
+#: thrive/user-navigation/user-navigation.php:48
+#: thrive/user-navigation/user-navigation.php:68
+#: thrive/user-navigation/user-navigation.php:105
+msgid "Notifications"
+msgstr ""
+
+#: thrive/user-navigation/user-navigation.php:122
+msgid "Show Unread Messages"
+msgstr ""
+
+#: thrive/user-navigation/user-navigation.php:129
+#: thrive/user-navigation/user-navigation.php:167
+msgid "My Messages"
+msgstr ""
+
+#: thrive/user-navigation/user-navigation.php:138
+msgid "Messages"
+msgstr ""
+
+#: thrive/user-navigation/user-navigation.php:152
+#: thrive/user-navigation/user-navigation.php:153
+msgid "See All Messages"
+msgstr ""
+
+#: thrive/user-navigation/user-navigation.php:164
+msgid "Show Messages"
+msgstr ""
+
+#: thrive/user-navigation/user-navigation.php:219
+msgid "Docs"
+msgstr ""
+
+#: thrive/widgets/widgets.php:27
+msgid "You can use this area to populate the 'Blocks' of your dashboard."
+msgstr ""
+
+#: thrive/widgets/widgets.php:35
+msgid "Left Side Navigation"
+msgstr ""
+
+#: thrive/widgets/widgets.php:37
+msgid ""
+"Use this sidebar to display your favourite widgets in the left navigation "
+"below the user photo."
+msgstr ""
+
+#: thrive/widgets/widgets.php:45
+msgid "Sidebar"
+msgstr ""
+
+#: thrive/widgets/widgets.php:47
+msgid "This sidebar appears in the single Pages, Posts, and other Post Types."
+msgstr ""
+
+#: thrive/widgets/widgets.php:57
+msgid "This sidebar appears in the index, author, and taxonomy pages."
+msgstr ""
+
+#: thrive/widgets/widgets.php:69
+msgid ""
+"Use this sidebar to display widgets in your knowledge-base pages powered by "
+"\"Reference\" plugin."
+msgstr ""
+
+#: thrive/widgets/widgets.php:82
+msgid ""
+"Use this sidebar to display your favourite widgets in the BuddyPress area "
+"such as members, groups, and activity streams."
+msgstr ""
+
+#: thrive/widgets/widgets.php:92
+msgid ""
+"Use this sidebar area to display widgets to your member's profile page. In "
+"absense of widgets, 'BuddyPress' sidebar will be used."
+msgstr ""
+
+#: thrive/widgets/widgets.php:102
+msgid ""
+"Use this sidebar area to display widgets in members page of your site. In "
+"absense of widgets, 'BuddyPress' sidebar will be used."
+msgstr ""
+
+#: thrive/widgets/widgets.php:112
+msgid ""
+"Use this sidebar area to display widgets in groups page of your site. In "
+"absense of widgets, 'BuddyPress' sidebar will be used."
+msgstr ""
+
+#: thrive/widgets/widgets.php:122
+msgid ""
+"Use this sidebar area to display widgets in the single group page. In "
+"absense of widgets, 'BuddyPress' sidebar will be used."
+msgstr ""
+
+#: thrive/widgets/widgets.php:133
+msgid "Footer"
+msgstr ""
+
+#: thrive/widgets/widgets.php:135
+msgid "Choose the widgets to appear before the site footer."
+msgstr ""
+
+#: thrive/widgets/widgets.php:145
+msgid "LearnDash Sidebar"
+msgstr ""
+
+#: thrive/widgets/widgets.php:147
+msgid "Use this sidebar to display widgets in your LearnDash pages"
+msgstr ""

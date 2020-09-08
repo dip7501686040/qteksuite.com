@@ -1,0 +1,20 @@
+// BP Single Screens Item Body General Styles.
+
+.buddypress-wrap {
+
+	.item-body {
+		h2,
+		.entry-title,
+		.screen-heading {
+
+			@include font-size(20);
+
+			font-weight: 400;
+		}
+
+		.button-tabs {
+			margin: $marg-xlrg 0 $marg-med;
+		}
+
+	}
+}

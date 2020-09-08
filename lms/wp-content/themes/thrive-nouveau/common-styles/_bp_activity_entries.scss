@@ -1,0 +1,353 @@
+// BP Activity Entries - activity loop
+#buddykit-container,
+#buddykit-filelist-wrap {
+		padding-left: 12%;
+	}
+.bp-dir-vert-nav {
+	.activity-update-form {
+		margin-bottom: -10px;
+	}
+}
+.activity-list {
+
+	padding: $pad-sml;
+
+	.activity-item:before,
+	.activity-item:after {
+		content: " ";
+		display: table;
+	}
+
+	.activity-item:after {
+		clear: both;
+	}
+
+	.activity-item { // li element - (entries)
+		list-style: none;
+		padding: $pad-med;
+
+		&.has-comments {
+			padding-bottom: $pad-med;
+		}
+
+
+		div.item-avatar { // 'div' for weight
+			margin: 0 auto;
+			text-align: left;
+			width: 15%;
+    		float: left;
+
+			img {
+
+			}
+		}
+
+		@include medium-up() {
+
+			div.item-avatar { // 'div' for weight
+				margin: 0 0 0 0;
+				text-align: left;
+				width: 38px;
+
+				img {
+					max-width: 80%;
+				}
+			}
+		}
+
+
+
+		&.new_forum_post,
+		&.new_forum_topic {
+
+			.activity-inner {
+				border-left: 2px solid $light-grey;
+				margin-left: $marg-sml;
+				padding-left: $pad-med;
+			}
+		} // close li forum elements
+
+
+		&.newest_mentions_activity,
+		&.newest_friends_activity,
+		&.newest_groups_activity,
+		&.newest_blogs_activity {
+			// why?
+			background: rgba(31, 179, 221, 0.1);
+		}
+
+		.activity-inreplyto {
+			color: $light-text;
+
+			@include font-size(13);
+
+			> p {
+				display: inline;
+				margin: 0;
+			}
+
+			blockquote,
+			.activity-inner {
+				background: none;
+				border: 0;
+				display: inline;
+				margin: 0;
+				overflow: hidden;
+				padding: 0;
+			}
+		}
+
+		// The header elements: date stamp, author etc;
+		.activity-header {
+
+			margin: 0 auto;
+		    width: 85%;
+    		float: left;
+    		padding: 0 15px;
+
+    		&:after {
+    			content: " ";
+    			display: table;
+    			clear: both;
+    			width: 100%;
+    		}
+
+			// ensure elements are display inline, some themes setting avatars as block
+			a,
+			img {
+				display: inline;
+			}
+
+			.avatar {
+				display: inline-block;
+				margin: 0 $marg-xsml;
+				vertical-align: bottom;
+			}
+
+			.time-since {
+
+				@include font-size(14);
+				color: $dark-black;
+				text-decoration: none;
+
+				&:hover {
+					color: $light-text;
+					cursor: pointer;
+					text-decoration: underline;
+				}
+			}
+
+		} // close .activity-header
+
+		.activity-content {
+			> .activity-meta.action {
+				border-top: 1px solid #ddd;
+			    margin: 0 -14px -15px;
+			    padding: 0 8px;
+			    background: #eee;
+			    display: block;
+			    clear: both;
+			    width: calc(100% + 28px);
+			}
+			
+			.activity-header,
+			.comment-header {
+				color: $light-text;
+                + .activity-meta {
+                    margin-top: 15px;
+                }
+                + .activity-inner,
+                + blockquote {
+                  /*  margin: 20px 0 15px 0; */
+                }
+			}
+
+			.activity-inner,
+			blockquote {
+				width: 100%;
+    			display: inline-block;
+			}
+
+			p {
+			}
+
+		} // close .activity-content
+
+		.activity-inner {
+
+			p {
+				word-wrap: break-word;
+			}
+		}
+
+		.activity-read-more {
+			margin-left: 0;
+		    white-space: nowrap;
+		    display: block;
+		    margin-top: 20px;
+		}
+
+		// The footer elements, buttons etc
+
+		// if this is a ul then...
+		// else we'll skip this for the rules below.
+		ul.activity-meta {
+			margin: 0;
+			padding-left: 0;
+
+			li {
+				// if a list is being used keep it inline
+				border: 0;
+				display: inline-block;
+			}
+		}
+
+
+		.activity-meta.action {
+
+		    display: inline-block;
+    		width: 100%;
+
+
+			// this wrapper has generic margins in _bp_lists.scss
+			// remove for act stream actions.
+			div.generic-button {
+				margin: 0;
+                .bp-secondary-action {
+                    &.loading {
+                        animation: none;
+                    }
+                }
+			}
+
+			.button {
+				background: transparent;
+			}
+
+			a {
+				margin-right: 15px;
+			}
+
+			// we don't want a background hover if icons used
+			.button:focus,
+			.button:hover {
+				background: none;
+			}
+
+			// Uncomment .acomment-reply class for icon us
+			.button:before,
+			.icons:before {
+				font-family: dashicons;
+				font-size: 18px;
+				vertical-align: middle;
+			}
+
+			.acomment-reply.button:before {
+				content: "\f101";
+			}
+
+			.view:before {
+				content: "\f125";
+			}
+
+			.fav:before {
+				content: "\f154";
+			}
+
+			.unfav:before {
+				content: "\f155";
+			}
+
+			.fav:before,
+			.unfav:before {
+			    margin-top: -4px;
+			    display: inline-block;
+			}
+
+			.delete-activity:before {
+				content: "\f153";
+			}
+
+			.delete-activity:hover {
+				color: #800;
+			}
+
+			.button {
+				border: 0;
+				box-shadow: none;
+
+				span {
+					background: none;
+					color: #555;
+					font-weight: 700;
+				}
+			}
+
+		} // close .activity-meta
+
+	} // close .activity-item
+
+} // close .activity-list
+
+@include medium-up() {
+
+	.activity-list.bp-list {
+		padding: 0;
+		margin: 0;
+	}
+
+	.activity-list {
+
+		.activity-item {
+
+			.activity-content {
+				margin: 0;
+				position: relative;
+
+				&:after {
+					clear: both;
+					content: "";
+					display: table;
+				}
+			}
+
+			.activity-header {
+				margin: 0 $marg-med 0 0;
+			}
+
+		} // li entry item
+	}
+}
+
+.buddypress-wrap {
+
+	// load more link
+	.activity-list {
+
+		.load-more,
+		.load-newest {
+			margin: $marg-med 0;
+			list-style: none;
+			padding: 0;
+			text-align: center;
+			a {
+				color: #444;
+			    display: inline-block;
+			    padding: 0.5em 25px;
+			    border-radius: 50px;
+			    background: #fff;
+			    font-weight: 500;
+                @extend .thrive-material-card-1;
+				&:focus,
+				&:hover, {
+					background: $off-white;
+					color: $black;
+				}
+			}
+		}
+
+	}
+}
+
+// Single Activity Entry View
+body.activity-permalink {}

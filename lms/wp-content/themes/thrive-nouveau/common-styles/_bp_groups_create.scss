@@ -1,0 +1,181 @@
+// Group Creation Steps - Screens
+.group-create {
+	#page-hero {
+		display: none;
+	}
+	.buddypress-wrap {
+		h2.bp-subhead {
+		    font-size: 20px;
+		    border-bottom: 2px solid #ddd;
+		    padding: 0 0 20px 0;
+		    margin-top: 25px;
+		}
+
+		#group_invites_search {
+			border: 0 none;
+		}
+
+		.group-create-links {
+			&:not(.tabbed-links) {
+				ol {
+                    width: 100%;
+					padding: 0;
+					margin: 0;
+                    display: inline-block;
+
+					li {
+                        width: 100%;
+                        margin: 0 10px 0 0;
+						list-style: none;
+                        float: left;
+                        @media(min-width: 480px) {
+                            width: 32.33%;
+                            margin: 0;
+                            float: none;
+                            display: inline-block;
+                        }
+                        @media(min-width: 768px) {
+                            width: initial;
+                            margin: 0 10px 0 0;
+                            float: left;
+                        }
+						> span,
+						> a {
+							padding: 10px 15px 10px 0;
+							display: inline-block;
+							color: #444;
+						}
+						> a {
+							background: transparent;
+							border-bottom: 2px solid #689F38;
+						}
+					}
+				}
+			}
+			&.tabbed-links {
+				ol {
+				    margin: 0;
+				    padding-left: 0;
+				    display: inline-block;
+				    width: 100%;
+				    border-bottom: 1px solid #ddd;
+					li {
+                        width: 100%;
+						list-style: none;
+						display: inline-block;
+						margin-bottom: 0;
+                        float: none;
+                        @media(min-width: 480px) {
+                            width: 32.33%;
+                        }
+                        @media(min-width: 768px) {
+                            width: initial;
+                            float: left;
+                        }
+						span,
+						a {
+							padding: 10px 15px;
+							display: block;
+						}
+						&.current {
+							a {
+								border: 1px solid #ddd;
+							    margin-bottom: -1px;
+							    border-radius: 6px 6px 0 0;
+							    font-weight: bold;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	#group-create-body {
+		padding: 15px 25px;
+		background: $white;
+		@extend .thrive-material-card-2;
+		border-radius: 2px;
+		margin-bottom: 30px;
+
+		.creation-step-name {
+			text-align: left;
+   			margin: 30px 0;
+		}
+
+		.avatar-nav-items {
+			margin-top: $marg-med;
+		}
+
+		nav.bp-navs {
+			border: 0 none;
+			box-shadow: none;
+		}
+		ul#public-group-description{
+			margin: 0;
+		    padding: 0 0 0 2.65em;
+		}
+	}
+	.left-menu {
+		padding-right: 15px;
+		img.avatar {
+			width: 160px;
+			border-radius: 0;
+		}
+	}
+	#avatar-crop-pane {
+		border-radius: 0;
+		margin-bottom: 35px;
+	}
+
+	#meta-group-description {
+
+		@extend .thrive-material-card-2;
+		background: #eee;
+		border-radius: 2px;
+
+		max-height: 300px;
+		overflow: hidden;
+
+		.group-description,
+		#meta-group-description-title {
+			padding: 15px 25px;
+		}
+
+		#meta-group-description-title {
+			background: $white;
+			h3 {
+				margin: 0;
+			}
+		}
+	}
+
+	#group-admin-mods {
+		@extend .thrive-material-card-2;
+		background: $white;
+		border-radius: 2px;
+		padding: 15px 25px;
+		margin-bottom: 25px;
+		.moderators-lists {
+			margin-bottom: 0;
+		}
+		.moderators-title {
+			margin-bottom: 10px;
+		}
+		.avatar {
+			width: 48px;
+		}
+		.user-list ul {
+
+			display: inline-block;
+			width: 100%;
+			margin: 0 -5px 0 -5px;
+
+			li {
+				float: left;
+				padding: 5px;
+				margin: 0;
+			}
+		}
+	}
+}

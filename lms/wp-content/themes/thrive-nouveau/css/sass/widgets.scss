@@ -1,0 +1,867 @@
+	/*sidebar widgets*/
+#secondary.widget-area {
+	padding-top: 24px;
+	p {
+		&:last-child { margin-bottom: 0; }
+	}
+	select[name=archive-dropdown] {
+		width: 100%;
+	}
+}
+
+#page-sidebar-widgets {
+	.sidebar-widgets {
+		padding: 15px 25px;
+		margin: 0 0 -1px 0;
+		border-radius: 0;
+		border-bottom: 1px solid #eee;
+		border-top: 1px solid #eee;
+		box-shadow: none;
+		.gears-social-media-link { padding: 0 2.5px; }
+	}
+}
+#thrive_footer_widget {
+	.calendar_wrap {
+		caption { 
+			padding-top: 0;
+    		background: rgba(0,0,0,0.12);
+    		padding: 10px 15px;
+		}
+		a { color: rgba(0,0,0,0.7); text-decoration: underline; }
+	}
+}
+.sidebar-widgets {
+
+	background: $light;
+	padding: 15px;
+	display: block;
+	margin: 15px 0;
+	@include card(1);
+	border-radius: 4px;
+
+	@media (max-width: 768px) {
+		padding: 15px 10px;
+	}
+
+	&:first-child {
+		margin-top: 0;
+	}
+
+		.widget-title {
+			opacity: 0.87;
+			font-size: 12px;
+			font-weight: bold;
+			text-transform: uppercase;
+			border-top-right-radius: 4px;
+			border-top-left-radius: 4px;
+		}
+
+	ul ul, ol ol, ul ol, ol ul {
+		padding-left: 1.5em;
+	}
+}
+
+#secondary {
+	.widget-title {
+	    opacity: 1;
+	    @extend .bg-primary-700;
+	    margin: -15px;
+	    @media(max-width: 767px ) {
+	    	margin: -15px -10px 15px;
+	    }
+	    color: rgba(255, 255, 255, 0.80);
+	    padding: 10px 15px;
+	    margin-bottom: 15px;
+	    font-weight: 300;
+	    font-size: 16px;
+    	letter-spacing: 0.5px;
+	    text-transform: none;
+	}
+}
+.widget {
+	word-break: break-word;
+
+	ul {
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+		li {
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	&.widget_archive {
+		ul li {
+			padding-left: 25px;
+		    position: relative;
+			a {
+				&:before {
+					@extend .material_font_extend;
+			        content: "archive";
+
+					font-size: 18px;
+					position: absolute;
+					left: -2px;
+					top: 2.5px;
+				}
+			}
+		}
+	}
+	&.widget_calendar {
+		.calendar_wrap {
+			table#wp-calendar {
+				margin: 0;
+			    text-align: center;
+				tr {
+					&:hover {
+						background: none;
+					}
+				}
+				th {
+					text-align: center;
+				}
+				tfoot {
+					#prev{
+						text-align: left;
+					}
+					#next{
+						text-align: right;
+					}
+				}
+			}
+		}
+	}
+	&.widget_meta,
+	&.widget_categories {
+		ul {
+			li {
+				padding-left: 20px;
+				position: relative;
+				a {
+					&:before {
+						@extend .material_font_extend;
+				        content: "radio_button_unchecked";
+						font-size: 10px;
+						position: absolute;
+						top: 6.5px;
+						left: 0;
+					}
+				}
+			}
+		}
+	}
+	
+	&.widget_categories ul li ul.children {
+		margin-top: 10px;
+	}
+
+	&.widget_nav_menu {
+
+		ul.menu{
+			margin: 15px 0 15px 0;
+		}
+		
+		ul.menu{
+			li {
+				margin-bottom: 0;
+				a {
+					&:before {
+						@extend .material_font_extend;
+    					content: "navigate_next";
+    					font-size: 12px;
+    					margin-right: 5px;
+					}
+				}
+				ul.sub-menu {
+					padding-left: 20px;
+					a {
+						padding: 5px 0;
+						display: block;
+					}
+				}
+			}
+		}
+	}
+
+	&.widget_pages {
+		ul {
+			li {
+				padding-left: 25px;
+				position: relative;
+				a {
+					&:before {
+						@extend .material_font_extend;
+				        content: "content_copy";
+
+						font-size: 18px;
+					    position: absolute;
+					    top: 0;
+					    left: 0;
+					}
+				}
+				ul.children {
+					margin-top: 10px;
+				}
+			}
+		}
+	}
+	&.widget_recent_comments {
+		ul {
+			li {
+				padding-left: 25px;
+				position: relative;
+				a {
+					&:before {
+						@extend .material_font_extend;
+				        content: "comment";
+
+						font-size: 18px;
+					    position: absolute;
+					    top: 2px;
+					    left: 0;
+					}
+				}
+			}
+		}
+	}
+	&.widget_rss {
+		.widget-title {
+			a {
+				color: rgba(255, 255, 255, 0.8);
+			}
+		}
+		ul {
+			li {
+				padding-left: 25px;
+				position: relative;
+				a.rsswidget {
+					&:before {
+						@extend .material_font_extend;
+				        content: "wifi";
+
+						font-size: 18px;
+					    position: absolute;
+					    top: 2px;
+					    left: -3px;
+					    -webkit-transform: rotateZ(46deg);
+					       -moz-transform: rotateZ(46deg);
+					    		transform: rotateZ(46deg);
+					}
+				}
+			}
+		}
+	}
+	&.widget_tag_cloud {
+		.tagcloud a{
+			font-size: 12px !important;
+		    padding: 2.5px 10px;
+		    border-radius: 4px;
+		    border: none;
+		    display: inline-block;
+		    margin: 0 0px 5px 0;
+		    background: #323232;
+		    color: #f2f2f2;
+		    box-shadow: 0px 1px 4px #212121;
+		    &:hover {
+		    	background: #fff;
+		    	background: #010101;
+		    }
+		}
+	}
+
+}
+
+.widget_recent_entries {
+	ul li {
+		padding-left: 25px;
+		position: relative;
+		a {
+			&:before {
+				@extend .material_font_extend;
+				content: "content_copy";
+
+				position: absolute;
+				left: 0;
+				font-size: 18px;
+			}
+		}
+	}
+}
+
+// DashBoard
+#dashboard-widgets {
+	margin: 0;
+	padding-bottom: 25px;
+	@media ( max-width: 768px ) {
+		margin: 0;
+	}
+}
+
+.widget.home-widgets {
+
+	padding: 25px 15px;
+	background: $light;
+	width: 32%;
+	float: left;
+	margin: 0 6px 15px;
+	@media ( max-width: 992px ) {
+		width: 45%;
+		margin: 0 2px 15px;
+	}
+	@include card(1);
+
+	h3.widget-title {
+		@extend .bg-primary-700;
+		color: $light_secondary;
+		font-size: 12px;
+		font-weight: bold;
+		text-transform: uppercase;
+		padding: 15px 15px;
+		margin: -25px -15px 15px;
+		
+		@media ( max-width: 768px ) {
+			padding: 15px 10px;
+			margin: -25px -10px 15px;
+		}
+
+		&.draggable {
+			&:hover{
+				cursor: move;
+				@extend .material_font_extend_after;
+				&:after {
+					content: "drag_handle";
+				    right: 10px;
+				    position: absolute;
+				    top: 12.5px;
+				}
+			}
+		}	
+	}
+
+	@media ( max-width: 1190px ) {
+		width: 31%;
+	}
+
+	@media ( max-width: 992px ) {
+		width: 48%;
+	}
+
+	@media ( max-width: 768px ) {
+		width: 100%;
+		padding: 25px 10px;
+		margin: 5px 0;
+	}
+	.fmember-member-details  {
+		 	margin-left: -15px;
+			margin-right: -15px;
+		 	.fmember-links {
+				margin-bottom: -25px;
+		 	}
+	 }
+
+	 //Wordpress
+	 &.widget_categories,
+	 &.widget_nav_menu,
+	 &.widget_pages {
+		 ul ul {
+			 padding-left: 0;
+		 }
+	 }
+	 &.widget_rss {
+		 .widget-title {
+			 .rsswidget{
+				 &:nth-child(2) {
+				     color: $light_secondary;
+				 }
+				 img {
+					 position: relative;
+				     top: -1.5px;
+				 }
+			 }
+		 }
+	 }
+}
+
+#content #wp-calendar {
+	td {
+		padding: 5px 5px;
+	}
+}
+
+/**
+ * Featured Members
+ */
+ .fmember-member-details {
+
+ 	text-align: center;
+	margin-left: -15px;
+	margin-right: -15px;
+
+	.fmember-links {
+		background: #eee;
+		margin-bottom: -15px;
+		border-top: 1px solid $dark_borders;
+		border-bottom: 1px solid $dark_borders;
+
+		@media(max-width: 768px) {
+			margin: 0 5px -15px;
+		}
+	}
+ 	.fmember-avatar {
+ 		img {
+ 			border-radius: 50%;
+ 			max-width: 128px;
+			box-shadow: 0 0 0 4px $light, 0 0 0 5px $dark_disabled;
+ 		}
+ 	}
+
+ 	.fmember-title {
+ 		margin: 15px 0;
+ 	}
+
+ 	.fmember-links{
+ 		text-align: center;
+		a {
+			display: inline-block;
+			border-right: 1px solid $dark_borders;
+			color: $dark_secondary_icon;
+
+			margin-right: 0;
+			text-align: center;
+			padding: 20px 0;
+
+			.material-icons {
+				display: block;
+				margin: 0 auto;
+			}
+
+			&.last {
+				margin-right: 0;
+				border-right: 0 none;
+			}
+			i {
+				overflow: hidden;
+			}
+		}
+
+ 	}
+ }
+ .widget_thrive_featured_member_widget {
+	 .fmember-links {
+		 a {
+			 width: 30%;
+		 }
+	  }
+ }
+ .widget_thrive_featured_group_widget {
+	 .fmember-links {
+		 a {
+			 width: 45%;
+		 }
+	  }
+ }
+
+ .widget_thrive_featured_group_widget {
+
+ }
+
+ /**
+ * Members Birthday
+ */
+.widget_foo_widget h5.mg-bottom-5 a {
+	font-weight: normal;
+}
+
+ .widget_thrive_members_birthday_widget {
+	 ul {
+    	margin: 0 -15px -15px;
+
+		&:last-of-type {
+			margin: 0 -15px -15px;
+		}
+
+		li {
+			margin-bottom: 0;
+			padding: 15px;
+			border-bottom: 1px solid $dark_borders;
+
+			&:first-of-type {
+				padding-top: 0;
+			}
+			img.avatar {
+				width: 42px;
+    			max-width: 100%;
+    			margin-top: 5px;
+			}
+			
+		}
+	}
+ }
+
+body.thrive-layout-2_columns #user-content-widget-sidenav #page-sidebar-widgets .sidebar-widgets {
+	&.widget_thrive_members_birthday_widget {
+		ul {
+
+   			li {
+
+	   			.row {
+					@media(max-width: 992px) {
+						margin: 0;
+					}
+	   				.col-xs-3 {
+						@media(max-width: 992px) {
+							width: 100%;
+						    text-align: center;
+						    margin-bottom: 15px;
+						    padding: 0;
+						}
+						@media(max-width: 768px) {
+							width: 25%;
+						    text-align: center;
+						    margin: 0 3% 0 0;
+						}
+
+					}
+	   				.col-xs-9 {
+						@media(max-width: 992px) {
+							width: 100%;
+						    text-align: center;
+						    padding: 0;
+						}
+						@media(max-width: 768px) {
+							width: 70%;
+						    text-align: left;
+						}
+
+	   				}
+				}
+			}
+		}
+	}
+}
+
+#secondary {
+	.widget_thrive_members_birthday_widget {
+		ul {
+			@media(max-width: 991px) {
+			    margin: 0 -10px -16px;
+			}
+			li {
+				@media(max-width: 991px) {
+					width: 33.33%;
+				    margin: 0 -0.35%;
+				    border-bottom-width: 0;
+				    display: inline-block;
+					vertical-align: top;
+                    &:first-of-type {
+                        padding-top: 15px;
+                    }
+				}
+				@media(max-width: 480px) {
+					width: 100%;
+					border-bottom-width: 1px;
+				}
+
+				.row {
+					@media(max-width: 768px) {
+						margin: 0;
+					}
+	   				.col-xs-3 {
+						@media(max-width: 768px) {
+							width: 100%;
+						    text-align: center;
+						    margin-bottom: 15px;
+						    padding: 0;
+						}
+						@media(max-width: 480px) {
+							width: 15%;
+						    text-align: center;
+						    margin: 0 3% 0 0;
+						}
+
+					}
+	   				.col-xs-9 {
+						@media(max-width: 768px) {
+							width: 100%;
+						    text-align: center;
+						    padding: 0;
+						}
+						@media(max-width: 480px) {
+							width: 70%;
+						    text-align: left;
+						}
+
+	   				}
+				}
+
+			}
+		}
+
+	}
+}
+
+.widget.home-widgets {
+	&.widget_thrive_members_birthday_widget {
+	   	 ul {
+	       	margin: 0 -15px -25px;
+
+			@media(max-width: 768px) {
+	       		margin: 0 -10px -25px;
+			}
+
+		}
+	}
+}
+
+// Sidebar Sidenav
+body.thrive-layout-2_columns #user-content-widget-sidenav #page-sidebar-widgets .sidebar-widgets {
+	//WordPress
+	&.widget_calendar {
+		.calendar_wrap {
+			table#wp-calendar {
+				width: 100%;
+				@media(max-width: 480px) {
+				   background: $light;
+				}
+				a {
+					&:hover {
+						text-decoration: none;
+					}
+				}
+			}
+	   }
+	}
+	&.widget_rss {
+		.widget-title {
+			.rsswidget {
+				&:nth-child(2) {
+					color: $dark_text;
+				}
+				img {
+					position: relative;
+					top: -1.5px;
+				}
+			}
+		}
+	}
+
+	// WooCommerce
+	 &.widget_shopping_cart {
+		 .buttons a {
+			 color: $light;
+			 @media(max-width: 992px) {
+				 width: 100%;
+			     text-align: center;
+				 &.wc-forward {
+    	 			margin-bottom: 10px;
+				 }
+			 }
+		 }
+	 }
+
+	 // The Events Calendar
+	 &.tribe-events-list-widget {
+		 .tribe-events-widget-link a {
+			 color: $light;
+		 }
+	}
+
+	// Featured widget & Groups widget
+	.fmember-links {
+		a {
+			color: $dark_secondary_icon;
+		}
+	}
+
+ }
+
+ // Footer Sidebar
+ body.thrive-inline #thrive_footer_widget .footer-widget {
+
+	 select {
+		 background-color: transparent;
+		 option {
+			 color: $dark_secondary_icon;
+		 }
+	 }
+	 ul ul {
+		 padding-left: 0;
+	 }
+
+	 //WordPress
+	 .widget_calendar {
+		 .calendar_wrap {
+			 table#wp-calendar {
+				 width: 100%;
+				 @media(max-width: 480px) {
+				    background: $light;
+				 }
+				 a {
+					 &:hover {
+						 text-decoration: none;
+					 }
+				 }
+			 }
+	 	}
+	 }
+	 .widget_rss {
+		 .widget-title {
+			 .rsswidget{
+				 &:nth-child(2) {
+				     color: $light;
+				     font-size: 14.875px;
+				 }
+				 img {
+					 position: relative;
+				     top: -1.5px;
+				 }
+			 }
+		 }
+	 }
+	 .widget_nav_menu {
+		 ul.menu {
+			 li a {
+				 &:hover {
+					  i {
+						  text-decoration: none;
+					  }
+				 }
+			 }
+		 }
+	 }
+
+	 // WooCommerce
+	 .widget_shopping_cart {
+		 .buttons a {
+			 color: $light;
+			 &:hover {
+				 text-decoration: none;
+			 }
+		 }
+	 }
+	 .widget_price_filter {
+		 .price_slider_wrapper {
+			 .ui-widget-content {
+				 border: none;
+			 }
+		 }
+	 }
+	 .widget_product_search {
+		 #woocommerce-product-search-field {
+			&::-webkit-input-placeholder { color: $light; }
+ 			&::-moz-placeholder { color: $light; } /* firefox 19+ */
+ 			&:-ms-input-placeholder { color: $light; } /* ie */
+ 			&input:-moz-placeholder { color: $light; }
+		 }
+	 }
+	 .widget_recent_reviews,
+	 .widget_top_rated_products {
+		 .star-rating {
+			 &:before {
+				 color: $light;
+			 }
+			 span {
+				 &:before {
+					 color: $light;
+			 	}
+			 }
+		 }
+	 }
+	 .widget_product_categories {
+		 .dropdown_product_cat {
+			 background-color: transparent;
+			 option {
+				 color: $dark_secondary_icon;
+			 }
+		 }
+	 }
+	 // The Events Calendar
+	 .tribe-events-list-widget {
+		 ol.tribe-list-widget {
+			 li {
+			 	.tribe-event-duration {
+					color: $light;
+				}
+			}
+		}
+	}
+
+	.widget_thrive_members_birthday_widget {
+		ul {
+			li {
+				.row .col-xs-9 {
+					p {
+						color: rgba(255, 255, 255, 0.54);
+					}
+				}
+			}
+		}
+	}
+
+ }
+
+ .widget a { 
+ 	color: #424242;
+ 	&:hover {
+ 		@extend .primary;
+ 	}
+ }
+
+ #side-navigation-settings-link {
+	position: fixed;
+    background: #f9f9f9;
+    bottom: 0;
+    width: 250px;
+  
+    display: block;
+    border-top: 1px solid #ececec;
+    box-shadow: -4px 3px 6px 3px #dcdcdc;
+    a {
+		color: #616161;
+	    font-size: 12px;
+	    text-transform: uppercase;
+	    padding: 12px 25px;
+	    display: block;
+	    font-weight: 600;
+    	letter-spacing: 0.75px;
+	    i {
+	    	float: right;
+	    	font-size: 14px;
+	    	top: 5px;
+	    }
+    }
+ }
+@media(max-width: 768px){
+   	 #document-wrapper.active {
+   	 	#side-navigation-settings-link {
+    		width: 75%;
+    	}
+    }
+}
+.packery-drop-placeholder {
+  outline: 3px dashed #444;
+  outline-offset: -6px;
+  /* transition position changing */
+  -webkit-transition: -webkit-transform 0.2s;
+          transition: transform 0.2s;
+}
+
+#dashboard-toolbar a#reset-widgets-position {
+	position: fixed;
+    background: linear-gradient(#1976D2, #03A9F4);
+    border: 1px solid #03A9F4;
+    padding: 5px;
+    display: inline-block;
+    text-align: center;
+    width: 43px;
+    right: 70px;
+    top: 28%;
+    z-index: 9999;
+    border-radius: 100px;
+    box-shadow: 0px 4px 16px -3px #3a3636;
+    color: #64B5F6;
+    transition: none;
+    -webkit-transition: none;
+}

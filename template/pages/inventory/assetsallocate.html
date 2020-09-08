@@ -1,0 +1,105 @@
+<!-- Right side column. Contains the navbar and content of the page -->
+<aside class="right-side">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1 class="pull-left"><?php _e('Assets'); ?><small> <?php _e('Manage Assest Allocate'); ?></small></h1>
+        <div class="pull-right">
+            <!--<?php if(in_array("addAssetsallocate",$perms)) { ?><a class="btn btn-primary btn-sm btn-flat" href="?route=inventory/assets/createassetsallocate"><?php _e('NEW ASSETS ALLOCATE'); ?></a><?php } ?>-->
+            <?php if(in_array("addAssetsallocate",$perms)) { ?>
+                <a onClick='showM("index.php?modal=assetsallocate/add&reroute=inventory/assetsallocate&routeid=&section="); return false' data-toggle="modal" class="btn btn-primary btn-sm btn-flat">
+                    <?php _e('NEW ASSETS ALLOCATE'); ?>
+                </a>
+            <?php } ?>
+        </div>
+        <div style="clear:both"></div>
+    </section>
+    <!-- Main content -->
+    <section class="content">
+        <?php if(!empty($statusmessage)): ?>
+        <div class="row"><div class='col-md-12'><div class="alert alert-<?php print $statusmessage["type"]; ?> alert-auto" role="alert"><?php print __($statusmessage["message"]); ?></div></div></div>
+        <?php endif; ?>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box box-primary">
+                    <div class="box-body">
+                        <div class="table-responsive">
+                            <table id="dataTablesFull" class="table table-striped table-hover table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th><?php _e('User'); ?></th>
+                                        <th><?php _e('Checkout Date'); ?></th>
+                                        <th><?php _e('Checkin Date'); ?></th>
+                                        <th><?php _e('Notes'); ?></th>
+                                        <th><?php _e('Manufacture'); ?></th>
+                                        <th><?php _e('File'); ?></th>
+                                        <th class="text-right"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php
+                                    
+                                    foreach ($assetsAllocates as $assetsAllocate) { ?>
+                                    <tr>
+                                        <td><?php echo getSingleValue("people","name",$assetsAllocate['userid']); ?></span></td>
+                                        <td><?php echo dateDisplay($assetsAllocate['checkout_date']); ?></td>
+                                        <td><?php echo dateDisplay($assetsAllocate['checkin_date']); ?></td>
+                                        <td><?php echo $assetsAllocate['notes']; ?></td>
+                                        <td><?php echo getSingleValue("manufacturers","name",$assetsAllocate['manufacturer']); ?></td>
+                                        <td><img src="<?php echo baseurl(); ?><?php echo $assetsAllocate['file']; ?>" height="50px" width="50px" /><td/>
+                                        
+                                        
+                                        <td>
+                                            <div class='pull-right'>
+                                                <div class="btn-group">
+                                                    <?php if(in_array("manageConsumables",$perms)) { ?>	<a href='?route=inventory/assets/manageassetsallocate&id=<?php echo $assetsAllocate['id']; ?>' class='btn btn-flat btn-primary btn-sm'><i class='fa fa-eye'></i></a><?php } ?>
+                                                    <?php if(in_array("editAsset",$perms)) { ?>	<a href='?route=inventory/assets/manageassetsallocate&id=<?php echo $assetsAllocate['id']; ?>&section=edit' class='btn btn-flat btn-success btn-sm'><i class='fa fa-edit'></i></a><?php } ?>
+
+                                                    <div class="btn-group">
+                                                        <button type="button" class="btn btn-default btn-sm btn-flat dropdown-toggle" data-toggle="dropdown">
+                                                            <span class="caret"></span>
+                                                        </button>
+                                                        <ul class="dropdown-menu pull-right">
+                                                            <?php if(in_array("deleteAssetallocate",$perms)) { ?>	
+                                                            <li><a href='#' onClick='showM("?modal=assetsallocate/delete&reroute=inventory/assetsallocate&routeid=&id=<?php echo $assetsAllocate['id']; ?>&section=");return false' ><i class='fa fa-trash-o fa-fw'></i><?php _e('Delete'); ?></a></li><?php } ?>
+                                                        </ul>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <?php } ?>
+                                </tbody>
+                            </table>
+                            <div class="pull-left" style="padding-top: 10px; padding-bottom:5px;padding-right: 5px;">
+                                <?php if(in_array("viewAssets",$perms)) { ?>
+                                <a href="?route=inventory/assets" class="btn btn-primary btn-sm btn-flat">
+                                    <?php _e('ASSETS'); ?>
+                                </a>
+                                <?php } ?>
+                            </div>
+                            
+                            <div class="pull-left" style="padding-top: 10px; padding-bottom:5px;padding-right: 5px;">
+                                <?php if(in_array("viewAssetsallocate",$perms)) { ?>
+                                <a href="?route=inventory/assetsallocate" class="btn btn-primary btn-sm btn-flat">
+                                    <?php _e('ASSETS ALLOCATE'); ?>
+                                </a>
+                                <?php } ?>
+                            </div>
+                            
+                            <div class="pull-left" style="padding-top: 10px; padding-bottom:5px;padding-right: 5px;">
+                                <?php if(in_array("viewAssetsreturn",$perms)) { ?>
+                                <a href="?route=inventory/assetsreturn" class="btn btn-primary btn-sm btn-flat">
+                                    <?php _e('ASSETS RETURN'); ?>
+                                </a>
+                                <?php } ?>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- /.content -->
+</aside><!-- /.right-side -->

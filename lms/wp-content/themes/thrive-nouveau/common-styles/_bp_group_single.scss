@@ -1,0 +1,176 @@
+.single-item.groups {
+	#page-hero {
+        display: none;
+    }
+	/*Single Group*/
+    #buddypress #item-header {
+        background: #fff;
+        position: relative;
+        padding: 0 15px 0 15px;
+        @extend .thrive-material-card-2;
+
+        @media(min-width: 768px) {
+            background-color: transparent;
+            box-shadow: none;
+        }
+    }
+    #item-header-avatar {
+        max-width: 128px;
+        margin: 0 auto;
+        @media (min-width: 768px) {
+            width: 20%;
+            float: left;
+        }
+    }
+	#buddypress-group-head {
+        margin: 0 -15px 20px -15px;
+
+		@media( min-width: 992px ) {
+			padding-top: 84px;
+		}
+	}
+	#page-content-wrapper {
+		padding-top: 0;
+	}
+	&.error404 #page-content-wrapper {
+        padding-top: 83px;
+    }
+	#buddypress #item-header-cover-image #item-header-avatar img.avatar {
+		border-radius: 2px;
+	}
+	#avatar-to-crop-wrap img.avatar {
+		border-radius: 0;
+	}
+
+	#secondary.widget-area {
+		padding-top: 0;
+	}
+
+	#meta-group-description {
+		border-top: 1px solid #cbd2e0;
+		@extend .thrive-material-card-2;
+		background: #eee;
+		border-radius: 2px;
+
+		max-height: 350px;
+		overflow: hidden;
+        margin-bottom: 15px;
+
+		#meta-group-description-title {
+			padding: 15px 25px;
+		}
+
+        .group-description {
+            border: 20px solid transparent;
+        }
+
+		#meta-group-description-title {
+			background: $white;
+			h3 {
+				margin: 0;
+				font-size: 16px;
+			}
+		}
+	}
+
+    &.group-home {
+        .item-body {
+            > .bp-screen-title {
+                @extend .bp-screen-reader-text;
+            }
+        }
+    }
+
+	#group-admin-mods {
+		border-top: 1px solid #cbd2e0;
+		@extend .thrive-material-card-2;
+		background: $white;
+		border-radius: 2px;
+		padding: 15px 25px;
+		margin-bottom: 15px;
+		.moderators-lists {
+			margin-bottom: 0;
+		}
+		.moderators-title {
+			margin-bottom: 10px;
+		}
+		.avatar {
+			width: 48px;
+		}
+		.user-list ul {
+
+			display: inline-block;
+			width: 100%;
+			margin: 0 -5px 0 -5px;
+
+			li {
+				float: left;
+				padding: 5px;
+				margin: 0;
+			}
+		}
+	}
+	/*Main Navigation*/
+	.main-navs {
+		margin-bottom: 20px;
+	}
+
+	/*Sub Navigation Filters*/
+	.subnav-filters {
+		> ul {
+			padding: 0;
+			margin: 0;
+			li {
+				list-style: none;
+			}
+		}
+	}
+
+	/*Sub navigation*/
+	.bp-navs {
+
+		ul {
+			li {
+				a{
+					padding: 15px 10px;
+					color: #414141;
+				}
+			}
+		}
+
+		&.vertical {
+			ul li a {
+                padding: 20px 10px;
+                @media(min-width: 768px) {
+                    padding: 10px;
+                }
+			}
+		}
+	}
+
+	#bp-activity-ajax-loader {
+		list-style: none;
+	}
+
+}
+
+.group-front-page {
+	.group-description {
+		background: #fff;
+    	padding: 20px;
+    	border-radius: 0 0 2px 2px;
+    	@extend .thrive-material-card-2;
+    	border-top: 1px solid #cbd2e0;
+        p {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+	}
+}
+
+.groups.create {
+	#meta-group-description .group-description {
+		border: 20px solid transparent;
+	}
+}

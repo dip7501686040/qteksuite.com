@@ -1,0 +1,48 @@
+// BP pagination  - generic styling for all screens
+.buddypress-wrap {
+
+	.bp-pagination {
+
+		border: 0;
+	    float: left;
+	    font-size: small;
+	    margin: 20px 0;
+	    border-radius: 2px;
+	    position: relative;
+	    width: 100%;
+
+		.pag-count {
+			float: left;
+			@media ( max-width: 768px ) {float: none;}
+		}
+
+		.bp-pagination-links {
+			float: right;
+			@media ( max-width: 768px ) {float: none; margin-top: 20px;}
+			
+			span,
+			a {
+				font-size: small;
+			    padding: 5px 10px;
+			    background: $white;
+			    @extend .thrive-material-card-1;
+			    border-radius: 2px;
+			}
+
+		}
+
+		.bp-pagination-links {
+
+			a:focus,
+			a:hover {
+				opacity: 1;
+			}
+		}
+
+		p {
+			margin: 0;
+		}
+
+	} // close .bp-pagination
+
+}

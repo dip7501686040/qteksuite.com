@@ -1,0 +1,10 @@
+.buddypress_material_font_before {
+    &:before {
+        @include material_font('');
+    }
+}
+.buddypress_material_font_after {
+    &:after {
+        @include material_font('');
+    }
+}

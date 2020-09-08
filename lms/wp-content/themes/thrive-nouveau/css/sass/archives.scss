@@ -1,0 +1,264 @@
+.search {
+	.search-entry-title {
+		margin-bottom: 10px;
+    	font-weight: bold;
+	}
+	.entry-search {
+		@extend .thrive-material-card-1;
+		padding: 15px 25px;
+	    margin-bottom: 25px;
+	    background: #fff;
+	    border-radius: 2px;
+	    img.avatar {
+	    		width: 18px;
+    			margin: -2.5px 5px 0 0;
+	    	}
+	    .byline,
+	    .posted-on {
+	    	a {
+	    		font-size: 12px;
+    			color: #757575;
+	    	}
+
+	    }
+	}
+	#search-page-search-form {
+		margin-bottom: 25px;
+		@extend .thrive-material-card-1;
+			border: 1px solid #ddd;
+
+		border-radius: 2px;
+
+		#searchform > div {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: baseline;
+		}
+		input#s {
+			background: #fff;
+			border-radius: 2px 0 0 2px;
+			border-right: 0 none;
+			margin: 0;
+		}
+		.thrive-search-input {
+			flex-grow: 20;
+		}
+		#searchsubmit {
+			margin: -1px -1px -1px 0;
+			flex-grow: 1;
+		    border-radius: 0 2px 2px 0;
+			padding: 7.5px 0;
+		}
+	}
+}
+
+
+.thrive-grid-archive {
+	
+	span.taxonomy-title {display: none;}
+	dd.course_progress {width: 100%;height: 7.5px;}
+
+	#primary #hentry-loop-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+  		justify-content: left;
+  		margin: 0 -10px;
+    }
+
+	#content.site-content {
+		.full-content {
+			#content-left-col #primary.content-area article.hentry {
+				@media(min-width: 780px) {
+					flex-basis: 33.3%;
+					max-width: 33.3%;
+				}
+			}
+		}
+		#content-left-col {
+			#primary {
+				&.content-area {
+					article {
+						&.hentry {
+							
+							width: 100%;
+						    position: relative;
+						    flex-grow: 1;
+						    flex-basis: 100%;
+						    max-width: 100%;
+
+							@media(min-width: 780px) {
+								flex-basis: 50%;
+								max-width: 50%;
+							}
+
+							.entry-content-wrap {
+								padding: 15px;
+							    background: #fff;
+							    margin: 0 10px 20px 10px;
+							    border-radius: 4px;
+							    position: relative;
+							    overflow: hidden;
+							    @extend .thrive-material-card-1;
+							}
+
+							.entry-is-sticky {
+								left: 15px;
+    							top: 5px;
+								position: absolute;
+								i.material-icons {
+									color: #FFEB3B;
+								}
+							}
+							.entry-categories {
+								font-weight: 400;
+							    font-size: 16px;
+							    margin-top: 15px;
+							}
+
+							.entry-footer {
+								font-size: 12px;
+								display: flex;
+								flex-wrap: wrap-reverse;
+								justify-content: space-between;
+
+								> span {
+									flex-grow: 1;
+								}
+								.byline {
+									font-style: italic;
+									text-align: right;
+								}
+								img.avatar {
+									width: 24px;
+									margin: -2.5px 5px 0 5px;
+								}
+								a {
+									color: #999;
+								}
+							}
+						}
+						.entry-title {
+							height: 50px;
+    						overflow: hidden;
+    						margin: 5px 0 15px 0;
+						}
+						.entry-summary {
+						    color: #444;
+						    height: 75px;
+						    margin-bottom: 15px;
+						    overflow: hidden;
+							> p {
+								font-size: 1em;
+							    margin: 0;
+							    color: #999;
+							    font-weight: 400;
+							    line-height: 1.5;
+							}
+						}
+						h1.entry-title {
+							color: #4a4a4a;
+							font-size: 20px;
+							font-weight: 500;
+							margin: 0;
+							line-height: 1.25;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.logged-out {
+	.thrive-archives {
+		.entry-footer {
+			.entry-footer-actions {
+				a {
+					text-align: left;
+					@media(min-width: 768px) {
+						text-align: right;
+					}
+				}
+			}
+		}
+	}
+}
+.thrive-archives {
+
+	.entry-header{
+		
+		&.has-post-thumbnail {
+
+			margin: -15px -15px 0 -15px;
+			position: relative;
+			overflow: hidden;
+
+			
+			.entry-thumbnail {
+
+				position: relative;
+
+				a {
+					position: relative;
+					display: block;
+					z-index: 20;
+				}
+
+				img {
+					width: 100%;
+					height: auto;
+				}
+
+				&:after{
+					content: " ";
+					background: $dark_borders;
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					top: 0;
+				}
+			}
+
+			
+		} //&.has-post-thumbnail
+	} //.entry-header
+} //.thrive-archives
+
+
+.archive {
+
+	#archive-section h1.page-title {
+		margin-bottom: 0;
+		font-size: 20px;
+		.material-icons {
+			margin-right: 15px;
+			top: 5px;
+		}
+	}
+
+	.page-header {
+		padding: 15px;
+		border-radius: 4px;
+	}
+
+	.archive-type {
+		display: block;
+		font-size: 0.85em;
+		font-weight: bold;
+		margin-bottom: 0;
+		color: $dark_secondary_icon;
+		text-transform: uppercase;
+	}
+
+	.archive-title {
+		font-size: 2em;
+		margin-bottom: 0;
+		display: block;
+		color: #212121;
+	}
+
+	.taxonomy-description {
+		margin: 35px 0 0;
+	}
+} //.archives

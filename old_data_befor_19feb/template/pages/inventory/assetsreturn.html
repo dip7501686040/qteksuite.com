@@ -1,0 +1,81 @@
+<!-- Right side column. Contains the navbar and content of the page -->
+<aside class="right-side">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1 class="pull-left"><?php _e('Assets'); ?><small> <?php _e('Manage Assest Return'); ?></small></h1>
+        <div class="pull-right"><?php if(in_array("addAssetsreturn",$perms)) { ?><a class="btn btn-primary btn-sm btn-flat" href="?route=inventory/assets/createassetsreturn"><?php _e('NEW ASSETS RETURN'); ?></a><?php } ?></div>
+        <div style="clear:both"></div>
+    </section>
+    <!-- Main content -->
+    <section class="content">
+        <?php if(!empty($statusmessage)): ?>
+        <div class="row"><div class='col-md-12'><div class="alert alert-<?php print $statusmessage["type"]; ?> alert-auto" role="alert"><?php print __($statusmessage["message"]); ?></div></div></div>
+        <?php endif; ?>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box box-primary">
+                    <div class="box-body">
+                        <div class="table-responsive">
+                            <table id="dataTablesFull" class="table table-striped table-hover table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th><?php _e('Assets Number'); ?></th>
+                                        <th><?php _e('Assets Category'); ?></th>
+                                        <th><?php _e('Employee Name'); ?></th>
+                                        <th><?php _e('Department'); ?></th>
+                                        <th><?php _e('Project Name'); ?></th>
+                                        <th><?php _e('Manager Name'); ?></th>
+                                        <th><?php _e('Approval Name'); ?></th>
+                                        <th><?php _e('Comments'); ?></th>
+                                        <th><?php _e('Checkin Date'); ?></th>
+                                        <th><?php _e('Checkout Date'); ?></th>
+                                        <th><?php _e('Status'); ?></th>
+                                        <th class="text-right"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php
+                                    
+                                    foreach ($assetsreturns as $assetsreturn) { ?>
+                                    <tr>
+                                        <td><?php echo getSingleValue("assets","serial",$assetsreturn['assets_number']); ?></span></td>
+                                        <td><?php echo getSingleValue("assetcategories","name",$assetsreturn['assets_category']); ?></span></td>
+                                        <td><?php echo getSingleValue("people","name",$assetsreturn['employee_name']); ?></td>
+                                        <td><?php echo getSingleValue("departmentcategories","name",$assetsreturn['department']); ?></td>
+                                        <td><?php echo getSingleValue("projects","name",$assetsreturn['project_name']); ?></td>
+                                        <td><?php echo getSingleValue("managercategories","name",$assetsreturn['manager_name']); ?></td>
+                                        <td><?php echo getSingleValue("approvalcategories","name",$assetsreturn['approval_name']); ?></td>
+                                        <td><?php echo $assetsreturn['comments']; ?></td>
+                                        <td><?php echo dateDisplay($assetsreturn['checkin_date']); ?></td>
+                                        <td><?php echo dateDisplay($assetsreturn['checkin_date']); ?></td>
+                                        <td><span class='badge' style='background-color:<?php echo getSingleValue("labels","color",$assetsreturn['statusid']); ?>'><?php echo getSingleValue("labels","name",$assetsreturn['status']); ?></span></td>
+                                        <td>
+                                            <div class='pull-right'>
+                                                <div class="btn-group">
+                                                    <?php if(in_array("manageConsumables",$perms)) { ?>	<a href='?route=inventory/assets/manageassetsreturn&id=<?php echo $assetsreturn['id']; ?>' class='btn btn-flat btn-primary btn-sm'><i class='fa fa-eye'></i></a><?php } ?>
+                                                    <?php if(in_array("editAsset",$perms)) { ?>	<a href='?route=inventory/assets/manageassetsreturn&id=<?php echo $assetsreturn['id']; ?>&section=edit' class='btn btn-flat btn-success btn-sm'><i class='fa fa-edit'></i></a><?php } ?>
+
+                                                    <div class="btn-group">
+                                                        <button type="button" class="btn btn-default btn-sm btn-flat dropdown-toggle" data-toggle="dropdown">
+                                                            <span class="caret"></span>
+                                                        </button>
+                                                        <ul class="dropdown-menu pull-right">
+                                                            <?php if(in_array("deleteAssetsreturn",$perms)) { ?>	
+                                                            <li><a href='#' onClick='showM("?modal=assetsreturn/delete&reroute=inventory/assetsreturn&routeid=&id=<?php echo $assetsreturn['id']; ?>&section=");return false' ><i class='fa fa-trash-o fa-fw'></i><?php _e('Delete'); ?></a></li><?php } ?>
+                                                        </ul>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <?php } ?>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- /.content -->
+</aside><!-- /.right-side -->

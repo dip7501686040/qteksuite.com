@@ -1,0 +1,483 @@
+// BP Widgets
+
+.buddypress.widget {
+
+	.item-options {
+
+		@include font-size(14);
+	}
+
+	ul.item-list {
+
+		@include flex-box-dir($flex-dir: column);
+
+		@include medium-small-up() {
+
+			@include flex-box-dir($flex-dir: row, $flex-wrap: wrap);
+		}
+
+		list-style: none;
+		margin: $marg-sml -2%;
+		overflow: hidden;
+
+		li {
+			border: 1px solid $bp-border-color;
+            list-style: none;
+
+			@include flex-align();
+			@include box-item-size($grow: 1, $basis: 46%);
+
+			@include large-up() {
+
+				@include box-item-size($grow: 0, $basis: 30%);
+			}
+
+			margin: 2%;
+
+			.item-avatar {
+				text-align: center;
+
+				.avatar {
+                    width: 100%;
+                    border-radius: 0;
+				}
+			}
+
+			.item {
+				padding: 0 $pad-sml $pad-sml;
+
+
+				.item-meta {
+					@include font-size(10);
+					overflow-wrap: break-word;
+				}
+			}
+		} // close li
+	}
+}
+
+// Are we in a main site sidebar?
+// while hard to tell width asume that
+// at large width it's narrow &
+// adjust the li widths & margins to %
+// & flex basis to auto for large up.
+// @todo this may need reviewing & adjusting.
+
+// WP default themes use the class '.widget-area'
+// as a naming convention for the main sidebar
+// this is the best we can know & style on this class
+.widget-area#secondary,
+#member-front-widgets  {
+    .widget,
+    .buddypress.widget {
+        &.widget_nav_menu {
+            .widget-title {
+                margin-bottom: 0;
+                @media (max-width: 767px) {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+.member-front-page,
+#member-front-widgets {
+    width: 100%;
+    display: inline-block;
+    float: left;
+}
+.member-front-page {
+    margin-top: 5px;
+    @media(min-width: 768px) {
+        margin-top: 0;
+    }
+}
+
+.widget-area {
+    .widget {
+
+        &.widget_nav_menu.buddypress {
+            padding-bottom: 0;
+            .widget-title {
+                margin-bottom: 0;
+                @media (max-width: 767px) {
+                    margin-bottom: 0;
+                }
+            }
+            ul {
+                margin: 0 -10px;
+                border-bottom-left-radius: 4px;
+                border-bottom-right-radius: 4px;
+                @media (min-width: 767px) {
+                    margin: 0 -15px;
+                }
+                li {
+                    &:last-child {
+                        > a {
+                            border-bottom: none;
+                        }
+                    }
+                    > a {
+                        border-bottom: 1px solid $primary-grey;
+                        @media (min-width: 767px) {
+                            padding: 15px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.bp-latest-activities {
+            .activity-list {
+                padding: 0;
+                > p {
+                    &:not(:empty) {
+                        background: $container-bg;
+                        padding: 10px;
+                        border-radius: 6px;
+                        position: relative;
+                        @extend .thrive-material-card-1;
+                    }
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            blockquote {
+                padding: 0;
+                border: none;
+                font-size: 0.85em;
+                margin-bottom: 10px;
+                background: $container-bg;
+                padding: 10px;
+                border-radius: 6px;
+                position: relative;
+                @extend .thrive-material-card-1;
+
+                &:before,
+                &:after {
+                    content: '';
+                    position: absolute;
+                    bottom: -15px;
+                    left: 10%;
+                    width: 0;
+                    height: 0;
+                    border: 15px solid transparent;
+                    border-top-color: $container-bg;
+                    border-bottom: 0;
+                    border-left: 0;
+                }
+                &:before {
+                    left: 10.55%;
+                    border-top-color: #d2d2d2;
+                    z-index: 0;
+                    font-size: inherit;
+                    margin-top: 15px;
+                    margin-right: 10px;
+                }
+                p {
+                    &:first-child {
+                        &:before {
+                            @extend .buddypress_material_font_before;
+                            content: 'format_quote';
+                            float: right;
+                            font-size: initial;
+                            color: rgba(0, 0, 0, 0.54);
+                        }
+                    }
+                }
+
+                footer {
+                    &:before {
+                        display: none;
+                    }
+                }
+                img.avatar {
+                    max-width: 32px;
+                    @extend .thrive-material-card-1;
+                }
+                .activity-time-since span {
+                    color: rgba(0, 0, 0, 0.54);
+                    margin-left: 5px;
+                    &:before {
+                        content: '-';
+                        margin-right: 5px;
+                    }
+                }
+
+            }
+        }
+		ul.item-list {
+
+			li {
+
+				@include box-item-size($grow: 0, $basis: 46%);
+				margin: 2% 2% 10px;
+
+				@include large-up {
+
+					.avatar {
+						width: 100%;
+					}
+				}
+			}
+		}
+
+		@include large-up() {
+
+			ul.item-list {
+				margin: $marg-sml -2%;
+				width: 100%;
+
+				li {
+
+					@include box-item-size($grow: 0, $basis: auto);
+					margin: $marg-sml 2% 1%;
+					width: 46%;
+				}
+			}
+		}
+	}
+}
+
+
+.widget.buddypress {
+    &.widget_bp_core_whos_online_widget,
+    &.widget_bp_core_recently_active_widget {
+        img.avatar {
+            width: 100%;
+            border-radius: 0;
+        }
+        .avatar-block {
+            padding: 0;
+            margin: 0;
+            display: inline-block;
+            width: 100%;
+            clear: both;
+        }
+        .item-avatar {
+            float: left;
+            width: 25%;
+            margin: 0;
+            padding: 0;
+            border-bottom: 0;
+            position: relative;
+            border: none;
+            @media(min-width: 480px) {
+                width: 20%;
+            }
+            &:hover {
+
+                &:after {
+                    opacity: 0.75;
+                    visibility: hidden;
+                }
+            }
+            &:after {
+                content: " ";
+                display: block;
+                position: absolute;
+                width: 100%;
+                height: 55%;
+                background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.8));
+                bottom: 0;
+                left: 0;
+                z-index: 10;
+                @extend .bp-shadow-transition;
+            }
+            &:first-child {
+                &:nth-last-child(3),
+                &:nth-last-child(3) ~ .item-avatar {
+                    @media(min-width: 480px) {
+                        width: 33.3%;
+                    }
+                }
+                &:nth-last-child(4),
+                &:nth-last-child(4) ~ .item-avatar {
+                    @media(min-width: 480px) {
+                        width: 25%;
+                    }
+                }
+            }
+        }
+        .item-meta {
+            display: none;
+        }
+    }
+    &.widget_bp_core_login_widget {
+        .bp-login-widget-user-avatar {
+            text-align: center;
+            margin-bottom: 15px;
+            img.avatar {
+                width: 35%;
+            }
+        }
+        .bp-login-widget-user-links {
+            .bp-login-widget-user-link,
+            .bp-login-widget-user-logout {
+                width: 100%;
+                display: inline-block;
+                text-align: center;
+            }
+            .bp-login-widget-user-logout {
+                .logout {
+                    color: red;
+                }
+            }
+        }
+    }
+    &.widget_bp_core_friends_widget,
+    &.widget_bp_groups_widget,
+    &.widget_bp_core_members_widget {
+        .item-options {
+            margin-bottom: 15px;
+            font-size: 0;
+            a {
+                font-size: 13px;
+                margin-right: 5px;
+                padding: 0 5px 5px 0;
+                &:last-child {
+                    margin-right: 0;
+                }
+                &.selected,
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+        .bp-separator {
+            display: none;
+        }
+    }
+    #friends-list,
+    #groups-list,
+    #members-list {
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+        width: 100%;
+        clear: both;
+        > li {
+            float: left;
+            width: 50%;
+            margin: 0;
+            padding: 0;
+            border-bottom: 0;
+            position: relative;
+            border: none;
+            @media(min-width: 480px) {
+                width: 33.3%;
+            }
+            &:hover {
+
+                &:after {
+                    opacity: 0.75;
+                }
+            }
+            &:after {
+                content: " ";
+                display: block;
+                position: absolute;
+                width: 100%;
+                height: 55%;
+                background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.8));
+                bottom: 0;
+                left: 0;
+                z-index: 10;
+                @extend .bp-shadow-transition;
+            }
+            .item {
+                position: absolute;
+                bottom: 0;
+                font-size: 12px;
+                z-index: 20;
+                padding: 10px;
+                line-height: 1.4;
+                max-height: 50px;
+                overflow: hidden;
+                color: $white;
+                a {
+                    color: $white;
+                }
+                .item-title {
+                    .ellip {
+                        width: 75px;
+                    }
+                }
+                .item-meta {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+#user-content-widget-sidenav {
+    .widget.buddypress #friends-list > li .item .item-title .ellip, .widget.buddypress #groups-list > li .item .item-title .ellip, .widget.buddypress #members-list > li .item .item-title .ellip {
+        width: 55px;
+    }
+}
+/**
+ * Home Widgets
+ */
+#item-body .bp-sidebar {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px 0;
+
+    @media (min-width: 768px) {
+        margin: 15px -1%;
+    }
+
+    > .widget {
+
+        flex-basis: 100%;
+        margin: 0 0 15px 0;
+        max-width: 100%;
+        padding: 10px;
+
+        flex-grow: 1;
+        background: $white;
+        border-radius: 3px;
+        @extend .thrive-material-card-2;
+
+        @media (min-width: 768px) {
+            flex-basis: 48%;
+            max-width: 48%;
+            margin: 5px 1%;
+        }
+
+        h2.widget-title {
+            margin-top: 0;
+            margin-bottom: 25px;
+            font-weight: 600;
+            font-size: 18px;
+        }
+        ul {
+            padding:15px 0; 
+            margin: 0;
+            li {
+                padding: 0 0 0 25px;
+                margin: 0 0 10px 0;
+                list-style: none;
+                &.bp-single-group,
+                &.vcard {
+                    padding: 0; margin: 0;
+                }
+            }
+        }
+        .wp-caption.alignnone {
+            margin: 0;
+        }
+    }
+}
+
+.bp-single-vert-nav {
+   #item-body > .bp-sidebar {
+        margin-top: -1%;
+        > .widget {
+            padding: 15px 20px;
+        }
+    }
+}

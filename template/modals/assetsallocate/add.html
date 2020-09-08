@@ -1,0 +1,105 @@
+<div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button><h4 class="modal-title"><?php _e('Add Asset Allocate'); ?></h4></div>
+<div class="modal-body">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="userid"><?php _e('User'); ?></label>
+                    <select class="form-control select2 select2-hidden-accessible" id="userid" name="userid" style="width: 100%;" tabindex="1" aria-hidden="true" required="">
+                        <option value=""><?php _e('None'); ?></option>
+                        <?php foreach ($users as $user) { echo "<option value='".$user['id']."'>".$user['name']."</option>"; } ?>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="checkout_date"><?php _e('Checkout Date'); ?></label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="purchase_date" name="checkout_date" required="" tabindex="2">
+                        <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="checkin_date"><?php _e('Expected Checkin Date'); ?></label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="purchase_date" name="checkin_date" required="" tabindex="3">
+                        <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="notes"><?php _e('Notes'); ?></label>
+                    <textarea class="form-control summernoteLarge" id="notes" name="notes" tabindex="4"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="manufacturer"><?php _e('Manufacturer'); ?></label>
+                    <select class="form-control select2 tag select2-hidden-accessible" id="manufacturer" name="manufacturer" style="width: 100%;" tabindex="5" required="" aria-hidden="true" multiple>
+                         <option value=""><?php _e('None'); ?></option>
+                        <?php foreach ($manufacturers as $manufacturer) { echo "<option value='".$manufacturer['name']."'>".$manufacturer['name']."</option>"; } ?>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="file"><?php _e('File'); ?></label>
+                    <input type="file" class="form-control" name="file" id="file">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <input type="hidden" name="action" value="addAssetsallocate">
+    <input type="hidden" name="route" value="<?php echo $_GET['reroute']; ?>">
+    <input type="hidden" name="routeid" value="<?php echo $_GET['routeid']; ?>">
+    <input type="hidden" name="section" value="<?php echo $_GET['section']; ?>">
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-default btn-flat" data-dismiss="modal"><i class="fa fa-times"></i> <?php _e('Cancel'); ?></button>
+    <button type="submit" class="btn btn-primary btn-flat"><i class="fa fa-check"></i> <?php _e('Create'); ?></button>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+         $('.summernote-modal').summernote({height: 200});
+         $('.bootstrap-slider').bootstrapSlider();
+
+         $(".sliderToggle").click(function() {
+            if(this.checked) {
+                // With JQuery
+                $(".bootstrap-slider").bootstrapSlider("disable");
+            }
+            else {
+                // With JQuery
+                $(".bootstrap-slider").bootstrapSlider("enable");
+            }
+         });
+     });
+     $('.summernoteLarge').summernote({height: 200, maximumImageFileSize: 524288, dialogsInBody: true, disableDragAndDrop: true});
+
+        $(function() {
+            $(".select2").select2();
+            $('#purchase_date, #deadline').datepicker({
+                format: '<?php echo jsFormat(); ?>',
+                clearBtn: 'true',
+                weekStart: '<?php echo getConfigValue("week_start"); ?>',
+                autoclose: true
+            });
+        });
+
+</script>
