@@ -3,8 +3,6 @@
 ## authenticate
 
 
-
-
 switch ($request_method) {
     case 'get':
         //isAuthorizedApi("manageData");

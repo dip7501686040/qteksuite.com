@@ -5,7 +5,6 @@
 ##################################
 
 $reroute = TRUE;
-
 switch($_POST['action']) {
 
 	// assets

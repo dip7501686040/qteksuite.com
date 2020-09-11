@@ -400,7 +400,6 @@ function signIn($email,$password) //login and set session
 
 		$internal = 0;
 		$ldap = 0;
-
 		$internal = $database->count("people",["AND" => ["email" => $email,"password" => sha1($password)]]);
 		if(getConfigValue("ldap_enable") == "true") {
 			$ldap = $database->count("people", ["ldap_user" => $email]);

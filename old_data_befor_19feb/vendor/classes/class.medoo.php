@@ -43,10 +43,11 @@ class medoo
 
 	public function __construct($options = null)
 	{
+		
 		try {
 			$commands = array();
 			$dsn = '';
-
+			
 			if (is_array($options))
 			{
 				foreach ($options as $option => $value)
@@ -140,14 +141,14 @@ class medoo
 				$this->password,
 				$this->option
 			);
-
 			foreach ($commands as $value)
 			{
 				$this->pdo->exec($value);
 			}
 		}
 		catch (PDOException $e) {
-			throw new Exception($e->getMessage());
+			// throw new Exception($e->getMessage());
+			echo $e->getMessage();
 		}
 	}
 

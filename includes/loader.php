@@ -4,15 +4,15 @@
 ###       LOAD FUNCTIONS       ###
 ##################################
 
-require($scriptpath . DIRECTORY_SEPARATOR . 'includes' . DIRECTORY_SEPARATOR . 'functions.php');
-
+//require($scriptpath . DIRECTORY_SEPARATOR . 'includes' . DIRECTORY_SEPARATOR . 'functions.php');
+require('includes/functions.php');
 
 ##################################
 ###      LOAD CONFIG FILE      ###
 ##################################
 
-if(file_exists($scriptpath . DIRECTORY_SEPARATOR . "config.php")) {
-    require($scriptpath . DIRECTORY_SEPARATOR . 'config.php');
+if(file_exists("config.php")) {
+    require('config.php');
     if(isset($DBconfig)) $config = $DBconfig;
     }
 else { // redirect to install if config.php file does not exist
@@ -29,13 +29,13 @@ spl_autoload_register('vendorClassAutoload');
 spl_autoload_register('appClassAutoload');
 
 // composer autoload
-require $scriptpath . '/vendor/autoload.php';
+require 'vendor/autoload.php';
 
 ##################################
 ###          APP INIT          ###
 ##################################
-
 ### INITIALIZE DATABSE CLASS ###
+require 'old_data_befor_19feb\vendor\classes\class.medoo.php';
 $database = new medoo($config);
 
 ### START THE SESSION ###
@@ -67,7 +67,8 @@ if ($route != "signin" && $route != "forgot") {
     $liu = $database->get("people", "*", ["sessionid" => session_id() ]);
     $perms = unserialize(getSingleValue("roles","perms",$liu['roleid']));
     //print_r($perms);die();
-    $isAdmin = false; if($liu['type'] == "admin") $isAdmin = true;
+    $isAdmin = false; 
+    if($liu['type'] == "admin") $isAdmin = true;
 }
 
 
@@ -78,17 +79,16 @@ if ($route != "signin" && $route != "forgot") {
 
 // get default app language
 $lang = getConfigValue("default_lang");
-
 // overwrite default lang if liu has one defined
 if(isset($liu)) {
     if($liu['lang'] != "") $lang = $liu['lang'];
     }
 
 // define language file path
-$langfile = $scriptpath . DIRECTORY_SEPARATOR . "lang" . DIRECTORY_SEPARATOR . $lang . ".mo";
+$langfile = "lang/".$lang . ".mo";
 
 // define overriden language file path
-$orlangfile = $scriptpath . DIRECTORY_SEPARATOR . "lang" . DIRECTORY_SEPARATOR . "override" . DIRECTORY_SEPARATOR . $lang . ".mo";
+$orlangfile = "lang/override/". $lang . ".mo";
 
 // load overriden language file (if exists)
 if(file_exists($orlangfile)) {
@@ -109,19 +109,20 @@ else {
 ##################################
 
 // general controller (always loads)
-require($scriptpath . DIRECTORY_SEPARATOR . 'includes' . DIRECTORY_SEPARATOR . 'controllers' . DIRECTORY_SEPARATOR . 'general.php');
+require('includes/controllers/general.php');
 
 // modals controller (loads only if a modal is requested)
-if(isset($_GET['modal'])) require($scriptpath . DIRECTORY_SEPARATOR . 'includes' . DIRECTORY_SEPARATOR . 'controllers' . DIRECTORY_SEPARATOR . 'modals.php');
+if(isset($_GET['modal'])) require('includes/controllers/modals.php');
 
 // quick actions controller (loads only if a quick action is requested)
-if(isset($_GET['qa'])) require($scriptpath . DIRECTORY_SEPARATOR . 'includes' . DIRECTORY_SEPARATOR . 'controllers' . DIRECTORY_SEPARATOR . 'quickactions.php');
+if(isset($_GET['qa'])) require('includes/controllers/quickactions.php');
 
 // actions controller (loads only if an action is requested)
-if(isset($_POST['action'])) require($scriptpath . DIRECTORY_SEPARATOR . 'includes' . DIRECTORY_SEPARATOR . 'controllers' . DIRECTORY_SEPARATOR . 'actions.php');
+if(isset($_POST['action'])) require('includes/controllers/actions.php');
 
 // data controller
-require($scriptpath . DIRECTORY_SEPARATOR . 'includes' . DIRECTORY_SEPARATOR . 'controllers' . DIRECTORY_SEPARATOR . 'data.php');
+require('includes/controllers/data.php');
 
 //print_r($_SESSION);die();
+
 ?>

@@ -64,7 +64,7 @@ $request_method = $_POST["method"];
 $request_resource = $_POST["resource"];
 
 
-
+die();
 switch ($request_method) {
     case 'get':
         if(isset($_POST['filters'])) {
@@ -315,7 +315,8 @@ switch ($request_resource) {
     break;
 
     case 'authenticate': ## DONE ##
-        require $scriptpath . '/api/resources/authenticate.php';
+
+        require 'api/resources/authenticate.php';
     break;
 
 
