@@ -357,13 +357,13 @@ function clearStatus() {
 
 function vendorClassAutoload($classname) {
 	global $scriptpath;
-	$file = $scriptpath . DIRECTORY_SEPARATOR .'vendor'. DIRECTORY_SEPARATOR . 'classes' . DIRECTORY_SEPARATOR . 'class.' . strtolower($classname) . '.php';
+	$file = 'vendor/classes/class.' . strtolower($classname) . '.php';
 	if (file_exists($file)) require($file);
 }
 
 function appClassAutoload($classname) {
 	global $scriptpath;
-	$file = $scriptpath . DIRECTORY_SEPARATOR .'includes'. DIRECTORY_SEPARATOR . 'classes' . DIRECTORY_SEPARATOR . 'class.' . strtolower($classname) . '.php';
+	$file = 'includes/classes/class.' . strtolower($classname) . '.php';
 	if (file_exists($file)) require($file);
 }
 

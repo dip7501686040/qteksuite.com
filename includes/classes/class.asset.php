@@ -45,7 +45,7 @@ class Asset extends App {
             $customfieldsdata[$customfield['id']] = $data[$customfield['id']];
         }
         
-            $target_dir = $scriptpath . "uploads/assets/";
+            $target_dir = "uploads/assets/";
             $target_file = $target_dir . basename($_FILES["file"]["name"]);
             //echo $scriptpath;die();
             $uploadOk = 1;
@@ -194,7 +194,7 @@ class Asset extends App {
         $target_file_old = 0; 
         $target_file_old = $database->get("components", "file", [ "id" => $data['id'] ]);
         if(!empty($_FILES["file"]["name"])){
-                $target_dir = $scriptpath . "uploads/assets/";
+                $target_dir = "uploads/assets/";
                 $target_file = $target_dir . basename($_FILES["file"]["name"]);
                 $uploadOk = 1;
                 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));

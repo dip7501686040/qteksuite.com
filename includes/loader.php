@@ -35,7 +35,6 @@ require 'vendor/autoload.php';
 ###          APP INIT          ###
 ##################################
 ### INITIALIZE DATABSE CLASS ###
-require 'old_data_befor_19feb\vendor\classes\class.medoo.php';
 $database = new medoo($config);
 
 ### START THE SESSION ###
