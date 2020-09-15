@@ -1,26 +1,26 @@
-.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
-
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
     vertical-align: middle;
 }
-
 
 .main-footer {
     padding: 5px 15px;
 }
+
 .text-dark {
     color: #444;
 }
+
 .callout-gray {
     background-color: #EEE;
     border-left: 5px solid #DDD;
 }
+
 .callout-gray a {
     color: #333;
-
 }
+
 .callout-gray a:hover {
     color: #444;
-
 }
 
 @media (min-width: 767px) {
@@ -29,23 +29,31 @@
     }
 }
 
-.notopborder {border-top: 0px!important;}
+.notopborder {
+    border-top: 0px!important;
+}
 
-.whitetext {color: #FFF;}
+.whitetext {
+    color: #FFF;
+}
 
-.dt-margin{
-margin-left:0px !important;
-margin-right:0px !important;
+.dt-margin {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
 }
 
 .todo-list {
     min-height: 40px;
 }
 
+.no-sort::after {
+    display: none!important;
+}
 
-.no-sort::after { display: none!important; }
-
-.no-sort { pointer-events: none!important; cursor: default!important; }
+.no-sort {
+    pointer-events: none!important;
+    cursor: default!important;
+}
 
 .timeline-item {
     background-color: #fff!important;
@@ -54,7 +62,6 @@ margin-right:0px !important;
 }
 
 .timeline-image {
-
     left: 16px;
     position: absolute;
     top: 0;
@@ -64,28 +71,27 @@ margin-right:0px !important;
     list-style-type: none;
 }
 
-.chart-legend li span{
+.chart-legend li span {
     display: inline-block;
     width: 10px;
     height: 10px;
-    margin-top:4px;
+    margin-top: 4px;
     margin-right: 5px;
-    border-radius:50%;
+    border-radius: 50%;
 }
 
 .dTsearch {
-    position:relative;
-    right:-145px;
-    top:1px;
+    position: relative;
+    right: -145px;
+    top: 1px;
 }
 
-
 .fullboby-bg {
-  background: url(../assets/bg2.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    background: url(../assets/bg2.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .fullboby-bg a {
@@ -100,7 +106,6 @@ margin-right:0px !important;
     padding-top: 12px;
     padding-bottom: 0px;
     margin-bottom: 0px;
-
 }
 
 .dt-buttons {
@@ -114,62 +119,54 @@ margin-right:0px !important;
     border-radius: 0px;
 }
 
-
-
-.fileinput{
+.fileinput {
     padding-top: 5px;
     padding-bottom: 5px;
 }
 
 .datepicker {
-    z-index:9999 !important;
+    z-index: 9999 !important;
 }
-
-
 
 td .btn-group {
-  display: flex;
+    display: flex;
 }
 
-
 .label-lite-blue {
-    background-color:#FFF;
-    color:#0073b7;
-    border:1px solid #0073b7;
+    background-color: #FFF;
+    color: #0073b7;
+    border: 1px solid #0073b7;
 }
 
 .label-lite-green {
-    background-color:#FFF;
-    color:#00a65a;
-    border:1px solid #00a65a;
+    background-color: #FFF;
+    color: #00a65a;
+    border: 1px solid #00a65a;
 }
 
 .label-lite-yellow {
-    background-color:#FFF;
-    color:#f39c12;
-    border:1px solid #f39c12;
+    background-color: #FFF;
+    color: #f39c12;
+    border: 1px solid #f39c12;
 }
 
 .label-lite-purple {
-    background-color:#FFF;
-    color:#605ca8;
-    border:1px solid #605ca8;
+    background-color: #FFF;
+    color: #605ca8;
+    border: 1px solid #605ca8;
 }
 
 .label-lite-red {
-    background-color:#FFF;
-    color:#dd4b39;
-    border:1px solid #dd4b39;
+    background-color: #FFF;
+    color: #dd4b39;
+    border: 1px solid #dd4b39;
 }
 
 .label-lite-gray {
-    background-color:#FFF;
-    color:#000;
-    border:1px solid #d2d6de;
+    background-color: #FFF;
+    color: #000;
+    border: 1px solid #d2d6de;
 }
-
-
-
 
 .issues-list .text {
     display: inline!important;
@@ -177,4 +174,22 @@ td .btn-group {
 
 .issue-more {
     margin: 5px 5px;
+}
+
+/* assets datatable css */
+.right-side .content-header .pull-right .filter_icon i{
+    position: relative;
+    top: 5px;
+    right: 15px;
+    font-size: 2.5rem;
+    color:#0073b7;
+    object-fit: contain;
+    cursor: pointer;
+}
+#dataTablesFull thead tr td input {
+    display: block;
+    width: 10rem;
+    padding: 3px;
+    box-sizing: border-box;
+    display: none;
 }
