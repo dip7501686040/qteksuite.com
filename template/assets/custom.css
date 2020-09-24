@@ -196,7 +196,6 @@ td .btn-group {
     box-sizing: border-box;
     display: none;
 }
-<<<<<<< HEAD
 #attach_file_container{
     display: flex;
     align-items: center;
@@ -204,7 +203,6 @@ td .btn-group {
     width: 100%;
     padding: 1.5rem 1.5rem 1.5rem 0;
 }
-=======
 /*Akanksha Goyal changes*/
 
 
@@ -284,4 +282,3 @@ td .btn-group {
 {
     color:grey;
 }
->>>>>>> origin/akanksha
