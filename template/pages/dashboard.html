@@ -32,14 +32,12 @@
             <div class="col-lg-3 col-xs-6">
                 <!-- small box -->
                 <a href="?route=inventory/assets" class="small-box-footer">
-                    <div class="small-box bg-blue">
+                    <div class="smallBox0 bg-blue">
                         <div class="inner">
                             <h3><?php echo $sumAssets; ?></h3>
                             <p><?php _e('Total Assets'); ?></p>
                         </div>
-                        <div class="icon">
-                            <i class="fa fa-desktop"></i>
-                        </div>
+                        
                     </div>
                 </a>
             </div>
@@ -48,14 +46,12 @@
             <div class="col-lg-3 col-xs-6">
                 <!-- small box -->
                 <a href="?route=inventory/assetsallocate" class="small-box-footer">
-                    <div class="small-box bg-aqua">
+                    <div class="smallBox0 bg-aqua">
                         <div class="inner">
                             <h3><?php echo $sumAssetsAllocate; ?></h3>
                             <p><?php _e('Assets Allocate'); ?></p>
                         </div>
-                        <div class="icon">
-                            <i class="fa fa-tag"></i>
-                        </div>
+                        
                     </div>
                 </a>
             </div>
@@ -64,14 +60,12 @@
             <div class="col-lg-3 col-xs-6">
                 <!-- small box -->
                 <a href="?route=sam/assetsreturn" class="small-box-footer">
-                    <div class="small-box bg-red">
+                    <div class="smallBox0 bg-red">
                         <div class="inner">
                             <h3><?php echo $sumAssetsReturn; ?></h3>
                             <p><?php _e('Assets Return'); ?></p>
                         </div>
-                        <div class="icon">
-                            <i class="fa fa-backward"></i>
-                        </div>
+                        
                     </div>
                 </a>
             </div>
@@ -80,14 +74,12 @@
             <div class="col-lg-3 col-xs-6">
                 <!-- small box -->
                 <a href="?route=inventory/assetsallocate" class="small-box-footer">
-                    <div class="small-box bg-teal">
+                    <div class="smallBox0 bg-teal">
                         <div class="inner">
                             <h3><?php echo $sumAssetsAllocate; ?></h3>
                             <p><?php _e('Accessories Assets'); ?></p>
                         </div>
-                        <div class="icon">
-                            <i class="fa fa-tasks"></i>
-                        </div>
+                        
                     </div>
                 </a>
             </div>
@@ -96,14 +88,12 @@
             <div class="col-lg-3 col-xs-6">
                 <!-- small box -->
                 <a href="?route=inventory/consumables" class="small-box-footer">
-                    <div class="small-box bg-red">
+                    <div class="smallBox0 bg-red">
                         <div class="inner">
                             <h3><?php echo $sumConsumables; ?></h3>
                             <p><?php _e('Consumable Assets'); ?></p>
                         </div>
-                        <div class="icon">
-                            <i class="fa fa-tasks"></i>
-                        </div>
+                        
                     </div>
                 </a>
             </div>
@@ -112,14 +102,12 @@
             <div class="col-lg-3 col-xs-6">
                 <!-- small box -->
                 <a href="?route=inventory/licenses" class="small-box-footer">
-                    <div class="small-box bg-green">
+                    <div class="smallBox0 bg-green">
                         <div class="inner">
                             <h3><?php echo $sumLicenses; ?></h3>
                             <p><?php _e('Licenses'); ?></p>
                         </div>
-                        <div class="icon">
-                            <i class="fa fa-certificate"></i>
-                        </div>
+                        
                     </div>
                 </a>
             </div>
@@ -128,14 +116,12 @@
             <div class="col-lg-3 col-xs-6">
                 <!-- small box -->
                 <a href="?route=sam/licensesallocate" class="small-box-footer">
-                    <div class="small-box bg-fuchsia">
+                    <div class="smallBox0 bg-fuchsia">
                         <div class="inner">
                             <h3><?php echo $sumLicensesAllocation; ?></h3>
                             <p><?php _e('Licenses Allocation'); ?></p>
                         </div>
-                        <div class="icon">
-                            <i class="fa fa-lock"></i>
-                        </div>
+                        
                     </div>
                 </a>
             </div>
@@ -144,14 +130,12 @@
             <div class="col-lg-3 col-xs-6">
                 <!-- small box -->
                 <a href="?route=sam/licensereturn" class="small-box-footer">
-                    <div class="small-box bg-light-blue">
+                    <div class="smallBox0 bg-light-blue">
                         <div class="inner">
                             <h3><?php echo $sumLicensesReturn; ?></h3>
                             <p><?php _e('Return Licenses'); ?></p>
                         </div>
-                        <div class="icon">
-                            <i class="fa fa-undo"></i>
-                        </div>
+                        
                     </div>
                 </a>
             </div>
@@ -160,14 +144,12 @@
             <div class="col-lg-3 col-xs-6">
                 <!-- small box -->
                 <a href="?route=projects" class="small-box-footer">
-                    <div class="small-box bg-yellow">
+                    <div class="smallBox0 bg-yellow">
                         <div class="inner">
                             <h3><?php echo $sumProjects; ?></h3>
                             <p><?php _e('Projects'); ?></p>
                         </div>
-                        <div class="icon">
-                            <i class="fa fa-rocket"></i>
-                        </div>
+                        
                     </div>
 
                 </a>
@@ -177,27 +159,24 @@
                 <!-- small box -->
                 <?php if($isAdmin) { ?>
                 <a href="?route=clients" class="small-box-footer">
-                    <div class="small-box bg-purple">
+                    <div class="smallBox0 bg-purple">
+                        
                         <div class="inner">
                             <h3><?php echo $sumClients; ?></h3>
                             <p><?php _e('Clients'); ?></p>
                         </div>
-                        <div class="icon">
-                            <i class="fa fa-briefcase"></i>
-                        </div>
+                        
                     </div>
                 </a>
                 <?php } ?>
                 <?php if(!$isAdmin) { ?>
                 <a href="?route=people/users" class="small-box-footer">
-                    <div class="small-box bg-red">
+                    <div class="smallBox0 bg-purple">
                         <div class="inner">
                             <h3><?php echo $sumUsers; ?></h3>
                             <p><?php _e('Users'); ?></p>
                         </div>
-                        <div class="icon">
-                            <i class="fa fa-briefcase"></i>
-                        </div>
+                        
                     </div>
                 </a>
                 <?php } ?>
@@ -729,12 +708,12 @@
                 {
                     fillColor: "rgba(60,141,188,0.9)",
                     data: [
-				  	<? php if($isAdmin) echo workHoursByMonth($last6YM[0]); if (!$isAdmin) echo workHoursByMonth($last6YM[0], $liu['clientid']); ?>,
-			  		<? php if ($isAdmin) echo workHoursByMonth($last6YM[1]); if (!$isAdmin) echo workHoursByMonth($last6YM[1], $liu['clientid']); ?>,
-					<? php if ($isAdmin) echo workHoursByMonth($last6YM[2]); if (!$isAdmin) echo workHoursByMonth($last6YM[2], $liu['clientid']); ?>,
-					<? php if ($isAdmin) echo workHoursByMonth($last6YM[3]); if (!$isAdmin) echo workHoursByMonth($last6YM[3], $liu['clientid']); ?>,
-					<? php if ($isAdmin) echo workHoursByMonth($last6YM[4]); if (!$isAdmin) echo workHoursByMonth($last6YM[4], $liu['clientid']); ?>,
-					<? php if ($isAdmin) echo workHoursByMonth($last6YM[5]); if (!$isAdmin) echo workHoursByMonth($last6YM[5], $liu['clientid']); ?>
+				  	<?php if($isAdmin) echo workHoursByMonth($last6YM[0]); if (!$isAdmin) echo workHoursByMonth($last6YM[0], $liu['clientid']); ?>,
+			  		<?php if ($isAdmin) echo workHoursByMonth($last6YM[1]); if (!$isAdmin) echo workHoursByMonth($last6YM[1], $liu['clientid']); ?>,
+					<?php if ($isAdmin) echo workHoursByMonth($last6YM[2]); if (!$isAdmin) echo workHoursByMonth($last6YM[2], $liu['clientid']); ?>,
+					<?php if ($isAdmin) echo workHoursByMonth($last6YM[3]); if (!$isAdmin) echo workHoursByMonth($last6YM[3], $liu['clientid']); ?>,
+					<?php if ($isAdmin) echo workHoursByMonth($last6YM[4]); if (!$isAdmin) echo workHoursByMonth($last6YM[4], $liu['clientid']); ?>,
+					<?php if ($isAdmin) echo workHoursByMonth($last6YM[5]); if (!$isAdmin) echo workHoursByMonth($last6YM[5], $liu['clientid']); ?>
 				]
 	        }
 	      ]
@@ -772,13 +751,13 @@
     //-------------
 
     var PieData = [
-	  		<? php foreach($categories as $category) { ?>
+	  		<?php foreach($categories as $category) { ?>
         {
-            value: <? php if($isAdmin) echo countAssetsByCategory($category['id']); if (!$isAdmin) echo countAssetsByCategory($category['id'], $liu['clientid']); ?>,
+            value: <?php if($isAdmin) echo countAssetsByCategory($category['id']); if (!$isAdmin) echo countAssetsByCategory($category['id'], $liu['clientid']); ?>,
                 color: "<?php echo $category['color']; ?>",
                     label: "<?php echo $category['name']; ?>"
 	  			},
-	  		<? php } ?>
+	  		<?php } ?>
       ];
     var pieOptions = {
         segmentShowStroke: true,
