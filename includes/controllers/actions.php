@@ -20,6 +20,13 @@ switch($_POST['action']) {
 		isAuthorized("deleteAsset"); $status = Asset::delete($_POST['id']);
     break;
 
+	case "addFileAsset":
+		isAuthorized("editAsset"); $status = Asset::addFile($_POST, $_FILES);
+    break;
+	case "addFileLicense":
+		isAuthorized("editLicense"); $status = License::addFile($_POST, $_FILES);
+    break;
+
 	
     // Components
 	case "addComponents":
@@ -33,6 +40,9 @@ switch($_POST['action']) {
 	case "deleteComponents":
 		isAuthorized("deleteComponents"); $status = Components::delete($_POST['id']);
     break;
+	case "assignComponent":
+		isAuthorized("editComponents"); $status = Components::assignComponent($_POST);
+	break;
 
 
     // Consumables

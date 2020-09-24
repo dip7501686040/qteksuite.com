@@ -296,7 +296,24 @@ class Components extends App {
         $database->delete("licenses_assets", [ "id" => $id ]);
     	return "30";
     }
+
+    public static function assignComponent($data){
+        global $database;
+        if(!empty($data['assetid']) && isset($data['assetid'])){
+            $database->insert("componentses_assets", [
+            "componentid" => $data['component_id'],
+            "assetid" => $data['assetid'],
+            "date" => $data['date']
+            ]);
+
+        }
+        if(!empty($data['licenseid']) && isset($data['licenseid'])){
+            $database->insert("componentses_licenses", [
+            "componentid" => $data['component_id'],
+            "licenseid" => $data['licenseid'],
+            "date" => $data['date']
+            ]);
+
+        }
+    }
 }
-
-
-?>

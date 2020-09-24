@@ -177,6 +177,9 @@ td .btn-group {
 }
 
 /* assets datatable css */
+#operations, #operations2{
+    margin: 0 30px 0 0;
+}
 .right-side .content-header .pull-right .filter_icon i{
     position: relative;
     top: 5px;
@@ -192,4 +195,11 @@ td .btn-group {
     padding: 3px;
     box-sizing: border-box;
     display: none;
+}
+#attach_file_container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 1.5rem 1.5rem 1.5rem 0;
 }

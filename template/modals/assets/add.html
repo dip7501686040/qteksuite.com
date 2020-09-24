@@ -1,17 +1,21 @@
-<div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button><h4 class="modal-title"><?php _e('Add Asset'); ?></h4></div>
+<div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <h4 class="modal-title"><?php _e('Add Asset'); ?></h4>
+</div>
 <div class="modal-body">
     <div class="row">
         <div class="col-md-6">
-            <?php if($isAdmin) { ?>
-            <div class="form-group">
-                <label for="clientid"><?php _e('Client'); ?></label>
-                <select onchange='generateTag(this)' class="form-control select2 select2-hidden-accessible" id="clientid" name="clientid" style="width: 100%;" tabindex="-1" aria-hidden="true">
-                    <option data-tagprefix='<?php echo getConfigValue("asset_tag_prefix"); ?>' value="0"><?php _e('None'); ?></option>
-                    <?php foreach ($clients as $client) { echo "<option data-tagprefix='".$client['asset_tag_prefix']."' value='".$client['id']."'>".$client['name']."</option>"; } ?>
-                </select>
-            </div>
+            <?php if ($isAdmin) { ?>
+                <div class="form-group">
+                    <label for="clientid"><?php _e('Client'); ?></label>
+                    <select onchange='generateTag(this)' class="form-control select2 select2-hidden-accessible" id="clientid" name="clientid" style="width: 100%;" tabindex="-1" aria-hidden="true">
+                        <option data-tagprefix='<?php echo getConfigValue("asset_tag_prefix"); ?>' value="0"><?php _e('None'); ?></option>
+                        <?php foreach ($clients as $client) {
+                            echo "<option data-tagprefix='" . $client['asset_tag_prefix'] . "' value='" . $client['id'] . "'>" . $client['name'] . "</option>";
+                        } ?>
+                    </select>
+                </div>
             <?php } ?>
-            <?php if(!$isAdmin) { ?><input type="hidden" name="clientid" value="<?php echo $liu['clientid']; ?>"><?php } ?>
+            <?php if (!$isAdmin) { ?><input type="hidden" name="clientid" value="<?php echo $liu['clientid']; ?>"><?php } ?>
 
             <div class="row">
                 <div class="col-md-4">
@@ -20,7 +24,6 @@
                         <input type="text" class="form-control" id="tag" name="tag" value="<?php echo getConfigValue("asset_tag_prefix"); ?><?php echo Asset::nextAssetTag(); ?>" required>
                     </div>
                 </div>
-
                 <div class="col-md-8">
                     <div class="form-group">
                         <label for="name"><?php _e('Asset Name'); ?> *</label>
@@ -33,7 +36,9 @@
                     <div class="form-group">
                         <label for="category"><?php _e('Category'); ?> *</label>
                         <select class="form-control select2 tag select2-hidden-accessible" id="category" name="category" style="width: 100%;" tabindex="-1" aria-hidden="true" multiple>
-                            <?php foreach ($categories as $category) { echo "<option value='".$category['name']."'>".$category['name']."</option>"; } ?>
+                            <?php foreach ($categories as $category) {
+                                echo "<option value='" . $category['name'] . "'>" . $category['name'] . "</option>";
+                            } ?>
                         </select>
                     </div>
                 </div>
@@ -42,32 +47,36 @@
                     <div class="form-group">
                         <label for="supplier"><?php _e('Supplier'); ?></label>
                         <select class="form-control select2 tag select2-hidden-accessible" id="supplier" name="supplier" style="width: 100%;" tabindex="-1" aria-hidden="true" multiple>
-                            <?php foreach ($suppliers as $supplier) { echo "<option value='".$supplier['name']."'>".$supplier['name']."</option>"; } ?>
+                            <?php foreach ($suppliers as $supplier) {
+                                echo "<option value='" . $supplier['name'] . "'>" . $supplier['name'] . "</option>";
+                            } ?>
                         </select>
                     </div>
                 </div>
 
                 <div class="col-md-4">
-                    <?php if($isAdmin) { ?>
-                    <div class="form-group">
-                        <label for="location"><?php _e('Location'); ?></label>
-                        <select class="form-control select2 tag select2-hidden-accessible" id="location" name="location" style="width: 100%;" tabindex="-1" aria-hidden="true" multiple>
-                            <?php foreach ($locations as $location) {
-                            $locationclient = getSingleValue("clients","name",$location['clientid']);
-                            if($locationclient != "") $locationclient = $locationclient . " / ";
-                            echo "<option value='".$location['name']."'>".$locationclient . $location['name']."</option>";
-                            } ?>
-                        </select>
-                    </div>
+                    <?php if ($isAdmin) { ?>
+                        <div class="form-group">
+                            <label for="location"><?php _e('Location'); ?></label>
+                            <select class="form-control select2 tag select2-hidden-accessible" id="location" name="location" style="width: 100%;" tabindex="-1" aria-hidden="true" multiple>
+                                <?php foreach ($locations as $location) {
+                                    $locationclient = getSingleValue("clients", "name", $location['clientid']);
+                                    if ($locationclient != "") $locationclient = $locationclient . " / ";
+                                    echo "<option value='" . $location['name'] . "'>" . $locationclient . $location['name'] . "</option>";
+                                } ?>
+                            </select>
+                        </div>
                     <?php } ?>
 
-                    <?php if(!$isAdmin) { ?>
-                    <div class="form-group">
-                        <label for="location"><?php _e('Location'); ?></label>
-                        <select class="form-control select2 tag select2-hidden-accessible" id="location" name="location" style="width: 100%;" tabindex="-1" aria-hidden="true" multiple>
-                            <?php foreach ($locations as $location) { echo "<option value='".$location['name']."'>".$location['name']."</option>"; } ?>
-                        </select>
-                    </div>
+                    <?php if (!$isAdmin) { ?>
+                        <div class="form-group">
+                            <label for="location"><?php _e('Location'); ?></label>
+                            <select class="form-control select2 tag select2-hidden-accessible" id="location" name="location" style="width: 100%;" tabindex="-1" aria-hidden="true" multiple>
+                                <?php foreach ($locations as $location) {
+                                    echo "<option value='" . $location['name'] . "'>" . $location['name'] . "</option>";
+                                } ?>
+                            </select>
+                        </div>
                     <?php } ?>
                 </div>
 
@@ -77,7 +86,9 @@
                     <div class="form-group">
                         <label for="statusid"><?php _e('Status'); ?> *</label>
                         <select class="form-control select2 select2-hidden-accessible" id="statusid" name="statusid" style="width: 100%;" tabindex="-1" aria-hidden="true">
-                            <?php foreach ($labels as $label) { echo "<option value='".$label['id']."'>".$label['name']."</option>"; } ?>
+                            <?php foreach ($labels as $label) {
+                                echo "<option value='" . $label['id'] . "'>" . $label['name'] . "</option>";
+                            } ?>
                         </select>
                     </div>
                 </div>
@@ -87,22 +98,26 @@
                         <label for="userid"><?php _e('Asset User'); ?></label>
                         <select class="form-control select2 select2-hidden-accessible" id="userid" name="userid" style="width: 100%;" tabindex="-1" aria-hidden="true">
                             <option value="0"><?php _e('None'); ?></option>
-                            <?php foreach ($users as $user) { echo "<option value='".$user['id']."'>".$user['name']."</option>"; } ?>
+                            <?php foreach ($users as $user) {
+                                echo "<option value='" . $user['id'] . "'>" . $user['name'] . "</option>";
+                            } ?>
                         </select>
                     </div>
                 </div>
 
                 <div class="col-md-4">
-                    <?php if($isAdmin) { ?>
-                    <div class="form-group">
-                        <label for="adminid"><?php _e('Asset Admin'); ?></label>
-                        <select class="form-control select2 select2-hidden-accessible" id="adminid" name="adminid" style="width: 100%;" tabindex="-1" aria-hidden="true">
-                            <option value="0"><?php _e('None'); ?></option>
-                            <?php foreach ($admins as $admin) { echo "<option value='".$admin['id']."'>".$admin['name']."</option>"; } ?>
-                        </select>
-                    </div>
+                    <?php if ($isAdmin) { ?>
+                        <div class="form-group">
+                            <label for="adminid"><?php _e('Asset Admin'); ?></label>
+                            <select class="form-control select2 select2-hidden-accessible" id="adminid" name="adminid" style="width: 100%;" tabindex="-1" aria-hidden="true">
+                                <option value="0"><?php _e('None'); ?></option>
+                                <?php foreach ($admins as $admin) {
+                                    echo "<option value='" . $admin['id'] . "'>" . $admin['name'] . "</option>";
+                                } ?>
+                            </select>
+                        </div>
                     <?php } ?>
-                    <?php if(!$isAdmin) { ?><input type="hidden" name="adminid" value="0"><?php } ?>
+                    <?php if (!$isAdmin) { ?><input type="hidden" name="adminid" value="0"><?php } ?>
                 </div>
 
 
@@ -110,7 +125,9 @@
                     <div class="form-group">
                         <label for="manufacturer"><?php _e('Manufacturer'); ?></label>
                         <select class="form-control select2 tag select2-hidden-accessible" id="manufacturer" name="manufacturer" style="width: 100%;" tabindex="-1" aria-hidden="true" multiple>
-                            <?php foreach ($manufacturers as $manufacturer) { echo "<option value='".$manufacturer['name']."'>".$manufacturer['name']."</option>"; } ?>
+                            <?php foreach ($manufacturers as $manufacturer) {
+                                echo "<option value='" . $manufacturer['name'] . "'>" . $manufacturer['name'] . "</option>";
+                            } ?>
                         </select>
                     </div>
                 </div>
@@ -119,17 +136,19 @@
                     <div class="form-group">
                         <label for="model"><?php _e('Model'); ?></label>
                         <select class="form-control select2 tag select2-hidden-accessible" id="model" name="model" style="width: 100%;" tabindex="-1" aria-hidden="true" multiple>
-                            <?php foreach ($models as $model) { echo "<option value='".$model['name']."'>".$model['name']."</option>"; } ?>
+                            <?php foreach ($models as $model) {
+                                echo "<option value='" . $model['name'] . "'>" . $model['name'] . "</option>";
+                            } ?>
                         </select>
                     </div>
                 </div>
 
                 <div class="col-md-12">
-                    <?php if(getConfigValue("manual_qrvalue") == "true") { ?>
-                    <div class="form-group">
-                        <label for="qrvalue"><?php _e('QR Code Value'); ?></label>
-                        <input type="text" class="form-control" id="qrvalue" name="qrvalue">
-                    </div>
+                    <?php if (getConfigValue("manual_qrvalue") == "true") { ?>
+                        <div class="form-group">
+                            <label for="qrvalue"><?php _e('QR Code Value'); ?></label>
+                            <input type="text" class="form-control" id="qrvalue" name="qrvalue">
+                        </div>
                     <?php } else { ?><input type="hidden" name="qrvalue" value=""><?php } ?>
                 </div>
             </div>
@@ -163,30 +182,33 @@
                     </div>
                 </div>
 
-                <?php foreach($customfields as $customfield) { ?>
-                <div class="col-md-12">
-                    <div class="form-group">
-                        <label><?php echo $customfield['name'] ?></label>
+                <?php foreach ($customfields as $customfield) { ?>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label><?php echo $customfield['name'] ?></label>
 
-                        <?php if($customfield['type'] == "Text Box") { ?>
-                        <input type="text" class="form-control" name="<?php echo $customfield['id']; ?>">
-                        <?php } ?>
+                            <?php if ($customfield['type'] == "Text Box") { ?>
+                                <input type="text" class="form-control" name="<?php echo $customfield['id']; ?>">
+                            <?php } ?>
 
-                        <?php if($customfield['type'] == "Text Area") { ?>
-                        <textarea class="form-control" name="<?php echo $customfield['id']; ?>"></textarea>
-                        <?php } ?>
+                            <?php if ($customfield['type'] == "Text Area") { ?>
+                                <textarea class="form-control" name="<?php echo $customfield['id']; ?>"></textarea>
+                            <?php } ?>
 
-                        <?php if($customfield['type'] == "Dropdown") { $options = explode(",",$customfield['options']); ?>
-                        <select class="form-control select2 select2-hidden-accessible" name="<?php echo $customfield['id']; ?>" style="width: 100%;" tabindex="-1" aria-hidden="true">
-                            <?php foreach ($options as $option) { echo "<option value='".$option."'>".$option."</option>"; } ?>
-                        </select>
-                        <?php } ?>
+                            <?php if ($customfield['type'] == "Dropdown") {
+                                $options = explode(",", $customfield['options']); ?>
+                                <select class="form-control select2 select2-hidden-accessible" name="<?php echo $customfield['id']; ?>" style="width: 100%;" tabindex="-1" aria-hidden="true">
+                                    <?php foreach ($options as $option) {
+                                        echo "<option value='" . $option . "'>" . $option . "</option>";
+                                    } ?>
+                                </select>
+                            <?php } ?>
 
-                        <?php if($customfield['description'] != "") { ?>
-                        <p class="help-block"><?php echo $customfield['description']; ?></p>
-                        <?php } ?>
+                            <?php if ($customfield['description'] != "") { ?>
+                                <p class="help-block"><?php echo $customfield['description']; ?></p>
+                            <?php } ?>
+                        </div>
                     </div>
-                </div>
                 <?php } ?>
             </div>
         </div>
@@ -217,19 +239,25 @@
 
 <script type="text/javascript">
     $(document).ready(function() {
-         $('.summernote-modal').summernote({height: 200});
-         $('.bootstrap-slider').bootstrapSlider();
-     });
-     $('.summernoteLarge').summernote({height: 200, maximumImageFileSize: 524288, dialogsInBody: true, disableDragAndDrop: true});
-
-        $(function() {
-            $(".select2").select2();
-            $('#purchase_date').datepicker({
-                format: '<?php echo jsFormat(); ?>',
-                clearBtn: 'true',
-                weekStart: '<?php echo getConfigValue("week_start"); ?>',
-                autoclose: true
-            });
+        $('.summernote-modal').summernote({
+            height: 200
         });
+        $('.bootstrap-slider').bootstrapSlider();
+    });
+    $('.summernoteLarge').summernote({
+        height: 200,
+        maximumImageFileSize: 524288,
+        dialogsInBody: true,
+        disableDragAndDrop: true
+    });
 
+    $(function() {
+        $(".select2").select2();
+        $('#purchase_date').datepicker({
+            format: '<?php echo jsFormat(); ?>',
+            clearBtn: 'true',
+            weekStart: '<?php echo getConfigValue("week_start"); ?>',
+            autoclose: true
+        });
+    });
 </script>

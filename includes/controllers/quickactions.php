@@ -50,12 +50,12 @@ switch($_GET['qa']) {
 
 
     case "download":
-        $file = getRowById("files",$_GET['id']);
-        $targetfile = $scriptpath . DIRECTORY_SEPARATOR . "uploads" . DIRECTORY_SEPARATOR . $file['file'];
+        $file = getRowById("asset_files",$_GET['id']);
+        $targetfile = "uploads/assets/" . $file['file_name']."";
         if (file_exists($targetfile)) {
             header('Content-Description: File Transfer');
             header('Content-Type: application/octet-stream');
-            header('Content-Disposition: attachment; filename="' . $file['file'] . '"');
+            header('Content-Disposition: attachment; filename="' . $file['file_name'] . '"');
             header('Expires: 0');
             header('Cache-Control: must-revalidate');
             header('Pragma: public');
