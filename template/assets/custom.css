@@ -175,6 +175,10 @@ td .btn-group {
 .issue-more {
     margin: 5px 5px;
 }
+.content-header
+{
+    background-size:300px 100px;
+}
 
 /* assets datatable css */
 .right-side .content-header .pull-right .filter_icon i{
@@ -193,6 +197,8 @@ td .btn-group {
     box-sizing: border-box;
     display: none;
 }
+
+
 /*Akanksha Goyal changes*/
 
 
@@ -217,7 +223,10 @@ td .btn-group {
     color:white;
 }
 
-
+/*.navbar-custom-menu.nav navbar-nav .dropdown notifications-menu {
+    position: absolute;
+    z-index: 1;
+}*/
 .smallBox0
 {
     display:flex;
@@ -228,6 +237,7 @@ td .btn-group {
     padding:0;
     margin:0 0 10px 0;
 }
+
 .smallicon.fa fa-briefcase
 {
     size:50%;
@@ -235,16 +245,18 @@ td .btn-group {
 .sub-menu-1
 {
     display:none;
-    
+      
 }
 
 
 .menu-bar ul li:hover .sub-menu-1
 {
-    display:flex;
-    position:absolute;
-    background:#3c8dbc;
-    margin-top:0;
+    display:flex !important;
+    position:absolute !important;
+    background:#3c8dbc !important;
+    margin-top:0 !important;
+    overflow: hidden;
+    display:inline-box;
     
     
     
@@ -253,6 +265,7 @@ td .btn-group {
 {
     display:block;
     margin:10px;
+    
 }
 .menu-bar ul li:hover .sub-menu-1 ul li
 {
@@ -262,6 +275,7 @@ td .btn-group {
     background:transparent;
     border-radius:0;
     text-align:left;
+    
 
 }
 .menu-bar ul li:hover .sub-menu-1 ul li:last-child

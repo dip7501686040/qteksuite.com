@@ -206,6 +206,17 @@
                                     </li>
                                 </ul>
                             </li>
+                            <!--Akanksha Goyal changes-->
+                            <li class="dropdown notifications-menu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-gear"></i></a>
+                                <ul class="dropdown-menu">
+                                    
+                                    <?php if(in_array("manageSettings",$perms)) { ?><li <?php if($route == "system/import") echo 'class="active"'; ?>><a href="?route=system/import"><i class="fa fa-angle-double-right"></i> <?php _e('Import'); ?></a></li><?php } ?>
+                                    <?php if(in_array("viewLogs",$perms)) { ?><li <?php if($route == "system/logs") echo 'class="active"'; ?>><a href="?route=system/logs"><i class="fa fa-angle-double-right"></i> <?php _e('Logs'); ?></a></li><?php } ?>
+                                    <?php if(in_array("manageSettings",$perms)) { ?><li <?php if($route == "system/settings") echo 'class="active"'; ?>><a href="?route=system/settings"><i class="fa fa-angle-double-right"></i> <?php _e('Settings'); ?></a></li><?php } ?>
+                                </ul>         
+                            </li>
+
                             
 
                             <!-- User Account: style can be found in dropdown.less -->
