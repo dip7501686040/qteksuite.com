@@ -67,7 +67,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </a>
-                    <div class="menu-bar">
+                    <!-- <div class="menu-bar">
                   <ul>
                       <li><a href="#">Dashboard</a></li>
                       <li><a href ="#">Hardware Assests  &nbsp;<i class="fa fa-caret-down fa-lg"></i></a>
@@ -161,7 +161,7 @@
                     </div>
                     </li>
                   </ul>
-                </div>      
+                </div>       -->
                   <div class="navbar-custom-menu">
                         <ul class="nav navbar-nav">
 
@@ -250,11 +250,11 @@
                 </nav>
             </header>
 
-            <!--<aside class="main-sidebar">
+            <aside class="main-sidebar">
                 <section class="sidebar">
 
                     <!-- Sidebar user panel -->
-                    <!--<div class="user-panel">
+                    <div class="user-panel">
                         <div class="pull-left image">
                             <img src="<?php echo getGravatar($liu['email'],'45'); ?>" class="img-circle" alt="User Image"  style="max-height:45px;max-width:45px;">
                         </div>
@@ -271,8 +271,8 @@
                     </div>
                     <?php if(in_array("search",$perms)) { ?>
                     <!-- search form -->
-                    <!----> <form method="get" class="sidebar-form">
-                        <!--<div class="input-group">
+                     <form method="get" class="sidebar-form">
+                        <div class="input-group">
                             <input type="text" name="q" class="form-control" placeholder="<?php _e('Search...'); ?>" required/>
                             <input type="hidden" name="route" value="search" />
                             <span class="input-group-btn">
@@ -283,7 +283,7 @@
                     <?php } ?>
                     <!-- /.search form -->
                     <!-- sidebar menu: : style can be found in sidebar.less -->
-                    <!-- <ul class="sidebar-menu">
+                    <ul class="sidebar-menu">
                         <li class="header"><?php _e('MAIN NAVIGATION'); ?></li>
 
                         <li <?php if(strpos($route,'dashboard') !== false) echo 'class="active"'; ?>>
@@ -303,77 +303,77 @@
 
 
                         <?php  if(in_array("viewAssets",$perms)) { ?>
-                        <li class="treeview<?php if(strpos($route,'inventory/') !== false) echo ' active'; ?>">
+                        <li class="treeview<?php if(strpos($route,'inventory/') !== false) echo 'active'; ?>">
                             <a href="#">
                                 <i class="fa fa-th fa-fw"></i> <span><?php _e('HAM'); ?></span>
                                 <i class="fa fa-angle-left pull-right"></i>
                             </a>
                             <ul class="treeview-menu">
 
-                                <!--<?php if(in_array("viewCredentials",$perms)) { ?><li <?php if(strpos($route,'inventory/assets/create') !== false) echo 'class="active"'; ?>><a href="?route=inventory/assets/create"><i class="fa fa-asterisk"></i> <?php _e('New Assets'); ?></a></li><?php } ?>-->
+                                <?php if(in_array("viewCredentials",$perms)) { ?><li <?php if(strpos($route,'inventory/assets/create') !== false) echo 'class="active"'; ?>><a href="?route=inventory/assets/create"><i class="fa fa-asterisk"></i> <?php _e('New Assets'); ?></a></li><?php } ?>
 
-                               <!--- <?php if(in_array("viewAssets",$perms)) { ?><li <?php if(strpos($route,'inventory/assets') !== false) echo 'class="active"'; ?>><a href="?route=inventory/assets"><i class="fa fa-desktop"></i> <?php _e('Assets'); ?></a></li><?php } ?>
+                                <?php if(in_array("viewAssets",$perms)) { ?><li <?php if(strpos($route,'inventory/assets') !== false) echo 'class="active"'; ?>><a href="?route=inventory/assets"><i class="fa fa-desktop"></i> <?php _e('Assets'); ?></a></li><?php } ?>
 
-                                <!--<li <?php if(strpos($route,'inventory/assetsallocate') !== false) echo 'class="active"'; ?>><a href="?route=inventory/assetsallocate"><i class="fa fa-tag"></i> <?php _e('Assets Allocate'); ?></a></li>-->
+                                <li <?php if(strpos($route,'inventory/assetsallocate') !== false) echo 'class="active"'; ?>><a href="?route=inventory/assetsallocate"><i class="fa fa-tag"></i> <?php _e('Assets Allocate'); ?></a></li>
                                 
-                                <!--<li <?php if(strpos($route,'inventory/assetsreturn') !== false) echo 'class="active"'; ?>><a href="?route=inventory/assetsreturn"><i class="fa fa-backward"></i> <?php _e('Assets Return'); ?></a></li>-->
+                                <li <?php if(strpos($route,'inventory/assetsreturn') !== false) echo 'class="active"'; ?>><a href="?route=inventory/assetsreturn"><i class="fa fa-backward"></i> <?php _e('Assets Return'); ?></a></li>
                                 
                                 <!-- Pratik new add for componets list-->
-                                <!--<li <?php if(strpos($route,'inventory/components') !== false) echo 'class="active"'; ?>><a href="?route=inventory/components"><i class="fa fa-gears"></i> <?php _e('Components'); ?></a></li>
+                                <li <?php if(strpos($route,'inventory/components') !== false) echo 'class="active"'; ?>><a href="?route=inventory/components"><i class="fa fa-gears"></i> <?php _e('Components'); ?></a></li>
 
                                 <!-- Pratik new add for consumables list-->
-                                <!--<li <?php if(strpos($route,'inventory/assets/createconsumables') !== false) echo 'class="active"'; ?>><a href="?route=inventory/assets/createconsumables"><i class="fa fa-desktop"></i> <?php _e('Consumables'); ?></a></li>-->
-                                <!-- <li <?php if(strpos($route,'inventory/consumables') !== false) echo 'class="active"'; ?>><a href="?route=inventory/consumables"><i class="fa fa-list"></i> <?php _e('Consumables'); ?></a></li>
+                                <li <?php if(strpos($route,'inventory/assets/createconsumables') !== false) echo 'class="active"'; ?>><a href="?route=inventory/assets/createconsumables"><i class="fa fa-desktop"></i> <?php _e('Consumables'); ?></a></li>
+                                <li <?php if(strpos($route,'inventory/consumables') !== false) echo 'class="active"'; ?>><a href="?route=inventory/consumables"><i class="fa fa-list"></i> <?php _e('Consumables'); ?></a></li> 
 
                             </ul>
                         </li>
                         <?php } ?>
                         
                         <!--Add SAM by Pratik-->
-                        <!-- <?php  if(in_array("viewSam",$perms)) { ?>
-                        <li class="treeview<?php if(strpos($route,'sam/') !== false) echo ' active'; ?>">
+                         <?php  if(in_array("viewSam",$perms)) { ?>
+                        <li class="treeview<?php if(strpos($route,'sam/') !== false) echo 'active'; ?>">
                             <a href="#">
                                 <i class="fa fa-th fa-fw"></i> <span><?php _e('SAM'); ?></span>
                                 <i class="fa fa-angle-left pull-right"></i>
-                            </a> --> -->
-                            <!-- <ul class="treeview-menu">
+                            </a>
+                            <ul class="treeview-menu">
                                 <?php if(in_array("viewLicenses",$perms)) { ?><li <?php if(strpos($route,'sam/licenses') !== false) echo 'class="active"'; ?>><a href="?route=sam/licenses"><i class="fa fa-certificate"></i> <?php _e('Licenses'); ?></a></li><?php } ?>
                                 <?php if(in_array("viewLicensesallocate",$perms)) { ?><li <?php if(strpos($route,'sam/licensesallocate') !== false) echo 'class="active"'; ?>><a href="?route=sam/licensesallocate"><i class="fa fa-certificate"></i> <?php _e('Licenses Allocate'); ?></a></li><?php } ?>
                                 <li <?php if($route == "sam/attributes/licensecategories") echo 'class="active"'; ?>><a href="?route=sam/attributes/licensecategories"><i class="fa fa-angle-double-right"></i> <?php _e('License Categories'); ?></a></li>
                                 <li <?php if(strpos($route,'sam/licensereturn') !== false) echo 'class="active"'; ?>><a href="?route=sam/licensereturn"><i class="fa fa-backward"></i> <?php _e('License Return'); ?></a></li>
                             </ul>
                         </li>
-                        <?php } ?> -->
+                        <?php } ?>
 
-                        <!-- <?php if(in_array("viewAssets",$perms)) { ?>
+                        <?php if(in_array("viewAssets",$perms)) { ?>
                         <li class="treeview<?php if(strpos($route,'inventory/') !== false) echo ' active'; ?>">
                             <a href="#">
                                 <i class="fa fa-th fa-fw"></i> <span><?php _e('Inventory'); ?></span>
                                 <i class="fa fa-angle-left pull-right"></i>
                             </a>
-                            <ul class="treeview-menu"> -->
-                                <!--<?php if(in_array("viewLicenses",$perms)) { ?><li <?php if(strpos($route,'inventory/licenses') !== false) echo 'class="active"'; ?>><a href="?route=inventory/licenses"><i class="fa fa-certificate"></i> <?php _e('Licenses'); ?></a></li><?php } ?>-->
-                                <!-- <?php if(in_array("viewCredentials",$perms)) { ?><li <?php if(strpos($route,'inventory/credentials') !== false) echo 'class="active"'; ?>><a href="?route=inventory/credentials"><i class="fa fa-asterisk"></i> <?php _e('Credentials'); ?></a></li><?php } ?>
+                            <ul class="treeview-menu">
+                                <?php if(in_array("viewLicenses",$perms)) { ?><li <?php if(strpos($route,'inventory/licenses') !== false) echo 'class="active"'; ?>><a href="?route=inventory/licenses"><i class="fa fa-certificate"></i> <?php _e('Licenses'); ?></a></li><?php } ?>
+                                <?php if(in_array("viewCredentials",$perms)) { ?><li <?php if(strpos($route,'inventory/credentials') !== false) echo 'class="active"'; ?>><a href="?route=inventory/credentials"><i class="fa fa-asterisk"></i> <?php _e('Credentials'); ?></a></li><?php } ?>
 
                                 <?php if(in_array("manageData",$perms)) { ?>
                                 <li class="treeview<?php if(strpos($route,'inventory/attributes') !== false) echo ' active'; ?>">
                                     <a href="#"><i class="fa fa-circle-o"></i> <?php _e('Attributes'); ?> <i class="fa fa-angle-left pull-right"></i></a>
                                     <ul class="treeview-menu">
                                         <li <?php if($route == "inventory/attributes/assetcategories") echo 'class="active"'; ?>><a href="?route=inventory/attributes/assetcategories"><i class="fa fa-angle-double-right"></i> <?php _e('Asset Categories'); ?></a></li>
-                                        <li <?php if($route == "inventory/attributes/licensecategories") echo 'class="active"'; ?>><a href="?route=inventory/attributes/licensecategories"><i class="fa fa-angle-double-right"></i> <?php _e('License Categories'); ?></a></li> -->
+                                        <li <?php if($route == "inventory/attributes/licensecategories") echo 'class="active"'; ?>><a href="?route=inventory/attributes/licensecategories"><i class="fa fa-angle-double-right"></i> <?php _e('License Categories'); ?></a></li>
 
-                                        <!--
+                            
                                         <li <?php if($route == "inventory/attributes/qrcodes") echo 'class="active"'; ?>><a href="?route=inventory/attributes/qrcodes"><i class="fa fa-angle-double-right"></i> <?php _e('QR Codes'); ?></a></li>
-                                        -->
+                                    
 
-                                        <!-- <li <?php if($route == "inventory/attributes/labels") echo 'class="active"'; ?>><a href="?route=inventory/attributes/labels"><i class="fa fa-angle-double-right"></i> <?php _e('Status Labels'); ?></a></li>
+                                         <li <?php if($route == "inventory/attributes/labels") echo 'class="active"'; ?>><a href="?route=inventory/attributes/labels"><i class="fa fa-angle-double-right"></i> <?php _e('Status Labels'); ?></a></li>
                                         <li <?php if($route == "inventory/attributes/manufacturers") echo 'class="active"'; ?>><a href="?route=inventory/attributes/manufacturers"><i class="fa fa-angle-double-right"></i> <?php _e('Manufacturers'); ?></a></li>
                                         <li <?php if($route == "inventory/attributes/models") echo 'class="active"'; ?>><a href="?route=inventory/attributes/models"><i class="fa fa-angle-double-right"></i> <?php _e('Asset Models'); ?></a></li>
                                         <li <?php if($route == "inventory/attributes/locations") echo 'class="active"'; ?>><a href="?route=inventory/attributes/locations"><i class="fa fa-angle-double-right"></i> <?php _e('Locations'); ?></a></li>
                                         <li <?php if($route == "inventory/attributes/suppliers") echo 'class="active"'; ?>><a href="?route=inventory/attributes/suppliers"><i class="fa fa-angle-double-right"></i> <?php _e('Suppliers'); ?></a></li>
                                     </ul>
-                                </li> -->
-                                <!-- <?php } ?>
+                                </li>
+                                 <?php } ?>
 
                             </ul>
                         </li>
@@ -385,9 +385,9 @@
                                 <i class="fa fa-rocket fa-fw"></i> <span><?php _e('Projects'); ?></span>
                             </a>
                         </li>
-                        <?php } ?> -->
+                        <?php } ?>
 
-                        <!-- <?php if(in_array("viewTickets",$perms)) { ?>
+                         <?php if(in_array("viewTickets",$perms)) { ?>
                         <li class="treeview<?php if(strpos($route,'tickets') !== false) echo ' active'; ?>">
                             <a href="#">
                                 <i class="fa fa-ticket fa-fw"></i> <span><?php _e('Tickets'); ?></span>
@@ -433,7 +433,7 @@
                         <?php if(in_array("viewReports",$perms)) { ?>
                         <li <?php if(strpos($route,'reports') !== false) echo 'class="active"'; ?>>
                             <a href="?route=reports"> -->
-                                <!-- <i class="fa fa-bar-chart fa-fw"></i> <span><?php _e('Reports'); ?></span>
+                                <i class="fa fa-bar-chart fa-fw"></i> <span><?php _e('Reports'); ?></span>
                             </a>
                         </li>
                         <?php } ?>
@@ -450,8 +450,8 @@
                                 <?php if(in_array("viewRoles",$perms)) { ?><li <?php if(strpos($route,'people/roles') !== false) echo 'class="active"'; ?>><a href="?route=people/roles"><i class="fa fa-angle-double-right"></i> <?php _e('Roles'); ?></a></li><?php } ?>
                                 <?php if(in_array("viewContacts",$perms)) { ?><li <?php if(strpos($route,'people/contacts') !== false) echo 'class="active"'; ?>><a href="?route=people/contacts"><i class="fa fa-angle-double-right"></i> <?php _e('Contacts'); ?></a></li><?php } ?>
                             </ul>
-                        </li> -->
-                        <!-- <?php } ?>
+                        </li>
+                        <?php } ?>
 
                         <?php if(in_array("viewSystem",$perms)) { ?>
                         <li class="treeview<?php if(strpos($route,'system/') !== false) echo ' active'; ?>">
@@ -470,8 +470,8 @@
                                 <?php if(in_array("viewLogs",$perms)) { ?><li <?php if($route == "system/logs") echo 'class="active"'; ?>><a href="?route=system/logs"><i class="fa fa-angle-double-right"></i> <?php _e('Logs'); ?></a></li><?php } ?>
                                 <?php if(in_array("manageSettings",$perms)) { ?><li <?php if($route == "system/settings") echo 'class="active"'; ?>><a href="?route=system/settings"><i class="fa fa-angle-double-right"></i> <?php _e('Settings'); ?></a></li><?php } ?>
                             </ul>
-                        </li> -->
-                        <!-- <?php } ?>
+                        </li>
+                        <?php } ?>
                         <?php if(in_array("viewMaster",$perms)) { ?>
                         <li class="treeview<?php if(strpos($route,'master/') !== false) echo ' active'; ?>">
                             <a href="#">
@@ -484,8 +484,8 @@
                                 <li <?php if($route == "master/approval/approvalcategories") echo 'class="active"'; ?>><a href="?route=master/approval/approvalcategories"><i class="fa fa-angle-double-right"></i> <?php _e('Approval Categories'); ?></a></li>
                             </ul>
                         </li>
-                        <?php } ?> -->
-                    <!-- </ul>
+                        <?php } ?>
+                    </ul>
                 </section>
                 <!-- /.sidebar -->
-            </aside> --> -->
+            </aside>

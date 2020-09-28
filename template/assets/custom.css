@@ -181,6 +181,9 @@ td .btn-group {
 }
 
 /* assets datatable css */
+#operations, #operations2{
+    margin: 0 30px 0 0;
+}
 .right-side .content-header .pull-right .filter_icon i{
     position: relative;
     top: 5px;
@@ -197,8 +200,18 @@ td .btn-group {
     box-sizing: border-box;
     display: none;
 }
+<<<<<<< HEAD
 
 
+=======
+#attach_file_container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 1.5rem 1.5rem 1.5rem 0;
+}
+>>>>>>> cce741086b1fd1b8577f14b97e7a3d2a99eaf019
 /*Akanksha Goyal changes*/
 
 

@@ -252,10 +252,10 @@ if ($route == "dashboard") {
 
 		$recentAssets = $database->select("assets", "*", ["ORDER" => ["id" => "DESC"], "LIMIT" => 5]);
 		$recentLicenses = $database->select("licenses", "*", ["ORDER" => ["id" => "DESC"], "LIMIT" => 5]);
-		
+
 		//$abc = $database->select('SELECT assets.purchase_date AS DateOfJoin, assetcategories.name AS catname, assets.tag, people.name AS allocatedBy, labels.name AS actions FROM assets LEFT JOIN assetcategories ON assetcategories.id = assets.categoryid LEFT JOIN people ON people.id = assets.userid LEFT JOIN labels ON labels.id = assets.statusid GROUP BY assets.id ORDER BY assets.id DESC');
 		//echo $abc = abc();
-		
+
 	} else {
 		$sumAssets = countTableFiltered("assets", "clientid", $liu['clientid']);
 		$sumAssetsAllocate = countTableFiltered("assetsallocate", "clientid", $liu['clientid']);
@@ -344,7 +344,7 @@ if ($route == "inventory/assets/manage") {
 	$labels = getTable("labels");
 	$licenses = getTable("licenses");
 	$suppliers = getTable("suppliers");
-	$files = getTableFiltered("files", "assetid", $_GET['id']);
+	$files = getTableFiltered("asset_files", "asset_id", $_GET['id']);
 	$timelog = getTableFiltered("timelog", "assetid", $_GET['id']);
 
 	$customfields = getTable("assets_customfields");
@@ -476,6 +476,26 @@ if ($route == "inventory/assets/managecomponents") {
 	$labels = getTable("labels");
 	$pageTitle = 'Manage Components';
 }
+if ($route == "inventory/assets/manage") {
+	isAuthorized("viewAssets");
+	if ($isAdmin) {
+		$componentses_assets = getTableFiltered("componentses_assets", "assetid", $asset['id']);
+		foreach ($componentses_assets as $componentses_asset) {
+			$components = getTableFiltered("components", "id", $componentses_asset["componentid"]);
+		}
+	}
+}
+
+if ($route == "sam/licenses/manage") {
+	isAuthorized("viewLicenses");
+	if ($isAdmin) {
+		$componentses_licenses = getTableFiltered("componentses_licenses", "licenseid", $_GET['id']);
+		foreach ($componentses_licenses as $componentses_license) {
+			$components = getTableFiltered("components", "id", $componentses_license["componentid"]);
+		}
+	}
+}
+
 // Component end by pratik 
 
 // ASSETS RETURN BY PRATIK
@@ -710,6 +730,9 @@ if ($route == "sam/licenses/manage") {
 	$customfields = getTable("licenses_customfields");
 
 	$pageTitle = $license['tag'];
+
+	$files = getTableFiltered("license_files", "license_id", $_GET['id']);
+
 }
 
 // SAM Licenses allocate start by pratik

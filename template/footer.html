@@ -63,10 +63,59 @@
 <script src="template/assets/app.js" type="text/javascript"></script>
 
 <script type="text/javascript">
-	$(document).ready(function() {
-		$(".right-side .content-header .pull-right .filter_icon i").on('click', function(){
+	$(document).ready(function () {
+		//total assets datatable's single row checkbox function
+
+		$("#dataTablesFull tbody tr td .enable_operations").on('change', function () {
+			$("#dataTablesFull tbody tr td .enable_operations").not(this).prop('checked', false);
+			if ($(this).is(":checked")) {
+				$("#operations .view_asset, #operations .edit_asset").removeClass("disabled")
+				$('#operations button').removeAttr('disabled')
+				$asset_id = $(this).val()
+				$view_asset_url = "?route=inventory/assets/manage&id=" + $asset_id + "";
+				$edit_asset_url = "?route=inventory/assets/manage&id=" + $asset_id + "&section=edit"
+				$delete_asset_url = "showM('?modal=assets/delete&reroute=inventory/assets&routeid=&id=" + $asset_id + "&section=');return false"
+				$label_asset_url = "?route=pdf&type=assetlabel&id=" + $asset_id + "";
+				$(".right-side .content-header .pull-right  .btn-group .view_asset").attr("href", $view_asset_url)
+				$(".right-side .content-header .pull-right  .btn-group .edit_asset").attr("href", $edit_asset_url)
+				$(".right-side .content-header .pull-right  .btn-group .btn-group .pull-right .delete_asset").attr("onClick", $delete_asset_url)
+				$(".right-side .content-header .pull-right  .btn-group .btn-group .pull-right .label_asset").attr("href", $label_asset_url)
+			}
+			else {
+
+				$("#operations .view_asset, #operations .edit_asset").addClass("disabled")
+				$('#operations button').attr('disabled')
+			}
+		})
+
+		$("#dataTablesFull tbody tr td .enable_operations2").on('change', function () {
+			$("#dataTablesFull tbody tr td .enable_operations2").not(this).prop('checked', false);
+			if ($(this).is(":checked")) {
+				$("#operations2 .view_licence, #operations2 .edit_licence").removeClass("disabled")
+				$('#operations2 button').removeAttr('disabled')
+				$licence_id = $(this).val()
+				$view_licence_url = "?route=sam/licenses/manage&id=" + $licence_id + "";
+				$edit_licence_url = "?route=sam/licenses/manage&id=" + $licence_id + "&section=edit"
+				$delete_licence_url = "showM('?modal=licenses/delete&reroute=inventory/licenses&routeid=&id=" + $licence_id + "&section=');return false"
+				$label_licence_url = "?route=pdf&type=licenselabel&id=" + $licence_id + "";
+				$(".right-side .content-header .pull-right  .btn-group .view_licence").attr("href", $view_licence_url)
+				$(".right-side .content-header .pull-right  .btn-group .edit_licence").attr("href", $edit_licence_url)
+				$(".right-side .content-header .pull-right  .btn-group .btn-group .pull-right .delete_licence").attr("onClick", $delete_licence_url)
+				$(".right-side .content-header .pull-right  .btn-group .btn-group .pull-right .label_licence").attr("href", $label_licence_url)
+			}
+			else {
+
+				$("#operations2 .view_licence, #operations2 .edit_licence").addClass("disabled")
+				$('#operations2 button').attr('disabled')
+			}
+
+		})
+
+		//total assets datatable's single column search box display toggle
+		$(".right-side .content-header .pull-right .filter_icon i").on('click', function () {
 			$("#dataTablesFull thead tr td input").toggle()
 		})
+
 		// DATATABLES
 		var table = $('#dataTablesFull').DataTable({
 			"pageLength": <?php echo getConfigValue("table_records"); ?>,
@@ -75,119 +124,122 @@
 			"stateSave": true,
 			"fixedHeader": true,
 			"oLanguage": {
-				"sSearch": "<i class='fa fa-search text-gray dTsearch'></i>",
-				"sEmptyTable": "<?php _e('No entries to show'); ?>",
-				"sZeroRecords": "<?php _e('Nothing found'); ?>",
-				"sInfo": "<?php _e('Showing'); ?> _START_ <?php _e('to'); ?> _END_ <?php _e('of'); ?> _TOTAL_ <?php _e('entries'); ?>",
-				"sInfoEmpty": "",
-				"oPaginate": {
-					"sNext": "<?php _e('Next'); ?>",
-					"sPrevious": "<?php _e('Previous'); ?>",
-					"sFirst": "<?php _e('First Page'); ?>",
-					"sLast": "<?php _e('Last Page'); ?>"
-				}
-			},
-			"columnDefs": [{
-				"orderable": false,
-				"targets": -1
-			}]
-		});
-		$('#dataTablesFull thead tr td input').keyup(function() {
-			table.search($(this).val()).draw();
-		})
-
-		$("#dataTablesFull2, #dataTablesFull3, #dataTablesFull4").dataTable({
-			"pageLength": <?php echo getConfigValue("table_records"); ?>,
-			"dom": '<"top"f>rt<"bottom"><"row dt-margin"<"col-md-6"i><"col-md-6"p><"col-md-12"B>><"clear">',
-			"buttons": ['copy', 'csv', 'excel', 'pdf', 'print'],
-			"stateSave": true,
-			"fixedHeader": true,
-			"oLanguage": {
-				"sSearch": "<i class='fa fa-search text-gray dTsearch'></i>",
-				"sEmptyTable": "<?php _e('No entries to show'); ?>",
-				"sZeroRecords": "<?php _e('Nothing found'); ?>",
-				"sInfo": "<?php _e('Showing'); ?> _START_ <?php _e('to'); ?> _END_ <?php _e('of'); ?> _TOTAL_ <?php _e('entries'); ?>",
-				"sInfoEmpty": "",
-				"oPaginate": {
-					"sNext": "<?php _e('Next'); ?>",
-					"sPrevious": "<?php _e('Previous'); ?>",
-					"sFirst": "<?php _e('First Page'); ?>",
-					"sLast": "<?php _e('Last Page'); ?>"
-				}
-			},
-			"columnDefs": [{
-				"orderable": false,
-				"targets": -1
-			}]
-		});
-		$("#dataTablesFullNoOrder, #dataTablesFullNoOrder2").dataTable({
-			"order": [],
-			"pageLength": <?php echo getConfigValue("table_records"); ?>,
-			"dom": '<"top"f>rt<"bottom"><"row dt-margin"<"col-md-6"i><"col-md-6"p><"col-md-12"B>><"clear">',
-			"buttons": ['copy', 'csv', 'excel', 'pdf', 'print'],
-			"stateSave": true,
-			"fixedHeader": true,
-			"oLanguage": {
-				"sSearch": "<i class='fa fa-search text-gray dTsearch'></i>",
-				"sEmptyTable": "<?php _e('No entries to show'); ?>",
-				"sZeroRecords": "<?php _e('Nothing found'); ?>",
-				"sInfo": "<?php _e('Showing'); ?> _START_ <?php _e('to'); ?> _END_ <?php _e('of'); ?> _TOTAL_ <?php _e('entries'); ?>",
-				"sInfoEmpty": "",
-				"oPaginate": {
-					"sNext": "<?php _e('Next'); ?>",
-					"sPrevious": "<?php _e('Previous'); ?>",
-					"sFirst": "<?php _e('First Page'); ?>",
-					"sLast": "<?php _e('Last Page'); ?>"
-				}
-			},
-			"columnDefs": [{
-				"orderable": false,
-				"targets": -1
-			}]
-		});
-		$("#dataTablesFullDesc, #dataTablesFullDesc2").dataTable({
-			"order": [
-				[0, "desc"]
-			],
-			"pageLength": <?php echo getConfigValue("table_records"); ?>,
-			"dom": '<"top"f>rt<"bottom"><"row dt-margin"<"col-md-6"i><"col-md-6"p><"col-md-12"B>><"clear">',
-			"buttons": ['copy', 'csv', 'excel', 'pdf', 'print'],
-			"stateSave": true,
-			"fixedHeader": true,
-			"oLanguage": {
-				"sSearch": "<i class='fa fa-search text-gray dTsearch'></i>",
-				"sEmptyTable": "<?php _e('No entries to show'); ?>",
-				"sZeroRecords": "<?php _e('Nothing found'); ?>",
-				"sInfo": "<?php _e('Showing'); ?> _START_ <?php _e('to'); ?> _END_ <?php _e('of'); ?> _TOTAL_ <?php _e('entries'); ?>",
-				"sInfoEmpty": "",
-				"oPaginate": {
-					"sNext": "<?php _e('Next'); ?>",
-					"sPrevious": "<?php _e('Previous'); ?>",
-					"sFirst": "<?php _e('First Page'); ?>",
-					"sLast": "<?php _e('Last Page'); ?>"
-				}
-			},
+			"sSearch": "<i class='fa fa-search text-gray dTsearch'></i>",
+			"sEmptyTable": "<?php _e('No entries to show'); ?>",
+			"sZeroRecords": "<?php _e('Nothing found'); ?>",
+			"sInfo": "<?php _e('Showing'); ?> _START_ <?php _e('to'); ?> _END_ <?php _e('of'); ?> _TOTAL_ <?php _e('entries'); ?>",
+			"sInfoEmpty": "",
+			"oPaginate": {
+				"sNext": "<?php _e('Next'); ?>",
+				"sPrevious": "<?php _e('Previous'); ?>",
+				"sFirst": "<?php _e('First Page'); ?>",
+				"sLast": "<?php _e('Last Page'); ?>"
+			}
+		},
 			"columnDefs": [{
 				"orderable": false,
 				"targets": -1
 			}]
 		});
 
+	//total assets datatable's single column search filter
+	$('#dataTablesFull thead tr td input').keyup(function () {
+		table.search($(this).val()).draw();
+	})
 
-
-		$('#purchase_date, #startDate, #endDate, #date, #pat_tested, #removal_date').datepicker({
-			format: '<?php echo jsFormat(); ?>',
-			clearBtn: 'true',
-			weekStart: '<?php echo getConfigValue("week_start"); ?>',
-			autoclose: true
+	// DATATABLES
+	$("#dataTablesFull2, #dataTablesFull3, #dataTablesFull4").dataTable({
+		"pageLength": <?php echo getConfigValue("table_records"); ?>,
+		"dom": '<"top"f>rt<"bottom"><"row dt-margin"<"col-md-6"i><"col-md-6"p><"col-md-12"B>><"clear">',
+		"buttons": ['copy', 'csv', 'excel', 'pdf', 'print'],
+		"stateSave": true,
+		"fixedHeader": true,
+		"oLanguage": {
+		"sSearch": "<i class='fa fa-search text-gray dTsearch'></i>",
+		"sEmptyTable": "<?php _e('No entries to show'); ?>",
+		"sZeroRecords": "<?php _e('Nothing found'); ?>",
+		"sInfo": "<?php _e('Showing'); ?> _START_ <?php _e('to'); ?> _END_ <?php _e('of'); ?> _TOTAL_ <?php _e('entries'); ?>",
+		"sInfoEmpty": "",
+		"oPaginate": {
+			"sNext": "<?php _e('Next'); ?>",
+			"sPrevious": "<?php _e('Previous'); ?>",
+			"sFirst": "<?php _e('First Page'); ?>",
+			"sLast": "<?php _e('Last Page'); ?>"
+		}
+	},
+		"columnDefs": [{
+			"orderable": false,
+			"targets": -1
+		}]
+		});
+	$("#dataTablesFullNoOrder, #dataTablesFullNoOrder2").dataTable({
+		"order": [],
+		"pageLength": <?php echo getConfigValue("table_records"); ?>,
+		"dom": '<"top"f>rt<"bottom"><"row dt-margin"<"col-md-6"i><"col-md-6"p><"col-md-12"B>><"clear">',
+		"buttons": ['copy', 'csv', 'excel', 'pdf', 'print'],
+		"stateSave": true,
+		"fixedHeader": true,
+		"oLanguage": {
+		"sSearch": "<i class='fa fa-search text-gray dTsearch'></i>",
+		"sEmptyTable": "<?php _e('No entries to show'); ?>",
+		"sZeroRecords": "<?php _e('Nothing found'); ?>",
+		"sInfo": "<?php _e('Showing'); ?> _START_ <?php _e('to'); ?> _END_ <?php _e('of'); ?> _TOTAL_ <?php _e('entries'); ?>",
+		"sInfoEmpty": "",
+		"oPaginate": {
+			"sNext": "<?php _e('Next'); ?>",
+			"sPrevious": "<?php _e('Previous'); ?>",
+			"sFirst": "<?php _e('First Page'); ?>",
+			"sLast": "<?php _e('Last Page'); ?>"
+		}
+	},
+		"columnDefs": [{
+			"orderable": false,
+			"targets": -1
+		}]
+		});
+	$("#dataTablesFullDesc, #dataTablesFullDesc2").dataTable({
+		"order": [
+			[0, "desc"]
+		],
+		"pageLength": <?php echo getConfigValue("table_records"); ?>,
+		"dom": '<"top"f>rt<"bottom"><"row dt-margin"<"col-md-6"i><"col-md-6"p><"col-md-12"B>><"clear">',
+		"buttons": ['copy', 'csv', 'excel', 'pdf', 'print'],
+		"stateSave": true,
+		"fixedHeader": true,
+		"oLanguage": {
+		"sSearch": "<i class='fa fa-search text-gray dTsearch'></i>",
+		"sEmptyTable": "<?php _e('No entries to show'); ?>",
+		"sZeroRecords": "<?php _e('Nothing found'); ?>",
+		"sInfo": "<?php _e('Showing'); ?> _START_ <?php _e('to'); ?> _END_ <?php _e('of'); ?> _TOTAL_ <?php _e('entries'); ?>",
+		"sInfoEmpty": "",
+		"oPaginate": {
+			"sNext": "<?php _e('Next'); ?>",
+			"sPrevious": "<?php _e('Previous'); ?>",
+			"sFirst": "<?php _e('First Page'); ?>",
+			"sLast": "<?php _e('Last Page'); ?>"
+		}
+	},
+		"columnDefs": [{
+			"orderable": false,
+			"targets": -1
+		}]
 		});
 
-		$(".donut").peity("donut");
+
+
+	$('#purchase_date, #startDate, #endDate, #date, #pat_tested, #removal_date').datepicker({
+		format: '<?php echo jsFormat(); ?>',
+		clearBtn: 'true',
+		weekStart: '<?php echo getConfigValue("week_start"); ?>',
+		autoclose: true
+	});
+
+	$(".donut").peity("donut");
 
 		<?php
 		if ($route == "dashboard" or $route == "tickets/ar" or $route == "tickets/active" or $route == "tickets/all" or $route == "monitoring") {
-			if ($liu['autorefresh'] != 0) echo "startAutorefresh(" . $liu['autorefresh'] . ");";
-		}
+		if ($liu['autorefresh'] != 0) echo "startAutorefresh(".$liu['autorefresh']. ");";
+	}
 		?>
 	});
 </script>
