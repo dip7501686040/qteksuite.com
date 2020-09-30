@@ -234,11 +234,13 @@ td .btn-group {
 {
     display:flex;
     box-sizing:border-box;
-    width:50%;
+    width:100%;
     justify-content:center;
     white-space: nowrap;
     padding:0;
     margin:0 0 10px 0;
+    text-align:center;
+    grid-column-gap: 20px;
 }
 
 .smallicon.fa fa-briefcase
