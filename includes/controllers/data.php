@@ -691,7 +691,6 @@ if ($route == "inventory/assets/manageassetsallocate") {
 
 // Assets_allocate end by pratik end      
 
-
 // LICENSES
 if ($route == "sam/licenses") {
 	isAuthorized("viewLicenses");
@@ -707,9 +706,9 @@ if ($route == "sam/licenses/create") {
 	isAuthorized("addLicense");
 	$suppliers = getTable("suppliers");
 	$categories = getTable("licensecategories");
-	$labels = getTable("labels");
-	$clients = getTable("clients");
-	$customfields = getTable("licenses_customfields");
+	$license_type2 = getTable("license_type2");
+	$statuses = getTable("statuses");
+	$purchase_type = getTable("purchase_type");
 }
 
 if ($route == "sam/licenses/manage") {
@@ -732,8 +731,12 @@ if ($route == "sam/licenses/manage") {
 	$pageTitle = $license['tag'];
 
 	$files = getTableFiltered("license_files", "license_id", $_GET['id']);
+	
+	$license_finances = getTableFiltered("license_finance", "license_id", $_GET['id']);
+	
 
 }
+
 
 // SAM Licenses allocate start by pratik
 

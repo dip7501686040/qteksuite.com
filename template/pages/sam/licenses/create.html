@@ -25,21 +25,16 @@
                                     <div class="col-md-6">
                                         <div class="row">
                                             <div class="col-md-12">
-                                                <?php if($isAdmin) { ?>
                                                 <div class="form-group">
-                                                    <label for="clientid"><?php _e('Application Name'); ?></label>
-                                                    <select onchange='generateTag(this)' class="form-control select2 select2-hidden-accessible" id="clientid" name="clientid" style="width: 100%;" tabindex="-1" aria-hidden="true">
-                                                        <option data-tagprefix='<?php echo getConfigValue("asset_tag_prefix"); ?>' value="0"><?php _e('None'); ?></option>
-                                                        <?php foreach ($clients as $client) { echo "<option data-tagprefix='".$client['license_tag_prefix']."' value='".$client['id']."'>".$client['name']."</option>"; } ?>
-                                                    </select>
+                                                    <label for="application_name"><?php _e('Application Name *');?></label>
+                                                    <input type="text" class="form-control" id="application_name" name="application_name" required>
+                                                    
                                                 </div>
-                                                <?php } ?>
-                                                <?php if(!$isAdmin) { ?><input type="hidden" name="clientid" value="<?php echo $liu['clientid']; ?>"><?php } ?>
                                             </div>
 
                                             <div class="col-md-4">
                                                 <div class="form-group">
-                                                    <label for="tag"><?php _e('Supplier Name'); ?> *</label>
+                                                    <label for="supplierid"><?php _e('Supplier Name'); ?> </label>
                                                     <select class="form-control select2 select2-hidden-accessible" id="supplierid" name="supplierid" style="width: 100%;" tabindex="-1" aria-hidden="true">
                                                         <option value="0"><?php _e('None'); ?></option>
                                                         <?php foreach ($suppliers as $supplier) { echo "<option value='".$supplier['id']."'>".$supplier['name']."</option>"; } ?>
@@ -49,24 +44,21 @@
 
                                             <div class="col-md-8">
                                                 <div class="form-group">
-                                                    <label for="name"><?php _e('Edition'); ?> *</label>
-                                                    <input type="text" class="form-control" id="name" name="name" required>
+                                                    <label for="edition"><?php _e('Edition'); ?> </label>
+                                                    <input type="text" class="form-control" id="edition" name="edition">
                                                 </div>
                                             </div>
 
                                             <div class="col-md-12">
-                                                <?php if($isAdmin) { ?>
                                                 <div class="form-group">
-                                                    <label for="clientid"><?php _e('Purchase Date'); ?></label>                                                    
-                                                    <input type="date" class="form-control" id="seats" name="seats">
+                                                    <label for="purchase_date"><?php _e('Purchase Date'); ?></label>                                                    
+                                                    <input type="date" class="form-control" id="purchase_date" name="purchase_date">
                                                 </div>
-                                                <?php } ?>
-                                                <?php if(!$isAdmin) { ?><input type="hidden" name="clientid" value="<?php echo $liu['clientid']; ?>"><?php } ?>
                                             </div>
 
                                             <div class="col-md-4">
                                                 <div class="form-group">
-                                                    <label for="statusid"><?php _e('Status'); ?> *</label>
+                                                    <label for="statusid"><?php _e('Status'); ?> </label>
                                                     <select class="form-control select2 select2-hidden-accessible" id="statusid" name="statusid" style="width: 100%;" tabindex="-1" aria-hidden="true">
                                                         <option value="0"><?php _e('None'); ?></option>
                                                         <?php foreach ($statuses as $status) { echo "<option value='".$status['id']."'>".$status['name']."</option>"; } ?>
@@ -76,7 +68,7 @@
 
                                             <div class="col-md-8">
                                                 <div class="form-group">
-                                                    <label for="categoriesid"><?php _e('Category'); ?> *</label>
+                                                    <label for="categoriesid"><?php _e('Category'); ?></label>
                                                     <select class="form-control select2 select2-hidden-accessible" id="categoriesid" name="categoriesid" style="width: 100%;" tabindex="-1" aria-hidden="true">
                                                         <option value="0"><?php _e('None'); ?></option>
                                                         <?php foreach ($categories as $category) { echo "<option value='".$category['id']."'>".$category['name']."</option>"; } ?>
@@ -85,66 +77,51 @@
                                             </div>
 
                                             <div class="col-md-12">
-                                                <?php if($isAdmin) { ?>
+                                                
                                                 <div class="form-group">
-                                                    <label for="clientid"><?php _e('Contract / Agreement Number'); ?></label>
+                                                    <label for="contract_num"><?php _e('Contract / Agreement Number'); ?></label>
                                                     
-                                                    <input type="text" class="form-control" id="name" name="name" required>
+                                                    <input type="text" class="form-control" id="contract_num" name="contract_num" >
                                                 </div>
-                                                <?php } ?>
-                                                <?php if(!$isAdmin) { ?><input type="hidden" name="clientid" value="<?php echo $liu['clientid']; ?>"><?php } ?>
                                             </div>
 
                                             <div class="col-md-4">
                                                 <div class="form-group">
-                                                    <label for="tag"><?php _e('Ammount'); ?> *</label>
+                                                    <label for="amount"><?php _e('Amount'); ?></label>
                                                     
-                                                    <input type="text" class="form-control" id="name" name="name" required>
+                                                    <input type="text" class="form-control" id="amount" name="amount" >
                                                 </div>
                                             </div>
 
                                             <div class="col-md-8">
                                                 <div class="form-group">
-                                                    <label for="name"><?php _e('Purchase Qunatity'); ?> *</label>
-                                                    <input type="text" class="form-control" id="name" name="name" required>
+                                                    <label for="purchase_quantity"><?php _e('Purchase Qunatity'); ?> </label>
+                                                    <input type="text" class="form-control" id="purchase_quantity" name="purchase_quantity" >
                                                 </div>
                                             </div>
 
                                             <div class="col-md-12">
-                                                <?php if($isAdmin) { ?>
                                                 <div class="form-group">
-                                                    <label for="clientid"><?php _e('Purchase Order Number'); ?></label>
+                                                    <label for="purchase_order_number"><?php _e('Purchase Order Number'); ?></label>
                                                    
-                                                    <input type="text" class="form-control" id="name" name="name" required>
+                                                    <input type="text" class="form-control" id="purchase_order_number" name="purchase_order_number" >
                                                 </div>
-                                                <?php } ?>
-                                                <?php if(!$isAdmin) { ?><input type="hidden" name="clientid" value="<?php echo $liu['clientid']; ?>"><?php } ?>
-                                            </div>
+                                             </div>
 
                                             <div class="col-md-4">
                                                 <div class="form-group">
-                                                    <label for="tag"><?php _e('Cost Center'); ?> *</label>
-                                                    <input type="text" class="form-control" id="name" name="name" required>
+                                                    <label for="cost_center"><?php _e('Cost Center'); ?> </label>
+                                                    <input type="text" class="form-control" id="cost_center" name="cost_center" >
                                                 </div>
                                             </div>
 
                                             <div class="col-md-8">
                                                 <div class="form-group">
-                                                    <label for="name"><?php _e('Business Unit'); ?> *</label>
-                                                    <input type="text" class="form-control" id="name" name="name" required>
+                                                    <label for="business_unit"><?php _e('Business Unit'); ?> </label>
+                                                    <input type="text" class="form-control" id="business_unit" name="business_unit" >
                                                 </div>
                                             </div>
-
-                                            <div class="col-md-12">
-                                                <?php if(getConfigValue("manual_qrvalue") == "true") { ?>
-                                                <div class="form-group">
-                                                    <label for="qrvalue"><?php _e('QR Code Value'); ?></label>
-                                                    <input type="text" class="form-control" id="qrvalue" name="qrvalue">
-                                                </div>
-                                                <?php } else { ?><input type="hidden" name="qrvalue" value=""><?php } ?>
-                                            </div>
-
-                                        </div>
+                                         </div>
 
 
                                     </div>
@@ -153,15 +130,15 @@
                                         <div class="row">
                                             <div class="col-md-8">
                                                 <div class="form-group">
-                                                    <label for="serial"><?php _e('Version'); ?></label>
-                                                    <input type="text" class="form-control" id="serial" name="serial">
+                                                    <label for="version"><?php _e('Version'); ?></label>
+                                                    <input type="text" class="form-control" id="version" name="version">
                                                 </div>
                                             </div>
 
                                             <div class="col-md-4">
                                                 <div class="form-group">
                                                     <label for="license_type2id"><?php _e('License Type'); ?></label>
-                                                    <select class="form-control select2 select2-hidden-accessible" id="license_type2id" name="license_type2id" style="width: 100%;" tabindex="-1" aria-hidden="true">
+                                                    <select class="form-control select2 select2-hidden-accessible" id="license_type2id" name="licenseid" style="width: 100%;" tabindex="-1" aria-hidden="true">
                                                         <option value="0"><?php _e('None'); ?></option>
                                                         <?php foreach ($license_type2 as $license) { echo "<option value='".$license['id']."'>".$license['license_type']."</option>"; } ?>
                                                     </select>
@@ -171,77 +148,77 @@
 
                                             <div class="col-md-12">
                                                 <div class="form-group">
-                                                    <label for="purchase_typeid"><?php _e('Purchase Type'); ?></label>
-                                                    <select class="form-control select2 select2-hidden-accessible" id="purchase_typeid" name="purchase_typeid" style="width: 100%;" tabindex="-1" aria-hidden="true">
+                                                    <label for="purchase_type"><?php _e('Purchase Type'); ?></label>
+                                                    <select class="form-control select2 select2-hidden-accessible" id="purchase_type" name="purchase_typeid" style="width: 100%;" tabindex="-1" aria-hidden="true">
                                                         <option value="0"><?php _e('None'); ?></option>
-                                                        <?php foreach ($purchase_type as $purchase) { echo "<option value='".$purchase['id']."'>".$purchase['name']."</option>"; } ?>
+                                                        <?php foreach ($purchase_type as $purchase_type) { echo "<option value='".$purchase_type['id']."'>".$purchase_type['name']."</option>"; } ?>
                                                     </select>
                                                 </div>
                                             </div>
 
                                             <div class="col-md-8">
                                                 <div class="form-group">
-                                                    <label for="serial"><?php _e('License Start Date'); ?></label>
-                                                    <input type="date" class="form-control" id="serial" name="serial">
+                                                    <label for="license_start_date"><?php _e('License Start Date'); ?></label>
+                                                    <input type="date" class="form-control" id="license_start_date" name="license_start_date">
                                                 </div>
                                             </div>
 
                                             <div class="col-md-4">
                                                 <div class="form-group">
-                                                    <label for="seats"><?php _e('License Expiry Date'); ?></label>
-                                                    <input type="date" class="form-control" id="seats" name="seats">
+                                                    <label for="license_expiry_date"><?php _e('License Expiry Date'); ?></label>
+                                                    <input type="date" class="form-control" id="license_expiry_date" name="license_expiry_date">
                                                 </div>
                                             </div>
 
                                             <div class="col-md-12">
                                                 <div class="form-group">
-                                                    <label for="supplierid"><?php _e('Serial Number'); ?></label>
+                                                    <label for="serial"><?php _e('Serial Number'); ?></label>
                                                     
-                                                    <input type="text" class="form-control" id="name" name="name" required>
+                                                    <input type="text" class="form-control" id="serial" name="serial" >
                                                 </div>
                                             </div>
 
                                             <div class="col-md-8">
                                                 <div class="form-group">
-                                                    <label for="serial"><?php _e('Vendor Name'); ?></label>
-                                                    <input type="text" class="form-control" id="serial" name="serial">
+                                                    <label for="vendor_name"><?php _e('Vendor Name'); ?></label>
+                                                    <input type="text" class="form-control" id="vendor_name" name="vendor_name">
                                                 </div>
                                             </div>
 
                                             <div class="col-md-4">
                                                 <div class="form-group">
-                                                    <label for="seats"><?php _e('Part Number ./SKU'); ?></label>
-                                                    <input type="text" class="form-control" id="seats" name="seats">
+                                                    <label for="part_number"><?php _e('Part Number ./SKU'); ?></label>
+                                                    <input type="text" class="form-control" id="part_number" name="part_number">
                                                 </div>
                                             </div>
 
                                             <div class="col-md-12">
                                                 <div class="form-group">
-                                                    <label for="supplierid"><?php _e('Quantity per unit'); ?></label>
+                                                    <label for="qunatity_per_unit"><?php _e('Quantity per unit'); ?></label>
                                                     
-                                                    <input type="text" class="form-control" id="name" name="name" required>
+                                                    <input type="text" class="form-control" id="qunatity_per_unit" name="qunatity_per_unit" >
                                                 </div>
                                             </div>
 
                                             <div class="col-md-8">
                                                 <div class="form-group">
-                                                    <label for="serial"><?php _e('Owner Name'); ?></label>
-                                                    <input type="text" class="form-control" id="serial" name="serial">
+                                                    <label for="owner_name"><?php _e('Owner Name'); ?></label>
+                                                    <input type="text" class="form-control" id="owner_name" name="owner_name">
                                                 </div>
                                             </div>
 
                                             <div class="col-md-4">
                                                 <div class="form-group">
-                                                    <label for="seats"><?php _e('Project ID'); ?></label>
-                                                    <input type="text" class="form-control" id="seats" name="seats">
+                                                    <label for="project_id"><?php _e('Project ID'); ?></label>
+                                                    <input type="text" class="form-control" id="project_id" name="project_id">
                                                 </div>
                                             </div>
 
                                             <div class="col-md-12">
                                                 <div class="form-group">
-                                                    <label for="supplierid"><?php _e('Location'); ?></label>
+                                                    <label for="location"><?php _e('Location'); ?></label>
                                                     
-                                                    <input type="text" class="form-control" id="name" name="name" required>
+                                                    <input type="text" class="form-control" id="location" name="location" >
                                                 </div>
                                             </div>
 
