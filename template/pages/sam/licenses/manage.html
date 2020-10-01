@@ -56,58 +56,79 @@
                                                     <!--Akanksha goyal changes-->
                                                     <tr>
                                                         <td><b><?php _e('Application Name'); ?></b></td>
-                                                        <td><span class='badge'></span></td>
+                                                        <td><?php echo $license['application_name'] ?></td>
                                                     </tr>
                                                     <tr>
                                                         <td><b><?php _e('Version'); ?></b></td>
-                                                        <td><span class='badge'></span></td>
+                                                        <td><?php echo $license['version'] ?></td>
                                                     </tr>
                                                     <tr>
                                                         <td><b><?php _e('License Start Date'); ?></b></td>
-                                                        <td><span class='badge'></span></td>
+                                                        <td><?php echo $license['license_start_date'] ?></td>
                                                     </tr>
                                                     <tr>
                                                         <td><b><?php _e('License Expiry Date'); ?></b></td>
-                                                        <td><span class='badge'></span></td>
+                                                        <td><?php echo $license['license_expiry_date'] ?></td>
                                                     </tr>
                                                     <tr>
                                                         <td><b><?php _e('Category dropdown'); ?></b></td>
-                                                        <td><span class='badge'></span></td>
+                                                        <td><?php echo $license['categoryid'] ?></td>
                                                     </tr>
                                                     <tr>
                                                         <td><b><?php _e('Contract/Agreement Number'); ?></b></td>
-                                                        <td><span class='badge'></span></td>
+                                                        <td><?php echo $license['contract_num'] ?></td>
                                                     </tr>
                                                     <tr>
                                                         <td><b><?php _e('Vendor Name'); ?></b></td>
-                                                        <td><span class='badge'></span></td>
+                                                        <td><?php echo $license['vendor_name'] ?></td>
                                                     </tr>
                                                     <tr>
                                                         <td><b><?php _e('Part no./SKU:'); ?></b></td>
-                                                        <td><span class='badge'></span></td>
+                                                        <td><?php echo $license['part_number'] ?></td>
                                                     </tr>
                                                     <tr>
                                                         <td><b><?php _e('Purcahse Quantity'); ?></b></td>
-                                                        <td><span class='badge'></span></td>
+                                                        <td><?php echo $license['purchase_quantity'] ?></td>
                                                     </tr>
 
                                                     <tr>
                                                         <td><b><?php _e('Quantity per unit'); ?></b></td>
-                                                        <td><span class='badge'></span></td>
+                                                        <td><?php echo $license['qunatity_per_unit'] ?></td>
                                                     </tr>
 
 
                                                     <tr>
                                                         <td><b><?php _e('Purchase Order Number'); ?></b></td>
-                                                        <td><span class='badge'></span></td>
+                                                        <td><?php echo $license['purchase_order_number'] ?></td>
                                                     </tr>
                                                     <!--Akanksha Goyal Changes-->
+
+                                                    <tr>
+                                                        <td><b><?php _e('License Name'); ?></b></td>
+                                                        <td><?php echo $license['licenseid']; ?></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><b><?php _e('Serial / CD Key'); ?></b></td>
+                                                        <td><?php echo encrypt_decrypt('decrypt', $license['serial']); ?></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><b><?php _e('Supplier'); ?></b></td>
+                                                        <td><a href='#' onClick='showM("index.php?modal=suppliers/view&id=<?php echo $license['supplierid']; ?>");return false'><?php echo getSingleValue('suppliers', 'name', $license['supplierid']); ?></a></td>
+                                                    </tr>
+<<<<<<< HEAD
+                                                    <!--Akanksha Goyal Changes-->
+=======
+
+>>>>>>> 056878815c64437b2eaaf079bc8542ec728462f7
                                                     <tr>
                                                         <td><b><?php _e('Status'); ?></b></td>
                                                         <td><span class='badge' style='background-color:<?php echo getSingleValue("labels", "color", $license['statusid']); ?>'><?php echo getSingleValue("labels", "name", $license['statusid']); ?></span>
                                                         </td>
                                                     </tr>
+
                                                     <tr>
+<<<<<<< HEAD
                                                         <td><b><?php _e('Client'); ?></b></td>
                                                         <td><?php echo getSingleValue('clients', 'name', $license['clientid']); ?>
                                                         </td>
@@ -116,17 +137,25 @@
                                                         <td><b><?php _e('Category'); ?></b></td>
                                                         <td><span class='label' style='background-color:#FFF;color:<?php echo getSingleValue("licensecategories", "color", $license['categoryid']); ?>;border:1px solid <?php echo getSingleValue("licensecategories", "color", $license['categoryid']); ?>'><?php echo getSingleValue('licensecategories', 'name', $license['categoryid']); ?></span>
                                                         </td>
+=======
+                                                        <td><b><?php _e('Location'); ?></b></td>
+                                                        <td><?php echo $license['location']; ?></td>
                                                     </tr>
                                                     <tr>
-                                                        <td><b><?php _e('License Name'); ?></b></td>
-                                                        <td><?php echo $license['name']; ?></td>
+                                                        <td><b><?php _e('Purchase Date'); ?></b></td>
+                                                        <td><?php echo $license['purchase_date']; ?></td>
+>>>>>>> 056878815c64437b2eaaf079bc8542ec728462f7
                                                     </tr>
                                                     <tr>
-                                                        <td><b><?php _e('License Tag'); ?></b></td>
-                                                        <td><?php echo $license['tag']; ?></td>
+                                                        <td><b><?php _e('Edition'); ?></b></td>
+                                                        <td><?php echo $license['edition']; ?></td>
                                                     </tr>
-
                                                     <tr>
+                                                        <td><b><?php _e('Notes'); ?></b></td>
+                                                        <td><?php echo $license['notes']; ?></td>
+                                                    </tr>
+                                                    <tr>
+<<<<<<< HEAD
                                                         <td><b><?php _e('Seats'); ?></b></td>
                                                         <td>
                                                             <?php if ($license['seats'] != "" && $license['seats'] > 0) { ?>
@@ -138,9 +167,13 @@
                                                                 <span class="text-gray"><?php _e('N/A'); ?></span>
                                                             <?php } ?>
                                                         </td>
+=======
+                                                        <td><b><?php _e('Purchase Type'); ?></b></td>
+                                                        <td><?php echo $license['purchase_typeid']; ?></td>
+>>>>>>> 056878815c64437b2eaaf079bc8542ec728462f7
                                                     </tr>
-
                                                     <tr>
+<<<<<<< HEAD
                                                         <td><b><?php _e('Serial / CD Key'); ?></b></td>
                                                         <td><?php echo encrypt_decrypt('decrypt', $license['serial']); ?>
                                                         </td>
@@ -149,14 +182,30 @@
                                                         <td><b><?php _e('Supplier'); ?></b></td>
                                                         <td><a href='#' onClick='showM("index.php?modal=suppliers/view&id=<?php echo $license['supplierid']; ?>");return false'><?php echo getSingleValue('suppliers', 'name', $license['supplierid']); ?></a>
                                                         </td>
+=======
+                                                        <td><b><?php _e('Business Unit'); ?></b></td>
+                                                        <td><?php echo $license['business_unit']; ?></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><b><?php _e('Cost Center'); ?></b></td>
+                                                        <td><?php echo $license['cost_center']; ?></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><b><?php _e('Project Id'); ?></b></td>
+                                                        <td><?php echo $license['project_id']; ?></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><b><?php _e('Owner Name'); ?></b></td>
+                                                        <td><?php echo $license['owner_name']; ?></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><b><?php _e('Amount'); ?></b></td>
+                                                        <td><?php echo $license['amount']; ?></td>
+>>>>>>> 056878815c64437b2eaaf079bc8542ec728462f7
                                                     </tr>
 
-                                                    <?php foreach ($customfields as $customfield) { ?>
-                                                        <tr>
-                                                            <td><b><?php echo $customfield['name'] ?></b></td>
-                                                            <td><?php echo $customdata[$customfield['id']] ?></td>
-                                                        </tr>
-                                                    <?php } ?>
+
+
 
 
                                                 </tbody>
