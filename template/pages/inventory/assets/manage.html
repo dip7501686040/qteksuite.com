@@ -533,7 +533,7 @@
                         <?php if (in_array("viewFiles", $perms)) { ?>
                             <div class="tab-pane <?php if ($section == "files") echo 'active'; ?>" id="tab-files">
                                 <form action="" method="post" enctype="multipart/form-data">
-                                    <div id="attach_file_container">
+                                    <div id="attach_file_container" class="pull-right">
                                         <input type="file" name="doc_files[]" id="asset_doc_file" multiple>
                                         <input type="hidden" name="action" value="addFileAsset">
                                         <input type="hidden" name="asset_id" value="<?php echo $_GET['id']; ?>">

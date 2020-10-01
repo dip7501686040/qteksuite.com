@@ -8,27 +8,39 @@ class License extends App
     {
         global $database;
 
-        $customfields = getTable("licenses_customfields");
-        $customfieldsdata = array();
-
-        foreach ($customfields as $customfield) {
-            $customfieldsdata[$customfield['id']] = $data[$customfield['id']];
-        }
+        // $customfields = getTable("licenses_customfields");
+        // $customfieldsdata = array();
+        // foreach ($customfields as $customfield) {
+        //     $customfieldsdata[$customfield['id']] = $data[$customfield['id']];
+        // }
 
 
         $lastid = $database->insert("licenses", [
-            "clientid" => $data['clientid'],
             "statusid" => $data['statusid'],
-            "categoryid" => $data['categoryid'],
+            "categoryid" => $data['categoriesid'],
             "supplierid" => $data['supplierid'],
-            "seats" => $data['seats'],
-            "tag" => $data['tag'],
-            "name" => $data['name'],
+            "edition" => $data['edition'],
+            "version" => $data['version'],
+            "application_name" => $data['application_name'],
             "serial" => encrypt_decrypt('encrypt', $data['serial']),
             "notes" => $data['notes'],
-            "customfields" => serialize($customfieldsdata),
-            "qrvalue" => $data['qrvalue'],
-            "type" => $data['type'],
+            "licenseid" => $data['licenseid'],
+            "purchase_typeid" => $data['purchase_typeid'],
+            "contract_num" => $data['contract_num'],
+            "vendor_name" => $data['vendor_name'],
+            "part_number" => $data['part_number'],
+            "amount" => $data['amount'],
+            "purchase_quantity" => $data['purchase_quantity'],
+            "qunatity_per_unit" => $data['qunatity_per_unit'],
+            "purchase_order_number" => $data['purchase_order_number'],
+            "owner_name" => $data['owner_name'],
+            "project_id" => $data['project_id'],
+            "cost_center" => $data['cost_center'],
+            "business_unit" => $data['business_unit'],
+            "purchase_date" => $data['purchase_date'],
+            "license_start_date" => $data['license_start_date'],
+            "license_expiry_date" => $data['license_expiry_date'],
+            "location" => $data['location']
         ]);
         if ($lastid == "0") {
             return "11";
@@ -148,5 +160,24 @@ class License extends App
     { //unassign license to asset
         global $database;
         return $database->count("licenses_assets", ["licenseid" => $id]);
+    }
+
+    public static function addFinance($data)
+    {
+        global $database;
+        $lastid=$database->insert(
+            "license_finance",
+            ["license_id" => $data['license_id'],
+            "amount" => $data['amount'],
+            "currency" =>$data['currency'],
+            "frequency" =>$data['frequency']
+            ]
+        );
+        if ($lastid == "0") {
+            return "11";
+        } else {
+            logSystem("License Finance Added - ID: " . $lastid);
+            return "10";
+        }
     }
 }

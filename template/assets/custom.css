@@ -200,7 +200,9 @@ td .btn-group {
     box-sizing: border-box;
     display: none;
 }
-
+.submit_file{
+    margin: 20px 0;
+}
 
 /*Akanksha Goyal changes*/
 

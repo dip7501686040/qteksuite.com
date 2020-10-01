@@ -25,6 +25,8 @@
                     <ul class="nav nav-tabs">
                         <li <?php if ($section == "") echo 'class="active"'; ?>><a href="#tab-summary" data-toggle="tab"><?php _e('Summary'); ?></a></li>
                         <?php if (in_array("viewAssets", $perms)) { ?><li <?php if ($section == "assets") echo 'class="active"'; ?>><a href="?route=sam/licenses/manage&id=<?php echo $license['id']; ?>&section=assets"><?php _e('Assets'); ?></a></li><?php } ?>
+                        <?php if (in_array("viewAssets", $perms)) { ?><li <?php if ($section == "finance") echo 'class="active"'; ?>><a href="?route=sam/licenses/manage&id=<?php echo $license['id']; ?>&section=finance"><?php _e('Finance'); ?></a></li><?php } ?>
+
                         <?php if (in_array("viewComponents", $perms)) { ?><li <?php if ($section == "components") echo 'class="active"'; ?>><a href="?route=sam/licenses/manage&id=<?php echo $license['id']; ?>&section=components"><?php _e('Components'); ?></a></li><?php } ?>
                         <?php if (in_array("viewLicences", $perms)) { ?><li <?php if ($section == "maintenance") echo 'class="active"'; ?>><a href="?route=inventory/assets/manage&id=<?php echo $license['id']; ?>&section=maintenance"><?php _e('Maintenance'); ?></a></li><?php } ?>
                         <?php if (in_array("viewFiles", $perms)) { ?><li <?php if ($section == "files") echo 'class="active"'; ?>><a href="?route=sam/licenses/manage&id=<?php echo $license['id']; ?>&section=files"><?php _e('Documents'); ?></a></li><?php } ?>
@@ -231,6 +233,119 @@
                             </div>
                         <?php } ?>
                         <!-- /tab pane -->
+                        <!-- /.tab-pane -->
+
+                        <?php if (in_array("viewAssets", $perms)) { ?>
+                            <div class="tab-pane <?php if ($section == "finance") echo 'active'; ?>" id="tab-finance">
+                                <div class="table-responsive">
+                                    <div class="box box-primary">
+                                        <div class="box-header">
+                                            <h3 class="box-title"><?php _e('Finance'); ?></h3>
+                                            <div class="pull-right box-tools">
+                                                <button type="button" class="btn btn-default btn-sm btn-flat" data-widget="collapse" data-toggle="tooltip" title="Collapse"><i class="fa fa-minus"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="box-body">
+                                            <form role="form" method="post">
+
+                                                <div class="col-md-6">
+                                                    <div class="row">
+
+                                                        <div class="col-md-4">
+                                                            <div class="form-group">
+                                                                <label for="amount" class="control-label"><?php _e('Amount'); ?> *</label>
+                                                                <input type="text" class="form-control" id="amount" name="amount" value="<?php echo $license['amount']; ?>" required>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-8">
+                                                            <div class="form-group">
+                                                                <label for="currency" class="control-label"><?php _e('Currency'); ?></label>
+                                                                <select class="form-control select2 select2-hidden-accessible" id="currency" name="currency" style="width: 100%;" tabindex="-1" aria-hidden="true">
+                                                                    <option value="0"><?php _e('None'); ?></option>
+                                                                    <option value="Dollar">Dollar</option>
+                                                                    <option value="Dinar">Dinar</option>
+                                                                    <option value="Dirham">Dirham</option>
+                                                                    <option value="Euro">Euro</option>
+                                                                    <option value="Pound">Pound</option>
+                                                                    <option value="Peso">Peso</option>
+                                                                    <option value="Rupee">Rupee</option>
+                                                                    <option value="Rupiah">Rupiah</option>
+                                                                    <option value="Yen">Yen</option>
+                                                                    <option value="Yuan">Yuan</option>
+                                                                </select>   
+                                                            </div>
+                                                        </div>
+
+
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="form-group">
+                                                                <label for="frequency" class="control-label"><?php _e('Frequency'); ?></label>
+                                                                <select class="form-control select2 select2-hidden-accessible" id="frequency" name="frequency" style="width: 100%;" tabindex="-1" aria-hidden="true">
+
+                                                                    <option value="Yearly">Yearly</option>
+                                                                    <option value="Monthly">Monthly</option>
+                                                                    <option value="Quarterly">Quarterly</option>
+                                                                    <option value="Halfyraely">Halfyraely</option>
+                                                                    <option value="None">None</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                        <input type="hidden" name="action" value="license_finance">
+                                        <input type="hidden" name="license_id" value="<?php echo $_GET['id']; ?>">
+                                        <input type="hidden" name="route" value="<?php echo $_GET['route']; ?>">
+                                        <input type="hidden" name="routeid" value="<?php echo $_GET['id']; ?>">
+                                        <input type="hidden" name="section" value="finance">
+                                        <input type="submit" name="submit" class="submit_file btn btn-info" value="Add Files" style="margin-bottom: 20px;">
+                                        <!-- /.tab-pane -->
+                            <div class="tab-pane ">
+                                
+                                        
+                                        <div class="box-body">
+                                            <div class="table-responsive">
+                                                <table class="table table-striped table-hover table-bordered">
+                                                    <thead>
+                                                        <tr>
+                                                            <th><?php _e('Amount'); ?></th>
+                                                            <th><?php _e('Currency'); ?></th>
+                                                            <th><?php _e('Frequency'); ?></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                       <?php 
+                                                       foreach($license_finances as $license_finance){
+                                                       ?>
+                                                       <tr>
+                                                       <td><?php echo $license_finance["amount"] ?></td>
+                                                       <td><?php echo $license_finance["currency"] ?></td>
+                                                       <td><?php echo $license_finance["frequency"] ?></td>
+                                                       </tr>
+                                                       <?php } ?>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
+                            </div>
+                                   
+
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        <?php } ?>
+                        <!-- /tab pane -->
 
                         <?php if (in_array("viewComponents", $perms)) { ?>
                             <div class="tab-pane <?php if ($section == "components") echo 'active'; ?>" id="tab-components">
@@ -338,7 +453,7 @@
 
                             </div>
                         <?php } ?>
-                            <!-- /.tab-pane -->
+                        <!-- /.tab-pane -->
 
                         <?php if (in_array("editLicense", $perms)) { ?>
                             <div class="tab-pane <?php if ($section == "edit") echo 'active'; ?>" id="tab-edit">

@@ -266,7 +266,6 @@ switch($_POST['action']) {
 		isAuthorized("deleteCredential"); $status = Credential::delete($_POST['id']);
         break;
 
-
 	// licenses
 	case "addLicense":
 		isAuthorized("addLicense"); $status = License::add($_POST);
@@ -287,6 +286,11 @@ switch($_POST['action']) {
 	case "deleteLicenseAssignment":
 		isAuthorized("assetLicense"); $status = License::unassignAsset($_POST['id']);
 		break;
+
+			
+	case "license_finance":
+			isAuthorized("editLicense"); $status = License::addFinance($_POST);
+			break;	
 
 
 	// clients
