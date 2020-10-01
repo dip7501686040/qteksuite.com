@@ -3,20 +3,9 @@
 </div>
 <div class="modal-body">
     <div class="row">
-        <div class="col-md-6">
-            <?php if ($isAdmin) { ?>
-                <div class="form-group">
-                    <label for="clientid"><?php _e('Client'); ?></label>
-                    <select onchange='generateTag(this)' class="form-control select2 select2-hidden-accessible" id="clientid" name="clientid" style="width: 100%;" tabindex="-1" aria-hidden="true">
-                        <option data-tagprefix='<?php echo getConfigValue("asset_tag_prefix"); ?>' value="0"><?php _e('None'); ?></option>
-                        <?php foreach ($clients as $client) {
-                            echo "<option data-tagprefix='" . $client['asset_tag_prefix'] . "' value='" . $client['id'] . "'>" . $client['name'] . "</option>";
-                        } ?>
-                    </select>
-                </div>
-            <?php } ?>
-            <?php if (!$isAdmin) { ?><input type="hidden" name="clientid" value="<?php echo $liu['clientid']; ?>"><?php } ?>
-
+        <div class="col-md-12">
+            
+            
             <div class="row">
                 <div class="col-md-4">
                     <div class="form-group">
@@ -24,68 +13,11 @@
                         <input type="text" class="form-control" id="tag" name="tag" value="<?php echo getConfigValue("asset_tag_prefix"); ?><?php echo Asset::nextAssetTag(); ?>" required>
                     </div>
                 </div>
-                <div class="col-md-8">
-                    <div class="form-group">
-                        <label for="name"><?php _e('Asset Name'); ?> *</label>
-                        <input type="text" class="form-control" id="name" name="name" required>
-                    </div>
-                </div>
-
-
-                <div class="col-md-4">
-                    <div class="form-group">
-                        <label for="category"><?php _e('Category'); ?> *</label>
-                        <select class="form-control select2 tag select2-hidden-accessible" id="category" name="category" style="width: 100%;" tabindex="-1" aria-hidden="true" multiple>
-                            <?php foreach ($categories as $category) {
-                                echo "<option value='" . $category['name'] . "'>" . $category['name'] . "</option>";
-                            } ?>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="form-group">
-                        <label for="supplier"><?php _e('Supplier'); ?></label>
-                        <select class="form-control select2 tag select2-hidden-accessible" id="supplier" name="supplier" style="width: 100%;" tabindex="-1" aria-hidden="true" multiple>
-                            <?php foreach ($suppliers as $supplier) {
-                                echo "<option value='" . $supplier['name'] . "'>" . $supplier['name'] . "</option>";
-                            } ?>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <?php if ($isAdmin) { ?>
-                        <div class="form-group">
-                            <label for="location"><?php _e('Location'); ?></label>
-                            <select class="form-control select2 tag select2-hidden-accessible" id="location" name="location" style="width: 100%;" tabindex="-1" aria-hidden="true" multiple>
-                                <?php foreach ($locations as $location) {
-                                    $locationclient = getSingleValue("clients", "name", $location['clientid']);
-                                    if ($locationclient != "") $locationclient = $locationclient . " / ";
-                                    echo "<option value='" . $location['name'] . "'>" . $locationclient . $location['name'] . "</option>";
-                                } ?>
-                            </select>
-                        </div>
-                    <?php } ?>
-
-                    <?php if (!$isAdmin) { ?>
-                        <div class="form-group">
-                            <label for="location"><?php _e('Location'); ?></label>
-                            <select class="form-control select2 tag select2-hidden-accessible" id="location" name="location" style="width: 100%;" tabindex="-1" aria-hidden="true" multiple>
-                                <?php foreach ($locations as $location) {
-                                    echo "<option value='" . $location['name'] . "'>" . $location['name'] . "</option>";
-                                } ?>
-                            </select>
-                        </div>
-                    <?php } ?>
-                </div>
-
-                <div class="col-md-12"></div>
 
                 <div class="col-md-4">
                     <div class="form-group">
                         <label for="statusid"><?php _e('Status'); ?> *</label>
-                        <select class="form-control select2 select2-hidden-accessible" id="statusid" name="statusid" style="width: 100%;" tabindex="-1" aria-hidden="true">
+                        <select class="form-control select2 select2-hidden-accessible" id="statusid" name="status" style="width: 100%;" tabindex="-1" aria-hidden="true">
                             <?php foreach ($labels as $label) {
                                 echo "<option value='" . $label['id'] . "'>" . $label['name'] . "</option>";
                             } ?>
@@ -95,67 +27,36 @@
 
                 <div class="col-md-4">
                     <div class="form-group">
-                        <label for="userid"><?php _e('Asset User'); ?></label>
-                        <select class="form-control select2 select2-hidden-accessible" id="userid" name="userid" style="width: 100%;" tabindex="-1" aria-hidden="true">
-                            <option value="0"><?php _e('None'); ?></option>
-                            <?php foreach ($users as $user) {
-                                echo "<option value='" . $user['id'] . "'>" . $user['name'] . "</option>";
-                            } ?>
-                        </select>
+                        <label for="name"><?php _e('Serial singer'); ?> *</label>
+                        <input type="text" class="form-control" id="serial" name="serial" required>
+                    </div>
+                </div>
+                    
+               <!--    -->
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="category"><?php _e('Manufacturer'); ?> *</label>
+                        <input type="text" class="form-control" id="Manufacturer" name="Manufacturer" required>
                     </div>
                 </div>
 
                 <div class="col-md-4">
-                    <?php if ($isAdmin) { ?>
-                        <div class="form-group">
-                            <label for="adminid"><?php _e('Asset Admin'); ?></label>
-                            <select class="form-control select2 select2-hidden-accessible" id="adminid" name="adminid" style="width: 100%;" tabindex="-1" aria-hidden="true">
-                                <option value="0"><?php _e('None'); ?></option>
-                                <?php foreach ($admins as $admin) {
-                                    echo "<option value='" . $admin['id'] . "'>" . $admin['name'] . "</option>";
-                                } ?>
-                            </select>
-                        </div>
-                    <?php } ?>
-                    <?php if (!$isAdmin) { ?><input type="hidden" name="adminid" value="0"><?php } ?>
-                </div>
-
-
-                <div class="col-md-6">
                     <div class="form-group">
-                        <label for="manufacturer"><?php _e('Manufacturer'); ?></label>
-                        <select class="form-control select2 tag select2-hidden-accessible" id="manufacturer" name="manufacturer" style="width: 100%;" tabindex="-1" aria-hidden="true" multiple>
-                            <?php foreach ($manufacturers as $manufacturer) {
-                                echo "<option value='" . $manufacturer['name'] . "'>" . $manufacturer['name'] . "</option>";
-                            } ?>
-                        </select>
+                        <label for="category"><?php _e('Assets Type'); ?> *</label>
+                        <input type="text" class="form-control" id="type" name="type" required>
                     </div>
                 </div>
 
-                <div class="col-md-6">
+
+                <div class="col-md-4">
                     <div class="form-group">
-                        <label for="model"><?php _e('Model'); ?></label>
-                        <select class="form-control select2 tag select2-hidden-accessible" id="model" name="model" style="width: 100%;" tabindex="-1" aria-hidden="true" multiple>
-                            <?php foreach ($models as $model) {
-                                echo "<option value='" . $model['name'] . "'>" . $model['name'] . "</option>";
-                            } ?>
-                        </select>
+                        <label for="category"><?php _e('Asset Model'); ?> *</label>
+                        <input type="text" class="form-control" id="model" name="model" required>
                     </div>
                 </div>
 
-                <div class="col-md-12">
-                    <?php if (getConfigValue("manual_qrvalue") == "true") { ?>
-                        <div class="form-group">
-                            <label for="qrvalue"><?php _e('QR Code Value'); ?></label>
-                            <input type="text" class="form-control" id="qrvalue" name="qrvalue">
-                        </div>
-                    <?php } else { ?><input type="hidden" name="qrvalue" value=""><?php } ?>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="row">
-                <div class="col-md-6">
+                <!--    456-->
+                <div class="col-md-4">
                     <div class="form-group">
                         <label for="purchase_date"><?php _e('Purchase Date'); ?></label>
                         <div class="input-group">
@@ -163,11 +64,53 @@
                             <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
                         </div>
                     </div>
+                </div>  
+
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="category"><?php _e('Purchase Cost'); ?> *</label>
+                        <input type="text" class="form-control" id="cost" name="cost" required>
+                    </div>
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="form-group">
-                        <label for="warranty_months"><?php _e('Warranty'); ?></label>
+                        <label for="supplier"><?php _e('PO Number'); ?></label>
+                        <input type="number" class="form-control" id="PO" name="PO">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+ 
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="supplier"><?php _e('Invoice Number'); ?></label>
+                        <input type="text" class="form-control" id="Invoice" name="Invoice" required>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="category"><?php _e('category'); ?> *</label>
+                        <select class="form-control select2 tag select2-hidden-accessible" id="category" name="category" style="width: 100%;" tabindex="-1" aria-hidden="true" multiple>
+                            
+                                <option value='SW'>SW</option>
+                                <option value='SW'>HW</option>
+                        
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="supplier"><?php _e('supplier'); ?></label>
+                        <input type="text" class="form-control" id="supplier" name="supplier" required>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="warranty_months"><?php _e('Warranty Period'); ?></label>
                         <div class="input-group">
                             <input type="number" class="form-control" id="warranty_months" name="warranty_months">
                             <span class="input-group-addon"><?php _e('months'); ?></span>
@@ -175,42 +118,109 @@
                     </div>
                 </div>
 
-                <div class="col-md-12">
+                <div class="col-md-4">
                     <div class="form-group">
-                        <label for="serial"><?php _e('Serial Number'); ?></label>
-                        <input type="text" class="form-control" id="serial" name="serial">
+                        <label for="purchase_date"><?php _e('EOL Date'); ?></label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="EOL_date" name="EOL_date">
+                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                        </div>
+                    </div>
+                </div> 
+                
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="category"><?php _e('Amount'); ?> *</label>
+                        <input type="text" class="form-control" id="amount" name="amount" required>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="purchase_date"><?php _e('Created Date'); ?></label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="created_date" name="created_date">
+                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="purchase_date"><?php _e('RAM'); ?></label>
+                        
+                            <input type="text" class="form-control" id="RAM" name="RAM">
+                            
+                        
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="supplier"><?php _e('Purchase Order Number'); ?></label>
+                        <input type="number" class="form-control" id="pon" name="pon">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="supplier"><?php _e('Owner Name'); ?></label>
+                        <input type="text" class="form-control" id="Owner_name" name="Owner_name">
                     </div>
                 </div>
 
-                <?php foreach ($customfields as $customfield) { ?>
-                    <div class="col-md-12">
-                        <div class="form-group">
-                            <label><?php echo $customfield['name'] ?></label>
-
-                            <?php if ($customfield['type'] == "Text Box") { ?>
-                                <input type="text" class="form-control" name="<?php echo $customfield['id']; ?>">
-                            <?php } ?>
-
-                            <?php if ($customfield['type'] == "Text Area") { ?>
-                                <textarea class="form-control" name="<?php echo $customfield['id']; ?>"></textarea>
-                            <?php } ?>
-
-                            <?php if ($customfield['type'] == "Dropdown") {
-                                $options = explode(",", $customfield['options']); ?>
-                                <select class="form-control select2 select2-hidden-accessible" name="<?php echo $customfield['id']; ?>" style="width: 100%;" tabindex="-1" aria-hidden="true">
-                                    <?php foreach ($options as $option) {
-                                        echo "<option value='" . $option . "'>" . $option . "</option>";
-                                    } ?>
-                                </select>
-                            <?php } ?>
-
-                            <?php if ($customfield['description'] != "") { ?>
-                                <p class="help-block"><?php echo $customfield['description']; ?></p>
-                            <?php } ?>
-                        </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="supplier"><?php _e('Project Id'); ?></label>
+                        <input type="text" class="form-control" id="pid" name="pid">
                     </div>
-                <?php } ?>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="supplier"><?php _e('Cost Center '); ?></label>
+                        <input type="text" class="form-control" id="cost_center" name="cost_center">
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="supplier"><?php _e('Bussiness unit'); ?></label>
+                        <input type="text" class="form-control" id="b_unit" name="b_unit">
+                    </div>
+                </div>
+                 
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="location"><?php _e('Location'); ?></label>
+                        <select class="form-control select2 tag select2-hidden-accessible" id="location" name="location" style="width: 100%;" tabindex="-1" aria-hidden="true" multiple>
+                            <?php foreach ($locations as $location) {
+                                echo "<option value='" . $location['name'] . "'>" . $location['name'] . "</option>";
+                            } ?>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="supplier"><?php _e('Graphics card'); ?></label>
+                        <input type="text" class="form-control" id="Gcard" name="Gcard">
+                    </div>
+                </div>
+                 
+
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="supplier"><?php _e('HDD'); ?></label>
+                        <input type="text" class="form-control" id="HDD" name="HDD">
+                    </div>
+                </div>
+
+        
             </div>
+       
+            
         </div>
 
         <div class="col-md-12">
@@ -254,6 +264,18 @@
     $(function() {
         $(".select2").select2();
         $('#purchase_date').datepicker({
+            format: '<?php echo jsFormat(); ?>',
+            clearBtn: 'true',
+            weekStart: '<?php echo getConfigValue("week_start"); ?>',
+            autoclose: true
+        });
+        $('#created_date').datepicker({
+            format: '<?php echo jsFormat(); ?>',
+            clearBtn: 'true',
+            weekStart: '<?php echo getConfigValue("week_start"); ?>',
+            autoclose: true
+        });
+        $('#EOL_date').datepicker({
             format: '<?php echo jsFormat(); ?>',
             clearBtn: 'true',
             weekStart: '<?php echo getConfigValue("week_start"); ?>',
