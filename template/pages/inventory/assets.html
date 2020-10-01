@@ -81,7 +81,7 @@
                                             <td><input type="checkbox" class="enable_operations" value="<?php echo $asset['id']; ?>"></td>
                                             <td><?php if (in_array("manageAsset", $perms)) { ?><a href='?route=inventory/assets/manage&id=<?php echo $asset['id']; ?>'><?php echo $asset['tag']; ?></a><?php } else echo $asset['tag']; ?>
                                             </td>
-                                            <td><span class='label' style='background-color:#FFF;color:<?php echo getSingleValue("assetcategories", "color", $asset['categoryid']); ?>;border:1px solid <?php echo getSingleValue("assetcategories", "color", $asset['categoryid']); ?>'><?php echo getSingleValue("assetcategories", "name", $asset['categoryid']); ?></span>
+                                            <td><span class='label' style='background-color:#FFF;color:<?php echo getSingleValue("assetcategories", "color", $asset['Category']); ?>;border:1px solid <?php echo getSingleValue("assetcategories", "color", $asset['categoryid']); ?>'><?php echo getSingleValue("assetcategories", "name", $asset['categoryid']); ?></span>
                                             </td>
                                             <td><?php if (in_array("manageAsset", $perms)) { ?><a href='?route=inventory/assets/manage&id=<?php echo $asset['id']; ?>'><?php echo $asset['name']; ?></a><?php } else echo $asset['name']; ?>
                                             </td>
@@ -97,14 +97,14 @@
                                                 <?php } ?>
 
                                                 <?php if ($asset['userid'] != 0) { ?>
-                                                    <a href='<?php if (in_array("editUser", $perms)) { ?>?route=people/users/edit&id=<?php echo $asset['userid']; ?><?php } else echo "#"; ?>'>
+                                                    <a href='<?php if (in_array("editUser", $perms)) { ?>?route=people/users/edit&id=<?php echo $asset['id']; ?><?php } else echo "#"; ?>'>
                                                         <span class='label' style="background-color:#FFF;color:#001F3F;border:1px solid #001F3F;"><i class='fa fa-user fa-fw'></i>
                                                             <?php echo getSingleValue("people", "name", $asset['userid']); ?></span>
                                                     </a>
                                                 <?php } ?>
                                             </td>
 
-                                            <td><span class='badge' style='background-color:<?php echo getSingleValue("labels", "color", $asset['statusid']); ?>'><?php echo getSingleValue("labels", "name", $asset['statusid']); ?></span>
+                                            <td><span class='badge' style='background-color:<?php echo getSingleValue("labels", "color", $asset['status']); ?>'><?php echo getSingleValue("labels", "name", $asset['statusid']); ?></span>
                                             </td>
                                         </tr>
                                     <?php } ?>
