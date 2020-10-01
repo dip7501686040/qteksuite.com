@@ -79,7 +79,7 @@
                                                 value="<?php echo $license['id']; ?>"></td>
 
                                         <td><?php if(in_array("manageLicense",$perms)) { ?><a
-                                                href='?route=sam/licenses/manage&id=<?php echo $license['id']; ?>'><?php echo $license['tag']; ?></a><?php } else echo $license['tag']; ?>
+                                                href='?route=sam/licenses/manage&id=<?php echo $license['id']; ?>'><?php echo $license['application_name']; ?></a><?php } else echo $license['application_name']; ?>
                                         </td>
                                         <td><span class='label'
                                                 style='background-color:#FFF;color:<?php echo getSingleValue("licensecategories","color",$license['categoryid']); ?>;border:1px solid <?php echo getSingleValue("licensecategories","color",$license['categoryid']); ?>'><?php echo getSingleValue("licensecategories","name",$license['categoryid']); ?></span>

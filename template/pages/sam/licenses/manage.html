@@ -14,7 +14,8 @@
         <?php if (!empty($statusmessage)) : ?>
             <div class="row">
                 <div class='col-md-12'>
-                    <div class="alert alert-<?php print $statusmessage["type"]; ?> alert-auto" role="alert"><?php print __($statusmessage["message"]); ?></div>
+                    <div class="alert alert-<?php print $statusmessage["type"]; ?> alert-auto" role="alert">
+                        <?php print __($statusmessage["message"]); ?></div>
                 </div>
             </div>
         <?php endif; ?>
@@ -24,12 +25,17 @@
                 <div class="nav-tabs-custom">
                     <ul class="nav nav-tabs">
                         <li <?php if ($section == "") echo 'class="active"'; ?>><a href="#tab-summary" data-toggle="tab"><?php _e('Summary'); ?></a></li>
-                        <?php if (in_array("viewAssets", $perms)) { ?><li <?php if ($section == "assets") echo 'class="active"'; ?>><a href="?route=sam/licenses/manage&id=<?php echo $license['id']; ?>&section=assets"><?php _e('Assets'); ?></a></li><?php } ?>
-                        <?php if (in_array("viewAssets", $perms)) { ?><li <?php if ($section == "finance") echo 'class="active"'; ?>><a href="?route=sam/licenses/manage&id=<?php echo $license['id']; ?>&section=finance"><?php _e('Finance'); ?></a></li><?php } ?>
+                        <?php if (in_array("viewAssets", $perms)) { ?><li <?php if ($section == "assets") echo 'class="active"'; ?>><a href="?route=sam/licenses/manage&id=<?php echo $license['id']; ?>&section=assets"><?php _e('Assets'); ?></a>
+                            </li><?php } ?>
+                        <?php if (in_array("viewAssets", $perms)) { ?><li <?php if ($section == "finance") echo 'class="active"'; ?>><a href="?route=sam/licenses/manage&id=<?php echo $license['id']; ?>&section=finance"><?php _e('Finance'); ?></a>
+                            </li><?php } ?>
 
-                        <?php if (in_array("viewComponents", $perms)) { ?><li <?php if ($section == "components") echo 'class="active"'; ?>><a href="?route=sam/licenses/manage&id=<?php echo $license['id']; ?>&section=components"><?php _e('Components'); ?></a></li><?php } ?>
-                        <?php if (in_array("viewLicences", $perms)) { ?><li <?php if ($section == "maintenance") echo 'class="active"'; ?>><a href="?route=inventory/assets/manage&id=<?php echo $license['id']; ?>&section=maintenance"><?php _e('Maintenance'); ?></a></li><?php } ?>
-                        <?php if (in_array("viewFiles", $perms)) { ?><li <?php if ($section == "files") echo 'class="active"'; ?>><a href="?route=sam/licenses/manage&id=<?php echo $license['id']; ?>&section=files"><?php _e('Documents'); ?></a></li><?php } ?>
+                        <?php if (in_array("viewComponents", $perms)) { ?><li <?php if ($section == "components") echo 'class="active"'; ?>><a href="?route=sam/licenses/manage&id=<?php echo $license['id']; ?>&section=components"><?php _e('Components'); ?></a>
+                            </li><?php } ?>
+                        <?php if (in_array("viewLicences", $perms)) { ?><li <?php if ($section == "maintenance") echo 'class="active"'; ?>><a href="?route=inventory/assets/manage&id=<?php echo $license['id']; ?>&section=maintenance"><?php _e('Maintenance'); ?></a>
+                            </li><?php } ?>
+                        <?php if (in_array("viewFiles", $perms)) { ?><li <?php if ($section == "files") echo 'class="active"'; ?>><a href="?route=sam/licenses/manage&id=<?php echo $license['id']; ?>&section=files"><?php _e('Documents'); ?></a>
+                            </li><?php } ?>
                         <?php if (in_array("editLicense", $perms)) { ?><li <?php if ($section == "edit") echo 'class="active"'; ?>><a href="#tab-edit" data-toggle="tab"><?php _e('Edit License'); ?></a></li><?php } ?>
 
                         <div class="btn-group pull-right" style="padding:6px;">
@@ -89,24 +95,27 @@
                                                         <td><b><?php _e('Quantity per unit'); ?></b></td>
                                                         <td><span class='badge'></span></td>
                                                     </tr>
-                                                   
-                                                
+
+
                                                     <tr>
                                                         <td><b><?php _e('Purchase Order Number'); ?></b></td>
                                                         <td><span class='badge'></span></td>
                                                     </tr>
-                                                <!--Akanksha Goyal Changes-->   
+                                                    <!--Akanksha Goyal Changes-->
                                                     <tr>
                                                         <td><b><?php _e('Status'); ?></b></td>
-                                                        <td><span class='badge' style='background-color:<?php echo getSingleValue("labels", "color", $license['statusid']); ?>'><?php echo getSingleValue("labels", "name", $license['statusid']); ?></span></td>
+                                                        <td><span class='badge' style='background-color:<?php echo getSingleValue("labels", "color", $license['statusid']); ?>'><?php echo getSingleValue("labels", "name", $license['statusid']); ?></span>
+                                                        </td>
                                                     </tr>
                                                     <tr>
                                                         <td><b><?php _e('Client'); ?></b></td>
-                                                        <td><?php echo getSingleValue('clients', 'name', $license['clientid']); ?></td>
+                                                        <td><?php echo getSingleValue('clients', 'name', $license['clientid']); ?>
+                                                        </td>
                                                     </tr>
                                                     <tr>
                                                         <td><b><?php _e('Category'); ?></b></td>
-                                                        <td><span class='label' style='background-color:#FFF;color:<?php echo getSingleValue("licensecategories", "color", $license['categoryid']); ?>;border:1px solid <?php echo getSingleValue("licensecategories", "color", $license['categoryid']); ?>'><?php echo getSingleValue('licensecategories', 'name', $license['categoryid']); ?></span></td>
+                                                        <td><span class='label' style='background-color:#FFF;color:<?php echo getSingleValue("licensecategories", "color", $license['categoryid']); ?>;border:1px solid <?php echo getSingleValue("licensecategories", "color", $license['categoryid']); ?>'><?php echo getSingleValue('licensecategories', 'name', $license['categoryid']); ?></span>
+                                                        </td>
                                                     </tr>
                                                     <tr>
                                                         <td><b><?php _e('License Name'); ?></b></td>
@@ -122,7 +131,8 @@
                                                         <td>
                                                             <?php if ($license['seats'] != "" && $license['seats'] > 0) { ?>
                                                                 <span class='label' style="background-color:#FFF;color:#029ca1;border:1px solid #029ca1;">
-                                                                    <?php echo License::countUsedSeats($license['id']); ?> / <?php echo $license['seats']; ?>
+                                                                    <?php echo License::countUsedSeats($license['id']); ?> /
+                                                                    <?php echo $license['seats']; ?>
                                                                 </span>
                                                             <?php } else { ?>
                                                                 <span class="text-gray"><?php _e('N/A'); ?></span>
@@ -132,11 +142,13 @@
 
                                                     <tr>
                                                         <td><b><?php _e('Serial / CD Key'); ?></b></td>
-                                                        <td><?php echo encrypt_decrypt('decrypt', $license['serial']); ?></td>
+                                                        <td><?php echo encrypt_decrypt('decrypt', $license['serial']); ?>
+                                                        </td>
                                                     </tr>
                                                     <tr>
                                                         <td><b><?php _e('Supplier'); ?></b></td>
-                                                        <td><a href='#' onClick='showM("index.php?modal=suppliers/view&id=<?php echo $license['supplierid']; ?>");return false'><?php echo getSingleValue('suppliers', 'name', $license['supplierid']); ?></a></td>
+                                                        <td><a href='#' onClick='showM("index.php?modal=suppliers/view&id=<?php echo $license['supplierid']; ?>");return false'><?php echo getSingleValue('suppliers', 'name', $license['supplierid']); ?></a>
+                                                        </td>
                                                     </tr>
 
                                                     <?php foreach ($customfields as $customfield) { ?>
@@ -273,7 +285,7 @@
                                                                     <option value="Rupiah">Rupiah</option>
                                                                     <option value="Yen">Yen</option>
                                                                     <option value="Yuan">Yuan</option>
-                                                                </select>   
+                                                                </select>
                                                             </div>
                                                         </div>
 
@@ -300,43 +312,43 @@
 
                                                     </div>
                                                 </div>
-                                        <input type="hidden" name="action" value="license_finance">
-                                        <input type="hidden" name="license_id" value="<?php echo $_GET['id']; ?>">
-                                        <input type="hidden" name="route" value="<?php echo $_GET['route']; ?>">
-                                        <input type="hidden" name="routeid" value="<?php echo $_GET['id']; ?>">
-                                        <input type="hidden" name="section" value="finance">
-                                        <input type="submit" name="submit" class="submit_file btn btn-info" value="Add Files" style="margin-bottom: 20px;">
-                                        <!-- /.tab-pane -->
-                            <div class="tab-pane ">
-                                
-                                        
-                                        <div class="box-body">
-                                            <div class="table-responsive">
-                                                <table class="table table-striped table-hover table-bordered">
-                                                    <thead>
-                                                        <tr>
-                                                            <th><?php _e('Amount'); ?></th>
-                                                            <th><?php _e('Currency'); ?></th>
-                                                            <th><?php _e('Frequency'); ?></th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                       <?php 
-                                                       foreach($license_finances as $license_finance){
-                                                       ?>
-                                                       <tr>
-                                                       <td><?php echo $license_finance["amount"] ?></td>
-                                                       <td><?php echo $license_finance["currency"] ?></td>
-                                                       <td><?php echo $license_finance["frequency"] ?></td>
-                                                       </tr>
-                                                       <?php } ?>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
+                                                <input type="hidden" name="action" value="license_finance">
+                                                <input type="hidden" name="license_id" value="<?php echo $_GET['id']; ?>">
+                                                <input type="hidden" name="route" value="<?php echo $_GET['route']; ?>">
+                                                <input type="hidden" name="routeid" value="<?php echo $_GET['id']; ?>">
+                                                <input type="hidden" name="section" value="finance">
+                                                <input type="submit" name="submit" class="submit_file btn btn-info" value="Add Files" style="margin-bottom: 20px;">
+                                                <!-- /.tab-pane -->
+                                                <div class="tab-pane ">
 
-                            </div>
-                                   
+
+                                                    <div class="box-body">
+                                                        <div class="table-responsive">
+                                                            <table class="table table-striped table-hover table-bordered">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th><?php _e('Amount'); ?></th>
+                                                                        <th><?php _e('Currency'); ?></th>
+                                                                        <th><?php _e('Frequency'); ?></th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <?php
+                                                                    foreach ($license_finances as $license_finance) {
+                                                                    ?>
+                                                                        <tr>
+                                                                            <td><?php echo $license_finance["amount"] ?></td>
+                                                                            <td><?php echo $license_finance["currency"] ?></td>
+                                                                            <td><?php echo $license_finance["frequency"] ?></td>
+                                                                        </tr>
+                                                                    <?php } ?>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
 
                                             </form>
                                         </div>
@@ -373,18 +385,23 @@
                                             <?php
                                             foreach ($components as $component) { ?>
                                                 <tr>
-                                                    <td><?php echo getSingleValue("company", "company_name", $component['company_name']); ?></span></td>
+                                                    <td><?php echo getSingleValue("company", "company_name", $component['company_name']); ?></span>
+                                                    </td>
                                                     <td><?php echo $component['consumables_name']; ?></td>
-                                                    <td><span class='label' style='background-color:#FFF;color:<?php echo getSingleValue("assetcategories", "color", $component['category']); ?>;border:1px solid <?php echo getSingleValue("assetcategories", "color", $component['category']); ?>'><?php echo getSingleValue("assetcategories", "name", $component['category']); ?></span></td>
-                                                    <td><?php echo getSingleValue("models", "name", $component['model_no']); ?></td>
-                                                    <td><?php echo getSingleValue("manufacturers", "name", $component['manufacture']); ?></td>
+                                                    <td><span class='label' style='background-color:#FFF;color:<?php echo getSingleValue("assetcategories", "color", $component['category']); ?>;border:1px solid <?php echo getSingleValue("assetcategories", "color", $component['category']); ?>'><?php echo getSingleValue("assetcategories", "name", $component['category']); ?></span>
+                                                    </td>
+                                                    <td><?php echo getSingleValue("models", "name", $component['model_no']); ?>
+                                                    </td>
+                                                    <td><?php echo getSingleValue("manufacturers", "name", $component['manufacture']); ?>
+                                                    </td>
                                                     <td><?php echo $component['item_no']; ?></td>
                                                     <td><?php echo $component['order_no']; ?></td>
                                                     <td><?php echo $component['purchase_cost']; ?></td>
                                                     <td><?php echo $component['purchase_date']; ?></td>
                                                     <td><?php echo $component['quanitity']; ?></td>
 
-                                                    <td><span class='badge' style='background-color:<?php echo getSingleValue("labels", "color", $component['statusid']); ?>'><?php echo getSingleValue("labels", "name", $component['statusid']); ?></span></td>
+                                                    <td><span class='badge' style='background-color:<?php echo getSingleValue("labels", "color", $component['statusid']); ?>'><?php echo getSingleValue("labels", "name", $component['statusid']); ?></span>
+                                                    </td>
                                                     <td>
                                                         <div class='pull-right'>
                                                             <div class="btn-group">
@@ -397,7 +414,8 @@
                                                                     </button>
                                                                     <ul class="dropdown-menu pull-right">
                                                                         <?php if (in_array("deleteAsset", $perms)) { ?>
-                                                                            <li><a href='#' onClick='showM("?modal=components/delete&reroute=inventory/components&routeid=&id=<?php echo $component['id']; ?>&section=");return false'><i class='fa fa-trash-o fa-fw'></i><?php _e('Delete'); ?></a></li><?php } ?>
+                                                                            <li><a href='#' onClick='showM("?modal=components/delete&reroute=inventory/components&routeid=&id=<?php echo $component['id']; ?>&section=");return false'><i class='fa fa-trash-o fa-fw'></i><?php _e('Delete'); ?></a>
+                                                                            </li><?php } ?>
                                                                     </ul>
                                                                 </div>
 
@@ -461,166 +479,312 @@
                                     <div class="container-fluid">
                                         <form role="form" method="post">
 
-                                            <div class="col-md-6">
-                                                <div class="row">
-                                                    <div class="col-md-12">
-                                                        <?php if ($isAdmin) { ?>
-                                                            <div class="form-group">
-                                                                <label for="clientid" class="control-label"><?php _e('Client'); ?> *</label>
-                                                                <select class="form-control select2 select2-hidden-accessible" id="clientid" name="clientid" style="width: 100%;" tabindex="-1" aria-hidden="true">
-                                                                    <option value="0"><?php _e('None'); ?></option>
-                                                                    <?php foreach ($clients as $client) {
-                                                                        echo "<option value='" . $client['id'] . "'";
-                                                                        if ($license['clientid'] == $client['id']) echo " selected";
-                                                                        echo ">" . $client['name'] . "</option>";
-                                                                    } ?>
-                                                                </select>
-                                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="application_name"><?php _e('Application Name *'); ?></label>
+                                                    <input type="text" value="<?php echo $license['application_name'] ?>" class="form-control" id="application_name" name="application_name" required>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="suplier_name"><?php _e('Supplier Name'); ?>
+                                                    </label>
+                                                    <input type="text"value="<?php echo $license['suplier_name'] ?>"  class="form-control" id="suplier_name" name="suplier_name">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="edition"><?php _e('Edition'); ?> </label>
+                                                    <input type="text"value="<?php echo $license['edition'] ?>" class="form-control" id="edition" name="edition">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="purchase_date"><?php _e('Purchase Date'); ?></label>
+                                                    <input type="date"value="<?php echo $license['purchase_date'] ?>" class="form-control" id="purchase_date" name="purchase_date">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="status"><?php _e('Status'); ?> </label>
+                                                    <select class="form-control select2 select2-hidden-accessible" id="status" name="status" style="width: 100%;" tabindex="-1" aria-hidden="true">
+                                                        <option value="Active"
+                                                        <?php
+                                                            if ($license['category'] == 'Active') {
+                                                                echo "selected";
+                                                            }
+                                                            ?>
+                                                        >Active</option>
+                                                        <option value="In Stock"
+                                                        <?php
+                                                            if ($license['category'] == 'In Stock') {
+                                                                echo "selected";
+                                                            }
+                                                            ?>
+                                                        >In Stock</option>
+                                                        <option value="Purchased"
+                                                        <?php
+                                                            if ($license['category'] == 'Purchased') {
+                                                                echo "selected";
+                                                            }
+                                                            ?>
+                                                        >Purchased</option>
+                                                        <option value="Received"
+                                                        <?php
+                                                            if ($license['category'] == 'Received') {
+                                                                echo "selected";
+                                                            }
+                                                            ?>
+                                                        >Received</option>
+                                                        <option value="Retired"
+                                                        <?php
+                                                            if ($license['category'] == 'Retired') {
+                                                                echo "selected";
+                                                            }
+                                                            ?>
+                                                        >Retired</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="category"><?php _e('Category'); ?></label>
+                                                    <select class="form-control select2 select2-hidden-accessible" id="category" name="category" style="width: 100%;" tabindex="-1" aria-hidden="true">
+                                                        <option value="SW"
+                                                        <?php
+                                                            if ($license['category'] == 'SW') {
+                                                                echo "selected";
+                                                            }
+                                                            ?>
+                                                        >SW</option>
+                                                        <option value="HW"
+                                                        <?php
+                                                            if ($license['category'] == 'HW') {
+                                                                echo "selected";
+                                                            }
+                                                            ?>
+                                                        >HW</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+
+                                                <div class="form-group">
+                                                    <label for="contract_num"><?php _e('Contract / Agreement Number'); ?></label>
+
+                                                    <input type="text"value="<?php echo $license['contract_num'] ?>" class="form-control" id="contract_num" name="contract_num">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="amount"><?php _e('Amount'); ?></label>
+
+                                                    <input type="text"value="<?php echo $license['amount'] ?>" class="form-control" id="amount" name="amount">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="purchase_quantity"><?php _e('Purchase Qunatity'); ?>
+                                                    </label>
+                                                    <input type="text"value="<?php echo $license['purchase_quantity'] ?>" class="form-control" id="purchase_quantity" name="purchase_quantity">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="purchase_order_number"><?php _e('Purchase Order Number'); ?></label>
+
+                                                    <input type="text"value="<?php echo $license['purchase_order_number'] ?>" class="form-control" id="purchase_order_number" name="purchase_order_number">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="cost_center"><?php _e('Cost Center'); ?>
+                                                    </label>
+                                                    <input type="text"value="<?php echo $license['cost_center'] ?>" class="form-control" id="cost_center" name="cost_center">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="business_unit"><?php _e('Business Unit'); ?>
+                                                    </label>
+                                                    <input type="text"value="<?php echo $license['business_unit'] ?>" class="form-control" id="business_unit" name="business_unit">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="version"><?php _e('Version'); ?></label>
+                                                    <input type="text" value="<?php echo $license['version'] ?>" class="form-control" id="version" name="version">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="license_typeid"><?php _e('License Type'); ?></label>
+                                                    <select class="form-control select2 select2-hidden-accessible" id="license_typeid" name="license_typeid" style="width: 100%;" tabindex="-1" aria-hidden="true">
+                                                        <?php foreach ($license_type2 as $license_type) {
+                                                            ?>
+                                                            <option value="<?php echo $license_type['id']; ?>"
+                                                             <?php
+                                                            if ($license['license_typeid'] == $license_type['id']) {
+                                                                echo "selected";
+                                                            }
+                                                            ?>><?php $license_type['license_type'] ?></option>
+                                                        <?php
+                                                        } ?>
+                                                    </select>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="purchase_type"><?php _e('Purchase Type'); ?></label>
+                                                    <select class="form-control select2 select2-hidden-accessible" id="purchase_type" name="purchase_typeid" style="width: 100%;" tabindex="-1" aria-hidden="true">
+                                                        <?php foreach ($purchase_types as $purchase_type) {
+                                                            ?>
+                                                            <option value="<?php echo $purchase_type['id']; ?>"
+                                                             <?php
+                                                            if ($license['purchase_typeid'] == $purchase_type['id']) {
+                                                                echo "selected";
+                                                            }
+                                                            ?>><?php $purchase_type['name'] ?></option>
+                                                        <?php
+
+                                                        } ?>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="license_start_date"><?php _e('License Start Date'); ?></label>
+                                                    <input type="date"value="<?php echo $license['license_start_date'] ?>" class="form-control" id="license_start_date" name="license_start_date">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="license_expiry_date"><?php _e('License Expiry Date'); ?></label>
+                                                    <input type="date"value="<?php echo $license['license_expiry_date'] ?>" class="form-control" id="license_expiry_date" name="license_expiry_date">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="serial"><?php _e('Serial Number'); ?></label>
+
+                                                    <input type="text"value="<?php echo $license['serial'] ?>" class="form-control" id="serial" name="serial">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="vendor_name"><?php _e('Vendor Name'); ?></label>
+                                                    <input type="text"value="<?php echo $license['vendor_name'] ?>" class="form-control" id="vendor_name" name="vendor_name">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="part_number"><?php _e('Part Number ./SKU'); ?></label>
+                                                    <input type="text"value="<?php echo $license['part_number'] ?>" class="form-control" id="part_number" name="part_number">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="qunatity_per_unit"><?php _e('Quantity per unit'); ?></label>
+
+                                                    <input type="text"value="<?php echo $license['qunatity_per_unit'] ?>" class="form-control" id="qunatity_per_unit" name="qunatity_per_unit">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="owner_name"><?php _e('Owner Name'); ?></label>
+                                                    <input type="text"value="<?php echo $license['owner_name'] ?>" class="form-control" id="owner_name" name="owner_name">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="project_id"><?php _e('Project ID'); ?></label>
+                                                    <input type="text"value="<?php echo $license['project_id'] ?>" class="form-control" id="project_id" name="project_id">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="location"><?php _e('Location'); ?></label>
+
+                                                    <input type="text"value="<?php echo $license['location'] ?>" class="form-control" id="location" name="location">
+                                                </div>
+                                            </div>
+
+                                            <?php foreach ($customfields as $customfield) { ?>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label><?php echo $customfield['name'] ?></label>
+
+                                                        <?php if ($customfield['type'] == "Text Box") { ?>
+                                                            <input type="text" class="form-control" name="<?php echo $customfield['id']; ?>">
                                                         <?php } ?>
-                                                        <?php if (!$isAdmin) { ?><input type="hidden" name="clientid" value="<?php echo $liu['clientid']; ?>"><?php } ?>
-                                                    </div>
 
-                                                    <div class="col-md-4">
-                                                        <div class="form-group">
-                                                            <label for="tag" class="control-label"><?php _e('License Tag'); ?> *</label>
-                                                            <input type="text" class="form-control" id="tag" name="tag" value="<?php echo $license['tag']; ?>" required>
-                                                        </div>
-                                                    </div>
+                                                        <?php if ($customfield['type'] == "Text Area") { ?>
+                                                            <textarea class="form-control" name="<?php echo $customfield['id']; ?>"></textarea>
+                                                        <?php } ?>
 
-                                                    <div class="col-md-8">
-                                                        <div class="form-group">
-                                                            <label for="name" class="control-label"><?php _e('License Name'); ?> *</label>
-                                                            <input type="text" class="form-control" id="name" name="name" value="<?php echo $license['name']; ?>" required>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <label for="categoryid" class="control-label"><?php _e('Category'); ?> *</label>
-                                                            <select class="form-control select2 select2-hidden-accessible" id="categoryid" name="categoryid" style="width: 100%;" tabindex="-1" aria-hidden="true">
-                                                                <option value="0"><?php _e('None'); ?></option>
-                                                                <?php foreach ($categories as $category) {
-                                                                    echo "<option value='" . $category['id'] . "'";
-                                                                    if ($license['categoryid'] == $category['id']) echo " selected";
-                                                                    echo ">" . $category['name'] . "</option>";
+                                                        <?php if ($customfield['type'] == "Dropdown") {
+                                                            $options = explode(",", $customfield['options']); ?>
+                                                            <select class="form-control select2 select2-hidden-accessible" name="<?php echo $customfield['id']; ?>" style="width: 100%;" tabindex="-1" aria-hidden="true">
+                                                                <?php foreach ($options as $option) {
+                                                                    echo "<option value='" . $option . "'>" . $option . "</option>";
                                                                 } ?>
                                                             </select>
-                                                        </div>
-                                                    </div>
+                                                        <?php } ?>
 
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <label for="statusid" class="control-label"><?php _e('Status'); ?> *</label>
-                                                            <select class="form-control select2 select2-hidden-accessible" id="statusid" name="statusid" style="width: 100%;" tabindex="-1" aria-hidden="true">
-                                                                <?php foreach ($labels as $label) {
-                                                                    echo "<option value='" . $label['id'] . "'";
-                                                                    if ($license['statusid'] == $label['id']) echo " selected";
-                                                                    echo ">" . $label['name'] . "</option>";
-                                                                } ?>
-                                                            </select>
-                                                        </div>
+                                                        <?php if ($customfield['description'] != "") { ?>
+                                                            <p class="help-block">
+                                                                <?php echo $customfield['description']; ?></p>
+                                                        <?php } ?>
                                                     </div>
-
-                                                    <div class="col-md-12">
-                                                        <?php if (getConfigValue("manual_qrvalue") == "true") { ?>
-                                                            <div class="form-group">
-                                                                <label for="qrvalue"><?php _e('QR Code Value'); ?></label>
-                                                                <input type="text" class="form-control" id="qrvalue" name="qrvalue" value="<?php echo $license['qrvalue']; ?>">
-                                                            </div>
-                                                        <?php } else { ?><input type="hidden" name="qrvalue" value="<?php echo $license['qrvalue']; ?>"><?php } ?>
-                                                    </div>
-
                                                 </div>
-                                            </div>
 
-                                            <div class="col-md-6">
-                                                <div class="row">
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <label for="serial" class="control-label"><?php _e('Serial'); ?></label>
-                                                            <input type="text" class="form-control" id="serial" name="serial" value="<?php echo encrypt_decrypt('decrypt', $license['serial']); ?>">
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <label for="seats"><?php _e('Seats'); ?></label>
-                                                            <input type="text" class="form-control" id="seats" name="seats" value="<?php echo $license['seats']; ?>">
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-md-12">
-                                                        <div class="form-group">
-                                                            <label for="supplierid" class="control-label"><?php _e('Supplier'); ?></label>
-                                                            <select class="form-control select2 select2-hidden-accessible" id="supplierid" name="supplierid" style="width: 100%;" tabindex="-1" aria-hidden="true">
-                                                                <option value="0"><?php _e('None'); ?></option>
-                                                                <?php foreach ($suppliers as $supplier) {
-                                                                    echo "<option value='" . $supplier['id'] . "'";
-                                                                    if ($license['supplierid'] == $supplier['id']) echo " selected";
-                                                                    echo ">" . $supplier['name'] . "</option>";
-                                                                } ?>
-                                                            </select>
-                                                        </div>
-                                                    </div>
+                                            <?php } ?>
 
 
-
-                                                    <?php foreach ($customfields as $customfield) { ?>
-                                                        <div class="col-md-12">
-                                                            <div class="form-group">
-                                                                <label><?php echo $customfield['name'] ?></label>
-
-                                                                <?php if ($customfield['type'] == "Text Box") { ?>
-                                                                    <input type="text" class="form-control" name="<?php echo $customfield['id'] ?>" value="<?php echo $customdata[$customfield['id']] ?>">
-                                                                <?php } ?>
-
-                                                                <?php if ($customfield['type'] == "Text Area") { ?>
-                                                                    <textarea class="form-control" name="<?php echo $customfield['id'] ?>"><?php echo $customdata[$customfield['id']]; ?></textarea>
-                                                                <?php } ?>
-
-                                                                <?php if ($customfield['type'] == "Dropdown") {
-                                                                    $options = explode(",", $customfield['options']); ?>
-                                                                    <select class="form-control select2 select2-hidden-accessible" name="<?php echo $customfield['id']; ?>" style="width: 100%;" tabindex="-1" aria-hidden="true">
-                                                                        <?php foreach ($options as $option) { ?>
-
-                                                                            <option value='<?php echo $option; ?>' <?php if ($option == $customdata[$customfield['id']]) echo "selected"; ?>><?php echo $option; ?></option>
-
-                                                                        <?php } ?>
-                                                                    </select>
-                                                                <?php } ?>
-
-                                                                <?php if ($customfield['description'] != "") { ?>
-                                                                    <p class="help-block"><?php echo $customfield['description'] ?></p>
-                                                                <?php } ?>
-                                                            </div>
-                                                        </div>
-
-                                                    <?php } ?>
-
-
-                                                </div>
-                                            </div>
 
 
                                             <div class="col-md-12">
                                                 <div class="form-group">
-                                                    <label for="notes" class="control-label"><?php _e('Notes'); ?></label>
-                                                    <textarea class="form-control summernoteLarge" rows="5" id="notes" name="notes"><?php echo $license['notes']; ?></textarea>
+                                                    <label for="notes"><?php _e('Notes'); ?></label>
+                                                    <textarea class="form-control summernoteLarge" rows="5" id="notes" name="notes"><?php echo $license['notes'] ?></textarea>
+                                                </div>
+
+                                                <input type="hidden" name="action" value="editLicense">
+                                                <input type="hidden" name="route" value="sam/licenses/manage">
+                                                <input type="hidden" name="license_id" value="<?php echo $_GET['id']; ?>">
+                                                <input type="hidden" name="routeid" value="<?php echo $_GET['id']; ?>">
+                                                <input type="hidden" name="type" value="license">
+
+                                                <div class="form-group">
+                                                    <button type="submit" class="btn btn-primary"><i class="fa fa-check"></i>
+                                                        <?php _e('Create'); ?></button>
                                                 </div>
                                             </div>
-
-                                            <div class="col-md-12 text-right">
-                                                <button type="submit" class="btn btn-success"><i class="fa fa-save fa-fw"></i> <?php _e('Save Changes'); ?></button>
-                                            </div>
-
-
-                                            <input type="hidden" name="action" value="editLicense">
-                                            <input type="hidden" name="route" value="sam/licenses/manage">
-                                            <input type="hidden" name="routeid" value="<?php echo $license['id']; ?>">
-                                            <input type="hidden" name="section" value="edit">
-                                            <input type="hidden" name="id" value="<?php echo $license['id']; ?>">
-                                            <input type="hidden" name="type" value="license">
-
 
                                         </form>
                                     </div>

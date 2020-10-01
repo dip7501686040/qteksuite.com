@@ -62,20 +62,33 @@ class License extends App
         }
 
         $database->update("licenses", [
-            "clientid" => $data['clientid'],
-            "statusid" => $data['statusid'],
-            "categoryid" => $data['categoryid'],
-            "supplierid" => $data['supplierid'],
-            "seats" => $data['seats'],
-            "tag" => $data['tag'],
-            "name" => $data['name'],
+            "status" => $data['status'],
+            "category" => $data['category'],
+            "suplier_name" => $data['suplier_name'],
+            "edition" => $data['edition'],
+            "version" => $data['version'],
+            "application_name" => $data['application_name'],
             "serial" => encrypt_decrypt('encrypt', $data['serial']),
             "notes" => $data['notes'],
-            "customfields" => serialize($customfieldsdata),
-            "qrvalue" => $data['qrvalue'],
-            "type" => $data['type'],
-        ], ["id" => $data['id']]);
-        logSystem("License Edited - ID: " . $data['id']);
+            "license_typeid" => $data['license_typeid'],
+            "purchase_typeid" => $data['purchase_typeid'],
+            "contract_num" => $data['contract_num'],
+            "vendor_name" => $data['vendor_name'],
+            "part_number" => $data['part_number'],
+            "amount" => $data['amount'],
+            "purchase_quantity" => $data['purchase_quantity'],
+            "qunatity_per_unit" => $data['qunatity_per_unit'],
+            "purchase_order_number" => $data['purchase_order_number'],
+            "owner_name" => $data['owner_name'],
+            "project_id" => $data['project_id'],
+            "cost_center" => $data['cost_center'],
+            "business_unit" => $data['business_unit'],
+            "purchase_date" => $data['purchase_date'],
+            "license_start_date" => $data['license_start_date'],
+            "license_expiry_date" => $data['license_expiry_date'],
+            "location" => $data['location']
+        ], ["id" => $data['license_id']]);
+        logSystem("License Edited - ID: " . $data['license_id']);
         return "20";
     }
 

@@ -728,7 +728,7 @@ if ($route == "sam/licenses/create") {
 	$categories = getTable("licensecategories");
 	$license_type2 = getTable("license_type2");
 	$statuses = getTable("statuses");
-	$purchase_type = getTable("purchase_type");
+	$purchase_types = getTable("purchase_type");
 }
 
 if ($route == "sam/licenses/manage") {

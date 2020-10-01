@@ -121,7 +121,6 @@ class Asset extends App
             "HDD"=>$data['HDD'],
             "notes" => $data['notes'],
             "Assest_type"=>$data['type'],
-            "file" => "/uploads/assets/" . $_FILES["file"]["name"],
             "type" => 'assets',
 
         ]);
@@ -274,28 +273,36 @@ class Asset extends App
         }
 
         $database->update("assets", [
-            "categoryid" => $categoryid,
-            "adminid" => $data['adminid'],
-            "clientid" => $data['clientid'],
-            "userid" => $data['userid'],
-            "manufacturerid" => $manufacturerid,
-            "modelid" => $modelid,
-            "supplierid" => $supplierid,
-            "statusid" => $data['statusid'],
             "purchase_date" => dateDb($data['purchase_date']),
             "warranty_months" => $data['warranty_months'],
             "tag" => $data['tag'],
-            "name" => $data['name'],
+            "status" => $data['status'],
+            "manufacturer"=>$data['Manufacturer'],
+            "modal"=>$data['model'],
+            "purchase_cost"=>$data['cost'],
+            "PO_number"=>$data['PO'],
             "serial" => $data['serial'],
+            "Invoice_number"=>$data['Invoice'],
+            "Category"=>$data['category'],
+            "Supplier"=>$data['supplier'],
+            "EOL_date"=>$data['EOL_date'],
+            "Amount"=>$data['amount'],
+            "Created_date"=>$data['created_date'],
+            "RAM"=>$data['RAM'],
+            "Purchase_order_number"=>$data['pon'],
+            "owner_name"=>$data['Owner_name'],
+            "project_id"=>$data['pid'],
+            "cost_center"=>$data['cost_center'],
+            "bussiness_unit"=>$data['b_unit'],
+            "location"=>$data['location'],
+            "graphics_card"=>$data['Gcard'],
+            "HDD"=>$data['HDD'],
             "notes" => $data['notes'],
-            "locationid" => $locationid,
-            "customfields" => serialize($customfieldsdata),
-            "qrvalue" => $data['qrvalue'],
-            "file" => $target_file,
-            "type" => $data['type'],
+            "Assest_type"=>$data['type'],
+            "type" => 'assets',
 
-        ], ["id" => $data['id']]);
-        logSystem("Asset Edited - ID: " . $data['id']);
+        ], ["id" => $data['asset_id']]);
+        logSystem("Asset Edited - ID: " . $data['asset_id']);
         return "20";
     }
 

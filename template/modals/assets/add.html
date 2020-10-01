@@ -76,7 +76,7 @@
                 <div class="col-md-4">
                     <div class="form-group">
                         <label for="supplier"><?php _e('PO Number'); ?></label>
-                        <input type="number" class="form-control" id="PO" name="PO">
+                        <input type="text" class="form-control" id="PO" name="PO">
                     </div>
                 </div>
             </div>
@@ -92,10 +92,10 @@
                 <div class="col-md-4">
                     <div class="form-group">
                         <label for="category"><?php _e('category'); ?> *</label>
-                        <select class="form-control select2 tag select2-hidden-accessible" id="category" name="category" style="width: 100%;" tabindex="-1" aria-hidden="true" multiple>
+                        <select class="form-control select2 tag select2-hidden-accessible" id="category" name="category" style="width: 100%;">
                             
                                 <option value='SW'>SW</option>
-                                <option value='SW'>HW</option>
+                                <option value='HW'>HW</option>
                         
                         </select>
                     </div>
@@ -112,7 +112,7 @@
                     <div class="form-group">
                         <label for="warranty_months"><?php _e('Warranty Period'); ?></label>
                         <div class="input-group">
-                            <input type="number" class="form-control" id="warranty_months" name="warranty_months">
+                            <input type="text" class="form-control" id="warranty_months" name="warranty_months">
                             <span class="input-group-addon"><?php _e('months'); ?></span>
                         </div>
                     </div>
@@ -159,7 +159,7 @@
                 <div class="col-md-4">
                     <div class="form-group">
                         <label for="supplier"><?php _e('Purchase Order Number'); ?></label>
-                        <input type="number" class="form-control" id="pon" name="pon">
+                        <input type="text" class="form-control" id="pon" name="pon">
                     </div>
                 </div>
             </div>
@@ -195,7 +195,7 @@
                 <div class="col-md-4">
                     <div class="form-group">
                         <label for="location"><?php _e('Location'); ?></label>
-                        <select class="form-control select2 tag select2-hidden-accessible" id="location" name="location" style="width: 100%;" tabindex="-1" aria-hidden="true" multiple>
+                        <select class="form-control select2 tag select2-hidden-accessible" id="location" name="location" style="width: 100%;">
                             <?php foreach ($locations as $location) {
                                 echo "<option value='" . $location['name'] . "'>" . $location['name'] . "</option>";
                             } ?>
@@ -227,12 +227,6 @@
             <div class="form-group">
                 <label for="notes"><?php _e('Notes'); ?></label>
                 <textarea class="form-control summernoteLarge" id="description" name="notes"></textarea>
-            </div>
-        </div>
-        <div class="col-md-12">
-            <div class="form-group">
-                <label for="file"><?php _e('File'); ?></label>
-                <input type="file" class="form-control" name="file" id="file">
             </div>
         </div>
     </div>

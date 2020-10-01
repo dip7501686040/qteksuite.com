@@ -295,42 +295,43 @@
                                             <?php
                                             foreach ($componentses_assets as $componentses_asset) {
                                                 $components = getTableFiltered("components", "id", $componentses_asset["componentid"]);
-                                                foreach($components as $component){
-                                             ?>
-                                                <tr>
-                                                    <td><?php echo getSingleValue("company", "company_name", $component['company_name']); ?></span></td>
-                                                    <td><?php echo $component['consumables_name']; ?></td>
-                                                    <td><span class='label' style='background-color:#FFF;color:<?php echo getSingleValue("assetcategories", "color", $component['category']); ?>;border:1px solid <?php echo getSingleValue("assetcategories", "color", $component['category']); ?>'><?php echo getSingleValue("assetcategories", "name", $component['category']); ?></span></td>
-                                                    <td><?php echo getSingleValue("models", "name", $component['model_no']); ?></td>
-                                                    <td><?php echo getSingleValue("manufacturers", "name", $component['manufacture']); ?></td>
-                                                    <td><?php echo $component['item_no']; ?></td>
-                                                    <td><?php echo $component['order_no']; ?></td>
-                                                    <td><?php echo $component['purchase_cost']; ?></td>
-                                                    <td><?php echo $component['purchase_date']; ?></td>
-                                                    <td><?php echo $component['quanitity']; ?></td>
+                                                foreach ($components as $component) {
+                                            ?>
+                                                    <tr>
+                                                        <td><?php echo getSingleValue("company", "company_name", $component['company_name']); ?></span></td>
+                                                        <td><?php echo $component['consumables_name']; ?></td>
+                                                        <td><span class='label' style='background-color:#FFF;color:<?php echo getSingleValue("assetcategories", "color", $component['category']); ?>;border:1px solid <?php echo getSingleValue("assetcategories", "color", $component['category']); ?>'><?php echo getSingleValue("assetcategories", "name", $component['category']); ?></span></td>
+                                                        <td><?php echo getSingleValue("models", "name", $component['model_no']); ?></td>
+                                                        <td><?php echo getSingleValue("manufacturers", "name", $component['manufacture']); ?></td>
+                                                        <td><?php echo $component['item_no']; ?></td>
+                                                        <td><?php echo $component['order_no']; ?></td>
+                                                        <td><?php echo $component['purchase_cost']; ?></td>
+                                                        <td><?php echo $component['purchase_date']; ?></td>
+                                                        <td><?php echo $component['quanitity']; ?></td>
 
-                                                    <td><span class='badge' style='background-color:<?php echo getSingleValue("labels", "color", $component['statusid']); ?>'><?php echo getSingleValue("labels", "name", $component['statusid']); ?></span></td>
-                                                    <td>
-                                                        <div class='pull-right'>
-                                                            <div class="btn-group">
-                                                                <?php if (in_array("manageComponents", $perms)) { ?> <a href='?route=inventory/assets/managecomponents&id=<?php echo $component['id']; ?>' class='btn btn-flat btn-primary btn-sm'><i class='fa fa-eye'></i></a><?php } ?>
-                                                                <?php if (in_array("editAsset", $perms)) { ?> <a href='?route=inventory/assets/managecomponents&id=<?php echo $component['id']; ?>&section=edit' class='btn btn-flat btn-success btn-sm'><i class='fa fa-edit'></i></a><?php } ?>
-
+                                                        <td><span class='badge' style='background-color:<?php echo getSingleValue("labels", "color", $component['statusid']); ?>'><?php echo getSingleValue("labels", "name", $component['statusid']); ?></span></td>
+                                                        <td>
+                                                            <div class='pull-right'>
                                                                 <div class="btn-group">
-                                                                    <button type="button" class="btn btn-default btn-sm btn-flat dropdown-toggle" data-toggle="dropdown">
-                                                                        <span class="caret"></span>
-                                                                    </button>
-                                                                    <ul class="dropdown-menu pull-right">
-                                                                        <?php if (in_array("deleteAsset", $perms)) { ?>
-                                                                            <li><a href='#' onClick='showM("?modal=components/delete&reroute=inventory/components&routeid=&id=<?php echo $component['id']; ?>&section=");return false'><i class='fa fa-trash-o fa-fw'></i><?php _e('Delete'); ?></a></li><?php } ?>
-                                                                    </ul>
-                                                                </div>
+                                                                    <?php if (in_array("manageComponents", $perms)) { ?> <a href='?route=inventory/assets/managecomponents&id=<?php echo $component['id']; ?>' class='btn btn-flat btn-primary btn-sm'><i class='fa fa-eye'></i></a><?php } ?>
+                                                                    <?php if (in_array("editAsset", $perms)) { ?> <a href='?route=inventory/assets/managecomponents&id=<?php echo $component['id']; ?>&section=edit' class='btn btn-flat btn-success btn-sm'><i class='fa fa-edit'></i></a><?php } ?>
 
+                                                                    <div class="btn-group">
+                                                                        <button type="button" class="btn btn-default btn-sm btn-flat dropdown-toggle" data-toggle="dropdown">
+                                                                            <span class="caret"></span>
+                                                                        </button>
+                                                                        <ul class="dropdown-menu pull-right">
+                                                                            <?php if (in_array("deleteAsset", $perms)) { ?>
+                                                                                <li><a href='#' onClick='showM("?modal=components/delete&reroute=inventory/components&routeid=&id=<?php echo $component['id']; ?>&section=");return false'><i class='fa fa-trash-o fa-fw'></i><?php _e('Delete'); ?></a></li><?php } ?>
+                                                                        </ul>
+                                                                    </div>
+
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            <?php }}?>
+                                                        </td>
+                                                    </tr>
+                                            <?php }
+                                            } ?>
                                         </tbody>
                                     </table>
                                 </div>
@@ -664,284 +665,292 @@
                                     <div class="container-fluid">
 
                                         <form role="form" method="post" enctype="multipart/form-data">
-
-
-                                            <div class="col-md-6">
-
-                                                <div class="row">
-
-                                                    <div class="col-md-12">
-                                                        <?php if ($isAdmin) { ?>
-                                                            <div class="form-group">
-                                                                <label for="clientid"><?php _e('Client'); ?></label>
-                                                                <select class="form-control select2 select2-hidden-accessible" id="clientid" name="clientid" style="width: 100%;" tabindex="-1" aria-hidden="true">
-                                                                    <option value="0"><?php _e('None'); ?></option>
-                                                                    <?php foreach ($clients as $client) {
-                                                                        echo "<option value='" . $client['id'] . "'";
-                                                                        if ($asset['clientid'] == $client['id']) echo " selected";
-                                                                        echo ">" . $client['name'] . "</option>";
-                                                                    } ?>
-                                                                </select>
-                                                            </div>
-                                                        <?php } ?>
-                                                        <?php if (!$isAdmin) { ?><input type="hidden" name="clientid" value="<?php echo $liu['clientid']; ?>"><?php } ?>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="tag"><?php _e('Asset Tag'); ?> *</label>
+                                                        <input type="text" value="<?php echo $asset['tag']; ?>" class="form-control" id="tag" name="tag" value="<?php echo getConfigValue("asset_tag_prefix"); ?><?php echo Asset::nextAssetTag(); ?>" required>
                                                     </div>
-
-
-                                                    <div class="col-md-4">
-                                                        <div class="form-group">
-                                                            <label for="tag"><?php _e('Asset Tag'); ?> *</label>
-                                                            <input type="text" class="form-control" id="tag" name="tag" value="<?php echo $asset['tag']; ?>" required>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-md-8">
-                                                        <div class="form-group">
-                                                            <label for="name"><?php _e('Asset Name'); ?></label>
-                                                            <input type="text" class="form-control" id="name" name="name" value="<?php echo $asset['name']; ?>">
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-md-4">
-                                                        <div class="form-group">
-                                                            <label for="category"><?php _e('Category'); ?> *</label>
-                                                            <select class="form-control select2tag select2-hidden-accessible" id="category" name="category" style="width: 100%;" tabindex="-1" aria-hidden="true" multiple>
-                                                                <?php foreach ($categories as $category) {
-                                                                    echo "<option value='" . $category['name'] . "'";
-                                                                    if ($asset['categoryid'] == $category['id']) echo " selected";
-                                                                    echo ">" . $category['name'] . "</option>";
-                                                                } ?>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-md-4">
-                                                        <div class="form-group">
-                                                            <label for="supplier"><?php _e('Supplier'); ?></label>
-                                                            <select class="form-control select2tag select2-hidden-accessible" id="supplier" name="supplier" style="width: 100%;" tabindex="-1" aria-hidden="true" multiple>
-                                                                <?php foreach ($suppliers as $supplier) {
-                                                                    echo "<option value='" . $supplier['name'] . "'";
-                                                                    if ($asset['supplierid'] == $supplier['id']) echo " selected";
-                                                                    echo ">" . $supplier['name'] . "</option>";
-                                                                } ?>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-md-4">
-                                                        <div class="form-group">
-                                                            <label for="location"><?php _e('Location'); ?></label>
-                                                            <select class="form-control select2tag select2-hidden-accessible" id="location" name="location" style="width: 100%;" tabindex="-1" aria-hidden="true" multiple>
-
-                                                                <?php foreach ($locations as $location) {
-                                                                    echo "<option value='" . $location['name'] . "'";
-                                                                    if ($asset['locationid'] == $location['id']) echo " selected";
-                                                                    echo ">" . $location['name'] . "</option>";
-                                                                } ?>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-md-12"></div>
-
-                                                    <div class="col-md-4">
-                                                        <div class="form-group">
-                                                            <label for="statusid"><?php _e('Status'); ?> *</label>
-                                                            <select class="form-control select2 select2-hidden-accessible" id="statusid" name="statusid" style="width: 100%;" tabindex="-1" aria-hidden="true">
-                                                                <?php foreach ($labels as $label) {
-                                                                    echo "<option value='" . $label['id'] . "'";
-                                                                    if ($asset['statusid'] == $label['id']) echo " selected";
-                                                                    echo ">" . $label['name'] . "</option>";
-                                                                } ?>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-md-4">
-                                                        <div class="form-group">
-                                                            <label for="userid"><?php _e('Asset User'); ?></label>
-                                                            <select class="form-control select2 select2-hidden-accessible" id="userid" name="userid" style="width: 100%;" tabindex="-1" aria-hidden="true">
-                                                                <option value="0"><?php _e('None'); ?></option>
-                                                                <?php foreach ($users as $user) {
-                                                                    echo "<option value='" . $user['id'] . "'";
-                                                                    if ($asset['userid'] == $user['id']) echo " selected";
-                                                                    echo ">" . $user['name'] . "</option>";
-                                                                } ?>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-md-4">
-                                                        <div class="form-group">
-                                                            <label for="adminid"><?php _e('Asset Admin'); ?></label>
-                                                            <select class="form-control select2 select2-hidden-accessible" id="adminid" name="adminid" style="width: 100%;" tabindex="-1" aria-hidden="true">
-                                                                <option value="0"><?php _e('None'); ?></option>
-                                                                <?php foreach ($admins as $admin) {
-                                                                    echo "<option value='" . $admin['id'] . "'";
-                                                                    if ($asset['adminid'] == $admin['id']) echo " selected";
-                                                                    echo ">" . $admin['name'] . "</option>";
-                                                                } ?>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-
-
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <label for="manufacturer"><?php _e('Manufacturer'); ?></label>
-                                                            <select class="form-control select2tag select2-hidden-accessible" id="manufacturer" name="manufacturer" style="width: 100%;" tabindex="-1" aria-hidden="true" multiple>
-                                                                <?php foreach ($manufacturers as $manufacturer) {
-                                                                    echo "<option value='" . $manufacturer['name'] . "'";
-                                                                    if ($asset['manufacturerid'] == $manufacturer['id']) echo " selected";
-                                                                    echo ">" . $manufacturer['name'] . "</option>";
-                                                                } ?>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <label for="model"><?php _e('Model'); ?></label>
-                                                            <select class="form-control select2tag select2-hidden-accessible" id="model" name="model" style="width: 100%;" tabindex="-1" aria-hidden="true" multiple>
-                                                                <?php foreach ($models as $model) {
-                                                                    echo "<option value='" . $model['name'] . "'";
-                                                                    if ($asset['modelid'] == $model['id']) echo " selected";
-                                                                    echo ">" . $model['name'] . "</option>";
-                                                                } ?>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-md-12">
-                                                        <?php if (getConfigValue("manual_qrvalue") == "true") { ?>
-                                                            <div class="form-group">
-                                                                <label for="qrvalue"><?php _e('QR Code Value'); ?></label>
-                                                                <input type="text" class="form-control" id="qrvalue" name="qrvalue" value="<?php echo $asset['qrvalue']; ?>">
-                                                            </div>
-                                                        <?php } else { ?><input type="hidden" name="qrvalue" value="<?php echo $asset['qrvalue']; ?>"><?php } ?>
-                                                    </div>
-
                                                 </div>
 
-                                            </div>
-
-                                            <div class="col-md-6">
-
-                                                <div class="row">
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <label for="purchase_date"><?php _e('Purchase Date'); ?></label>
-                                                            <div class="input-group">
-                                                                <input type="text" class="form-control" id="purchase_date" name="purchase_date" value="<?php echo dateDisplay($asset['purchase_date']); ?>">
-                                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                                                            </div>
-                                                        </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="statusid"><?php _e('Status'); ?> *</label>
+                                                        <select class="form-control select2 select2-hidden-accessible" id="statusid" name="status" style="width: 100%;" tabindex="-1" aria-hidden="true">
+                                                            <?php foreach ($labels as $label) {
+                                                            ?>
+                                                                <option value="<?php echo $label['id']; ?>" <?php
+                                                                                                            if ($label['id'] == $asset['status']) {
+                                                                                                                echo "selected";
+                                                                                                            }
+                                                                                                            ?>><?php echo $label['name']; ?></option>
+                                                            <?php } ?>
+                                                        </select>
                                                     </div>
+                                                </div>
 
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <label for="warranty_months"><?php _e('Warranty'); ?></label>
-                                                            <div class="input-group">
-                                                                <input type="number" class="form-control" id="warranty_months" name="warranty_months" value="<?php echo $asset['warranty_months']; ?>">
-                                                                <span class="input-group-addon"><?php _e('months'); ?></span>
-                                                            </div>
-                                                        </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="name"><?php _e('Serial singer'); ?> *</label>
+                                                        <input type="text" value="<?php echo $asset['serial']; ?>" class="form-control" id="serial" name="serial" required>
                                                     </div>
+                                                </div>
 
-                                                    <div class="col-md-12">
-                                                        <div class="form-group">
-                                                            <label for="serial"><?php _e('Serial Number'); ?></label>
-                                                            <input type="text" class="form-control" id="serial" name="serial" value="<?php echo $asset['serial']; ?>">
-                                                        </div>
+                                                <!--    -->
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="Manufacturer"><?php _e('Manufacturer'); ?> *</label>
+                                                        <input type="text" value="<?php echo $asset['manufacturer']; ?>" class="form-control" id="Manufacturer" name="Manufacturer" required>
                                                     </div>
+                                                </div>
 
-
-                                                    <?php foreach ($customfields as $customfield) { ?>
-                                                        <div class="col-md-12">
-                                                            <div class="form-group">
-                                                                <label><?php echo $customfield['name'] ?></label>
-
-                                                                <?php if ($customfield['type'] == "Text Box") { ?>
-                                                                    <input type="text" class="form-control" name="<?php echo $customfield['id'] ?>" value="<?php echo $customdata[$customfield['id']] ?>">
-                                                                <?php } ?>
-
-                                                                <?php if ($customfield['type'] == "Text Area") { ?>
-                                                                    <textarea class="form-control" name="<?php echo $customfield['id'] ?>"><?php echo $customdata[$customfield['id']]; ?></textarea>
-                                                                <?php } ?>
-
-                                                                <?php if ($customfield['type'] == "Dropdown") {
-                                                                    $options = explode(",", $customfield['options']); ?>
-                                                                    <select class="form-control select2 select2-hidden-accessible" name="<?php echo $customfield['id']; ?>" style="width: 100%;" tabindex="-1" aria-hidden="true">
-                                                                        <?php foreach ($options as $option) { ?>
-
-                                                                            <option value='<?php echo $option; ?>' <?php if ($option == $customdata[$customfield['id']]) echo "selected"; ?>><?php echo $option; ?></option>
-
-                                                                        <?php } ?>
-                                                                    </select>
-                                                                <?php } ?>
-
-                                                                <?php if ($customfield['description'] != "") { ?>
-                                                                    <p class="help-block"><?php echo $customfield['description'] ?></p>
-                                                                <?php } ?>
-                                                            </div>
-                                                        </div>
-
-                                                    <?php } ?>
-
-
-
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="type"><?php _e('Assets Type'); ?> *</label>
+                                                        <input type="text" value="<?php echo $asset['Assest_type']; ?>" class="form-control" id="type" name="type" required>
+                                                    </div>
                                                 </div>
 
 
-                                            </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="model"><?php _e('Asset Model'); ?> *</label>
+                                                        <input type="text" value="<?php echo $asset['modal']; ?>" class="form-control" id="model" name="model" required>
+                                                    </div>
+                                                </div>
 
+                                                <!--    456-->
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="purchase_date"><?php _e('Purchase Date'); ?></label>
+                                                        <div class="input-group">
+                                                            <input type="text" value="<?php echo $asset['purchase_date']; ?>" class="form-control" id="purchase_date" name="purchase_date">
+                                                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
 
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <label for="notes"><?php _e('Notes'); ?></label>
-                                                    <textarea class="form-control summernoteLarge" id="notes" name="notes"><?php echo $asset['notes']; ?></textarea>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="cost"><?php _e('Purchase Cost'); ?> *</label>
+                                                        <input type="text" value="<?php echo $asset['purchase_cost']; ?>" class="form-control" id="cost" name="cost" required>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="PO"><?php _e('PO Number'); ?></label>
+                                                        <input type="text" value="<?php echo $asset['PO_number']; ?>" class="form-control" id="PO" name="PO">
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <img src="<?php echo baseurl(); ?><?php echo $asset['file']; ?>" height="50px" width="50px">
+                                            <div class="row">
+
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="Invoice"><?php _e('Invoice Number'); ?></label>
+                                                        <input type="text" value="<?php echo $asset['Invoice_number']; ?>" class="form-control" id="Invoice" name="Invoice" required>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="category"><?php _e('category'); ?> *</label>
+                                                        <select class="form-control select2 tag select2-hidden-accessible" id="category" name="category" style="width: 100%;">
+
+                                                            <option value='SW' <?php
+                                                                                if ($asset['Category'] == 'SW') {
+                                                                                    echo "selected";
+                                                                                }
+                                                                                ?>>SW</option>
+                                                            <option value='HW' <?php
+                                                                                if ($asset['Category'] == 'HW') {
+                                                                                    echo "selected";
+                                                                                }
+                                                                                ?>>HW</option>
+
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="supplier"><?php _e('supplier'); ?></label>
+                                                        <input type="text" value="<?php echo $asset['Supplier']; ?>" class="form-control" id="supplier" name="supplier" required>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="warranty_months"><?php _e('Warranty Period'); ?></label>
+                                                        <div class="input-group">
+                                                            <input type="text" value="<?php echo $asset['warranty_months']; ?>" class="form-control" id="warranty_months" name="warranty_months">
+                                                            <span class="input-group-addon"><?php _e('months'); ?></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="EOL_date"><?php _e('EOL Date'); ?></label>
+                                                        <div class="input-group">
+                                                            <input type="text" value="<?php echo $asset['EOL_date']; ?>" class="form-control" id="EOL_date" name="EOL_date">
+                                                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="amount"><?php _e('Amount'); ?> *</label>
+                                                        <input type="text" value="<?php echo $asset['Amount']; ?>" class="form-control" id="amount" name="amount" required>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <label for="notes"><?php _e('File'); ?></label>
-                                                    <input type="file" class="form-control" id="file" name="file[]" multiple>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="created_date"><?php _e('Created Date'); ?></label>
+                                                        <div class="input-group">
+                                                            <input type="text" value="<?php echo $asset['Created_date']; ?>" class="form-control" id="created_date" name="created_date">
+                                                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="RAM"><?php _e('RAM'); ?></label>
+
+                                                        <input type="text" value="<?php echo $asset['RAM']; ?>" class="form-control" id="RAM" name="RAM">
+
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="supplier"><?php _e('Purchase Order Number'); ?></label>
+                                                        <input type="text" value="<?php echo $asset['Purchase_order_number']; ?>" class="form-control" id="pon" name="pon">
+                                                    </div>
                                                 </div>
                                             </div>
-
-                                            <div class="col-md-12 text-right">
-                                                <div class="form-group">
-                                                    <button type="submit" class="btn btn-success"><i class="fa fa-save fa-fw"></i> <?php _e('Save Changes'); ?></button>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="supplier"><?php _e('Owner Name'); ?></label>
+                                                        <input type="text" value="<?php echo $asset['owner_name']; ?>" class="form-control" id="Owner_name" name="Owner_name">
+                                                    </div>
                                                 </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="supplier"><?php _e('Project Id'); ?></label>
+                                                        <input type="text" value="<?php echo $asset['project_id']; ?>" class="form-control" id="pid" name="pid">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="supplier"><?php _e('Cost Center '); ?></label>
+                                                        <input type="text" value="<?php echo $asset['cost_center']; ?>" class="form-control" id="cost_center" name="cost_center">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="supplier"><?php _e('Bussiness unit'); ?></label>
+                                                        <input type="text" value="<?php echo $asset['bussiness_unit']; ?>" class="form-control" id="b_unit" name="b_unit">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="location"><?php _e('Location'); ?></label>
+                                                        <select class="form-control select2 tag select2-hidden-accessible" id="location" name="location" style="width: 100%;">
+                                                            <?php foreach ($locations as $location) {
+                                                            ?>
+                                                                <option value="<?php echo $location['id']; ?>" <?php
+                                                                                                                if ($location['id'] == $asset['location']) {
+                                                                                                                    echo "selected";
+                                                                                                                }
+                                                                                                                ?>><?php echo $location['name']; ?></option>
+                                                            <?php } ?>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="supplier"><?php _e('Graphics card'); ?></label>
+                                                        <input type="text" value="<?php echo $asset['graphics_card']; ?>" class="form-control" id="Gcard" name="Gcard">
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="supplier"><?php _e('HDD'); ?></label>
+                                                        <input type="text" value="<?php echo $asset['HDD']; ?>" class="form-control" id="HDD" name="HDD">
+                                                    </div>
+                                                </div>
+
+
                                             </div>
 
-                                            <input type="hidden" name="route" value="inventory/assets/manage">
-                                            <input type="hidden" name="routeid" value="<?php echo $asset['id']; ?>">
-                                            <input type="hidden" name="section" value="edit">
 
-                                            <input type="hidden" name="action" value="editAsset">
-                                            <input type="hidden" name="id" value="<?php echo $asset['id']; ?>">
-                                            <input type="hidden" name="type" value="assets">
+                                    </div>
 
-
-                                        </form>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="notes"><?php _e('Notes'); ?></label>
+                                            <textarea class="form-control summernoteLarge" id="description" name="notes"><?php echo $asset['notes']; ?></textarea>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <!-- /.tab-pane -->
-                        <?php } ?>
 
+                                <input type="hidden" name="action" value="editAsset">
+                                <input type="hidden" name="asset_id" value="<?php echo $_GET['id']; ?>">
+                                <input type="hidden" name="route" value="<?php echo $_GET['route']; ?>">
+                                <input type="hidden" name="routeid" value="<?php echo $_GET['id']; ?>">
+                                <input type="hidden" name="section" value="">
+                                <input type="submit" value="Edit" class="btn btn-info">
+
+                                </form>
+                            </div>
                     </div>
-                    <!-- /.tab-content -->
                 </div>
-                <!-- nav-tabs-custom -->
+                <!-- /.tab-pane -->
+            <?php } ?>
+
             </div>
-            <!-- /.col -->
+            <!-- /.tab-content -->
+        </div>
+        <!-- nav-tabs-custom -->
+        </div>
+        <!-- /.col -->
         </div>
     </section><!-- /.content -->
 </aside><!-- /.right-side -->
+<script>
+    $(function() {
+        $(".select2").select2();
+        $('#purchase_date').datepicker({
+            format: '<?php echo jsFormat(); ?>',
+            clearBtn: 'true',
+            weekStart: '<?php echo getConfigValue("week_start"); ?>',
+            autoclose: true
+        });
+        $('#created_date').datepicker({
+            format: '<?php echo jsFormat(); ?>',
+            clearBtn: 'true',
+            weekStart: '<?php echo getConfigValue("week_start"); ?>',
+            autoclose: true
+        });
+        $('#EOL_date').datepicker({
+            format: '<?php echo jsFormat(); ?>',
+            clearBtn: 'true',
+            weekStart: '<?php echo getConfigValue("week_start"); ?>',
+            autoclose: true
+        });
+    });
+</script>

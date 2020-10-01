@@ -35,10 +35,7 @@
                                             <div class="col-md-4">
                                                 <div class="form-group">
                                                     <label for="supplierid"><?php _e('Supplier Name'); ?> </label>
-                                                    <select class="form-control select2 select2-hidden-accessible" id="supplierid" name="supplierid" style="width: 100%;" tabindex="-1" aria-hidden="true">
-                                                        <option value="0"><?php _e('None'); ?></option>
-                                                        <?php foreach ($suppliers as $supplier) { echo "<option value='".$supplier['id']."'>".$supplier['name']."</option>"; } ?>
-                                                    </select>
+                                                    <input type="text" class="form-control" id="suplier_name" name="suplier_name">
                                                 </div>
                                             </div>
 
@@ -58,20 +55,23 @@
 
                                             <div class="col-md-4">
                                                 <div class="form-group">
-                                                    <label for="statusid"><?php _e('Status'); ?> </label>
-                                                    <select class="form-control select2 select2-hidden-accessible" id="statusid" name="statusid" style="width: 100%;" tabindex="-1" aria-hidden="true">
-                                                        <option value="0"><?php _e('None'); ?></option>
-                                                        <?php foreach ($statuses as $status) { echo "<option value='".$status['id']."'>".$status['name']."</option>"; } ?>
+                                                    <label for="status"><?php _e('Status'); ?> </label>
+                                                    <select class="form-control select2 select2-hidden-accessible" id="status" name="status" style="width: 100%;">
+                                                        <option value="Active">Active</option>
+                                                        <option value="In Stock">In Stock</option>
+                                                        <option value="Purchased">Purchased</option>
+                                                        <option value="Received">Received</option>
+                                                        <option value="Retired">Retired</option>
                                                     </select>
                                                 </div>
                                             </div>
 
                                             <div class="col-md-8">
                                                 <div class="form-group">
-                                                    <label for="categoriesid"><?php _e('Category'); ?></label>
-                                                    <select class="form-control select2 select2-hidden-accessible" id="categoriesid" name="categoriesid" style="width: 100%;" tabindex="-1" aria-hidden="true">
-                                                        <option value="0"><?php _e('None'); ?></option>
-                                                        <?php foreach ($categories as $category) { echo "<option value='".$category['id']."'>".$category['name']."</option>"; } ?>
+                                                    <label for="category"><?php _e('Category'); ?></label>
+                                                    <select class="form-control select2 select2-hidden-accessible" id="category" name="category" style="width: 100%;" tabindex="-1" aria-hidden="true">
+                                                        <option value="SW">SW</option>
+                                                        <option value="HW">HW</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -137,8 +137,8 @@
 
                                             <div class="col-md-4">
                                                 <div class="form-group">
-                                                    <label for="license_type2id"><?php _e('License Type'); ?></label>
-                                                    <select class="form-control select2 select2-hidden-accessible" id="license_type2id" name="licenseid" style="width: 100%;" tabindex="-1" aria-hidden="true">
+                                                    <label for="license_typeid"><?php _e('License Type'); ?></label>
+                                                    <select class="form-control select2 select2-hidden-accessible" id="license_typeid" name="license_typeid" style="width: 100%;" tabindex="-1" aria-hidden="true">
                                                         <option value="0"><?php _e('None'); ?></option>
                                                         <?php foreach ($license_type2 as $license) { echo "<option value='".$license['id']."'>".$license['license_type']."</option>"; } ?>
                                                     </select>
@@ -269,17 +269,6 @@
                                                 <button type="submit" class="btn btn-primary"><i class="fa fa-check"></i> <?php _e('Create'); ?></button>
                                             </div>
                                     </div>
-
-
-
-
-
-
-
-
-
-
-
 
                                 </form><!-- /.form -->
                             </div>
