@@ -175,6 +175,10 @@ td .btn-group {
 .issue-more {
     margin: 5px 5px;
 }
+.content-header
+{
+    background-size:300px 100px;
+}
 
 /* assets datatable css */
 #operations, #operations2, #operations_procurements{
@@ -196,13 +200,8 @@ td .btn-group {
     box-sizing: border-box;
     display: none;
 }
-#attach_file_container{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    width: 100%;
-    padding: 1.5rem 1.5rem 1.5rem 0;
-}
+
+
 /*Akanksha Goyal changes*/
 
 
@@ -227,17 +226,23 @@ td .btn-group {
     color:white;
 }
 
-
+/*.navbar-custom-menu.nav navbar-nav .dropdown notifications-menu {
+    position: absolute;
+    z-index: 1;
+}*/
 .smallBox0
 {
     display:flex;
     box-sizing:border-box;
-    width:50%;
+    width:100%;
     justify-content:center;
     white-space: nowrap;
     padding:0;
     margin:0 0 10px 0;
+    text-align:center;
+    grid-column-gap: 20px;
 }
+
 .smallicon.fa fa-briefcase
 {
     size:50%;
@@ -245,16 +250,18 @@ td .btn-group {
 .sub-menu-1
 {
     display:none;
-    
+      
 }
 
 
 .menu-bar ul li:hover .sub-menu-1
 {
-    display:flex;
-    position:absolute;
-    background:#3c8dbc;
-    margin-top:0;
+    display:flex !important;
+    position:absolute !important;
+    background:#3c8dbc !important;
+    margin-top:0 !important;
+    overflow: hidden;
+    display:inline-box;
     
     
     
@@ -263,6 +270,7 @@ td .btn-group {
 {
     display:block;
     margin:10px;
+    
 }
 .menu-bar ul li:hover .sub-menu-1 ul li
 {
@@ -272,6 +280,7 @@ td .btn-group {
     background:transparent;
     border-radius:0;
     text-align:left;
+    
 
 }
 .menu-bar ul li:hover .sub-menu-1 ul li:last-child
