@@ -1,0 +1,636 @@
+<aside class="right-side">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1><?php echo $asset['tag']; ?></h1>
+        <ol class="breadcrumb">
+            <li><a href="?route=dashboard"><i class="fa fa-dashboard"></i> <?php _e('Home'); ?></a></li>
+            <li><?php _e('Inventory'); ?></li>
+            <li><a href="?route=inventory/procurements"><?php _e('Procurements'); ?></a></li>
+            <li class="active"><?php echo $procurement['purchase_order_number']; ?></li>
+        </ol>
+    </section>
+    <br>
+    <!-- Main content -->
+    <section class="content">
+        <?php if (!empty($statusmessage)) : ?>
+            <div class="row">
+                <div class='col-md-12'>
+                    <div class="alert alert-<?php print $statusmessage["type"]; ?> alert-auto" role="alert"><?php print __($statusmessage["message"]); ?></div>
+                </div>
+            </div>
+        <?php endif; ?>
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Custom Tabs (Pulled to the right) -->
+                <div class="nav-tabs-custom">
+                    <ul class="nav nav-tabs">
+                        <li <?php if ($section == "") echo 'class="active"'; ?>><a href="?route=inventory/procurements/manage&id=<?php echo $procurement['id']; ?>&section="><?php _e('Summary'); ?></a></li>
+                        <?php if (in_array("viewLicenses", $perms)) { ?><li <?php if ($section == "licenses") echo 'class="active"'; ?>><a href="?route=inventory/procurements/manage&id=<?php echo $procurement['id']; ?>&section=licenses"><?php _e('Licenses'); ?></a></li><?php } ?>
+                        <?php if (in_array("viewAssets", $perms)) { ?><li <?php if ($section == "ownners") echo 'class="active"'; ?>><a href="?route=inventory/procurements/manage&id=<?php echo $procurement['id']; ?>&section=ownners"><?php _e('Ownners'); ?></a></li><?php } ?>
+                        <?php if (in_array("viewFiles", $perms)) { ?><li <?php if ($section == "files") echo 'class="active"'; ?>><a href="?route=inventory/procurements/manage&id=<?php echo $procurement['id']; ?>&section=files"><?php _e('Documents'); ?></a></li><?php } ?>
+                        <?php if (in_array("editAsset", $perms)) { ?><li <?php if ($section == "edit") echo 'class="active"'; ?>><a href="?route=inventory/procurements/manage&id=<?php echo $procurement['id']; ?>&section=edit"><?php _e('Edit Procurement'); ?></a></li><?php } ?>
+                        <?php if (in_array("viewTime", $perms)) { ?><li <?php if ($section == "timelog") echo 'class="active"'; ?>><a href="?route=inventory/procurements/manage&id=<?php echo $procurement['id']; ?>&section=timelog"><?php _e('History'); ?></a></li><?php } ?>
+
+
+                        <div class="btn-group pull-right" style="padding:6px;">
+                            <?php if (in_array("addIssue", $perms)) { ?><a data-toggle='tooltip' title='<?php _e('New Issue'); ?>' class="btn btn-default btn-sm btn-flat" href="#" onClick='showM("?modal=issues/add&reroute=inventory/procurements/manage&routeid=<?php echo $procurement['id']; ?>&clientid=<?php echo $procurement['clientid']; ?>&assetid=<?php echo $asset['id']; ?>&section=issues");return false'><i class='fa fa-tasks fa-fw'></i> <?php _e('New Issue'); ?></a><?php } ?>
+                            <?php if (in_array("addTime", $perms)) { ?><a class="btn btn-default btn-sm btn-flat" href="#" onClick='showM("?modal=time/add&reroute=inventory/assets/manage&routeid=<?php echo $asset['id']; ?>&clientid=<?php echo $asset['clientid']; ?>&assetid=<?php echo $asset['id']; ?>&section=timelog");return false'><i class='fa fa-clock-o fa-fw'></i> <?php _e('Log Time'); ?></a><?php } ?>
+
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary btn-sm btn-flat dropdown-toggle" data-toggle="dropdown">
+                                    <?php _e('More'); ?> <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu pull-right">
+
+                                    <?php if (in_array("addTicket", $perms)) { ?><li><a href="#" onClick='showM("?modal=tickets/add&reroute=inventory/procurements/manage&routeid=<?php echo $procurement['id']; ?>&clientid=<?php echo $procurement['clientid']; ?>&procurementid=<?php echo $procurement['id']; ?>&section=tickets");return false'><i class="fa fa-tag fa-fw"></i><?php _e('New Ticket'); ?></a></li><?php } ?>
+                                    <?php if (in_array("addCredential", $perms)) { ?><li><a href="#" onClick='showM("?modal=credentials/add&section=&reroute=inventory/procurements/manage&routeid=<?php echo $procurement['id']; ?>&procurementid=<?php echo $procurement['id']; ?>&clientid=<?php echo $procurement['clientid']; ?>");return false'><i class="fa fa-asterisk fa-fw"></i><?php _e('New Credential'); ?></a></li><?php } ?>
+                                    <?php if (in_array("uploadFile", $perms)) { ?><li><a href="#" onClick='showM("?modal=files/upload&reroute=inventory/procurements/manage&routeid=<?php echo $procurement['id']; ?>&clientid=<?php echo $procurement['clientid']; ?>&procurementid=<?php echo $procurement['id']; ?>&section=files");return false'><i class="fa fa-upload fa-fw"></i><?php _e('Upload File'); ?></a></li><?php } ?>
+                                    <?php if (in_array("licenseAsset", $perms)) { ?><li><a href="#" onClick='showM("?modal=procurements/assignLicense&section=&reroute=inventory/procurements/manage&routeid=<?php echo $procurement['id']; ?>");return false'><i class="fa fa-thumb-tack fa-fw"></i><?php _e('Assign License'); ?></a></li><?php } ?>
+                                    <li><a href="?route=pdf&type=assetlabel&id=<?php echo $procurement['id']; ?>" target="_blank"><i class="fa fa-barcode fa-fw"></i><?php _e('Label'); ?></a></li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane <?php if ($section == "") echo 'active'; ?>" id="tab-summary">
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <div class="box box-primary">
+                                        <div class="box-body">
+                                            <table id="clientTable" class="table table-striped table-hover">
+                                                <tbody>
+                                                    <tr>
+                                                        <th><?php _e('Purchase Order Number'); ?> </th>
+                                                        <td><?php echo $procurement['purchase_order_number']; ?></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th><?php _e('Status'); ?></th>
+                                                        <td><?php echo $procurement['status']; ?></td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <th><?php _e('Publisher'); ?></th>
+                                                        <td><?php echo $procurement['manufacture']; ?></td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <th><?php _e('Vendor'); ?></th>
+                                                        <td><?php echo $procurement['vendor']; ?></td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <th><?php _e('Application Name'); ?></th>
+                                                        <td><?php echo $procurement['application_name']; ?></td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <th><?php _e('PartNo/Sku'); ?></th>
+                                                        <td><?php echo $procurement['partno_sku']; ?></td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <th><?php _e('Purchase Qty'); ?></th>
+                                                        <td><?php echo $procurement['purchase_qty']; ?></td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <th><?php _e('Purchase Type'); ?> </th>
+                                                        <td><?php echo $procurement['purchase_type']; ?></td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <th><?php _e('Contract/Agreement No'); ?></th>
+                                                        <td><?php echo $procurement['contract_agreement']; ?></td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <th><?php _e('Effective Start Date'); ?></th>
+                                                        <td><?php echo $procurement['effective_start_date']; ?></td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <th><?php _e('Effective End Date'); ?></th>
+                                                        <td><?php echo $procurement['effective_end_date']; ?></td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <th><?php _e('Notes'); ?></th>
+                                                        <td><?php echo $procurement['notes']; ?></td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <th><?php _e('Software Price'); ?></th>
+                                                        <td><?php //echo $procurement['amount']; 
+                                                            ?></td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <th><?php _e('Email Notification Expiry With in 180'); ?></th>
+                                                        <td><?php echo $procurement['email_notification_180']; ?></td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <th><?php _e('Email Notification Expiry With in 90'); ?> </th>
+                                                        <td><?php echo $procurement['email_notification_90']; ?></td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <th><?php _e('Email Notification Expiry With in 60'); ?></th>
+                                                        <td><?php echo $procurement['email_notification_60']; ?></td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <th><?php _e('Email Notification Expiry With in 30'); ?></th>
+                                                        <td><?php echo $procurement['email_notification_30']; ?></td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <th><?php _e('Amount'); ?></th>
+                                                        <td><?php echo $procurement['amount']; ?></td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <th><?php _e('Invoice Number'); ?></th>
+                                                        <td><?php echo $procurement['invoice_number']; ?></td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <th><?php _e('Category'); ?></th>
+                                                        <td><?php echo $procurement['category']; ?></td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <th><?php _e('Owner Name'); ?></th>
+                                                        <td><?php echo $procurement['ownner_name']; ?></td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <th><?php _e('Project ID'); ?></th>
+                                                        <td><?php echo $procurement['project_id']; ?></td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <th><?php _e('Cost Center'); ?></th>
+                                                        <td><?php echo $procurement['cost_center']; ?></td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <th><?php _e('Bussiness Unit'); ?></th>
+                                                        <td><?php echo $procurement['bussiness_name']; ?></td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <th><?php _e('Location'); ?></th>
+                                                        <td><?php echo $procurement['location']; ?></td>
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.tab-pane -->
+
+                        <?php if (in_array("viewLicenses", $perms)) { ?>
+                            <div class="tab-pane <?php if ($section == "licenses") echo 'active'; ?>" id="tab-licenses">
+                                <div class="table-responsive">
+                                    <div class="box box-primary">
+                                        <div class="box-header">
+                                            <h3 class="box-title"><?php _e('Assigned Licenses'); ?></h3>
+                                            <div class="pull-right box-tools">
+                                                <div class="btn btn-primary" onclick="showM('?modal=procurements/assign_lisence&reroute=inventory/procurements/manage&routeid=<?php echo $procurement['id']; ?>&id=<?php echo $procurement['id']; ?>&section=');return false">
+                                                    Assign Lisence
+                                                </div>
+                                                <button type="button" class="btn btn-default btn-sm btn-flat" data-widget="collapse" data-toggle="tooltip" title="Collapse"><i class="fa fa-minus"></i></button>
+                                            </div>
+
+                                        </div>
+                                        <div class="box-body">
+                                            <div class="table-responsive">
+                                                <table id="dataTablesFull" class="table table-striped table-hover table-bordered">
+                                                    <thead>
+
+                                                        <tr>
+                                                            <th><?php _e('tag'); ?></th>
+                                                            <th><?php _e('Consumables Name'); ?></th>
+                                                            <th><?php _e('Category'); ?></th>
+                                                            <th><?php _e('Model No'); ?></th>
+                                                            <th><?php _e('Manufacture'); ?></th>
+                                                            <th><?php _e('Item No'); ?></th>
+                                                            <th><?php _e('Order No'); ?></th>
+                                                            <th><?php _e('Purchase Cost'); ?></th>
+                                                            <th><?php _e('Purchase Date'); ?></th>
+                                                            <th><?php _e('Quantity'); ?></th>
+                                                            <th><?php _e('Status'); ?></th>
+                                                            <!--                                    <th><?php _e('Image'); ?></th>              -->
+
+                                                            <th class="text-right"></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <?php
+                                                        foreach ($procurementAssignedLicenses as $procurementAssignedLicense) {
+                                                            $licenses = getTableFiltered("licenses", "id", $procurementAssignedLicense["license_id"]);
+                                                            foreach ($licenses as $license) { ?>
+                                                                <tr>
+                                                                    <td><?php echo $license['tag'];  ?></td>
+                                                                    <td><?php echo $component['consumables_name']; ?></td>
+                                                                    <td><span class='label' style='background-color:#FFF;color:<?php echo getSingleValue("assetcategories", "color", $component['category']); ?>;border:1px solid <?php echo getSingleValue("assetcategories", "color", $component['category']); ?>'><?php echo getSingleValue("assetcategories", "name", $component['category']); ?></span></td>
+                                                                    <td><?php echo getSingleValue("models", "name", $component['model_no']); ?></td>
+                                                                    <td><?php echo getSingleValue("manufacturers", "name", $component['manufacture']); ?></td>
+                                                                    <td><?php echo $component['item_no']; ?></td>
+                                                                    <td><?php echo $component['order_no']; ?></td>
+                                                                    <td><?php echo $component['purchase_cost']; ?></td>
+                                                                    <td><?php echo $component['purchase_date']; ?></td>
+                                                                    <td><?php echo $component['quanitity']; ?></td>
+
+                                                                    <td><span class='badge' style='background-color:<?php echo getSingleValue("labels", "color", $component['statusid']); ?>'><?php echo getSingleValue("labels", "name", $component['statusid']); ?></span></td>
+                                                                    <td>
+                                                                        <div class='pull-right'>
+                                                                            <div class="btn-group">
+                                                                                <?php if (in_array("manageComponents", $perms)) { ?> <a href='?route=inventory/assets/managecomponents&id=<?php echo $component['id']; ?>' class='btn btn-flat btn-primary btn-sm'><i class='fa fa-eye'></i></a><?php } ?>
+                                                                                <?php if (in_array("editAsset", $perms)) { ?> <a href='?route=inventory/assets/managecomponents&id=<?php echo $component['id']; ?>&section=edit' class='btn btn-flat btn-success btn-sm'><i class='fa fa-edit'></i></a><?php } ?>
+
+                                                                                <div class="btn-group">
+                                                                                    <button type="button" class="btn btn-default btn-sm btn-flat dropdown-toggle" data-toggle="dropdown">
+                                                                                        <span class="caret"></span>
+                                                                                    </button>
+                                                                                    <ul class="dropdown-menu pull-right">
+                                                                                        <?php if (in_array("deleteAsset", $perms)) { ?>
+                                                                                            <li><a href='#' onClick='showM("?modal=components/delete&reroute=inventory/components&routeid=&id=<?php echo $component['id']; ?>&section=");return false'><i class='fa fa-trash-o fa-fw'></i><?php _e('Delete'); ?></a></li><?php } ?>
+                                                                                    </ul>
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                        <?php }
+                                                        } ?>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <?php if (empty($assignedlicenses)) _e("There are no assigned licenses to display."); ?>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        <?php } ?>
+                        <!-- /.tab-pane -->
+
+                        <?php if (in_array("viewAssets", $perms)) { ?>
+                            <div class="tab-pane <?php if ($section == "ownners") echo 'active'; ?>" id="tab-ownners">
+                                <div class="table-responsive">
+                                    <table id="dataTablesFull" class="table table-striped table-hover table-bordered">
+                                        <tbody>
+                                            <tr>
+                                                <th><?php _e('Owner Name'); ?></th>
+                                                <td><?php echo $procurement['ownner_name']; ?></td>
+
+                                            </tr>
+                                            <tr>
+                                                <th><?php _e('Project ID'); ?></th>
+                                                <td><?php echo $procurement['project_id']; ?></td>
+
+                                            </tr>
+                                            <tr>
+                                                <th><?php _e('Cost Center'); ?></th>
+                                                <td><?php echo $procurement['cost_center']; ?></td>
+
+                                            </tr>
+                                            <tr>
+                                                <th><?php _e('Bussiness Unit'); ?></th>
+                                                <td><?php echo $procurement['bussiness_name']; ?></td>
+
+                                            </tr>
+                                            <tr>
+                                                <th><?php _e('Location'); ?></th>
+                                                <td><?php echo $procurement['location']; ?></td>
+
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        <?php } ?>
+                        <!-- /.tab-pane -->
+
+                        <?php if (in_array("viewFiles", $perms)) { ?>
+                            <div class="tab-pane <?php if ($section == "files") echo 'active'; ?>" id="tab-files">
+                                <form action="" method="post" enctype="multipart/form-data">
+                                    <div id="attach_file_container">
+                                        <input type="file" name="doc_files[]" id="procurement_doc_file" multiple>
+                                        <input type="hidden" name="action" value="addFileProcurement">
+                                        <input type="hidden" name="procurement_id" value="<?php echo $_GET['id']; ?>">
+                                        <input type="hidden" name="route" value="<?php echo $_GET['route']; ?>">
+                                        <input type="hidden" name="routeid" value="<?php echo $_GET['id']; ?>">
+                                        <input type="hidden" name="section" value="files">
+                                        <input type="submit" name="submit" class="submit_file btn btn-info" value="Add Files">
+                                    </div>
+                                </form>
+                                <?php if (empty($files)) { ?>
+                                    <div class="alert alert-info">
+                                        <i class="icon fa fa-info"></i> <?php _e('No files have been uploaded yet!'); ?>
+                                    </div>
+                                <?php } ?>
+
+                                <ul class="todo-list list-inline" id="fileslist">
+                                    <?php foreach ($files as $file) { ?>
+                                        <li id="" style="width:260px;margin:10px;padding:8px;height:60px;">
+                                            <div class="row">
+                                                <div class="col-xs-2" style="text-align:center;vertical-align:middle;height:60px;">
+                                                    <i class="fa fa-<?php echo File::icon($file['file_name']); ?>" style="font-size:36px;padding-top:3px;"></i>
+                                                </div>
+                                                <div class="col-xs-10">
+                                                    <?php echo ttruncat($file['file_name'], 30) . "<br><small>" . ttruncat($file['file_name'], 35) . "</small>"; ?>
+                                                    <div class="pull-right">
+                                                        <?php if (in_array("viewFiles", $perms)) { ?><a href="#" onClick='showM("?modal=files/view&reroute=inventory/assets/manage&routeid=<?php echo $asset['id']; ?>&id=<?php echo $file['id']; ?>&section=files");return false' class='btn-right text-dark'><i class='fa fa-eye'></i></a>&nbsp;<?php } ?>
+                                                            <?php if (in_array("downloadFile", $perms)) { ?><a href="<?php echo "?qa=download&id=" . $file['id']; ?>" class='btn-right text-dark'><i class='fa fa-download'></i></a>&nbsp;<?php } ?>
+                                                                <?php if (in_array("deleteFile", $perms)) { ?><a href="#" onClick='showM("?modal=files/delete&reroute=inventory/assets/manage&routeid=<?php echo $asset['id']; ?>&id=<?php echo $file['id']; ?>&section=files");return false' class='btn-right text-red'><i class='fa fa-trash-o'></i></a><?php } ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    <?php } ?>
+                                </ul>
+
+                            </div>
+                        <?php } ?>
+                        <!-- /.tab-pane -->
+
+
+                        <?php if (in_array("viewTime", $perms)) { ?>
+                            <div class="tab-pane <?php if ($section == "timelog") echo 'active'; ?>" id="tab-timelog">
+                                <div class="table-responsive">
+                                    <table id="dataTablesFullDesc" class="table table-striped table-hover table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>IP address</th>
+                                                <th>Description</th>
+                                                <th>time</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            
+                                            <tr>
+                                                <td><?php echo $lastHistory['ipaddress']  ?></td>
+                                                <td><?php echo $lastHistory['description']  ?></td>
+                                                <td><?php echo $lastHistory['timestamp']  ?></td>
+                                            </tr>
+                                            
+                                        </tbody>        
+                                    </table>
+                                </div>
+
+                            </div>
+                            <!-- /.tab-pane -->
+                        <?php } ?>
+
+                        <?php if (in_array("editAsset", $perms)) { ?>
+                            <div class="tab-pane <?php if ($section == "edit") echo 'active'; ?>" id="tab-edit">
+                                <div class="row">
+                                    <div class="container-fluid">
+
+                                        <form role="form" method="post">
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="purchase_order_number"><?php _e('Puschase Order Number'); ?>
+                                                        *</label>
+                                                    <input type="text" value="<?php echo $procurement['purchase_order_number']; ?>" class="form-control" id="purchase_order_number" name="purchase_order_number" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="manufacture"><?php _e('Manufacture'); ?> </label>
+                                                    <input type="text" value="<?php echo $procurement['manufacture']; ?>" class="form-control" id="manufacture" name="manufacture">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="purchase_qty"><?php _e('Purchase Qty'); ?> </label>
+                                                    <input type="text" value="<?php echo $procurement['purchase_qty']; ?>" class="form-control" id="purchase_qty" name="purchase_qty">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="invoice_number"><?php _e('Invoice Number'); ?> </label>
+                                                    <input type="text" value="<?php echo $procurement['invoice_number']; ?>" class="form-control" id="invoice_number" name="invoice_number">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="effective_end_date"><?php _e('Effective End Date'); ?></label>
+                                                    <div class="input-group">
+                                                        <input type="text" value="<?php echo $procurement['effective_end_date']; ?>" class="form-control datepicker" id="effective_end_date" name="effective_end_date">
+                                                        <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="amount"><?php _e('Amount'); ?> </label>
+                                                    <input type="text" value="<?php echo $procurement['amount']; ?>" class="form-control" id="amount" name="amount">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="email_notification_60"><?php _e('Email Notification With in 60 Days'); ?>
+                                                    </label>
+                                                    <input type="text" value="<?php echo $procurement['email_notification_60']; ?>" class="form-control" id="email_notification_60" name="email_notification_60">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="cost_center"><?php _e('Cost Center'); ?> </label>
+                                                    <input type="text" value="<?php echo $procurement['cost_center']; ?>" class="form-control" id="cost_center" name="cost_center">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="status"><?php _e('Status'); ?> </label>
+                                                    <input type="text" value="<?php echo $procurement['status']; ?>" class="form-control" id="status" name="status">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="vendor"><?php _e('Vendor'); ?> </label>
+                                                    <input type="text" value="<?php echo $procurement['vendor']; ?>" class="form-control" id="vendor" name="vendor">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="category"><?php _e('Category'); ?> </label>
+                                                    <select class="form-control select2" id="category" name="category" style="width: 100%;">
+                                                        <option value="Select"
+                                                        <?php
+                                                            if($procurement['purchase_type'] == 'Select'){
+                                                                echo 'selected';
+                                                            }
+                                                        ?>
+                                                        >Select</option>
+                                                        <option value='sw'
+                                                        <?php
+                                                            if($procurement['category'] == 'sw'){
+                                                                echo 'selected';
+                                                            }
+                                                        ?>
+                                                        >
+                                                            SW
+                                                        </option>
+                                                        <option value='hw'
+                                                        <?php
+                                                            if($procurement['category'] == 'hw'){
+                                                                echo 'selected';
+                                                            }
+                                                        ?>
+                                                        >
+                                                            HW
+                                                        </option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="suplier_name"><?php _e('Suplier Name'); ?> </label>
+                                                    <input type="text" value="<?php echo $procurement['suplier_name']; ?>" class="form-control" id="suplier_name" name="suplier_name">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="email_notification_180"><?php _e('Email Notification With in 180 Days'); ?>
+                                                    </label>
+                                                    <input type="text" value="<?php echo $procurement['email_notification_180']; ?>" class="form-control" id="email_notification_180" name="email_notification_180">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="email_notification_30"><?php _e('Email Notification With in 30 Days'); ?>
+                                                    </label>
+                                                    <input type="text" value="<?php echo $procurement['email_notification_30']; ?>" class="form-control" id="email_notification_30" name="email_notification_30">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="ownner_name"><?php _e('Ownner Name'); ?> </label>
+                                                    <input type="text" value="<?php echo $procurement['ownner_name']; ?>" class="form-control" id="ownner_name" name="ownner_name">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="bussiness_name"><?php _e('Bussiness Name'); ?> </label>
+                                                    <input type="text" value="<?php echo $procurement['bussiness_name']; ?>" class="form-control" id="bussiness_name" name="bussiness_name">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="application_name"><?php _e('Application Name'); ?> </label>
+                                                    <input type="text" value="<?php echo $procurement['application_name']; ?>" class="form-control" id="application_name" name="application_name">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="partno_sku"><?php _e('Partno/sku'); ?> </label>
+                                                    <input type="text" value="<?php echo $procurement['partno_sku']; ?>" class="form-control" id="partno_sku" name="partno_sku">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="contract_agreement"><?php _e('Contract/Agreement'); ?> </label>
+                                                    <input type="text" value="<?php echo $procurement['contract_agreement']; ?>" class="form-control" id="contract_agreement" name="contract_agreement">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="effective_start_date"><?php _e('Effective Start Date'); ?>
+                                                    </label>
+                                                    <div class="input-group">
+                                                        <input type="text" value="<?php echo $procurement['effective_start_date']; ?>" class="form-control datepicker" id="effective_start_date" name="effective_start_date">
+                                                        <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="purchase_type"><?php _e('Purchase Type'); ?> </label>
+                                                    <select class="form-control select2" id="purchase_type" name="purchase_type" style="width: 100%;">
+                                                        <option value="Select"
+                                                        <?php
+                                                            if($procurement['purchase_type'] == 'Select'){
+                                                                echo 'selected';
+                                                            }
+                                                        ?>
+                                                        >Select</option>
+                                                        <option value='Software'
+                                                        <?php
+                                                            if($procurement['purchase_type'] == 'Software'){
+                                                                echo 'selected';
+                                                            }
+                                                        ?>
+                                                        >
+                                                            Software
+                                                        </option>
+                                                        <option value='Maintenance'
+                                                        <?php
+                                                            if($procurement['purchase_type'] == 'Maintenance'){
+                                                                echo 'selected';
+                                                            }
+                                                        ?>
+                                                        >
+                                                            Maintenance
+                                                        </option>
+                                                        <option value='Upgrade'
+                                                        <?php
+                                                            if($procurement['purchase_type'] == 'Upgrade'){
+                                                                echo 'selected';
+                                                            }
+                                                        ?>
+                                                        >
+                                                            Upgrade
+                                                        </option>
+                                                        <option value='Maintenance2'
+                                                        <?php
+                                                            if($procurement['purchase_type'] == 'Maintenance2'){
+                                                                echo 'selected';
+                                                            }
+                                                        ?>
+                                                        >
+                                                            Maintenance2
+                                                        </option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="email_notification_90"><?php _e('Email Notification With in 90 Days'); ?>
+                                                    </label>
+                                                    <input type="text" value="<?php echo $procurement['email_notification_90']; ?>" class="form-control" id="email_notification_90" name="email_notification_90">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="project_id"><?php _e('Project Id'); ?> </label>
+                                                    <input type="text" value="<?php echo $procurement['project_id']; ?>" class="form-control" id="project_id" name="project_id">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="location"><?php _e('Location'); ?> </label>
+                                                    <input type="text" value="<?php echo $procurement['location']; ?>" class="form-control" id="location" name="location">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label for="notes"><?php _e('Notes'); ?></label>
+                                                    <textarea class="form-control summernoteLarge" id="notes" name="notes">
+                                                        <?php echo $procurement['notes']; ?>
+                                                    </textarea>
+                                                </div>
+                                            </div>
+
+
+                                            <input type="hidden" name="type" value="procurements">
+                                            <input type="hidden" name="action" value="editProcurements">
+                                            <input type="hidden" name="procurement_id" value="<?php echo $_GET['id']; ?>">
+                                            <input type="hidden" name="route" value="inventory/procurements/manage">
+                                            <input type="hidden" name="routeid" value="<?php echo $_GET['id']; ?>">
+                                            <input type="hidden" name="section" value="">
+
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <button type="submit" class="btn btn-primary"><i class="fa fa-check"></i>
+                                                        <?php _e('Edit'); ?></button>
+                                                </div>
+                                            </div>
+
+                                        </form><!-- /.form -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.tab-pane -->
+                        <?php } ?>
+
+                    </div>
+                    <!-- /.tab-content -->
+                </div>
+                <!-- nav-tabs-custom -->
+            </div>
+            <!-- /.col -->
+        </div>
+    </section><!-- /.content -->
+</aside><!-- /.right-side -->
+<script type="text/javascript">
+        $(function () {
+            $(".select2").select2();
+            $('.datepicker').datepicker({
+                format: '<?php echo jsFormat(); ?>',
+                clearBtn: 'true',
+                weekStart: '<?php echo getConfigValue("week_start"); ?>',
+                autoclose: true
+            });
+        });
+    </script>

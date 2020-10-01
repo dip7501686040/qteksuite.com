@@ -293,7 +293,10 @@
                                         </thead>
                                         <tbody>
                                             <?php
-                                            foreach ($components as $component) { ?>
+                                            foreach ($componentses_assets as $componentses_asset) {
+                                                $components = getTableFiltered("components", "id", $componentses_asset["componentid"]);
+                                                foreach($components as $component){
+                                             ?>
                                                 <tr>
                                                     <td><?php echo getSingleValue("company", "company_name", $component['company_name']); ?></span></td>
                                                     <td><?php echo $component['consumables_name']; ?></td>
@@ -327,7 +330,7 @@
                                                         </div>
                                                     </td>
                                                 </tr>
-                                            <?php } ?>
+                                            <?php }}?>
                                         </tbody>
                                     </table>
                                 </div>
@@ -568,7 +571,7 @@
 
                             </div>
                         <?php } ?>
-                            <!-- /.tab-pane -->
+                        <!-- /.tab-pane -->
 
 
                         <?php if (in_array("viewTime", $perms)) { ?>

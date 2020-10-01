@@ -27,7 +27,20 @@ switch($_POST['action']) {
 		isAuthorized("editLicense"); $status = License::addFile($_POST, $_FILES);
     break;
 
-	
+	//Procurements
+	case "addProcurements":
+		isAuthorized("addAsset"); $status = Procurement::add($_POST);
+    break;
+	case "procurementLicenseAssignment":
+		isAuthorized("addAsset"); $status = Procurement::procurementLicenseAssignment($_POST);
+    break;
+	case "addFileProcurement":
+		isAuthorized("editAsset"); $status = Procurement::addFile($_POST, $_FILES);
+    break;
+	case "editProcurements":
+		isAuthorized("editAsset"); $status = Procurement::edit($_POST);
+    break;
+
     // Components
 	case "addComponents":
 		isAuthorized("addComponents"); $status = Components::add($_POST);

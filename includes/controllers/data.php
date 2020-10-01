@@ -414,6 +414,29 @@ if ($route == "sam/assets/manage") {
 	$pageTitle = $asset['tag'];
 }
 
+//procurements 
+
+if ($route == "inventory/procurements") {
+	isAuthorized("viewAssets");
+	$procurements = getTable("procurements");
+	$pageTitle = __("Procurements");
+}
+
+if($route == "inventory/procurements/manage"){
+	isAuthorized("manageAsset");
+	$procurement = getRowById("procurements", $_GET['id']);
+	if ($isAdmin) {
+	$procurementAssignedLicenses = getTableFiltered("procurements_licenses", "procurement_id", $_GET['id']);
+		
+	}
+	$files = getTableFiltered("procurement_files", "procurement_id", $_GET['id']);
+	$history = getTable("systemlog");
+	$count = count($history);
+	if($count != 0){
+		$lastHistory = $history[$count-1];
+	}
+}
+
 // COMPONENTS BY PRATIK
 if ($route == "inventory/components") {
 	isAuthorized("viewComponents");
@@ -480,9 +503,6 @@ if ($route == "inventory/assets/manage") {
 	isAuthorized("viewAssets");
 	if ($isAdmin) {
 		$componentses_assets = getTableFiltered("componentses_assets", "assetid", $asset['id']);
-		foreach ($componentses_assets as $componentses_asset) {
-			$components = getTableFiltered("components", "id", $componentses_asset["componentid"]);
-		}
 	}
 }
 
@@ -732,7 +752,6 @@ if ($route == "sam/licenses/manage") {
 	$pageTitle = $license['tag'];
 
 	$files = getTableFiltered("license_files", "license_id", $_GET['id']);
-
 }
 
 // SAM Licenses allocate start by pratik

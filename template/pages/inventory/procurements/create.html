@@ -1,0 +1,218 @@
+<!-- Right side column. Contains the navbar and content of the page -->
+<aside class="right-side">
+    <script type="text/javascript">
+        $(function () {
+            $(".select2").select2();
+            $('.datepicker').datepicker({
+                format: '<?php echo jsFormat(); ?>',
+                clearBtn: 'true',
+                weekStart: '<?php echo getConfigValue("week_start"); ?>',
+                autoclose: true
+            });
+        });
+    </script>
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1><?php _e('PROCUREMENTS'); ?><small> <?php _e('Manage procurements'); ?></small></h1>
+        <ol class="breadcrumb">
+            <li><a href="?route=dashboard"><i class="fa fa-dashboard"></i> <?php _e('Home'); ?></a></li>
+            <li><?php _e('Inventory'); ?></li>
+            <li><a href="?route=inventory/procurements"><?php _e('Procurements'); ?></a></li>
+            <li class="active"><?php _e('Create'); ?></li>
+        </ol>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+        <?php if (!empty($statusmessage)) : ?>
+        <div class="row">
+            <div class='col-md-12'>
+                <div class="alert alert-<?php print $statusmessage["type"]; ?> alert-auto" role="alert">
+                    <?php print __($statusmessage["message"]); ?></div>
+            </div>
+        </div>
+        <?php endif; ?>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box box-primary">
+                    <div class="box-header with-border">
+                        <h3 class="box-title"><?php _e('Create New Procurement'); ?></h3>
+                    </div><!-- /.box-header -->
+                    <div class="box-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <form role="form" method="post" class="">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="purchase_order_number"><?php _e('Puschase Order Number'); ?>
+                                                *</label>
+                                            <input type="text" class="form-control" id="purchase_order_number"
+                                                name="purchase_order_number" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="manufacture"><?php _e('Manufacture'); ?> </label>
+                                            <input type="text" class="form-control" id="manufacture" name="manufacture">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="purchase_qty"><?php _e('Purchase Qty'); ?> </label>
+                                            <input type="text" class="form-control" id="purchase_qty"
+                                                name="purchase_qty">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="invoice_number"><?php _e('Invoice Number'); ?> </label>
+                                            <input type="text" class="form-control" id="invoice_number"
+                                                name="invoice_number">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="effective_end_date"><?php _e('Effective End Date'); ?></label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control datepicker"
+                                                    id="effective_end_date" name="effective_end_date">
+                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="amount"><?php _e('Amount'); ?> </label>
+                                            <input type="text" class="form-control" id="amount" name="amount">
+                                        </div>
+                                        <div class="form-group">
+                                            <label
+                                                for="email_notification_60"><?php _e('Email Notification With in 60 Days'); ?>
+                                                </label>
+                                            <input type="text" class="form-control" id="email_notification_60"
+                                                name="email_notification_60">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="cost_center"><?php _e('Cost Center'); ?> </label>
+                                            <input type="text" class="form-control" id="cost_center" name="cost_center">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="status"><?php _e('Status'); ?> </label>
+                                            <input type="text" class="form-control" id="status" name="status">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="vendor"><?php _e('Vendor'); ?> </label>
+                                            <input type="text" class="form-control" id="vendor" name="vendor">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="category"><?php _e('Category'); ?> </label>
+                                            <select class="form-control select2" id="category" name="category"
+                                                style="width: 100%;">
+                                                <option value="Select">Select</option>
+                                                <option value='sw'>SW</option>
+                                                <option value='hw'>HW</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="suplier_name"><?php _e('Suplier Name'); ?> </label>
+                                            <input type="text" class="form-control" id="suplier_name"
+                                                name="suplier_name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label
+                                                for="email_notification_180"><?php _e('Email Notification With in 180 Days'); ?>
+                                                </label>
+                                            <input type="text" class="form-control" id="email_notification_180"
+                                                name="email_notification_180">
+                                        </div>
+                                        <div class="form-group">
+                                            <label
+                                                for="email_notification_30"><?php _e('Email Notification With in 30 Days'); ?>
+                                                </label>
+                                            <input type="text" class="form-control" id="email_notification_30"
+                                                name="email_notification_30">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="ownner_name"><?php _e('Ownner Name'); ?> </label>
+                                            <input type="text" class="form-control" id="ownner_name" name="ownner_name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="bussiness_name"><?php _e('Bussiness Name'); ?> </label>
+                                            <input type="text" class="form-control" id="bussiness_name"
+                                                name="bussiness_name">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="application_name"><?php _e('Application Name'); ?> </label>
+                                            <input type="text" class="form-control" id="application_name"
+                                                name="application_name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="partno_sku"><?php _e('Partno/sku'); ?> </label>
+                                            <input type="text" class="form-control" id="partno_sku" name="partno_sku">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="contract_agreement"><?php _e('Contract/Agreement'); ?> </label>
+                                            <input type="text" class="form-control" id="contract_agreement"
+                                                name="contract_agreement">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="effective_start_date"><?php _e('Effective Start Date'); ?>
+                                                </label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control datepicker"
+                                                    id="effective_start_date" name="effective_start_date">
+                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="purchase_type"><?php _e('Purchase Type'); ?> </label>
+                                            <select class="form-control select2" id="purchase_type" name="purchase_type"
+                                                style="width: 100%;">
+                                                <option value="Select">Select</option>
+                                                <option value='Software'>Software</option>
+                                                <option value='Maintenance'>Maintenance</option>
+                                                <option value='Upgrade'>Upgrade</option>
+                                                <option value='Maintenance2'>Maintenance2</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label
+                                                for="email_notification_90"><?php _e('Email Notification With in 90 Days'); ?>
+                                                </label>
+                                            <input type="text" class="form-control" id="email_notification_90"
+                                                name="email_notification_90">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="project_id"><?php _e('Project Id'); ?> </label>
+                                            <input type="text" class="form-control" id="project_id" name="project_id">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="location"><?php _e('Location'); ?> </label>
+                                            <input type="text" class="form-control" id="location" name="location">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="notes"><?php _e('Notes'); ?></label>
+                                            <textarea class="form-control summernoteLarge" id="notes"
+                                                name="notes"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <button type="submit" class="btn btn-primary"><i class="fa fa-check"></i>
+                                                <?php _e('Create'); ?></button>
+                                        </div>
+                                    </div>
+
+                                    <input type="hidden" name="type" value="procurements">
+                                    <input type="hidden" name="action" value="addProcurements">
+                                    <input type="hidden" name="route" value="inventory/procurements">
+                                    <input type="hidden" name="routeid" value="">
+
+
+                                </form><!-- /.form -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- /.content -->
+</aside><!-- /.right-side -->

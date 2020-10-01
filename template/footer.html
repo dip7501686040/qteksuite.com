@@ -110,6 +110,29 @@
 			}
 
 		})
+		$("#dataTablesFull tbody tr td .enable_operations3").on('change', function () {
+			$("#dataTablesFull tbody tr td .enable_operations3").not(this).prop('checked', false);
+			if ($(this).is(":checked")) {
+				$("#operations_procurements .view_procurement, #operations_procurements .edit_procurement").removeClass("disabled")
+				$('#operations_procurements button').removeAttr('disabled')
+				$procurement_id = $(this).val()
+				$view_procurement_url = "?route=inventory/procurements/manage&id=" + $procurement_id + "";
+				$edit_procurement_url = "?route=inventory/procurements/manage&id=" + $procurement_id + "&section=edit"
+				$delete_procurement_url = "showM('?modal=procurements/delete&reroute=inventory/procurements&routeid=&id=" + $procurement_id + "&section=');return false"
+				$label_procurement_url = "?route=pdf&type=procurementlabel&id=" + $procurement_id + "";
+				$(".right-side .content-header .pull-right  .btn-group .view_procurement").attr("href", $view_procurement_url)
+				$(".right-side .content-header .pull-right  .btn-group .edit_procurement").attr("href", $edit_procurement_url)
+				$(".right-side .content-header .pull-right  .btn-group .btn-group .pull-right .delete_procurement").attr("onClick", $delete_procurement_url)
+				$(".right-side .content-header .pull-right  .btn-group .btn-group .pull-right .label_procurement").attr("href", $label_procurement_url)
+			}
+			else {
+
+				$("#operations_procurements .view_procurement, #operations_procurements .edit_procurement").addClass("disabled")
+				$('#operations_procurements button').attr('disabled')
+			}
+
+		})
+
 
 		//total assets datatable's single column search box display toggle
 		$(".right-side .content-header .pull-right .filter_icon i").on('click', function () {

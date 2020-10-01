@@ -177,7 +177,7 @@ td .btn-group {
 }
 
 /* assets datatable css */
-#operations, #operations2{
+#operations, #operations2, #operations_procurements{
     margin: 0 30px 0 0;
 }
 .right-side .content-header .pull-right .filter_icon i{
