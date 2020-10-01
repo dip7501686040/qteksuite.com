@@ -66,12 +66,30 @@
                                     <tr>
                                         <th></th>
                                         <th><?php _e('Tag'); ?> </th>
-                                        <th><?php _e('Category'); ?></th>
-                                        <th><?php _e('Asset Name'); ?></th>
-                                        <th><?php _e('Model'); ?></th>
-                                        <th><?php _e('Serial Number'); ?></th>
-                                        <th><?php _e('Related Entities'); ?></th>
-                                        <th><?php _e('Status'); ?></th>
+                                        <th><?php _e('Status'); ?> </th>
+                                        <th><?php _e('Serial Singer'); ?> </th>
+                                        <th><?php _e('manufacturers'); ?> </th>
+                                        <th><?php _e('Assets Type'); ?> </th>
+                                        <th><?php _e('Asset Model'); ?> </th>
+                                        <th><?php _e('Purchase Date'); ?> </th>
+                                        <th><?php _e('Purchase Cost'); ?> </th>
+                                        <th><?php _e('PO Number'); ?> </th>
+                                        <th><?php _e('Invoice Number'); ?> </th>
+                                        <th><?php _e('Category'); ?> </th>
+                                        <th><?php _e('Supplier'); ?> </th>
+                                        <th><?php _e('Warranty Period'); ?> </th>
+                                        <th><?php _e('EOL Date'); ?> </th>
+                                        <th><?php _e('Amount'); ?> </th>
+                                        <th><?php _e('Created Date'); ?> </th>
+                                        <th><?php _e('RAM'); ?> </th>
+                                        <th><?php _e('Purchase Order Number'); ?> </th>
+                                        <th><?php _e('Owner Name'); ?> </th>
+                                        <th><?php _e('Project Id'); ?> </th>
+                                        <th><?php _e('Cost center'); ?> </th>
+                                        <th><?php _e('Bussiness Unit'); ?> </th>
+                                        <th><?php _e('Location'); ?> </th>
+                                        <th><?php _e('Graphics Card'); ?> </th>
+                                        <th><?php _e('HDD'); ?> </th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -83,29 +101,33 @@
                                             </td>
                                             <td><span class='label' style='background-color:#FFF;color:<?php echo getSingleValue("assetcategories", "color", $asset['Category']); ?>;border:1px solid <?php echo getSingleValue("assetcategories", "color", $asset['categoryid']); ?>'><?php echo getSingleValue("assetcategories", "name", $asset['categoryid']); ?></span>
                                             </td>
-                                            <td><?php if (in_array("manageAsset", $perms)) { ?><a href='?route=inventory/assets/manage&id=<?php echo $asset['id']; ?>'><?php echo $asset['name']; ?></a><?php } else echo $asset['name']; ?>
-                                            </td>
-                                            <td><?php echo getSingleValue("manufacturers", "name", $asset['manufacturerid']); ?>
-                                                <?php echo getSingleValue("models", "name", $asset['modelid']); ?></td>
                                             <td><?php echo $asset['serial']; ?></td>
-                                            <td>
-                                                <?php if ($asset['clientid'] != 0) { ?>
-                                                    <a href='<?php if (in_array("manageClient", $perms)) { ?>?route=clients/manage&id=<?php echo $asset['clientid']; ?><?php } else echo "#"; ?>'>
-                                                        <span class='label' style="background-color:#FFF;color:#0073b7;border:1px solid #0073b7;"><i class='fa fa-briefcase fa-fw'></i>
-                                                            <?php echo getSingleValue("clients", "name", $asset['clientid']); ?></span>
-                                                    </a>
-                                                <?php } ?>
+                                            <td><?php echo $asset['manufacturer']; ?></td>
+                                            <td><?php echo $asset['Assest_type']; ?></td>
+                                            <td><?php echo $asset['modal']; ?></td>
+                                            <td><?php echo $asset['purchase_date']; ?></td>
+                                            <td><?php echo $asset['purchase_cost']; ?></td>
+                                            <td><?php echo $asset['PO_number']; ?></td>
+                                            <td><?php echo $asset['Invoice_number']; ?></td>
+                                            <td><?php echo $asset['Category']; ?></td>
+                                            <td><?php echo $asset['Supplier']; ?></td>
+                                            <td><?php echo $asset['warranty_months']; ?></td>
+                                            <td><?php echo $asset['EOL_date']; ?></td>
+                                            <td><?php echo $asset['Amount']; ?></td>
+                                            <td><?php echo $asset['Created_date']; ?></td>
+                                            <td><?php echo $asset['RAM']; ?></td>
+                                            <td><?php echo $asset['Purchase_order_number']; ?></td>
+                                            <td><?php echo $asset['owner_name']; ?></td>
+                                            <td><?php echo $asset['project_id']; ?></td>
+                                            <td><?php echo $asset['cost_center']; ?></td>
+                                            <td><?php echo $asset['bussiness_unit']; ?></td>
+                                            <td><?php echo $asset['location']; ?></td>
+                                            <td><?php echo $asset['graphics_card']; ?></td>
+                                            <td><?php echo $asset['HDD']; ?></td>
+                                            
 
-                                                <?php if ($asset['userid'] != 0) { ?>
-                                                    <a href='<?php if (in_array("editUser", $perms)) { ?>?route=people/users/edit&id=<?php echo $asset['id']; ?><?php } else echo "#"; ?>'>
-                                                        <span class='label' style="background-color:#FFF;color:#001F3F;border:1px solid #001F3F;"><i class='fa fa-user fa-fw'></i>
-                                                            <?php echo getSingleValue("people", "name", $asset['userid']); ?></span>
-                                                    </a>
-                                                <?php } ?>
-                                            </td>
 
-                                            <td><span class='badge' style='background-color:<?php echo getSingleValue("labels", "color", $asset['status']); ?>'><?php echo getSingleValue("labels", "name", $asset['statusid']); ?></span>
-                                            </td>
+
                                         </tr>
                                     <?php } ?>
                                 </tbody>
